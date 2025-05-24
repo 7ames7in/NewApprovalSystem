@@ -1,0 +1,11 @@
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/bin/Debug/net9.0/SharedKernel.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/bin/Debug/net9.0/SharedKernel.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/bin/Debug/net9.0/SharedKernel.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.AssemblyInfoInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.AssemblyInfo.cs
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.csproj.CoreCompileInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/refint/SharedKernel.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/ref/SharedKernel.dll

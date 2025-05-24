@@ -1,0 +1,17 @@
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.csproj.AssemblyReference.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.AssemblyInfoInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.AssemblyInfo.cs
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.csproj.CoreCompileInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/ApprovalService.Application.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/ApprovalService.Application.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/ApprovalService.Application.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/SharedKernel.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/ApprovalService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/bin/Debug/net9.0/SharedKernel.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/Approval.32C7C1E0.Up2Date
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/refint/ApprovalService.Application.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ApprovalService.Application.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/Debug/net9.0/ref/ApprovalService.Application.dll

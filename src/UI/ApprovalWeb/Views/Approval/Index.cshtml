@@ -1,0 +1,39 @@
+@model List<ApprovalViewModel>
+
+<h2>Approval Requests</h2>
+
+<a href="/Approval/Create" class="btn btn-primary">+ Submit New Request</a>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Request ID</th>
+            <th>Approver</th>
+            <th>Status</th>
+            @* <th>Requested At</th> *@
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RequestId</td>
+                <td>@item.ApproverName</td>
+                <td>
+                    <span class="badge @(item.Status switch {
+                        "Approved" => "bg-success",
+                        "Rejected" => "bg-danger",
+                        _ => "bg-warning text-dark"
+                    })">
+                        @item.Status
+                    </span>
+                </td>
+                @* <td>@item.RequestedAt.ToLocalTime().ToString("g")</td> *@
+                <td>
+                    <a href="/Approval/Details/@item.RequestId" class="btn btn-sm btn-outline-info">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

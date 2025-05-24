@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UIxBMSJEOsg/3woPZSOD7xONYZ2s0Z/Pew3kvzooxU4=",
+  "Source": "ApprovalService.API",
+  "BasePath": "_content/ApprovalService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

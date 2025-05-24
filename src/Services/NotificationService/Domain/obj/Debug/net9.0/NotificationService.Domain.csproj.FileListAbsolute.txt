@@ -1,0 +1,11 @@
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/bin/Debug/net9.0/NotificationService.Domain.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/bin/Debug/net9.0/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/bin/Debug/net9.0/NotificationService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.AssemblyInfoInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.AssemblyInfo.cs
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.csproj.CoreCompileInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/refint/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/ref/NotificationService.Domain.dll

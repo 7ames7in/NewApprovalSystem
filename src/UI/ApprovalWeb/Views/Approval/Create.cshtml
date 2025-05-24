@@ -1,0 +1,15 @@
+@model ApprovalWeb.Models.ApprovalViewModel
+
+<h2>Submit Approval Request</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Request ID</label>
+        <input asp-for="RequestId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Approver Name</label>
+        <input asp-for="ApproverName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>

@@ -1,0 +1,11 @@
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/ApprovalService.Domain.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/ApprovalService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.AssemblyInfoInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.AssemblyInfo.cs
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.csproj.CoreCompileInputs.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/refint/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ref/ApprovalService.Domain.dll
