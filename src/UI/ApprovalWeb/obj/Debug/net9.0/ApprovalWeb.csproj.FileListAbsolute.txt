@@ -104,3 +104,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/WebActivatorEx.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/ApprovalWeb.csproj.AssemblyReference.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/Approval.BD0CD378.Up2Date
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/ApprovalWeb.sourcelink.json

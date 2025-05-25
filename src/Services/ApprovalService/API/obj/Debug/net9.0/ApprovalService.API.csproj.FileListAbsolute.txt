@@ -102,3 +102,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/Debug/net9.0/ApprovalService.API.sourcelink.json

@@ -1,9 +1,63 @@
 @model ApprovalWeb.Models.ApprovalViewModel
 
-<h2>Approval Details</h2>
-<div>
-    <strong>Request ID:</strong> @Model.RequestId <br />
-    <strong>Approver:</strong> @Model.ApproverName <br />
-    <strong>Status:</strong> @Model.Status <br />
-    <strong>Comments:</strong> @Model.Comments
+<div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">Approval Details</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <tbody>
+                <tr>
+                    <th style="width:200px">Request ID</th>
+                    <td>@Model.RequestId</td>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <td>@Model.Title</td>
+                </tr>
+                <tr>
+                    <th>Approver</th>
+                    <td>@Model.ApproverName</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>
+                        <span class="badge @(Model.Status == "Approved" ? "bg-success" : Model.Status == "Rejected" ? "bg-danger" : "bg-warning text-dark")">
+                            @Model.Status
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Comments</th>
+                    <td>@Model.Comments</td>
+                </tr>
+                <tr>
+                    <th>Priority</th>
+                    <td>
+                        <span class="badge @(Model.Priority == "High" ? "bg-danger" : Model.Priority == "Medium" ? "bg-warning text-dark" : "bg-success")">
+                            @Model.Priority
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer">
+        <h3>Actions</h3>
+        @if (Model.Status == "Pending")
+        {
+            <form asp-action="Approve" method="post" class="d-inline">
+                <input type="hidden" name="RequestId" value="@Model.RequestId" />
+                <button type="submit" class="btn btn-success">Approve</button>
+            </form>
+            <form asp-action="Reject" method="post" class="d-inline ms-2">
+                <input type="hidden" name="RequestId" value="@Model.RequestId" />
+                <button type="submit" class="btn btn-danger">Reject</button>
+            </form>
+        }
+        else
+        {
+            <p>No actions available for this request.</p>
+        }
+    </div>
 </div>

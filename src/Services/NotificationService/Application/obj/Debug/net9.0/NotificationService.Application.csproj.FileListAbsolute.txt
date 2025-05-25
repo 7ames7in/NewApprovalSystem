@@ -9,3 +9,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Application/obj/Debug/net9.0/refint/NotificationService.Application.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Application/obj/Debug/net9.0/NotificationService.Application.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Application/obj/Debug/net9.0/ref/NotificationService.Application.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Application/obj/Debug/net9.0/NotificationService.Application.sourcelink.json

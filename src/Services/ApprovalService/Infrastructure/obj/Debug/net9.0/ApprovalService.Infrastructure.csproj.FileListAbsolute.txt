@@ -19,3 +19,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ApprovalService.Infrastructure.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ApprovalService.Infrastructure.genruntimeconfig.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ref/ApprovalService.Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ApprovalService.Infrastructure.sourcelink.json

@@ -1,8 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 text-primary">@ViewData["Title"]</h1>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card border-primary">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-primary">Total Submissions</h5>
+                    <p class="card-text text-dark font-weight-bold">50</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-warning">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-warning">Pending Submissions</h5>
+                    <p class="card-text text-dark font-weight-bold">20</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-success">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-success">Completed Submissions</h5>
+                    <p class="card-text text-dark font-weight-bold">30</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

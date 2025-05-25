@@ -1,26 +1,34 @@
 using ApprovalWeb.Models;
 using System.Net.Http.Json;
+using ApprovalWeb.Interfaces;
 
 namespace ApprovalWeb.Services;
 
-public class ApprovalApiService
+public class ApprovalApiService : IApprovalService
 {
     private readonly HttpClient _http;
 
-    public ApprovalApiService(IHttpClientFactory httpClientFactory)
+    public ApprovalApiService(IHttpClientFactory factory)
     {
-        _http = httpClientFactory.CreateClient("ApprovalApi");
+        _http = factory.CreateClient("ApprovalApi");
     }
 
     public async Task<List<ApprovalViewModel>> GetApprovalsAsync()
-    {
-        return await _http.GetFromJsonAsync<List<ApprovalViewModel>>("api/approval") ?? new();
-    }
+        => await _http.GetFromJsonAsync<List<ApprovalViewModel>>("api/approval") ?? new();
 
     public async Task<Guid> SubmitApprovalAsync(ApprovalViewModel model)
     {
         var response = await _http.PostAsJsonAsync("api/approval/submit", model);
         var result = await response.Content.ReadFromJsonAsync<Dictionary<string, Guid>>();
         return result?["ApprovalId"] ?? Guid.Empty;
+    }
+
+    public async Task<ApprovalViewModel?> GetByIdAsync(string requestId)
+        => await _http.GetFromJsonAsync<ApprovalViewModel>($"api/approval/{requestId}");
+
+    public async Task UpdateStatusAsync(string requestId, string status, string? comment)
+    {
+        var content = JsonContent.Create(new { requestId, status, comment });
+        await _http.PostAsync("api/approval/update-status", content);
     }
 }

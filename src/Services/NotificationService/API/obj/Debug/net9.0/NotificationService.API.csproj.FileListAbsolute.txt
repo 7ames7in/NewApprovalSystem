@@ -31,3 +31,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/obj/Debug/net9.0/NotificationService.API.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/obj/Debug/net9.0/NotificationService.API.genruntimeconfig.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/obj/Debug/net9.0/ref/NotificationService.API.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/obj/Debug/net9.0/NotificationService.API.sourcelink.json

@@ -1,14 +1,23 @@
 using ApprovalWeb.Services;
+using ApprovalWeb.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient("ApprovalApi", client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5001/"); // ApprovalService.API 주소
-});
+var useMock = builder.Configuration.GetValue<bool>("UseMockService");
 
-builder.Services.AddScoped<ApprovalApiService>(); // ApprovalService.API 주소
+if (useMock)
+{
+    builder.Services.AddScoped<IApprovalService, MockApprovalService>();
+}
+else
+{
+    builder.Services.AddHttpClient("ApprovalApi", client =>
+    {
+        client.BaseAddress = new Uri("https://localhost:5001/");
+    });
+    builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
+}
 
 var app = builder.Build();
 

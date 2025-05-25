@@ -9,3 +9,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/refint/SharedKernel.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/ref/SharedKernel.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/obj/Debug/net9.0/SharedKernel.sourcelink.json

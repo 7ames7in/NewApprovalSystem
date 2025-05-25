@@ -9,3 +9,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/obj/Debug/net9.0/refint/EventBus.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/obj/Debug/net9.0/EventBus.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/obj/Debug/net9.0/ref/EventBus.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/obj/Debug/net9.0/EventBus.sourcelink.json

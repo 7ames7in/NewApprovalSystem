@@ -1,14 +1,15 @@
 using ApprovalWeb.Models;
 using ApprovalWeb.Services;
+using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApprovalWeb.Controllers;
 
 public class ApprovalController : Controller
 {
-    private readonly ApprovalApiService _apiService;
+    private readonly IApprovalService _apiService;
 
-    public ApprovalController(ApprovalApiService apiService)
+    public ApprovalController(IApprovalService apiService)
     {
         _apiService = apiService;
     }
@@ -38,7 +39,8 @@ public class ApprovalController : Controller
 
     public IActionResult Details(string id)
     {
-        var model = new ApprovalViewModel { RequestId = id, ApproverName = "Alice", Status = "Pending", Comments = "From server" };
+        //var model = new ApprovalViewModel { RequestId = id, ApproverName = "Alice", Status = "Pending", Comments = "From server" };
+        var model = _apiService.GetByIdAsync(id).Result;
         return View(model);
     }
 }

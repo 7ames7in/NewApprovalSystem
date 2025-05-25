@@ -111,3 +111,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ApprovalService.Tests.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ApprovalService.Tests.genruntimeconfig.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ref/ApprovalService.Tests.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ApprovalService.Tests.sourcelink.json

@@ -9,3 +9,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/obj/Debug/net9.0/refint/Contracts.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/obj/Debug/net9.0/Contracts.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/obj/Debug/net9.0/ref/Contracts.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/obj/Debug/net9.0/Contracts.sourcelink.json
