@@ -10,3 +10,9 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/obj/Debug/net9.0/NotificationService.Infrastructure.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/obj/Debug/net9.0/ref/NotificationService.Infrastructure.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/obj/Debug/net9.0/NotificationService.Infrastructure.sourcelink.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/bin/Debug/net9.0/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/bin/Debug/net9.0/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/bin/Debug/net9.0/ApprovalService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/bin/Debug/net9.0/NotificationService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/obj/Debug/net9.0/NotificationService.Infrastructure.csproj.AssemblyReference.cache
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/obj/Debug/net9.0/Notifica.C5696791.Up2Date
