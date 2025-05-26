@@ -1136,6 +1136,16 @@
           "bin/placeholder/ApprovalService.Domain.dll": {}
         }
       },
+      "NotificationService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
+        }
+      },
       "SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3178,6 +3188,11 @@
       "path": "../Domain/ApprovalService.Domain.csproj",
       "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
     },
+    "NotificationService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../NotificationService/Domain/NotificationService.Domain.csproj",
+      "msbuildProject": "../../NotificationService/Domain/NotificationService.Domain.csproj"
+    },
     "SharedKernel/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/SharedKernel/SharedKernel.csproj",
@@ -3191,6 +3206,7 @@
       "Microsoft.EntityFrameworkCore >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.5",
+      "NotificationService.Domain >= 1.0.0",
       "SharedKernel >= 1.0.0"
     ]
   },
@@ -3237,6 +3253,9 @@
             },
             "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\ApprovalService\\Domain\\ApprovalService.Domain.csproj": {
               "projectPath": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\ApprovalService\\Domain\\ApprovalService.Domain.csproj"
+            },
+            "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\NotificationService\\Domain\\NotificationService.Domain.csproj": {
+              "projectPath": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\NotificationService\\Domain\\NotificationService.Domain.csproj"
             }
           }
         }

@@ -1,3 +1,5 @@
+namespace ApprovalService.Domain.Entities;
+
 public class ApprovalRequest
 {
     public Guid ApprovalId { get; set; }
