@@ -1,3 +1,5 @@
+namespace NotificationService.Domain.Entities;
+
 public class EmailNotification
 {
     public Guid EmailNotificationId { get; set; }

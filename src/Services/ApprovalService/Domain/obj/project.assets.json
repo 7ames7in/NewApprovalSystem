@@ -8,35 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ec20505\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/7ames7in/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\ApprovalService\\Domain\\ApprovalService.Domain.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj",
       "projectName": "ApprovalService.Domain",
-      "projectPath": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\ApprovalService\\Domain\\ApprovalService.Domain.csproj",
-      "packagesPath": "C:\\Users\\ec20505\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\ApprovalService\\Domain\\obj\\",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj",
+      "packagesPath": "/Users/7ames7in/.nuget/packages/",
+      "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ec20505\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/7ames7in/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json": {}
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -75,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

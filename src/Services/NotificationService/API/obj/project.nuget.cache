@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iChY5JevDVQ=",
+  "dgSpecHash": "2pxhw9smLEs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ec20505\\source\\repos\\MyGit-Projects\\NewApprovalSystem\\src\\Services\\NotificationService\\API\\NotificationService.API.csproj",
+  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/NotificationService.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ec20505\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
-    "C:\\Users\\ec20505\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.openapi/9.0.3/microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json."
-    }
-  ]
+  "logs": []
 }
