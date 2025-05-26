@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LKAlTE0SOOc=",
+  "dgSpecHash": "ax5Vs/AhBlI=",
   "success": true,
   "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/ApprovalService.Tests.csproj",
   "expectedPackageFiles": [
@@ -28,12 +28,5 @@
     "/Users/7ames7in/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

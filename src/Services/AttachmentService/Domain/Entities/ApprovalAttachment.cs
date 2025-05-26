@@ -1,3 +1,5 @@
+namespace AttachmentService.Domain.Entities;
+
 public class ApprovalAttachment
 {
     public Guid AttachmentId { get; set; }

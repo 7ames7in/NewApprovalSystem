@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TLVcLE8r/4o=",
+  "dgSpecHash": "goJXHdaQyK0=",
   "success": true,
   "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/ApprovalService.API.csproj",
   "expectedPackageFiles": [
@@ -186,12 +186,6 @@
     "/Users/7ames7in/.nuget/packages/webactivatorex/2.0.0/webactivatorex.2.0.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

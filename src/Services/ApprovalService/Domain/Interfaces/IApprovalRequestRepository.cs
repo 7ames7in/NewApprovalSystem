@@ -1,8 +1,9 @@
-public interface IApprovalRequestRepository
+
+public interface IApprovalRequestRepository<T> 
 {
-    Task<ApprovalRequest?> GetByIdAsync(Guid id);
-    Task<IEnumerable<ApprovalRequest>> GetAllAsync();
-    Task AddAsync(ApprovalRequest entity);
-    Task UpdateAsync(ApprovalRequest entity);
+    Task<T?> GetByIdAsync(Guid id);
+    Task<IEnumerable<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
     Task DeleteAsync(Guid id);
 }

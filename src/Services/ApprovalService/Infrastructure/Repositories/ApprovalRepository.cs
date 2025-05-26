@@ -1,11 +1,12 @@
 using ApprovalService.Application.Interfaces;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Infrastructure.Persistence;
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApprovalService.Infrastructure.Repositories;
 
-public class ApprovalRepository : IApprovalRepository
+public class ApprovalRepository<T> : IRepository<T> where T : class
 {
     private readonly ApprovalDbContext _context;
 
@@ -14,16 +15,29 @@ public class ApprovalRepository : IApprovalRepository
         _context = context;
     }
 
-    public async Task AddAsync(Approval approval)
+    public async Task<T?> GetByIdAsync(Guid id) =>
+        await _context.Set<T>().FindAsync(id);
+    public async Task<IEnumerable<T>> GetAllAsync() =>
+        await _context.Set<T>().ToListAsync();
+    public async Task AddAsync(T entity)
     {
-        await _context.Approvals.AddAsync(approval);
+        await _context.Set<T>().AddAsync(entity);
+        await _context.SaveChangesAsync();
     }
-
-    public async Task<Approval?> GetByIdAsync(Guid id)
+    public async Task UpdateAsync(T entity)
     {
-        return await _context.Approvals.FindAsync(id);
+        _context.Set<T>().Update(entity);
+        await _context.SaveChangesAsync();
     }
-
+    public async Task DeleteAsync(Guid id)
+    {
+        var entity = await _context.Set<T>().FindAsync(id);
+        if (entity != null)
+        {
+            _context.Set<T>().Remove(entity);
+            await _context.SaveChangesAsync();
+        }
+    }
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();

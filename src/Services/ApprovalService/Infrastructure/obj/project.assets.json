@@ -1128,12 +1128,49 @@
       },
       "ApprovalService.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/ApprovalService.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/ApprovalService.Domain.dll": {}
+        }
+      },
+      "AttachmentService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/AttachmentService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AttachmentService.Domain.dll": {}
+        }
+      },
+      "AttachmentService.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
         }
       },
       "NotificationService.Domain/1.0.0": {
@@ -3188,6 +3225,21 @@
       "path": "../Domain/ApprovalService.Domain.csproj",
       "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
     },
+    "AttachmentService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Domain/AttachmentService.Domain.csproj",
+      "msbuildProject": "../../AttachmentService/Domain/AttachmentService.Domain.csproj"
+    },
+    "AttachmentService.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj",
+      "msbuildProject": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+    },
     "NotificationService.Domain/1.0.0": {
       "type": "project",
       "path": "../../NotificationService/Domain/NotificationService.Domain.csproj",
@@ -3203,6 +3255,9 @@
     "net9.0": [
       "ApprovalService.Application >= 1.0.0",
       "ApprovalService.Domain >= 1.0.0",
+      "AttachmentService.Domain >= 1.0.0",
+      "AttachmentService.Infrastructure >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.5",
@@ -3236,6 +3291,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+            },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/SharedKernel.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/SharedKernel.csproj"
             },
@@ -3244,6 +3302,12 @@
             },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/AttachmentService.Domain.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/AttachmentService.Domain.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
             },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/NotificationService.Domain.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/NotificationService.Domain.csproj"
@@ -3301,13 +3365,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

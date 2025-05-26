@@ -10,9 +10,13 @@
         "dependencies": {
           "ApprovalService.Application": "1.0.0",
           "ApprovalService.Domain": "1.0.0",
+          "AttachmentService.Domain": "1.0.0",
+          "AttachmentService.Infrastructure": "1.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
+          "NotificationService.Domain": "1.0.0",
           "SharedKernel": "1.0.0"
         },
         "runtime": {
@@ -814,6 +818,45 @@
           }
         }
       },
+      "AttachmentService.Domain/1.0.0": {
+        "runtime": {
+          "AttachmentService.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AttachmentService.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "runtime": {
+          "AttachmentService.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "runtime": {
+          "Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NotificationService.Domain/1.0.0": {
+        "runtime": {
+          "NotificationService.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "SharedKernel/1.0.0": {
         "runtime": {
           "SharedKernel.dll": {
@@ -1179,6 +1222,26 @@
       "sha512": ""
     },
     "ApprovalService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AttachmentService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AttachmentService.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NotificationService.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

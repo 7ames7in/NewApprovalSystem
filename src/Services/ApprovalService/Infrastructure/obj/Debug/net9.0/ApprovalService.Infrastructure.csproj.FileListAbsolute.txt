@@ -20,3 +20,11 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ApprovalService.Infrastructure.genruntimeconfig.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ref/ApprovalService.Infrastructure.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/Debug/net9.0/ApprovalService.Infrastructure.sourcelink.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Infrastructure.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/NotificationService.Domain.pdb

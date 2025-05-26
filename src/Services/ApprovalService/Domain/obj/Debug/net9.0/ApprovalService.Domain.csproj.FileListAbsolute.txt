@@ -9,3 +9,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/refint/ApprovalService.Domain.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ref/ApprovalService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.sourcelink.json

@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj" />
+    <ProjectReference Include="../../AttachmentService/Domain/AttachmentService.Domain.csproj" />
+    <ProjectReference Include="../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj" />
     <ProjectReference Include="..\..\NotificationService\Domain\NotificationService.Domain.csproj" />
     <ProjectReference Include="..\Domain\ApprovalService.Domain.csproj" />
     <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedKernel\SharedKernel.csproj" />

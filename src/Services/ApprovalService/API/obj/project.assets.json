@@ -3183,7 +3183,7 @@
       },
       "ApprovalService.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/ApprovalService.Domain.dll": {}
         },
@@ -3197,6 +3197,9 @@
         "dependencies": {
           "ApprovalService.Application": "1.0.0",
           "ApprovalService.Domain": "1.0.0",
+          "AttachmentService.Domain": "1.0.0",
+          "AttachmentService.Infrastructure": "1.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
           "NotificationService.Domain": "1.0.0",
@@ -3207,6 +3210,30 @@
         },
         "runtime": {
           "bin/placeholder/ApprovalService.Infrastructure.dll": {}
+        }
+      },
+      "AttachmentService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/AttachmentService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AttachmentService.Domain.dll": {}
+        }
+      },
+      "AttachmentService.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
         }
       },
       "Contracts/1.0.0": {
@@ -3227,6 +3254,19 @@
         },
         "runtime": {
           "bin/placeholder/EventBus.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
         }
       },
       "NotificationService.Domain/1.0.0": {
@@ -8978,6 +9018,16 @@
       "path": "../Infrastructure/ApprovalService.Infrastructure.csproj",
       "msbuildProject": "../Infrastructure/ApprovalService.Infrastructure.csproj"
     },
+    "AttachmentService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Domain/AttachmentService.Domain.csproj",
+      "msbuildProject": "../../AttachmentService/Domain/AttachmentService.Domain.csproj"
+    },
+    "AttachmentService.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj",
+      "msbuildProject": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/Contracts/Contracts.csproj",
@@ -8987,6 +9037,11 @@
       "type": "project",
       "path": "../../../../BuildingBlocks/EventBus/EventBus.csproj",
       "msbuildProject": "../../../../BuildingBlocks/EventBus/EventBus.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
     },
     "NotificationService.Domain/1.0.0": {
       "type": "project",
@@ -9113,12 +9168,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

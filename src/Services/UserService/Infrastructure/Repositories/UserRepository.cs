@@ -1,4 +1,9 @@
-public class UserRepository : IUserRepository
+using Microsoft.EntityFrameworkCore;
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+
+namespace ApprovalService.Infrastructure.Repositories;
+
+public class UserRepository<T> : IRepository<T> where T : class
 {
     private readonly DbContext _context;
 
@@ -7,31 +12,31 @@ public class UserRepository : IUserRepository
         _context = context;
     }
 
-    public async Task<User?> GetByIdAsync(Guid id) =>
-        await _context.Set<User>().FindAsync(id);
-
-    public async Task<IEnumerable<User>> GetAllAsync() =>
-        await _context.Set<User>().ToListAsync();
-
-    public async Task AddAsync(User entity)
+    public async Task<T?> GetByIdAsync(Guid id) =>
+        await _context.Set<T>().FindAsync(id);
+    public async Task<IEnumerable<T>> GetAllAsync() =>
+        await _context.Set<T>().ToListAsync();
+    public async Task AddAsync(T entity)
     {
-        await _context.Set<User>().AddAsync(entity);
+        await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
     }
-
-    public async Task UpdateAsync(User entity)
+    public async Task UpdateAsync(T entity)
     {
-        _context.Set<User>().Update(entity);
+        _context.Set<T>().Update(entity);
         await _context.SaveChangesAsync();
     }
-
     public async Task DeleteAsync(Guid id)
     {
-        var entity = await _context.Set<User>().FindAsync(id);
+        var entity = await _context.Set<T>().FindAsync(id);
         if (entity != null)
         {
-            _context.Set<User>().Remove(entity);
+            _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
+    }
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

@@ -1,4 +1,9 @@
-public class ApprovalAttachmentRepository : IApprovalAttachmentRepository
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+namespace ApprovalService.Infrastructure.Repositories;
+
+public class ApprovalAttachmentRepository<T> : IRepository<T> where T : class
 {
     private readonly DbContext _context;
 
@@ -6,32 +11,31 @@ public class ApprovalAttachmentRepository : IApprovalAttachmentRepository
     {
         _context = context;
     }
-
-    public async Task<ApprovalAttachment?> GetByIdAsync(Guid id) =>
-        await _context.Set<ApprovalAttachment>().FindAsync(id);
-
-    public async Task<IEnumerable<ApprovalAttachment>> GetAllAsync() =>
-        await _context.Set<ApprovalAttachment>().ToListAsync();
-
-    public async Task AddAsync(ApprovalAttachment entity)
+    public async Task<T?> GetByIdAsync(Guid id) =>
+        await _context.Set<T>().FindAsync(id);
+    public async Task<IEnumerable<T>> GetAllAsync() =>
+        await _context.Set<T>().ToListAsync();
+    public async Task AddAsync(T entity)
     {
-        await _context.Set<ApprovalAttachment>().AddAsync(entity);
+        await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
     }
-
-    public async Task UpdateAsync(ApprovalAttachment entity)
+    public async Task UpdateAsync(T entity)
     {
-        _context.Set<ApprovalAttachment>().Update(entity);
+        _context.Set<T>().Update(entity);
         await _context.SaveChangesAsync();
     }
-
     public async Task DeleteAsync(Guid id)
     {
-        var entity = await _context.Set<ApprovalAttachment>().FindAsync(id);
+        var entity = await _context.Set<T>().FindAsync(id);
         if (entity != null)
         {
-            _context.Set<ApprovalAttachment>().Remove(entity);
+            _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
+    }
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

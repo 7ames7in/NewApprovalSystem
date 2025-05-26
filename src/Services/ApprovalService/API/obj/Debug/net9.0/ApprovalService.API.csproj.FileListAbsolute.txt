@@ -103,3 +103,11 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/Debug/net9.0/ApprovalService.API.sourcelink.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/AttachmentService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/AttachmentService.Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/NotificationService.Domain.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/AttachmentService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/AttachmentService.Infrastructure.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/Infrastructure.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/bin/Debug/net9.0/NotificationService.Domain.pdb

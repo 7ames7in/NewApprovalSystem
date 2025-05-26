@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ApprovalService.Infrastructure;
+using ApprovalService.Infrastructure.Persistence;
 using ApprovalService.Infrastructure.Seed;
 
 var builder = WebApplication.CreateBuilder(args);

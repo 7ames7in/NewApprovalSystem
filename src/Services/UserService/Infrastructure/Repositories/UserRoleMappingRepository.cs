@@ -1,4 +1,7 @@
-public class UserRoleMappingRepository : IUserRoleMappingRepository
+using Microsoft.EntityFrameworkCore;
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+
+public class UserRoleMappingRepository<T> : IRepository<T> where T : class
 {
     private readonly DbContext _context;
 
@@ -7,31 +10,31 @@ public class UserRoleMappingRepository : IUserRoleMappingRepository
         _context = context;
     }
 
-    public async Task<UserRoleMapping?> GetByIdAsync(Guid id) =>
-        await _context.Set<UserRoleMapping>().FindAsync(id);
-
-    public async Task<IEnumerable<UserRoleMapping>> GetAllAsync() =>
-        await _context.Set<UserRoleMapping>().ToListAsync();
-
-    public async Task AddAsync(UserRoleMapping entity)
+    public async Task<T?> GetByIdAsync(Guid id) =>
+        await _context.Set<T>().FindAsync(id);
+    public async Task<IEnumerable<T>> GetAllAsync() =>
+        await _context.Set<T>().ToListAsync();
+    public async Task AddAsync(T entity)
     {
-        await _context.Set<UserRoleMapping>().AddAsync(entity);
+        await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
     }
-
-    public async Task UpdateAsync(UserRoleMapping entity)
+    public async Task UpdateAsync(T entity)
     {
-        _context.Set<UserRoleMapping>().Update(entity);
+        _context.Set<T>().Update(entity);
         await _context.SaveChangesAsync();
     }
-
     public async Task DeleteAsync(Guid id)
     {
-        var entity = await _context.Set<UserRoleMapping>().FindAsync(id);
+        var entity = await _context.Set<T>().FindAsync(id);
         if (entity != null)
         {
-            _context.Set<UserRoleMapping>().Remove(entity);
+            _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
+    }
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }
