@@ -32,4 +32,15 @@ dotnet sln $SOLUTION_NAME add src/Services/UserService/Infrastructure/UserServic
 # SharedKernel / Core
 dotnet sln $SOLUTION_NAME add BuildingBlocks/Core/Infrastructure/Infrastructure.csproj
 
+
+# ✅ UI (e.g. MVC or Blazor)
+if [ -f src/UI/ApprovalWeb/ApprovalWeb.csproj ]; then
+    dotnet sln $SOLUTION_NAME add src/UI/ApprovalWeb/ApprovalWeb.csproj
+fi
+
+# ✅ Tests
+for test_proj in tests/**/*.csproj; do
+    dotnet sln $SOLUTION_NAME add "$test_proj"
+done
+
 echo "✅ All projects added to $SOLUTION_NAME successfully."

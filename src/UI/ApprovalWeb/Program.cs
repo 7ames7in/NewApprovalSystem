@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 var useMock = builder.Configuration.GetValue<bool>("UseMockService");
 
-if (useMock)
+if (!useMock)
 {
     builder.Services.AddScoped<IApprovalService, MockApprovalService>();
 }
