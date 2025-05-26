@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\..\NotificationService\Domain\NotificationService.Domain.csproj" />
     <ProjectReference Include="..\Domain\ApprovalService.Domain.csproj" />
     <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedKernel\SharedKernel.csproj" />
     <ProjectReference Include="..\Application\ApprovalService.Application.csproj" />

@@ -1,10 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using ApprovalService.Infrastructure;
+using ApprovalService.Infrastructure.Seed;
 
-// Add services to the container
-builder.Services.AddControllers(); // Ensure controllers are added
-builder.Services.AddEndpointsApiExplorer(); // Required for minimal APIs and Swagger
+var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerGen(); // Add Swagger generation
 
+// SQLite 연결 등록
+builder.Services.AddDbContext<ApprovalDbContext>(options =>
+    options.UseSqlite("Data Source=Data/ApprovalService.db"));
+
+builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -14,9 +19,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthorization(); // Ensure authorization middleware is added
+app.MapControllers();
 
-app.MapControllers(); // Map controller routes
+// 데이터베이스 생성 및 시드
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApprovalDbContext>();
+    db.Database.EnsureCreated(); // 또는 db.Database.Migrate();
+    await ApprovalSeedData.InitializeAsync(db);
+}
 
 app.Run();

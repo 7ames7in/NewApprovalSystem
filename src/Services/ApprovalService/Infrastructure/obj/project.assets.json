@@ -1136,6 +1136,16 @@
           "bin/placeholder/ApprovalService.Domain.dll": {}
         }
       },
+      "NotificationService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
+        }
+      },
       "SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3178,6 +3188,11 @@
       "path": "../Domain/ApprovalService.Domain.csproj",
       "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
     },
+    "NotificationService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../NotificationService/Domain/NotificationService.Domain.csproj",
+      "msbuildProject": "../../NotificationService/Domain/NotificationService.Domain.csproj"
+    },
     "SharedKernel/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/SharedKernel/SharedKernel.csproj",
@@ -3191,6 +3206,7 @@
       "Microsoft.EntityFrameworkCore >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.5",
+      "NotificationService.Domain >= 1.0.0",
       "SharedKernel >= 1.0.0"
     ]
   },
@@ -3228,6 +3244,9 @@
             },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/NotificationService.Domain.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/NotificationService.Domain.csproj"
             }
           }
         }
@@ -3282,5 +3301,13 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

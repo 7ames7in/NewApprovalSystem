@@ -3199,6 +3199,7 @@
           "ApprovalService.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
+          "NotificationService.Domain": "1.0.0",
           "SharedKernel": "1.0.0"
         },
         "compile": {
@@ -3226,6 +3227,16 @@
         },
         "runtime": {
           "bin/placeholder/EventBus.dll": {}
+        }
+      },
+      "NotificationService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NotificationService.Domain.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -8977,6 +8988,11 @@
       "path": "../../../../BuildingBlocks/EventBus/EventBus.csproj",
       "msbuildProject": "../../../../BuildingBlocks/EventBus/EventBus.csproj"
     },
+    "NotificationService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../NotificationService/Domain/NotificationService.Domain.csproj",
+      "msbuildProject": "../../NotificationService/Domain/NotificationService.Domain.csproj"
+    },
     "SharedKernel/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/SharedKernel/SharedKernel.csproj",
@@ -9097,6 +9113,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
