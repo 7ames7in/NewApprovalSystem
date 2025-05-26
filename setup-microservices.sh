@@ -14,7 +14,7 @@ echo "🛠️ Initializing each microservice API project..."
 # dotnet new classlib -n ApprovalService.Infrastructure -o src/Services/ApprovalService/Infrastructure
 
 dotnet new webapi -n AttachmentService.API -o src/Services/AttachmentService/API
-dotnet new webapi -n NotificationService.API -o src/Services/NotificationService/API
+# dotnet new webapi -n NotificationService.API -o src/Services/NotificationService/API
 dotnet new webapi -n LoggingService.API -o src/Services/LoggingService/API
 dotnet new webapi -n UserService.API -o src/Services/UserService/API
 
