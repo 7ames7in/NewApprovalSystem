@@ -18,6 +18,6 @@ dotnet new webapi -n AttachmentService.API -o src/Services/AttachmentService/API
 dotnet new webapi -n LoggingService.API -o src/Services/LoggingService/API
 dotnet new webapi -n UserService.API -o src/Services/UserService/API
 
-dotnet new classlib -n SharedKernel -o src/BuildingBlocks/SharedKernel
+#dotnet new classlib -n SharedKernel -o src/BuildingBlocks/SharedKernel
 
 echo "✅ All services and structure initialized."
