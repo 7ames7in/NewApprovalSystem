@@ -21,18 +21,6 @@
       "code": "NU1301",
       "level": "Error",
       "message": "Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json.\r\n  Response status code does not indicate success: 401 (Unauthorized).",
-      "libraryId": "coverlet.collector"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json.\r\n  Response status code does not indicate success: 401 (Unauthorized).",
-      "libraryId": "Microsoft.NET.Test.Sdk"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json.\r\n  Response status code does not indicate success: 401 (Unauthorized).",
       "libraryId": "xunit"
     },
     {
@@ -45,7 +33,13 @@
       "code": "NU1301",
       "level": "Error",
       "message": "Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json.\r\n  Response status code does not indicate success: 401 (Unauthorized).",
-      "libraryId": "Microsoft.Extensions.Logging"
+      "libraryId": "Microsoft.NET.Test.Sdk"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://pkgs.dev.azure.com/volvogroup/_packaging/nvsfull/nuget/v3/index.json.\r\n  Response status code does not indicate success: 401 (Unauthorized).",
+      "libraryId": "coverlet.collector"
     },
     {
       "code": "NU1900",

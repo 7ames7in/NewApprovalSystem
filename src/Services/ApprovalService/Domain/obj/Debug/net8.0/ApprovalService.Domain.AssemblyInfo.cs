@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApprovalService.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6601a22f6a04e02576ab27c2bc99afbf5afb4903")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d072f37238763172280616584dc1432807d735")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApprovalService.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApprovalService.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
