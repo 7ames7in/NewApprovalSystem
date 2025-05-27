@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+
 public class ApprovalStep
 {
+    [Key]
     public Guid StepId { get; set; }
     public Guid ApprovalId { get; set; }
     public string ApproverEmployeeNumber { get; set; }

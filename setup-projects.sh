@@ -31,6 +31,7 @@ dotnet new classlib -n NotificationService.Infrastructure -o src/Services/Notifi
 # LoggingService
 dotnet new webapi -n LoggingService.API -o src/Services/LoggingService/API
 dotnet new classlib -n LoggingService.Infrastructure -o src/Services/LoggingService/Infrastructure
+dotnet new classlib -n LoggingService.Domain -o src/Services/LoggingService/Domain
 
 # UserService
 dotnet new webapi -n UserService.API -o src/Services/UserService/API

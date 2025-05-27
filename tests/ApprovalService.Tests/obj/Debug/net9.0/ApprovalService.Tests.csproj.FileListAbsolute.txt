@@ -227,3 +227,15 @@ C:/Users/ec20505/source/repos/MyGit-Projects/NewApprovalSystem/tests/ApprovalSer
 C:/Users/ec20505/source/repos/MyGit-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ApprovalService.Tests.pdb
 C:/Users/ec20505/source/repos/MyGit-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ApprovalService.Tests.genruntimeconfig.cache
 C:/Users/ec20505/source/repos/MyGit-Projects/NewApprovalSystem/tests/ApprovalService.Tests/obj/Debug/net9.0/ref/ApprovalService.Tests.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/ApprovalService.Application.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/ApprovalService.Application.runtimeconfig.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/ApprovalService.Application
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/AutoMapper.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/FluentValidation.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Configuration.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.Configuration.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.Console.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll

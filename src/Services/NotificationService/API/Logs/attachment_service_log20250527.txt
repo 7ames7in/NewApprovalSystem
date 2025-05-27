@@ -1,0 +1,269 @@
+2025-05-27 09:49:04.063 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-27 09:49:04.120 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-27 09:49:04.181 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-27 09:49:34.892 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-27 09:49:34.929 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-27 09:49:34.971 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-27 09:49:54.919 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-27 09:49:54.962 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-27 09:49:55.016 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-27 09:49:55.205 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'NotificationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-27 09:49:55.210 +09:00 [DBG] Creating DbConnection.
+2025-05-27 09:49:55.218 +09:00 [DBG] Created DbConnection. (5ms).
+2025-05-27 09:49:55.221 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.225 +09:00 [DBG] An error occurred using the connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.226 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.228 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.228 +09:00 [DBG] Creating DbConnection.
+2025-05-27 09:49:55.228 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-27 09:49:55.228 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.234 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.235 +09:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-05-27 09:49:55.237 +09:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-05-27 09:49:55.238 +09:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-05-27 09:49:55.240 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-05-27 09:49:55.253 +09:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-05-27 09:49:55.254 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.255 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (1ms).
+2025-05-27 09:49:55.303 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.303 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.303 +09:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-05-27 09:49:55.305 +09:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-05-27 09:49:55.305 +09:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-05-27 09:49:55.305 +09:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-05-27 09:49:55.305 +09:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-05-27 09:49:55.305 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "EmailNotifications" (
+    "NotificationId" TEXT NOT NULL CONSTRAINT "PK_EmailNotifications" PRIMARY KEY,
+    "Recipient" TEXT NOT NULL,
+    "Subject" TEXT NOT NULL,
+    "Body" TEXT NULL,
+    "SentAt" TEXT NULL,
+    "Status" TEXT NOT NULL
+);
+2025-05-27 09:49:55.306 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "EmailNotifications" (
+    "NotificationId" TEXT NOT NULL CONSTRAINT "PK_EmailNotifications" PRIMARY KEY,
+    "Recipient" TEXT NOT NULL,
+    "Subject" TEXT NOT NULL,
+    "Body" TEXT NULL,
+    "SentAt" TEXT NULL,
+    "Status" TEXT NOT NULL
+);
+2025-05-27 09:49:55.306 +09:00 [DBG] Committing transaction.
+2025-05-27 09:49:55.307 +09:00 [DBG] Committed transaction.
+2025-05-27 09:49:55.307 +09:00 [DBG] Disposing transaction.
+2025-05-27 09:49:55.307 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.307 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.309 +09:00 [DBG] Creating DbConnection.
+2025-05-27 09:49:55.309 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-27 09:49:55.309 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.310 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.310 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.310 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.311 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-05-27 09:49:55.311 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 09:49:55.311 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 09:49:55.311 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.311 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.311 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 09:49:55.313 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 09:49:55.313 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.313 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.333 +09:00 [DBG] Compiling query expression: 
+'DbSet<EmailNotification>()
+    .Any()'
+2025-05-27 09:49:55.408 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: NotificationService.Infrastructure.Persistence.NotificationDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-05-27 09:49:55.422 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.423 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.423 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 09:49:55.423 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.423 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.423 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-05-27 09:49:55.424 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-05-27 09:49:55.426 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.426 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db' is being disposed after spending 1ms reading results.
+2025-05-27 09:49:55.427 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.427 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.458 +09:00 [DBG] Context 'NotificationDbContext' started tracking 'EmailNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.459 +09:00 [DBG] Context 'NotificationDbContext' started tracking 'EmailNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.459 +09:00 [DBG] Context 'NotificationDbContext' started tracking 'EmailNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.460 +09:00 [DBG] SaveChanges starting for 'NotificationDbContext'.
+2025-05-27 09:49:55.461 +09:00 [DBG] DetectChanges starting for 'NotificationDbContext'.
+2025-05-27 09:49:55.466 +09:00 [DBG] DetectChanges completed for 'NotificationDbContext'.
+2025-05-27 09:49:55.486 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.487 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.487 +09:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-05-27 09:49:55.487 +09:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-05-27 09:49:55.488 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 09:49:55.488 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.488 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.489 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 27), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 6), @p5='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.491 +09:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 27), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 6), @p5='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.492 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.492 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db' is being disposed after spending 1ms reading results.
+2025-05-27 09:49:55.492 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 09:49:55.492 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.492 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.492 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 22), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 4), @p5='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.493 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 22), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 4), @p5='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.493 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.493 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db' is being disposed after spending 0ms reading results.
+2025-05-27 09:49:55.493 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 09:49:55.493 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.493 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 09:49:55.493 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 39), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 8), @p5='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.493 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 39), @p2='?' (Size = 17), @p3='?' (DbType = DateTime), @p4='?' (Size = 8), @p5='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmailNotifications" ("NotificationId", "Body", "Recipient", "SentAt", "Status", "Subject")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-05-27 09:49:55.493 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.493 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db' is being disposed after spending 0ms reading results.
+2025-05-27 09:49:55.494 +09:00 [DBG] Committing transaction.
+2025-05-27 09:49:55.494 +09:00 [DBG] Committed transaction.
+2025-05-27 09:49:55.495 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/Data/NotificationService.db'.
+2025-05-27 09:49:55.495 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.496 +09:00 [DBG] Disposing transaction.
+2025-05-27 09:49:55.499 +09:00 [DBG] An entity of type 'EmailNotification' tracked by 'NotificationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.499 +09:00 [DBG] An entity of type 'EmailNotification' tracked by 'NotificationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.499 +09:00 [DBG] An entity of type 'EmailNotification' tracked by 'NotificationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 09:49:55.500 +09:00 [DBG] SaveChanges completed for 'NotificationDbContext' with 3 entities written to the database.
+2025-05-27 09:49:55.500 +09:00 [DBG] 'NotificationDbContext' disposed.
+2025-05-27 09:49:55.500 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-05-27 09:49:55.500 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (0ms).
+2025-05-27 09:49:55.502 +09:00 [DBG] Hosting starting
+2025-05-27 09:49:55.518 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-27 09:49:55.518 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-27 09:49:55.772 +09:00 [INF] Now listening on: https://localhost:7259
+2025-05-27 09:49:55.772 +09:00 [INF] Now listening on: http://localhost:5058
+2025-05-27 09:49:55.772 +09:00 [DBG] Loaded hosting startup assembly NotificationService.API
+2025-05-27 09:49:55.772 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-27 09:49:55.772 +09:00 [INF] Hosting environment: Development
+2025-05-27 09:49:55.773 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API
+2025-05-27 09:49:55.773 +09:00 [DBG] Hosting started
+2025-05-27 09:50:05.561 +09:00 [DBG] Connection id "0HNCSN1LV97VD" accepted.
+2025-05-27 09:50:05.564 +09:00 [DBG] Connection id "0HNCSN1LV97VD" started.
+2025-05-27 09:50:05.565 +09:00 [DBG] Connection id "0HNCSN1LV97VE" accepted.
+2025-05-27 09:50:05.566 +09:00 [DBG] Connection id "0HNCSN1LV97VE" started.
+2025-05-27 09:50:05.681 +09:00 [DBG] Connection id "0HNCSN1LV97VE" received FIN.
+2025-05-27 09:50:05.688 +09:00 [DBG] Connection 0HNCSN1LV97VD established using the following protocol: "Tls12"
+2025-05-27 09:50:05.688 +09:00 [DBG] Connection 0HNCSN1LV97VE established using the following protocol: "Tls12"
+2025-05-27 09:50:05.759 +09:00 [DBG] Connection id "0HNCSN1LV97VE" is closed. The last processed stream ID was 0.
+2025-05-27 09:50:05.760 +09:00 [DBG] Connection id "0HNCSN1LV97VE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-27 09:50:05.766 +09:00 [DBG] The connection queue processing loop for 0HNCSN1LV97VE completed.
+2025-05-27 09:50:05.770 +09:00 [DBG] Connection id "0HNCSN1LV97VE" stopped.
+2025-05-27 09:50:05.786 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/ - null null
+2025-05-27 09:50:05.790 +09:00 [DBG] No candidates found for the request path '/'
+2025-05-27 09:50:05.791 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:05.816 +09:00 [DBG] The request path  does not match the path filter
+2025-05-27 09:50:05.817 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/ - 404 0 null 32.5067ms
+2025-05-27 09:50:05.821 +09:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7259/, Response status code: 404
+2025-05-27 09:50:06.375 +09:00 [DBG] Connection id "0HNCSN1LV97VD" received FIN.
+2025-05-27 09:50:06.377 +09:00 [DBG] Connection id "0HNCSN1LV97VD" is closed. The last processed stream ID was 1.
+2025-05-27 09:50:06.378 +09:00 [DBG] Connection id "0HNCSN1LV97VD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-27 09:50:06.379 +09:00 [DBG] The connection queue processing loop for 0HNCSN1LV97VD completed.
+2025-05-27 09:50:06.380 +09:00 [DBG] Connection id "0HNCSN1LV97VD" stopped.
+2025-05-27 09:50:10.918 +09:00 [DBG] Connection id "0HNCSN1LV97VF" accepted.
+2025-05-27 09:50:10.919 +09:00 [DBG] Connection id "0HNCSN1LV97VF" started.
+2025-05-27 09:50:10.963 +09:00 [DBG] Connection 0HNCSN1LV97VF established using the following protocol: "Tls12"
+2025-05-27 09:50:10.966 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger - null null
+2025-05-27 09:50:10.966 +09:00 [DBG] No candidates found for the request path '/swagger'
+2025-05-27 09:50:10.966 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:10.968 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger - 301 0 null 2.2766ms
+2025-05-27 09:50:10.972 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/index.html - null null
+2025-05-27 09:50:10.972 +09:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-05-27 09:50:10.972 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.034 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/index.html - 200 null text/html;charset=utf-8 61.826ms
+2025-05-27 09:50:11.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/index.css - null null
+2025-05-27 09:50:11.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/swagger-ui.css - null null
+2025-05-27 09:50:11.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-27 09:50:11.065 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-05-27 09:50:11.065 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-27 09:50:11.064 +09:00 [DBG] No candidates found for the request path '/swagger/index.css'
+2025-05-27 09:50:11.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/index.js - null null
+2025-05-27 09:50:11.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/swagger-ui-bundle.js - null null
+2025-05-27 09:50:11.065 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.065 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.065 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.065 +09:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-05-27 09:50:11.066 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.065 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-27 09:50:11.066 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.067 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/index.js - 200 null application/javascript;charset=utf-8 2.9438ms
+2025-05-27 09:50:11.070 +09:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-05-27 09:50:11.071 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/index.css - 200 202 text/css 6.6784ms
+2025-05-27 09:50:11.088 +09:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-27 09:50:11.088 +09:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-27 09:50:11.090 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/swagger-ui.css - 200 154949 text/css 26.4837ms
+2025-05-27 09:50:11.090 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 26.3424ms
+2025-05-27 09:50:11.101 +09:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-27 09:50:11.101 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/swagger-ui-bundle.js - 200 1484234 text/javascript 37.2858ms
+2025-05-27 09:50:11.274 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/v1/swagger.json - null null
+2025-05-27 09:50:11.274 +09:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-05-27 09:50:11.274 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.282 +09:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-05-27 09:50:11.289 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7259/swagger/favicon-32x32.png - null null
+2025-05-27 09:50:11.289 +09:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-05-27 09:50:11.289 +09:00 [DBG] Request did not match any endpoints
+2025-05-27 09:50:11.290 +09:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-27 09:50:11.290 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/favicon-32x32.png - 200 628 image/png 1.9162ms
+2025-05-27 09:50:11.304 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7259/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.0466ms
+2025-05-27 09:50:11.375 +09:00 [DBG] Connection id "0HNCSN1LV97VF" received FIN.
+2025-05-27 09:50:11.375 +09:00 [DBG] Connection id "0HNCSN1LV97VF" is closed. The last processed stream ID was 17.
+2025-05-27 09:50:11.375 +09:00 [DBG] Connection id "0HNCSN1LV97VF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-27 09:50:11.376 +09:00 [DBG] The connection queue processing loop for 0HNCSN1LV97VF completed.
+2025-05-27 09:50:11.376 +09:00 [DBG] Connection id "0HNCSN1LV97VF" stopped.

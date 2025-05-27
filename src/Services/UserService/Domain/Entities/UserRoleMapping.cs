@@ -1,3 +1,5 @@
+namespace UserService.Domain.Entities;
+
 public class UserRoleMapping
 {
     public Guid MappingId { get; set; }

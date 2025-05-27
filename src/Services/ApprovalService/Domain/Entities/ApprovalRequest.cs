@@ -1,16 +1,20 @@
 namespace ApprovalService.Domain.Entities;
 
+using System.ComponentModel.DataAnnotations;
+
 public class ApprovalRequest
 {
+    [Key] // 또는 이름이 Id 혹은 ApprovalId이면 EF가 자동으로 인식함
     public Guid ApprovalId { get; set; }
-    public string RequestTitle { get; set; }
+
+    public string RequestTitle { get; set; } = string.Empty;
     public string? RequestContent { get; set; }
-    public string ApplicantEmployeeNumber { get; set; }
-    public string ApplicantName { get; set; }
+    public string ApplicantEmployeeNumber { get; set; } = string.Empty;
+    public string ApplicantName { get; set; } = string.Empty;
     public string? ApplicantPosition { get; set; }
     public string? ApplicantDepartment { get; set; }
     public string Status { get; set; } = "Pending";
-    public DateTime RequestedAt { get; set; }
+    public DateTime RequestedAt { get; set; } = DateTime.UtcNow;
     public DateTime? RespondedAt { get; set; }
     public string? ApproverComment { get; set; }
     public string? ApprovalType { get; set; }

@@ -1,21 +1,25 @@
-namespace ApprovalService.Domain.ValueObjects;
+//namespace ApprovalService.Domain.ValueObjects;
+namespace ApprovalService.Domain.Entities;
 
 public class Approver
 {
-    public Guid UserId { get; private set; }
+    public string EmployeeNumber { get; private set; }
     public string Name { get; private set; }
+    public string Position { get; private set; }
+    public string Department { get; private set; }
 
-    public Approver(Guid userId, string name)
+    public Approver(string employeeNumber, string name)
     {
-        UserId = userId;
+        EmployeeNumber = employeeNumber;
         Name = name;
+        Position = string.Empty; // 기본값 설정
+        Department = string.Empty; // 기본값 설정
     }
 
-    public override bool Equals(object? obj)
+    public Approver(string employeeNumber, string name, string position, string department) 
+        : this(employeeNumber, name)
     {
-        if (obj is not Approver other) return false;
-        return UserId == other.UserId && Name == other.Name;
+        Position = position;
+        Department = department;
     }
-
-    public override int GetHashCode() => HashCode.Combine(UserId, Name);
 }

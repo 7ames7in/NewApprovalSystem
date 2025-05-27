@@ -1,3 +1,5 @@
+namespace UserService.Domain.Entities;
+
 public class User
 {
     public string EmployeeNumber { get; set; }

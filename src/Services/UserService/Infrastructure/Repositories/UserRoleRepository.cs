@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 
-namespace ApprovalService.Infrastructure.Repositories;
+namespace UserService.Infrastructure.Repositories;
 
 public class UserRoleRepository<T> : IRepository<T> where T : class
 {

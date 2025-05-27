@@ -1,41 +1,48 @@
+using Microsoft.EntityFrameworkCore;
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using NotificationService.Infrastructure.Repositories;
+using NotificationService.Infrastructure.Persistence;
+using Serilog;
+using NotificationService.Domain.Entities;
+using NotificationService.Infrastructure.Seed;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSwaggerGen(); // Add Swagger generation
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Serilog 설정
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/attachment_service_log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog(); // Serilog 사용
+// Serilog 설정 완료
+// Serilog 미들웨어 추가
+    
+// SQLite 연결 등록
+builder.Services.AddDbContext<NotificationDbContext>(options =>
+    options.UseSqlite("Data Source=Data/NotificationService.db"));
 
+builder.Services.AddScoped<IRepository<EmailNotification>, EmailNotificationRepository<EmailNotification>>();
+
+builder.Services.AddControllers();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.MapControllers();
 
-var summaries = new[]
+// 데이터베이스 생성 및 시드
+using (var scope = app.Services.CreateScope())
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var db = scope.ServiceProvider.GetRequiredService<NotificationDbContext>();
+    db.Database.EnsureCreated(); // 또는 db.Database.Migrate();
+    await NotificationSeedData.InitializeAsync(db);
+}
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

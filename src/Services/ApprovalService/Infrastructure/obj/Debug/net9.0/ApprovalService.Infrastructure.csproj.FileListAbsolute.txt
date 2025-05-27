@@ -28,3 +28,6 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Domain.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/AttachmentService.Infrastructure.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/NotificationService.Domain.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/ApprovalService.Application.deps.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/ApprovalService.Application.runtimeconfig.json
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/bin/Debug/net9.0/ApprovalService.Application

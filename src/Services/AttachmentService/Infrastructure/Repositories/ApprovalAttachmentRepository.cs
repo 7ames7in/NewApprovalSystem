@@ -1,13 +1,14 @@
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using AttachmentService.Infrastructure.Persistence;
 
-namespace ApprovalService.Infrastructure.Repositories;
+namespace AttachmentService.Infrastructure.Repositories;
 
 public class ApprovalAttachmentRepository<T> : IRepository<T> where T : class
 {
-    private readonly DbContext _context;
+    private readonly AttachmentDbContext _context;
 
-    public ApprovalAttachmentRepository(DbContext context)
+    public ApprovalAttachmentRepository(AttachmentDbContext context)
     {
         _context = context;
     }

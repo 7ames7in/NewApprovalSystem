@@ -1,41 +1,43 @@
 using Microsoft.EntityFrameworkCore;
-using NotificationService.Domain.Entities;
-using NotificationService.Domain.Interfaces;
+using NotificationService.Infrastructure.Persistence; // Ensure this is the correct namespace for NotificationDbContext
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 
-public class EmailNotificationRepository : IEmailNotificationRepository
+namespace NotificationService.Infrastructure.Repositories;
+
+public class EmailNotificationRepository<T> : IRepository<T> where T : class
 {
-    private readonly DbContext _context;
-
-    public EmailNotificationRepository(DbContext context)
+    private readonly NotificationDbContext _context;
+    public EmailNotificationRepository(NotificationDbContext context)
     {
         _context = context;
     }
+    public async Task<T?> GetByIdAsync(Guid id) =>
+        await _context.Set<T>().FindAsync(id);
+    public async Task<IEnumerable<T>> GetAllAsync() =>
+        await _context.Set<T>().ToListAsync();
 
-    public async Task<EmailNotification?> GetByIdAsync(Guid id) =>
-        await _context.Set<EmailNotification>().FindAsync(id);
-
-    public async Task<IEnumerable<EmailNotification>> GetAllAsync() =>
-        await _context.Set<EmailNotification>().ToListAsync();
-
-    public async Task AddAsync(EmailNotification entity)
+    public async Task AddAsync(T entity)
     {
-        await _context.Set<EmailNotification>().AddAsync(entity);
+        await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
     }
-
-    public async Task UpdateAsync(EmailNotification entity)
+    public async Task UpdateAsync(T entity)
     {
-        _context.Set<EmailNotification>().Update(entity);
+        _context.Set<T>().Update(entity);
         await _context.SaveChangesAsync();
     }
-
     public async Task DeleteAsync(Guid id)
     {
-        var entity = await _context.Set<EmailNotification>().FindAsync(id);
+        var entity = await _context.Set<T>().FindAsync(id);
         if (entity != null)
         {
-            _context.Set<EmailNotification>().Remove(entity);
+            _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
+    }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

@@ -1,5 +1,4 @@
 using ApprovalService.Domain.Enums;
-using ApprovalService.Domain.ValueObjects;
 
 namespace ApprovalService.Domain.Entities;
 

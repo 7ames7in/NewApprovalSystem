@@ -19,10 +19,12 @@ dotnet sln $SOLUTION_NAME add src/Services/AttachmentService/Infrastructure/Atta
 # NotificationService
 dotnet sln $SOLUTION_NAME add src/Services/NotificationService/API/NotificationService.API.csproj
 dotnet sln $SOLUTION_NAME add src/Services/NotificationService/Infrastructure/NotificationService.Infrastructure.csproj
+dotnet sln $SOLUTION_NAME add src/Services/NotificationService/Domain/NotificationService.Domain.csproj
 
 # LoggingService
 dotnet sln $SOLUTION_NAME add src/Services/LoggingService/API/LoggingService.API.csproj
 dotnet sln $SOLUTION_NAME add src/Services/LoggingService/Infrastructure/LoggingService.Infrastructure.csproj
+dotnet sln $SOLUTION_NAME add src/Services/LoggingService/Domain/LoggingService.Domain.csproj
 
 # UserService
 dotnet sln $SOLUTION_NAME add src/Services/UserService/API/UserService.API.csproj
