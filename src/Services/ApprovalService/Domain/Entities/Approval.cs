@@ -6,10 +6,10 @@ public class Approval
 {
     public Guid Id { get; private set; }
     public string RequestId { get; private set; }
-    public ApprovalStatus Status { get; private set; }
+    public ApprovalStatus Status { get; private set; } = ApprovalStatus.Pending;
     public Approver Approver { get; private set; }
     public string? Comments { get; private set; }
-    public DateTime RequestedAt { get; private set; }
+    public DateTime RequestedAt { get; private set; } = DateTime.UtcNow;
     public DateTime? RespondedAt { get; private set; }
 
     private Approval() { }

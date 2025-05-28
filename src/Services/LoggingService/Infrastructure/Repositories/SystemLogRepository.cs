@@ -1,13 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using LoggingService.Infrastructure.Persistence;
 
-namespace ApprovalService.Infrastructure.Repositories;
+namespace LoggingService.Infrastructure.Repositories;
 
 public class SystemLogRepository<T> : IRepository<T> where T : class
 {
-    private readonly DbContext _context;
+    private readonly SystemLogDbContext _context;
 
-    public SystemLogRepository(DbContext context)
+    public SystemLogRepository(SystemLogDbContext context)
     {
         _context = context;
     }

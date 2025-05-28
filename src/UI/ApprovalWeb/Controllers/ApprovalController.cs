@@ -16,18 +16,18 @@ public class ApprovalController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var approvals = await _apiService.GetApprovalsAsync();
+        var approvals = await _apiService.GetApprovalRequestsAsync();
         return View(approvals);
     }
 
     public IActionResult Create()
     {
-        var model = new ApprovalViewModel();
+        var model = new ApprovalRequestViewModel();
         return View(model);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(ApprovalViewModel model)
+    public async Task<IActionResult> Create(ApprovalRequestViewModel model)
     {
         if (ModelState.IsValid)
         {

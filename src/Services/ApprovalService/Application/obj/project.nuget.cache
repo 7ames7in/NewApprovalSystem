@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aa2SeKYldVE=",
+  "dgSpecHash": "fGrCd35ndhM=",
   "success": true,
   "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/ApprovalService.Application.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,11 @@
     "/Users/7ames7in/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.entityframeworkcore/9.0.5/microsoft.entityframeworkcore.9.0.5.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.5/microsoft.entityframeworkcore.abstractions.9.0.5.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.5/microsoft.entityframeworkcore.analyzers.9.0.5.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.5/microsoft.extensions.caching.abstractions.9.0.5.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.extensions.caching.memory/9.0.5/microsoft.extensions.caching.memory.9.0.5.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

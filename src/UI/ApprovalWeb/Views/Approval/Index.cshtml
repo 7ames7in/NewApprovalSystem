@@ -1,43 +1,38 @@
-@model List<ApprovalViewModel>
+@model List<ApprovalRequestViewModel>
 
-<h2 class="text-center my-4">Approval Requests</h2>
+<h2 class="text-center my-4">Approval Request List</h2>
 
 <div class="d-flex justify-content-end mb-3">
     <a href="/Approval/Create" class="btn btn-primary">+ Submit New Request</a>
 </div>
 
 <div class="table-responsive">
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover align-middle text-center">
         <thead class="table-dark">
             <tr>
-                <th>Priority</th>
-                <th>Request ID</th>
-                <th>Approver</th>
                 <th>Title</th>
+                <th>Applicant</th>
+                <th>Department</th>
                 <th>Status</th>
+                <th>Type</th>
                 <th>Requested At</th>
-                @* <th>Action</th> *@
+                <th>Responded At</th>
+                <th>Details</th>
             </tr>
         </thead>
         <tbody>
             @if (Model != null && Model.Any())
             {
-                @foreach (var item in Model)
+                foreach (var item in Model)
                 {
                     <tr>
-                        <td>
-                            <span class="badge @(item.Priority switch {
-                                "High" => "bg-danger text-white",
-                                "Medium" => "bg-warning text-dark",
-                                "Low" => "bg-success text-white",
-                                _ => "bg-secondary text-white"
-                            })">
-                                @item.Priority
-                            </span>
+                        <td class="text-start">
+                            <a href="/Approval/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
+                                @item.RequestTitle
+                            </a>
                         </td>
-                        <td>@item.RequestId</td>
-                        <td>@item.ApproverName</td>
-                        <td><a href="/Approval/Details/@item.RequestId">@item.Title</a></td>
+                        <td>@item.ApplicantName</td>
+                        <td>@item.ApplicantDepartment</td>
                         <td>
                             <span class="badge @(item.Status switch {
                                 "Approved" => "bg-success",
@@ -47,17 +42,19 @@
                                 @item.Status
                             </span>
                         </td>
-                        <td>@item.RequestedAt.ToLocalTime().ToString("g")</td>
-                        @* <td>
-                            <a href="/Approval/Details/@item.RequestId" class="btn btn-sm btn-outline-info">Details</a>
-                        </td> *@
+                        <td>@item.ApprovalType</td>
+                        <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
+                        <td>
+                            <a href="/Approval/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info">View</a>
+                        </td>
                     </tr>
                 }
             }
             else
             {
                 <tr>
-                    <td colspan="6" class="text-center">No approval requests found.</td>
+                    <td colspan="8" class="text-center text-muted">No approval requests found.</td>
                 </tr>
             }
         </tbody>

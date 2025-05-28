@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using ApprovalService.Infrastructure.Persistence;
 
 
 public class ApprovalStepRepository<T> : IRepository<T> where T : class
 {
-    private readonly DbContext _context;
+    private readonly ApprovalDbContext _context;
 
-    public ApprovalStepRepository(DbContext context)
+    public ApprovalStepRepository(ApprovalDbContext context)
     {
         _context = context;
     }

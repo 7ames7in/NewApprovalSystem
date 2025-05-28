@@ -4,16 +4,16 @@ using ApprovalWeb.Services;
 
 public class MockApprovalService : IApprovalService
 {
-    public Task<List<ApprovalViewModel>> GetApprovalsAsync()
+    public Task<List<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
         => Task.FromResult(MockApprovalData.Approvals);
 
-    public Task<Guid> SubmitApprovalAsync(ApprovalViewModel model)
+    public Task<Guid> SubmitApprovalAsync(ApprovalRequestViewModel model)
     {
         MockApprovalData.Add(model);
         return Task.FromResult(Guid.NewGuid());
     }
 
-    public Task<ApprovalViewModel?> GetByIdAsync(string requestId)
+    public Task<ApprovalRequestViewModel?> GetByIdAsync(string requestId)
         => Task.FromResult(MockApprovalData.GetByRequestId(requestId));
 
     public Task UpdateStatusAsync(string requestId, string status, string? comment)

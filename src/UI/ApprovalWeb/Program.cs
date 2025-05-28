@@ -19,6 +19,8 @@ else
     builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
 }
 
+builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -36,6 +38,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Approval}/{action=Index}/{id?}");
+    pattern: "{controller=ApprovalRequest}/{action=Index}/{id?}");
 
 app.Run();

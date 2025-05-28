@@ -13,18 +13,18 @@ public class ApprovalApiService : IApprovalService
         _http = factory.CreateClient("ApprovalApi");
     }
 
-    public async Task<List<ApprovalViewModel>> GetApprovalsAsync()
-        => await _http.GetFromJsonAsync<List<ApprovalViewModel>>("api/approval") ?? new();
+    public async Task<List<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
+        => await _http.GetFromJsonAsync<List<ApprovalRequestViewModel>>("api/approval") ?? new();
 
-    public async Task<Guid> SubmitApprovalAsync(ApprovalViewModel model)
+    public async Task<Guid> SubmitApprovalAsync(ApprovalRequestViewModel model)
     {
         var response = await _http.PostAsJsonAsync("api/approval/submit", model);
         var result = await response.Content.ReadFromJsonAsync<Dictionary<string, Guid>>();
         return result?["ApprovalId"] ?? Guid.Empty;
     }
 
-    public async Task<ApprovalViewModel?> GetByIdAsync(string requestId)
-        => await _http.GetFromJsonAsync<ApprovalViewModel>($"api/approval/{requestId}");
+    public async Task<ApprovalRequestViewModel?> GetByIdAsync(string requestId)
+        => await _http.GetFromJsonAsync<ApprovalRequestViewModel>($"api/approval/{requestId}");
 
     public async Task UpdateStatusAsync(string requestId, string status, string? comment)
     {

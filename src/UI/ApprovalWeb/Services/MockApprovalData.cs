@@ -4,76 +4,49 @@ namespace ApprovalWeb.Services;
 
 public static class MockApprovalData
 {
-    public static List<ApprovalViewModel> Approvals = new()
+    public static List<ApprovalRequestViewModel> Approvals = new()
     {
-        new ApprovalViewModel
+        new ApprovalRequestViewModel
         {
-            RequestId = "REQ001",
-            ApproverName = "Alice",
+            ApprovalId = Guid.NewGuid(),
+            RequestTitle = "New Laptop Request",
+            RequestContent = "Requesting a new laptop for development work.",
+            ApplicantEmployeeNumber = "EMP001",
+            ApplicantName = "Alice Smith",
+            ApplicantPosition = "Software Engineer",
+            ApplicantDepartment = "Development",
             Status = "Pending",
-            RequestedAt = DateTime.UtcNow.AddHours(-5),
-            Title = "New Feature Approval",
-            Description = "Please review the new feature proposal.",
-            Details = "This feature will enhance user experience by providing additional functionality.",
-            Comments = null,
-            Priority = "High"
+            RequestedAt = DateTime.UtcNow,
+            RespondedAt = null,
+            ApproverComment = null,
+            ApprovalType = "Hardware",
+            MisKey = "MIS12345"
         },
-        new ApprovalViewModel
+        new ApprovalRequestViewModel
         {
-            RequestId = "REQ002",
-            ApproverName = "Bob",
+            ApprovalId = Guid.NewGuid(),
+            RequestTitle = "Conference Attendance",
+            RequestContent = "Requesting approval to attend the annual tech conference.",
+            ApplicantEmployeeNumber = "EMP002",
+            ApplicantName = "Bob Johnson",
+            ApplicantPosition = "Product Manager",
+            ApplicantDepartment = "Product",
             Status = "Approved",
-            RequestedAt = DateTime.UtcNow.AddHours(-3),
-            Title = "Bug Fix Approval",
-            Description = "Please review the bug fix request.",
-            Details = "This fix addresses critical issues reported by users.",
-            Comments = "Approved after review.",
-            Priority = "Medium"
-        },
-        new ApprovalViewModel
-        {
-            RequestId = "REQ003",
-            ApproverName = "Charlie",
-            Status = "Rejected",
-            RequestedAt = DateTime.UtcNow.AddHours(-1),
-            Title = "Performance Improvement Approval",
-            Description = "Please review the performance improvement proposal.",
-            Details = "This proposal aims to optimize system performance and reduce latency.",
-            Comments = "Rejected due to insufficient details.",
-            Priority = "Low"
-        },
-        new ApprovalViewModel
-        {
-            RequestId = "REQ004",
-            ApproverName = "Diana",
-            Status = "Pending",
-            RequestedAt = DateTime.UtcNow.AddMinutes(-30),
-            Title = "Security Update Approval",
-            Description = "Please review the security update request.",
-            Details = "This update addresses vulnerabilities identified in the last security audit.",
-            Comments = null,
-            Priority = "High"
-        },
-        new ApprovalViewModel
-        {
-            RequestId = "REQ005",
-            ApproverName = "Ethan",
-            Status = "Pending",
-            RequestedAt = DateTime.UtcNow.AddMinutes(-10),
-            Title = "UI Enhancement Approval",
-            Description = "Please review the UI enhancement proposal.",
-            Details = "This enhancement aims to improve user interface consistency and usability.",
-            Comments = null,
-            Priority = "Medium"
+            RequestedAt = DateTime.UtcNow.AddDays(-2),
+            RespondedAt = DateTime.UtcNow.AddDays(-1),
+            ApproverComment = "Approved for budget reasons.",
+            ApprovalType = "Event",
+            MisKey = "MIS67890"
         }
+        
     };
 
-    public static ApprovalViewModel? GetByRequestId(string requestId)
+    public static ApprovalRequestViewModel? GetByRequestId(string requestId)
     {
-        return Approvals.FirstOrDefault(a => a.RequestId == requestId);
+        return Approvals.FirstOrDefault(a => a.ApplicantEmployeeNumber == requestId);
     }
 
-    public static void Add(ApprovalViewModel model)
+    public static void Add(ApprovalRequestViewModel model)
     {
         model.RequestedAt = DateTime.UtcNow;
         model.Status = "Pending";
@@ -86,7 +59,7 @@ public static class MockApprovalData
         if (item != null)
         {
             item.Status = status;
-            item.Comments = comment;
+            //item.Comments = comment;
         }
     }
 }

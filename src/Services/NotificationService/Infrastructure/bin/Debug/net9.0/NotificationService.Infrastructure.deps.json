@@ -774,6 +774,9 @@
       },
       "System.Threading.Channels/7.0.0": {},
       "ApprovalService.Domain/1.0.0": {
+        "dependencies": {
+          "Infrastructure": "1.0.0"
+        },
         "runtime": {
           "ApprovalService.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

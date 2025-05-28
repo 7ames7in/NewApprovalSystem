@@ -1,3 +1,6 @@
+using LoggingService.Domain.Entities;
+
+//사용안함.
 public interface ISystemLogRepository
 {
     Task<SystemLog?> GetByIdAsync(Guid id);

@@ -4,6 +4,7 @@ using ApprovalService.Infrastructure.Seed;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Infrastructure.Repositories;
+using ApprovalService.Domain.Interfaces;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,9 +26,12 @@ builder.Services.AddDbContext<ApprovalDbContext>(options =>
 
 builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
 builder.Services.AddScoped<IRepository<Approval>, ApprovalRepository<Approval>>();
-//builder.Services.AddScoped<IRepository<User>, UserRepository<User>>();
-// builder.Services.AddScoped<IRepository<UserRole>, UserRoleRepository<UserRole>>();
-// builder.Services.AddScoped<IRepository<ApprovalAttachment>, ApprovalAttachmentRepository<ApprovalAttachment>>();
+builder.Services.AddScoped<IRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
+builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
+
+builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
+// builder.Services.AddScoped<IApprovalTemplateRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
+// builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 
 
 builder.Services.AddControllers();

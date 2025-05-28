@@ -239,3 +239,9 @@ C:/Users/ec20505/source/repos/MyGit-Projects/NewApprovalSystem/tests/ApprovalSer
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.Configuration.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.Console.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Infrastructure.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/tests/ApprovalService.Tests/bin/Debug/net9.0/Infrastructure.pdb

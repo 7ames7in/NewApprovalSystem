@@ -1,0 +1,62 @@
+@model List<ApprovalRequestViewModel>
+
+<h2 class="text-center my-4">Approval Request List</h2>
+
+<div class="d-flex justify-content-end mb-3">
+    <a href="/Approval/Create" class="btn btn-primary">+ Submit New Request</a>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle text-center">
+        <thead class="table-dark">
+            <tr>
+                <th style="width:300px">Title</th>
+                <th>Applicant</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Type</th>
+                <th>Requested At</th>
+                <th>Responded At</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-start">
+                            <a href="/Approval/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
+                                @item.RequestTitle
+                            </a>
+                        </td>
+                        <td>@item.ApplicantName</td>
+                        <td>@item.ApplicantDepartment</td>
+                        <td>
+                            <span class="badge @(item.Status switch {
+                                "Approved" => "bg-success",
+                                "Rejected" => "bg-danger",
+                                _ => "bg-warning text-dark"
+                            })">
+                                @item.Status
+                            </span>
+                        </td>
+                        <td>@item.ApprovalType</td>
+                        <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
+                        <td>
+                            <a href="/Approval/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info">View</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center text-muted">No approval requests found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

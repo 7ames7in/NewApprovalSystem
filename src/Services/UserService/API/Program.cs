@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(); // Add Swagger generation
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
-    .WriteTo.File("Logs/attachment_service_log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("Logs/user_service_log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog(); // Serilog 사용
 // Serilog 설정 완료

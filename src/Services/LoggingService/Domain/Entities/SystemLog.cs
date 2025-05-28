@@ -1,3 +1,5 @@
+namespace LoggingService.Domain.Entities;
+
 public class SystemLog
 {
     public Guid LogId { get; set; }

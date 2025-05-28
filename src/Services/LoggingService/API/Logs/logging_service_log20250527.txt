@@ -1,0 +1,301 @@
+2025-05-27 16:58:10.692 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-27 16:58:10.735 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-27 16:58:10.794 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-27 16:58:11.517 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'SystemLogDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-27 16:58:11.523 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:11.533 +09:00 [DBG] Created DbConnection. (8ms).
+2025-05-27 16:58:11.540 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.545 +09:00 [DBG] An error occurred using the connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.547 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.550 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (1ms).
+2025-05-27 16:58:11.552 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:11.553 +09:00 [DBG] Created DbConnection. (1ms).
+2025-05-27 16:58:11.553 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.563 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.567 +09:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-05-27 16:58:11.580 +09:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2025-05-27 16:58:11.581 +09:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (14ms).
+2025-05-27 16:58:11.590 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-05-27 16:58:11.621 +09:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-05-27 16:58:11.623 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.625 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (2ms).
+2025-05-27 16:58:11.760 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.760 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.761 +09:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-05-27 16:58:11.769 +09:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-05-27 16:58:11.771 +09:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-05-27 16:58:11.771 +09:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-05-27 16:58:11.771 +09:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-05-27 16:58:11.771 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "SystemLogs" (
+    "LogId" TEXT NOT NULL CONSTRAINT "PK_SystemLogs" PRIMARY KEY,
+    "LogLevel" TEXT NOT NULL,
+    "Message" TEXT NOT NULL,
+    "Source" TEXT NULL,
+    "CreatedAt" TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
+);
+2025-05-27 16:58:11.772 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "SystemLogs" (
+    "LogId" TEXT NOT NULL CONSTRAINT "PK_SystemLogs" PRIMARY KEY,
+    "LogLevel" TEXT NOT NULL,
+    "Message" TEXT NOT NULL,
+    "Source" TEXT NULL,
+    "CreatedAt" TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
+);
+2025-05-27 16:58:11.775 +09:00 [DBG] Committing transaction.
+2025-05-27 16:58:11.778 +09:00 [DBG] Committed transaction.
+2025-05-27 16:58:11.779 +09:00 [DBG] Disposing transaction.
+2025-05-27 16:58:11.779 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.779 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:11.782 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:11.782 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-27 16:58:11.782 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.784 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.785 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.786 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:11.787 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-05-27 16:58:11.787 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 16:58:11.788 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 16:58:11.788 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.788 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.789 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:11.795 +09:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:11.795 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.795 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:11.853 +09:00 [DBG] Compiling query expression: 
+'DbSet<SystemLog>()
+    .Any()'
+2025-05-27 16:58:11.964 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM SystemLogs AS s)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM SystemLogs AS s), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: LoggingService.Infrastructure.Persistence.SystemLogDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-05-27 16:58:11.978 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:11.979 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.979 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 16:58:11.979 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:11.979 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:11.979 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "SystemLogs" AS "s")
+2025-05-27 16:58:11.980 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "SystemLogs" AS "s")
+2025-05-27 16:58:11.983 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.986 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db' is being disposed after spending 4ms reading results.
+2025-05-27 16:58:11.988 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:11.989 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:12.023 +09:00 [DBG] Context 'SystemLogDbContext' started tracking 'SystemLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.024 +09:00 [DBG] Context 'SystemLogDbContext' started tracking 'SystemLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.024 +09:00 [DBG] Context 'SystemLogDbContext' started tracking 'SystemLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.026 +09:00 [DBG] SaveChanges starting for 'SystemLogDbContext'.
+2025-05-27 16:58:12.026 +09:00 [DBG] DetectChanges starting for 'SystemLogDbContext'.
+2025-05-27 16:58:12.032 +09:00 [DBG] DetectChanges completed for 'SystemLogDbContext'.
+2025-05-27 16:58:12.054 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:12.054 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:12.054 +09:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-05-27 16:58:12.054 +09:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-05-27 16:58:12.055 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 16:58:12.055 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.055 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.056 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 5), @p3='?' (Size = 29), @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.059 +09:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 5), @p3='?' (Size = 29), @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.060 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:12.060 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db' is being disposed after spending 1ms reading results.
+2025-05-27 16:58:12.060 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 16:58:12.060 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.061 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.061 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 11), @p3='?' (Size = 33), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.061 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 11), @p3='?' (Size = 33), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.061 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:12.061 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db' is being disposed after spending 0ms reading results.
+2025-05-27 16:58:12.061 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 16:58:12.061 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.061 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:12.061 +09:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 7), @p3='?' (Size = 26), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.061 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 7), @p3='?' (Size = 26), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "SystemLogs" ("LogId", "CreatedAt", "LogLevel", "Message", "Source")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-27 16:58:12.061 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:12.061 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db' is being disposed after spending 0ms reading results.
+2025-05-27 16:58:12.062 +09:00 [DBG] Committing transaction.
+2025-05-27 16:58:12.063 +09:00 [DBG] Committed transaction.
+2025-05-27 16:58:12.064 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:12.064 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:12.065 +09:00 [DBG] Disposing transaction.
+2025-05-27 16:58:12.069 +09:00 [DBG] An entity of type 'SystemLog' tracked by 'SystemLogDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.070 +09:00 [DBG] An entity of type 'SystemLog' tracked by 'SystemLogDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.070 +09:00 [DBG] An entity of type 'SystemLog' tracked by 'SystemLogDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-27 16:58:12.070 +09:00 [DBG] SaveChanges completed for 'SystemLogDbContext' with 3 entities written to the database.
+2025-05-27 16:58:12.071 +09:00 [DBG] 'SystemLogDbContext' disposed.
+2025-05-27 16:58:12.071 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:12.071 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:12.073 +09:00 [DBG] Hosting starting
+2025-05-27 16:58:12.095 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-27 16:58:12.095 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-27 16:58:12.525 +09:00 [INF] Now listening on: https://localhost:7007
+2025-05-27 16:58:12.525 +09:00 [INF] Now listening on: http://localhost:5164
+2025-05-27 16:58:12.525 +09:00 [DBG] Loaded hosting startup assembly LoggingService.API
+2025-05-27 16:58:12.525 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-27 16:58:12.526 +09:00 [INF] Hosting environment: Development
+2025-05-27 16:58:12.526 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API
+2025-05-27 16:58:12.526 +09:00 [DBG] Hosting started
+2025-05-27 16:58:15.697 +09:00 [INF] Application is shutting down...
+2025-05-27 16:58:15.702 +09:00 [DBG] Hosting stopping
+2025-05-27 16:58:15.713 +09:00 [DBG] Hosting stopped
+2025-05-27 16:58:18.184 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-27 16:58:18.225 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-27 16:58:18.264 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-05-27 16:58:18.436 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'SystemLogDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-27 16:58:18.441 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:18.452 +09:00 [DBG] Created DbConnection. (11ms).
+2025-05-27 16:58:18.455 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.461 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.462 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.466 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:18.470 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-05-27 16:58:18.471 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:18.471 +09:00 [DBG] Created DbConnection. (1ms).
+2025-05-27 16:58:18.474 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-05-27 16:58:18.475 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (5ms).
+2025-05-27 16:58:18.476 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.478 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.482 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:18.500 +09:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:18.501 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.502 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (1ms).
+2025-05-27 16:58:18.504 +09:00 [DBG] Creating DbConnection.
+2025-05-27 16:58:18.504 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-27 16:58:18.504 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.504 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.504 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.504 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:18.504 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-05-27 16:58:18.505 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 16:58:18.505 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-05-27 16:58:18.505 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.505 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.505 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:18.506 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-05-27 16:58:18.506 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.506 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:18.533 +09:00 [DBG] Compiling query expression: 
+'DbSet<SystemLog>()
+    .Any()'
+2025-05-27 16:58:18.637 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM SystemLogs AS s)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM SystemLogs AS s), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: LoggingService.Infrastructure.Persistence.SystemLogDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-05-27 16:58:18.651 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.652 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.652 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-27 16:58:18.652 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:18.652 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-27 16:58:18.652 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "SystemLogs" AS "s")
+2025-05-27 16:58:18.653 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "SystemLogs" AS "s")
+2025-05-27 16:58:18.655 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.657 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db' is being disposed after spending 3ms reading results.
+2025-05-27 16:58:18.659 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Data/UserService.db'.
+2025-05-27 16:58:18.659 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:18.660 +09:00 [DBG] 'SystemLogDbContext' disposed.
+2025-05-27 16:58:18.661 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-27 16:58:18.661 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-27 16:58:18.665 +09:00 [DBG] Hosting starting
+2025-05-27 16:58:18.681 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-27 16:58:18.682 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-27 16:58:18.955 +09:00 [INF] Now listening on: https://localhost:7007
+2025-05-27 16:58:18.955 +09:00 [INF] Now listening on: http://localhost:5164
+2025-05-27 16:58:18.955 +09:00 [DBG] Loaded hosting startup assembly LoggingService.API
+2025-05-27 16:58:18.955 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-27 16:58:18.956 +09:00 [INF] Hosting environment: Development
+2025-05-27 16:58:18.956 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API
+2025-05-27 16:58:18.956 +09:00 [DBG] Hosting started

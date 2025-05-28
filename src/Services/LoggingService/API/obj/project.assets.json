@@ -904,6 +904,45 @@
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "LoggingService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LoggingService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoggingService.Domain.dll": {}
+        }
+      },
+      "LoggingService.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "LoggingService.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/LoggingService.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoggingService.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2318,11 +2357,28 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+    },
+    "LoggingService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/LoggingService.Domain.csproj",
+      "msbuildProject": "../Domain/LoggingService.Domain.csproj"
+    },
+    "LoggingService.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/LoggingService.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/LoggingService.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "FluentValidation.AspNetCore >= 11.3.0",
+      "Infrastructure >= 1.0.0",
+      "LoggingService.Infrastructure >= 1.0.0",
       "MediatR >= 12.5.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
@@ -2357,7 +2413,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/Infrastructure/LoggingService.Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/Infrastructure/LoggingService.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

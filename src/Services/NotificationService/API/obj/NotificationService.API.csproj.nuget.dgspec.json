@@ -92,7 +92,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

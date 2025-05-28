@@ -66,16 +66,18 @@ namespace ApprovalService.Infrastructure.Seed
             if (await context.ApprovalRequests.AnyAsync())
                 return;
 
-            var requestId1 = Guid.NewGuid();
+            var requestId1 = "EC20505";
+            var approvalid = Guid.NewGuid();
+            var approvalid2 = Guid.NewGuid();
             var approver1 = new Approver("1001", "Kim Minsoo", "Manager", "IT");
             var approval1 = new Approval(requestId1.ToString(), approver1);
 
             var request = new ApprovalRequest
             {
-                ApprovalId = requestId1,
+                ApprovalId = approvalid,
                 RequestTitle = "출장 신청",
                 RequestContent = "3일간 부산 출장",
-                ApplicantEmployeeNumber = "2001",
+                ApplicantEmployeeNumber = "EC20505",
                 ApplicantName = "Lee Jiyoung",
                 ApplicantPosition = "Staff",
                 ApplicantDepartment = "Sales",
@@ -83,14 +85,37 @@ namespace ApprovalService.Infrastructure.Seed
                 RequestedAt = DateTime.UtcNow
             };
 
+            var request2 = new ApprovalRequest
+            {
+                ApprovalId = approvalid2,
+                RequestTitle = "회의 참석 요청",
+                RequestContent = "다음 주 화요일 회의 참석",
+                ApplicantEmployeeNumber = "EC20505",
+                ApplicantName = "Park Hyunwoo",
+                ApplicantPosition = "Senior Staff",
+                ApplicantDepartment = "Marketing",
+                ApprovalType = "회의",
+                RequestedAt = DateTime.UtcNow.AddDays(-1)
+            };
+            
             var step = new ApprovalStep
             {
                 StepId = Guid.NewGuid(),
-                ApprovalId = requestId1,
-                ApproverEmployeeNumber = "1001",
+                ApprovalId = approvalid,
+                ApproverEmployeeNumber = "EC20507",
                 Sequence = 1,
                 IsFinalApprover = true
             };
+
+            var step2 = new ApprovalStep
+            {
+                StepId = Guid.NewGuid(),
+                ApprovalId = approvalid,
+                ApproverEmployeeNumber = "EC20507",
+                Sequence = 1,
+                IsFinalApprover = false
+            };
+
 
             var template = new ApprovalTemplate
             {
@@ -104,6 +129,8 @@ namespace ApprovalService.Infrastructure.Seed
             await context.Approvals.AddAsync(approval1);
             await context.ApprovalRequests.AddAsync(request);
             await context.ApprovalSteps.AddAsync(step);
+            await context.ApprovalRequests.AddAsync(request2);
+            await context.ApprovalSteps.AddAsync(step2);
             await context.ApprovalTemplates.AddAsync(template);
             await context.SaveChangesAsync();
         }
