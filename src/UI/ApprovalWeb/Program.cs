@@ -1,5 +1,6 @@
 using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
+using UserService.Domain.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,12 @@ else
     builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
 }
 
+builder.Services.AddHttpClient("UserApi", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7129/");
+});
+
+builder.Services.AddScoped<IUserService<User>, UserApiService<User>>();
 builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
 
 var app = builder.Build();

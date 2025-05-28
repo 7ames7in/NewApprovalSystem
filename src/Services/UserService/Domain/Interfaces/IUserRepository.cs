@@ -1,12 +1,15 @@
 using UserService.Domain.Entities;
+using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 
-//하지만 지금은 사용하지 않음. 공통으로 뺐음.
+namespace UserService.Domain.Interfaces;
 
-public interface IUserRepository
+public interface IUserRepository<T> : IRepository<T> where T : class
 {
-    Task<User?> GetByIdAsync(Guid id);
-    Task<IEnumerable<User>> GetAllAsync();
-    Task AddAsync(User entity);
-    Task UpdateAsync(User entity);
-    Task DeleteAsync(Guid id);
+    Task<T?> GetByEmailAsync(string email);
+    Task<IEnumerable<T>> GetUsersByRoleAsync(string roleName);
+    Task<IAsyncEnumerable<T>> SearchUsersAsync(string searchTerm, int pageNumber, int pageSize);
+    Task<bool> UserExistsAsync(string email);
+    Task AddUserAsync(T user);
+    Task UpdateUserAsync(T user);
+    Task DeleteUserAsync(Guid userId);
 }

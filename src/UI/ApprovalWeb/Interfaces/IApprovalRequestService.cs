@@ -2,7 +2,7 @@ using ApprovalWeb.Models;
 
 namespace ApprovalWeb.Interfaces;
 
-public interface IApprovalRequestService 
+public interface IApprovalRequestService
 {
     Task<IEnumerable<ApprovalRequestViewModel>> GetMyRequestsAsync(string userId);
     Task<IEnumerable<ApprovalRequestViewModel>> GetMyPendingRequestsAsync(string userId);

@@ -1,11 +1,192 @@
 @model ApprovalRequestViewModel
 
 <h2>Submit Approval Request</h2>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const $input = $("#userSearchInput");
+        const $results = $("#autocompleteResults");
 
+        $input.on("input", function () {
+            const query = $input.val();
+
+            if (query.length < 2) {
+                $results.hide();
+                return;
+            }
+
+            $.ajax({
+                url: "https://localhost:7129/api/UserService/search", // 서버의 검색 API 엔드포인트
+                type: "GET",
+                data: { query: query },
+                success: function (data) {
+                    console.log("Search results:", data.result.length);
+                    $results.empty();
+                    if (data.result.length > 0) {
+                        data.result.forEach(user => {
+                            console.log(`User found: ${user.name} (${user.employeeNumber})`);
+                            $results.append(
+                                `<li class="list-group-item" data-id="${user.id}">
+                                    ${user.name} (${user.employeeNumber})
+                                </li>`
+                            );
+                        });
+                        $results.show();
+                    } else {
+                        $results.hide();
+                    }
+                },
+                error: function () {
+                    console.error("Error fetching user data.");
+                }
+            });
+        });
+
+        // 클릭 이벤트로 사용자 선택
+        $results.on("click", "li", function () {
+            const userId = $(this).data("id");
+            const userName = $(this).text();
+            //alert(`Selected User: ${userName} (ID: ${userId})`);
+            $results.hide();
+            $input.val(userName); // 선택된 사용자 이름을 입력 필드에 표시
+        });
+    });
+</script>
+
+<div class="section-box">
+
+<!-- Approver Add -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <h4>Approval Type</h4>
+        <div class="form-group">
+            
+            <select id="approvalType" class="form-control" asp-for="ApprovalType">
+            <option value="Approval">Approval</option>
+            <option value="Notification">Notification</option>
+            <option value="Agreement">Agreement</option>
+            <option value="Reference">Reference</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <!-- User Search -->
+        <div class="mb-4">
+            <h4>Find Approver</h4>
+            <div class="input-group">
+                <input type="text" class="form-control me-2" placeholder="Search for user..." id="userSearchInput" />
+                <ul class="list-group position-absolute" id="autocompleteResults" style="z-index: 1000; display: none;"></ul>
+                <button type="button" class="btn btn-secondary" id="addApproverButton">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<hr />
+
+<div class="section-box">
+
+<!-- Approval Steps -->
+<div class="mb-4">
+    <h4>Approval Steps</h4>
+    <ul class="list-group">
+    
+        @if (Model.Steps != null && Model.Steps.Any())
+        {
+            var stepCount = 0;
+            foreach (var step in Model.Steps)
+            {
+                stepCount++;
+                <li class="list-group-item">
+                    <strong>Step @stepCount:</strong> 
+                    <span>@step.ApproverName</span> 
+                    (<span>@step.ApproverEmployeeNumber</span>) / 
+                    <em>@step.StepType</em>
+                </li>
+            }
+        }
+        else
+        {
+            <p>No steps available.</p>
+        }
+    </ul>
+</div>
+</div>
+
+<hr />
+
+<div class="section-box">
+
+<!-- Modal for User Search -->
+<div class="modal fade" id="userSearchModal" tabindex="-1" aria-labelledby="userSearchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userSearchModalLabel">Search User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Search functionality goes here...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Select User</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form -->
 <form asp-action="Create" method="post">
-    <div class="form-group">
+    @* <div class="form-group mb-3">
         <label>Request ID</label>
         <input asp-for="ApprovalId" class="form-control" />
+    </div> *@
+    <div class="form-group mb-3">
+        <label>Title</label>
+        <input asp-for="RequestTitle" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Content</label>
+        <textarea asp-for="RequestContent" class="form-control" rows="5"></textarea>
+    </div>
+    <div class="form-group mb-3">
+        <label>Attach File</label>
+        <input type="file" class="form-control" />
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
 </form>
+</div>
+
+<style>
+    .section-box {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+    #autocompleteResults {
+        top: 40px;
+        max-height: 250px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+    }
+
+    #autocompleteResults .list-group-item {
+        cursor: pointer;
+    }
+
+    #autocompleteResults .list-group-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+<div class="section-box">
+    <h4>Additional Information</h4>
+    <p>You can add any additional information or instructions here.</p>
+</div>

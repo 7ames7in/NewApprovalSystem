@@ -15,4 +15,7 @@ public class ApprovalRequestViewModel
     public string? ApproverComment { get; set; }
     public string? ApprovalType { get; set; }
     public string? MisKey { get; set; }
+
+    public List<ApprovalStepViewModel> Steps { get; set; } = new List<ApprovalStepViewModel>();
+    public List<ApprovalAttachmentViewModel> Attachments { get; set; } = new List<ApprovalAttachmentViewModel>();
 }

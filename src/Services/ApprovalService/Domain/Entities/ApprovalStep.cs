@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
+namespace ApprovalService.Domain.Entities;
+
 public class ApprovalStep
 {
     [Key]
