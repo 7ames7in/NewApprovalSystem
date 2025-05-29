@@ -1,0 +1,58 @@
+2025-05-29 09:13:59.295 +09:00 [WRN] As of ""2025-05-29T00:13:51.0489540+00:00"", the heartbeat has been running for ""00:00:02.1007317"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2025-05-29 16:15:13.413 +09:00 [DBG] Connection id "0HNCTFGC18APR" accepted.
+2025-05-29 16:15:13.542 +09:00 [DBG] Connection id "0HNCTFGC18APR" started.
+2025-05-29 16:15:13.841 +09:00 [DBG] Connection 0HNCTFGC18APR established using the following protocol: "Tls12"
+2025-05-29 16:15:15.846 +09:00 [DBG] Connection id "0HNCTFGC18APR" received FIN.
+2025-05-29 16:15:15.875 +09:00 [DBG] Connection id "0HNCTFGC18APR" is closed. The last processed stream ID was 0.
+2025-05-29 16:15:15.885 +09:00 [DBG] Connection id "0HNCTFGC18APR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:15:15.886 +09:00 [DBG] The connection queue processing loop for 0HNCTFGC18APR completed.
+2025-05-29 16:15:15.887 +09:00 [DBG] Connection id "0HNCTFGC18APR" stopped.
+2025-05-29 16:15:16.636 +09:00 [DBG] Connection id "0HNCTFGC18APS" accepted.
+2025-05-29 16:15:16.638 +09:00 [DBG] Connection id "0HNCTFGC18APS" started.
+2025-05-29 16:15:16.816 +09:00 [DBG] Connection 0HNCTFGC18APS established using the following protocol: "Tls12"
+2025-05-29 16:15:16.899 +09:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2025-05-29 16:15:16.899 +09:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2025-05-29 16:15:16.899 +09:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-29 16:15:16.917 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-05-29 16:15:16.917 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-05-29 16:15:16.917 +09:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-05-29 16:15:16.927 +09:00 [DBG] Request did not match any endpoints
+2025-05-29 16:15:16.927 +09:00 [DBG] Request did not match any endpoints
+2025-05-29 16:15:16.927 +09:00 [DBG] Request did not match any endpoints
+2025-05-29 16:15:17.496 +09:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-29 16:15:17.506 +09:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-29 16:15:17.509 +09:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 613.5539ms
+2025-05-29 16:15:17.509 +09:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 154949 text/css 613.5615ms
+2025-05-29 16:15:17.793 +09:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-29 16:15:17.793 +09:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1484234 text/javascript 897.5119ms
+2025-05-29 16:15:18.403 +09:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-05-29 16:15:18.409 +09:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-05-29 16:15:18.409 +09:00 [DBG] Request did not match any endpoints
+2025-05-29 16:15:18.709 +09:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-05-29 16:15:19.746 +09:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1343.5349ms
+2025-05-29 16:15:20.849 +09:00 [DBG] Connection id "0HNCTFGC18APS" received FIN.
+2025-05-29 16:15:20.850 +09:00 [DBG] Connection id "0HNCTFGC18APS" is closed. The last processed stream ID was 7.
+2025-05-29 16:15:20.850 +09:00 [DBG] Connection id "0HNCTFGC18APS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:15:20.854 +09:00 [DBG] The connection queue processing loop for 0HNCTFGC18APS completed.
+2025-05-29 16:15:20.854 +09:00 [DBG] Connection id "0HNCTFGC18APS" stopped.
+2025-05-29 16:38:50.763 +09:00 [DBG] Connection id "0HNCTFGC18APT" accepted.
+2025-05-29 16:38:50.769 +09:00 [DBG] Connection id "0HNCTFGC18APT" started.
+2025-05-29 16:38:50.810 +09:00 [DBG] Connection 0HNCTFGC18APT established using the following protocol: "Tls12"
+2025-05-29 16:38:51.093 +09:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-05-29 16:38:51.094 +09:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-05-29 16:38:51.095 +09:00 [DBG] Request did not match any endpoints
+2025-05-29 16:38:51.144 +09:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.1272ms
+2025-05-29 16:40:18.853 +09:00 [DBG] Connection id "0HNCTFGC18APT" received FIN.
+2025-05-29 16:40:18.857 +09:00 [DBG] Connection id "0HNCTFGC18APT" is closed. The last processed stream ID was 1.
+2025-05-29 16:40:18.858 +09:00 [DBG] Connection id "0HNCTFGC18APT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:40:18.860 +09:00 [DBG] The connection queue processing loop for 0HNCTFGC18APT completed.
+2025-05-29 16:40:18.860 +09:00 [DBG] Connection id "0HNCTFGC18APT" stopped.
+2025-05-29 16:43:13.631 +09:00 [DBG] Connection id "0HNCTFGC18APU" accepted.
+2025-05-29 16:43:13.633 +09:00 [DBG] Connection id "0HNCTFGC18APU" started.
+2025-05-29 16:43:13.669 +09:00 [DBG] Connection 0HNCTFGC18APU established using the following protocol: "Tls12"
+2025-05-29 16:43:13.858 +09:00 [DBG] Connection id "0HNCTFGC18APU" received FIN.
+2025-05-29 16:43:13.859 +09:00 [DBG] Connection id "0HNCTFGC18APU" is closed. The last processed stream ID was 0.
+2025-05-29 16:43:13.860 +09:00 [DBG] Connection id "0HNCTFGC18APU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:43:13.860 +09:00 [DBG] The connection queue processing loop for 0HNCTFGC18APU completed.
+2025-05-29 16:43:13.860 +09:00 [DBG] Connection id "0HNCTFGC18APU" stopped.
+2025-05-29 19:11:13.066 +09:00 [WRN] As of ""2025-05-29T10:11:06.8372660+00:00"", the heartbeat has been running for ""00:00:01.2722537"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.

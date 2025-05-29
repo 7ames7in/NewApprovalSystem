@@ -1,0 +1,323 @@
+2025-05-29 09:13:58.569 +09:00 [WRN] As of ""2025-05-29T00:13:42.9174190+00:00"", the heartbeat has been running for ""00:00:05.1731752"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2025-05-29 09:29:57.548 +09:00 [WRN] As of ""2025-05-29T00:29:57.4924810+00:00"", the heartbeat has been running for ""00:00:02.3054508"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2025-05-29 16:14:45.347 +09:00 [DBG] Connection id "0HNCTRD9L76JN" accepted.
+2025-05-29 16:14:45.475 +09:00 [DBG] Connection id "0HNCTRD9L76JN" started.
+2025-05-29 16:14:46.255 +09:00 [DBG] Connection 0HNCTRD9L76JN established using the following protocol: "Tls12"
+2025-05-29 16:14:46.702 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=bo - null null
+2025-05-29 16:14:46.738 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-05-29 16:14:46.793 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-05-29 16:14:46.814 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:46.921 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-29 16:14:46.944 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-05-29 16:14:46.956 +09:00 [INF] CORS policy execution successful.
+2025-05-29 16:14:46.989 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:47.027 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-05-29 16:14:47.042 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-29 16:14:47.071 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-29 16:14:47.095 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-05-29 16:14:47.100 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-29 16:14:47.113 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-05-29 16:14:47.125 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:47.479 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:47.506 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:47.533 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-05-29 16:14:47.543 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:47.550 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:47.558 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:47.581 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-05-29 16:14:47.782 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-29 16:14:47.927 +09:00 [INF] Executing JsonResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IAsyncEnumerable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:14:48.153 +09:00 [DBG] Creating DbConnection.
+2025-05-29 16:14:48.261 +09:00 [DBG] Created DbConnection. (108ms).
+2025-05-29 16:14:48.276 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:48.564 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:48.622 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-29 16:14:48.637 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (52ms).
+2025-05-29 16:14:48.651 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (76ms).
+2025-05-29 16:14:48.753 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:48.963 +09:00 [INF] Executed DbCommand (201ms) [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:49.072 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.092 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.097 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.098 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.098 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.098 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.098 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.098 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.106 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.106 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:49.155 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:49.155 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 184ms reading results.
+2025-05-29 16:14:49.162 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:49.175 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (13ms).
+2025-05-29 16:14:49.191 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API) in 2073.5394ms
+2025-05-29 16:14:49.200 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:49.203 +09:00 [DBG] 'UserDbContext' disposed.
+2025-05-29 16:14:49.203 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:49.203 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:14:49.210 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=bo - 200 null application/json; charset=utf-8 2515.3932ms
+2025-05-29 16:14:50.250 +09:00 [DBG] Connection id "0HNCTRD9L76JN" received FIN.
+2025-05-29 16:14:50.270 +09:00 [DBG] Connection id "0HNCTRD9L76JN" is closed. The last processed stream ID was 1.
+2025-05-29 16:14:50.273 +09:00 [DBG] The connection queue processing loop for 0HNCTRD9L76JN completed.
+2025-05-29 16:14:50.276 +09:00 [DBG] Connection id "0HNCTRD9L76JN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:14:50.313 +09:00 [DBG] Connection id "0HNCTRD9L76JN" stopped.
+2025-05-29 16:14:53.969 +09:00 [DBG] Connection id "0HNCTRD9L76JO" accepted.
+2025-05-29 16:14:53.969 +09:00 [DBG] Connection id "0HNCTRD9L76JO" started.
+2025-05-29 16:14:53.998 +09:00 [DBG] Connection 0HNCTRD9L76JO established using the following protocol: "Tls12"
+2025-05-29 16:14:54.014 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=bo - null null
+2025-05-29 16:14:54.019 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-05-29 16:14:54.019 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-05-29 16:14:54.020 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:54.020 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-29 16:14:54.020 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-05-29 16:14:54.020 +09:00 [INF] CORS policy execution successful.
+2025-05-29 16:14:54.020 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:54.024 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-05-29 16:14:54.028 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-29 16:14:54.028 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-29 16:14:54.028 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-05-29 16:14:54.032 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-29 16:14:54.033 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-05-29 16:14:54.033 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:54.043 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:54.052 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:54.052 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-05-29 16:14:54.053 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:54.053 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:54.070 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:54.071 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-05-29 16:14:54.077 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-29 16:14:54.077 +09:00 [INF] Executing JsonResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IAsyncEnumerable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:14:54.091 +09:00 [DBG] Creating DbConnection.
+2025-05-29 16:14:54.095 +09:00 [DBG] Created DbConnection. (3ms).
+2025-05-29 16:14:54.095 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:54.095 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:54.095 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-29 16:14:54.095 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:14:54.112 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (16ms).
+2025-05-29 16:14:54.116 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:54.129 +09:00 [INF] Executed DbCommand (17ms) [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.130 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.136 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.137 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.137 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:54.154 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:54.154 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 24ms reading results.
+2025-05-29 16:14:54.154 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:54.155 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (1ms).
+2025-05-29 16:14:54.160 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API) in 127.7528ms
+2025-05-29 16:14:54.160 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:54.160 +09:00 [DBG] 'UserDbContext' disposed.
+2025-05-29 16:14:54.161 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:54.165 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (4ms).
+2025-05-29 16:14:54.165 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=bo - 200 null application/json; charset=utf-8 150.9726ms
+2025-05-29 16:14:55.185 +09:00 [DBG] Connection id "0HNCTRD9L76JO" received FIN.
+2025-05-29 16:14:55.185 +09:00 [DBG] Connection id "0HNCTRD9L76JO" is closed. The last processed stream ID was 1.
+2025-05-29 16:14:55.185 +09:00 [DBG] Connection id "0HNCTRD9L76JO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:14:55.188 +09:00 [DBG] The connection queue processing loop for 0HNCTRD9L76JO completed.
+2025-05-29 16:14:55.192 +09:00 [DBG] Connection id "0HNCTRD9L76JO" stopped.
+2025-05-29 16:14:57.015 +09:00 [DBG] Connection id "0HNCTRD9L76JP" accepted.
+2025-05-29 16:14:57.023 +09:00 [DBG] Connection id "0HNCTRD9L76JP" started.
+2025-05-29 16:14:57.047 +09:00 [DBG] Connection 0HNCTRD9L76JP established using the following protocol: "Tls12"
+2025-05-29 16:14:57.064 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob - null null
+2025-05-29 16:14:57.064 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-05-29 16:14:57.064 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-05-29 16:14:57.071 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:57.072 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-29 16:14:57.072 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-05-29 16:14:57.072 +09:00 [INF] CORS policy execution successful.
+2025-05-29 16:14:57.072 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:57.072 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-05-29 16:14:57.072 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-29 16:14:57.072 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-29 16:14:57.074 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-05-29 16:14:57.074 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-29 16:14:57.074 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-05-29 16:14:57.074 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:57.086 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:57.086 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:57.087 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-05-29 16:14:57.087 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:57.087 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:57.087 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:57.088 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-05-29 16:14:57.100 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-29 16:14:57.100 +09:00 [INF] Executing JsonResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IAsyncEnumerable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:14:57.100 +09:00 [DBG] Creating DbConnection.
+2025-05-29 16:14:57.100 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-29 16:14:57.100 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:57.100 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:57.100 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-29 16:14:57.100 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:14:57.100 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:14:57.100 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 5), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:57.101 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@__Format_1='?' (Size = 5), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:57.101 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.102 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.102 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.103 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.103 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.103 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.104 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.104 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.104 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.104 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:57.104 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:57.104 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 3ms reading results.
+2025-05-29 16:14:57.105 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:57.105 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:14:57.105 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API) in 30.3159ms
+2025-05-29 16:14:57.105 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:57.105 +09:00 [DBG] 'UserDbContext' disposed.
+2025-05-29 16:14:57.105 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:57.105 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:14:57.105 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob - 200 null application/json; charset=utf-8 41.5868ms
+2025-05-29 16:14:58.456 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob%20 - null null
+2025-05-29 16:14:58.463 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-05-29 16:14:58.471 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-05-29 16:14:58.471 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:58.471 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-29 16:14:58.471 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-05-29 16:14:58.471 +09:00 [INF] CORS policy execution successful.
+2025-05-29 16:14:58.471 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:58.471 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-05-29 16:14:58.513 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-29 16:14:58.513 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-29 16:14:58.514 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-05-29 16:14:58.514 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-29 16:14:58.514 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-05-29 16:14:58.518 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:58.524 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:58.540 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:58.551 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-05-29 16:14:58.551 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:58.551 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:58.551 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:58.552 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-05-29 16:14:58.570 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-29 16:14:58.574 +09:00 [INF] Executing JsonResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IAsyncEnumerable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:14:58.583 +09:00 [DBG] Creating DbConnection.
+2025-05-29 16:14:58.583 +09:00 [DBG] Created DbConnection. (0ms).
+2025-05-29 16:14:58.583 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:58.583 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:58.583 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-29 16:14:58.583 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:14:58.600 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (17ms).
+2025-05-29 16:14:58.603 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 6), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:58.607 +09:00 [INF] Executed DbCommand (6ms) [Parameters=[@__Format_1='?' (Size = 6), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.607 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.634 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.634 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.634 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:14:58.635 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:58.635 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 27ms reading results.
+2025-05-29 16:14:58.658 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:14:58.658 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:14:58.658 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API) in 144.6523ms
+2025-05-29 16:14:58.658 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:58.658 +09:00 [DBG] 'UserDbContext' disposed.
+2025-05-29 16:14:58.659 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:14:58.659 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:14:58.659 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob%20 - 200 null application/json; charset=utf-8 202.6828ms
+2025-05-29 16:14:59.958 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob%201 - null null
+2025-05-29 16:14:59.967 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-05-29 16:14:59.967 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-05-29 16:14:59.967 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:59.968 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-05-29 16:14:59.976 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-05-29 16:14:59.983 +09:00 [INF] CORS policy execution successful.
+2025-05-29 16:14:59.984 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:14:59.984 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-05-29 16:14:59.984 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-05-29 16:14:59.984 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-05-29 16:14:59.984 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-05-29 16:14:59.984 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-05-29 16:14:59.984 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-05-29 16:14:59.984 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:59.987 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-05-29 16:14:59.990 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:59.990 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-05-29 16:14:59.991 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:59.991 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-05-29 16:14:59.991 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-05-29 16:14:59.991 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-05-29 16:14:59.994 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-05-29 16:15:00.000 +09:00 [INF] Executing JsonResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IAsyncEnumerable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:15:00.005 +09:00 [DBG] Creating DbConnection.
+2025-05-29 16:15:00.011 +09:00 [DBG] Created DbConnection. (5ms).
+2025-05-29 16:15:00.011 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:15:00.011 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:15:00.011 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-05-29 16:15:00.011 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:15:00.011 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-05-29 16:15:00.011 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 7), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:15:00.011 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@__Format_1='?' (Size = 7), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-05-29 16:15:00.011 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:15:00.011 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-05-29 16:15:00.012 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:15:00.012 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 0ms reading results.
+2025-05-29 16:15:00.012 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-05-29 16:15:00.012 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-05-29 16:15:00.012 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API) in 28.0484ms
+2025-05-29 16:15:00.012 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (UserService.API)'
+2025-05-29 16:15:00.014 +09:00 [DBG] 'UserDbContext' disposed.
+2025-05-29 16:15:00.020 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-05-29 16:15:00.025 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (4ms).
+2025-05-29 16:15:00.025 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=bob%201 - 200 null application/json; charset=utf-8 66.8797ms
+2025-05-29 16:15:00.187 +09:00 [DBG] Connection id "0HNCTRD9L76JP" received FIN.
+2025-05-29 16:15:00.187 +09:00 [DBG] Connection id "0HNCTRD9L76JP" is closed. The last processed stream ID was 5.
+2025-05-29 16:15:00.187 +09:00 [DBG] The connection queue processing loop for 0HNCTRD9L76JP completed.
+2025-05-29 16:15:00.187 +09:00 [DBG] Connection id "0HNCTRD9L76JP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-29 16:15:00.187 +09:00 [DBG] Connection id "0HNCTRD9L76JP" stopped.
