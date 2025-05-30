@@ -2,55 +2,120 @@
 
 <h2>Submit Approval Request</h2>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/utility.js"></script>
 <script>
     $(document).ready(function () {
         const $input = $("#userSearchInput");
         const $results = $("#autocompleteResults");
 
+        // Load existing steps into a JavaScript variable
+        const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+        console.log("Existing Steps Data:", stepsData);
+        
+        // Call the function to display steps
+        displaySteps(stepsData);
+
         $input.on("input", function () {
             const query = $input.val();
-
+            $("#addButton").prop("disabled", true); // Disable the add button initially
+            
             if (query.length < 2) {
                 $results.hide();
                 return;
             }
 
-            $.ajax({
-                url: "https://localhost:7129/api/UserService/search", // 서버의 검색 API 엔드포인트
-                type: "GET",
-                data: { query: query },
-                success: function (data) {
-                    console.log("Search results:", data.result.length);
-                    $results.empty();
-                    if (data.result.length > 0) {
-                        data.result.forEach(user => {
-                            console.log(`User found: ${user.name} (${user.employeeNumber})`);
-                            $results.append(
-                                `<li class="list-group-item" data-id="${user.id}">
-                                    ${user.name} (${user.employeeNumber})
-                                </li>`
-                            );
-                        });
-                        $results.show();
-                    } else {
-                        $results.hide();
-                    }
-                },
-                error: function () {
-                    console.error("Error fetching user data.");
+            fetchData("https://localhost:7129/api/UserService/search", query, callback);
+        });
+
+        // Add button click event to add a new step
+        $("#addButton").on("click", function () {
+            const approverInfo = $("#userSearchInput").val();
+            const selectedItem = $results.find("li:contains('" + approverInfo + "')");
+            const approverName = selectedItem.data("name");
+            const approverEmployeeNumber = selectedItem.data("id");
+            const position = selectedItem.data("position");
+            const stepType = $("#approvalType").val();
+
+            if (approverName && stepType) {
+                // Check for duplicates
+                const isDuplicate = stepsData.some(step => step.approverEmployeeNumber === approverEmployeeNumber);
+                if (isDuplicate) {
+                    alert("This approver is already added to the steps.");
+                    return;
                 }
-            });
+
+                const newStep = {
+                    approverName: approverName,
+                    approverEmployeeNumber: approverEmployeeNumber,
+                    position: position,
+                    stepType: stepType
+                };
+
+                // Add the new step to stepsData
+                stepsData.push(newStep);
+
+                // Display updated steps
+                displaySteps(stepsData);
+                $("#addButton").prop("disabled", true);
+
+                // Clear the input field
+                $("#userSearchInput").val("");
+            } else {
+                alert("Please select an approver and approval type.");
+            }
         });
 
         // 클릭 이벤트로 사용자 선택
         $results.on("click", "li", function () {
             const userId = $(this).data("id");
             const userName = $(this).text();
-            //alert(`Selected User: ${userName} (ID: ${userId})`);
             $results.hide();
             $input.val(userName); // 선택된 사용자 이름을 입력 필드에 표시
+            $("#addButton").prop("disabled", false); // Enable the add button
         });
     });
+    
+    function callback(data) {
+        const $results = $("#autocompleteResults");
+        $results.empty();
+
+        if (data.result.length > 0) {
+            data.result.forEach(user => {
+            const $item = $("<li class='list-group-item'></li>")
+                .html(`<strong>${user.name} (${user.employeeNumber})</strong> - <em>${user.department}</em> / <span>${user.position}</span>`)
+                .data("id", user.employeeNumber)
+                .data("name", user.name)
+                .data("position", user.position)
+                .data("department", user.department);
+            $results.append($item);
+        });
+        $results.show();
+    } else {
+        $results.hide();
+    }
+    }
+
+    // Display existing steps in the list
+    function displaySteps(stepsData) {
+        const $stepsList = $(".list-group");
+        $stepsList.empty(); // Clear existing steps
+
+        if (stepsData.length > 0) {
+            const sortedSteps = stepsData.sort((a, b) => {
+                    const order = { "Approval": 1, "Agreement": 2, "Notification": 3, "Reference": 4, "Review": 5 };
+                    return order[a.stepType] - order[b.stepType];
+            });
+
+            sortedSteps.forEach((step, index) => {
+                const $stepItem = $("<li class='list-group-item'></li>")
+                .html(`<strong>Step ${index + 1}:</strong> <span>${step.approverName}</span> (<span>${step.approverEmployeeNumber}</span>) / <span>${step.position}</span> / <em>${step.stepType}</em>`);
+                $stepsList.append($stepItem);
+            });
+        } else {
+            $stepsList.append("<p>No steps available.</p>");
+        }
+    }
+
 </script>
 
 <div class="section-box">
@@ -76,7 +141,8 @@
             <div class="input-group">
                 <input type="text" class="form-control me-2" placeholder="Search for user..." id="userSearchInput" />
                 <ul class="list-group position-absolute" id="autocompleteResults" style="z-index: 1000; display: none;"></ul>
-                <button type="button" class="btn btn-secondary" id="addApproverButton">Add</button>
+                <button type="button" class="btn btn-secondary" data-bs-target="#userSearchModal" id="addButton" disabled>Add</button>
+                
             </div>
         </div>
     </div>
@@ -93,7 +159,7 @@
     <h4>Approval Steps</h4>
     <ul class="list-group">
     
-        @if (Model.Steps != null && Model.Steps.Any())
+        @* @if (Model.Steps != null && Model.Steps.Any())
         {
             var stepCount = 0;
             foreach (var step in Model.Steps)
@@ -110,7 +176,7 @@
         else
         {
             <p>No steps available.</p>
-        }
+        } *@
     </ul>
 </div>
 </div>
@@ -140,10 +206,14 @@
 
 <!-- Form -->
 <form asp-action="Create" method="post">
-    @* <div class="form-group mb-3">
+    <div class="form-group mb-3">
         <label>Request ID</label>
         <input asp-for="ApprovalId" class="form-control" />
-    </div> *@
+    </div>
+    <div class="form-group mb-3">
+        <label>ApplicantName</label>
+        <input asp-for="ApplicantName" class="form-control" />
+    </div>
     <div class="form-group mb-3">
         <label>Title</label>
         <input asp-for="RequestTitle" class="form-control" />
@@ -156,7 +226,15 @@
         <label>Attach File</label>
         <input type="file" class="form-control" />
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <input type="hidden" name="StepsJson" id="StepsJson" />
+    <button type="submit" class="btn btn-success" onclick="prepareFormData()">Submit</button>
+
+    <script>
+        function prepareFormData() {
+            const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+            document.getElementById("StepsJson").value = JSON.stringify(stepsData);
+        }
+    </script>
 </form>
 </div>
 
@@ -187,6 +265,6 @@
     }
 </style>
 <div class="section-box">
-    <h4>Additional Information</h4>
-    <p>You can add any additional information or instructions here.</p>
+    <h4>Notice</h4>
+    <p>Please ensure all required fields are filled out before submitting the approval request. Double-check the approval steps for accuracy.</p>
 </div>

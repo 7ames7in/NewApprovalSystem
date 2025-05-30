@@ -2,9 +2,11 @@ using ApprovalWeb.Models;
 using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApprovalWeb.Controllers;
 
+[Authorize]
 public class ApprovalRequestController : Controller
 {
     private readonly IApprovalRequestService _apiService;
@@ -16,10 +18,46 @@ public class ApprovalRequestController : Controller
 
     public async Task<IActionResult> Index()
     {
+         var user = HttpContext.User;
+
+        // 1. 사용자 ID (보통은 Claim의 NameIdentifier)
+        var userId = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "EC20505";
+
+        // 2. 사용자 이름
+        var userName = user.Identity?.Name;
+
+        // 3. 사용자 이메일
+        var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
+
+        ViewBag.UserId = userId;
+        ViewBag.UserName = userName;
+        ViewBag.Email = email;
+
+        
         //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        var userId = "EC20505";
+        //var userId = "EC20505";
         var requests = await _apiService.GetMyRequestsAsync(userId);
         return View(requests);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(ApprovalRequestViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(model);
+        }
+
+        var result = await _apiService.CreateApprovalRequestAsync(model);
+
+        if (result.IsSuccess)
+        {
+            TempData["SuccessMessage"] = "Approval request created successfully.";
+            return RedirectToAction("Index");
+        }
+
+        ModelState.AddModelError(string.Empty, "An error occurred while creating the approval request.");
+        return View(model);
     }
 
     public IActionResult Create()
@@ -38,6 +76,9 @@ public class ApprovalRequestController : Controller
                 IsFinalApprover = false,
                 ActionStatus = "Pending",
                 ActionDate = null,
+                Department = "Finance",
+                JobTitle = "Financial Analyst",
+                Position = "Analyst",
                 Comment = ""
             },
             new ApprovalStepViewModel
@@ -51,6 +92,9 @@ public class ApprovalRequestController : Controller
                 IsFinalApprover = true,
                 ActionStatus = "Pending",
                 ActionDate = null,
+                Department = "HR",
+                JobTitle = "HR Manager",
+                Position = "Manager",
                 Comment = ""
             },
             new ApprovalStepViewModel
@@ -59,11 +103,14 @@ public class ApprovalRequestController : Controller
                 ApprovalId = Guid.NewGuid(),
                 ApproverEmployeeNumber = "E54321",
                 ApproverName = "Charlie",
-                StepType = "Final Approval",
+                StepType = "Approval",
                 Sequence = 3,
                 IsFinalApprover = true,
                 ActionStatus = "Pending",
                 ActionDate = null,
+                Department = "IT",
+                JobTitle = "IT Director",
+                Position = "Director",
                 Comment = ""
             }
         };
@@ -75,5 +122,5 @@ public class ApprovalRequestController : Controller
 
         return View(model);
     }
-    
+
 }

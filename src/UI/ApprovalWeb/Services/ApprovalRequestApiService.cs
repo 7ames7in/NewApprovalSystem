@@ -8,10 +8,23 @@ namespace ApprovalWeb.Services;
 public class ApprovalRequestApiService : IApprovalRequestService
 {
     private readonly HttpClient _http;
+    private static readonly ILogger<ApprovalRequestApiService> Logger = LoggerFactory.Create(builder => builder.AddConsole()).CreateLogger<ApprovalRequestApiService>();
 
     public ApprovalRequestApiService(IHttpClientFactory factory)
     {
         _http = factory.CreateClient("ApprovalApi");
+    }
+    public async Task<ResultViewModel> CreateApprovalRequestAsync(ApprovalRequestViewModel model)
+    {
+        var response = await _http.PostAsJsonAsync("api/approvalrequest/create", model);
+        if (!response.IsSuccessStatusCode)
+        {
+            var errorContent = await response.Content.ReadAsStringAsync();
+            // Log the error or handle it as needed
+            Logger.LogError($"Error creating approval request: {errorContent}");
+            return new ResultViewModel { IsSuccess = false, Message = errorContent };
+        }
+        return new ResultViewModel { IsSuccess = true }; // Example implementation
     }
 
     public async Task<IEnumerable<ApprovalRequestViewModel>> GetMyRequestsAsync(string userId)

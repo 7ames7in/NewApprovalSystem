@@ -1,0 +1,318 @@
+2025-05-31 08:15:11.797 +09:00 [INF] AzureAd: Microsoft.Extensions.Configuration.ConfigurationSection
+2025-05-31 08:15:11.950 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-31 08:15:11.985 +09:00 [DBG] Hosting starting
+2025-05-31 08:15:11.992 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-05-31 08:15:12.003 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-05-31 08:15:12.006 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-05-31 08:15:12.010 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-05-31 08:15:12.019 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-05-31 08:15:12.022 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-05-31 08:15:12.023 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-31 08:15:12.028 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-05-31 08:15:12.028 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-05-31 08:15:12.030 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-05-31 08:15:12.030 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-05-31 08:15:12.044 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:15:12.046 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:15:12.369 +09:00 [INF] Now listening on: https://localhost:7185
+2025-05-31 08:15:12.369 +09:00 [INF] Now listening on: http://localhost:5107
+2025-05-31 08:15:12.369 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-05-31 08:15:12.370 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 08:15:12.370 +09:00 [INF] Hosting environment: Development
+2025-05-31 08:15:12.370 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-05-31 08:15:12.370 +09:00 [DBG] Hosting started
+2025-05-31 08:15:47.462 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" accepted.
+2025-05-31 08:15:47.464 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" started.
+2025-05-31 08:15:47.532 +09:00 [DBG] Connection 0HNCVPVKHSOJT established using the following protocol: "Tls12"
+2025-05-31 08:15:47.564 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:15:47.613 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:15:47.613 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:15:47.614 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:15:47.621 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:15:47.622 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:15:47.623 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:15:47.625 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:15:47.626 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:15:47.635 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 05/30/2025 23:15:47. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-05-31 08:15:47.979 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-05-31 08:15:47.987 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:15:47.987 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-05-31 08:15:48.217 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:15:48.218 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-05-31 08:15:48.231 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:15:48.246 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842437482318090.ZjU3YzExYjItNDViMy00MTczLTk4MWQtNDhmNjUzZjIxNDY1MjA5YjQxYWUtNmM5NS00OTJjLWI2ZWMtNDVlOWJjZTVlOWI5&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP0flpzVTO2NX2WlMGUrMo5m5nQAWbzA23HmAOboGYYg559WNRiM0LvZeS95R7yCyO5dS07UY36b4b7UO-vr8o92V3OKacwAFHlQvdtlCaY0cbFP_Msjyp78gIoD-PdED4SxU2UgFza-XeFN7i6ev8SLB1mXrgl84Ue-TJUfyOFWhZvaYeia7XZBgdLTpeY81TQOqGzHGizMsNx3QL6Fxrd0PWr6vpTS3lC2InP2zEkbQ1ljxmtH5MuFFIcf5zO9oM_QsyRyWC-HEosemIlimabq&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP3xGTuD_dm5eG5uR-B36Gcu-stJ01RQwAONRSqJB1Tbn96V_Y72q9z1VWaxeCJ24gyAJBGvZFwax2yMrYLvNY-m94W8Mfvkm9F0WPFRSK6XczaQrzo3QKQiwgZhObRzOPMPdwJp6PnbPccKvrsKk7e12eowFNnlv7a6noDudQQEaKeWySyC7QYWQwH9gtBTtBo3tualdx5t_FOoVzYfiGw3BM-ywNmXV0Pmj9Uzpyf-P-j086Q4o1iJ17iYk7BR35I=N; expires=Fri, 30 May 2025 23:30:48 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.39LjHHs3cM4MLBnfNiFETFycjlEEJ_0_85ZUMNWm8NI=N; expires=Fri, 30 May 2025 23:30:48 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:15:48.247 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:15:48.254 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 691.1811ms
+2025-05-31 08:15:52.167 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" received FIN.
+2025-05-31 08:15:52.170 +09:00 [DBG] The connection queue processing loop for 0HNCVPVKHSOJT completed.
+2025-05-31 08:15:52.171 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" is closed. The last processed stream ID was 1.
+2025-05-31 08:15:52.171 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:15:52.182 +09:00 [DBG] Connection id "0HNCVPVKHSOJT" stopped.
+2025-05-31 08:21:07.085 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" accepted.
+2025-05-31 08:21:07.087 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" started.
+2025-05-31 08:21:07.120 +09:00 [DBG] Connection 0HNCVPVKHSOJU established using the following protocol: "Tls12"
+2025-05-31 08:21:07.125 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:21:07.130 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:21:07.130 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:21:07.130 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:21:07.131 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:21:07.132 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:21:07.132 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:21:07.133 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:21:07.133 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:21:07.134 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:21:07.136 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842440671344090.MWQyZDZiNjItNmYxZS00ODNlLTg4NjgtM2Q4NmQ3MGZiMzM2NmU4M2ZjZTYtMzkzOC00OGVkLWExMWUtNjhlZTc3NGNiZDg0&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP1g_HSosYjAuIWnB6Z3GDOpNafWwVlZNBPYtfh0VnP8tIXMY5fumPire3t30U5ivipCliRJebFq91KOEFLwoi3XsX6EOvwnMK4IlYpZKHnleZJFv7YFiZV2ecpsB-jmNu2LRD1VuKEYLc1izJivIYBhYbM876bL6Uog6wqX4bOBHotBonrHl44mZClrXbt_KAQtiJZYkGrOex0fkSDeDcrb1HYc6QEQ6lTcNhb4FD_4zU_kFgD-38PetYrRsXQKrzvSPZsYKy3qxjCsge22Dwaq&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP3E1JVamiGSu0JnPEhYehLpMYrzT3MY_wgJSJXjvT-qbvTDNu-z3mKtIpv-iy-8A5Gt7uKyuSnZVaEhMW29pJcBC8nDjFaPB9z4wBzwL94Lre5BYN4iZFZAM5Uac8dRs4cseM9MbwnJxG_0MVd2hCpyzNyf8vlG-aOwzVsbhzL7fzfyoRrWynNN6bv2YNftDnNebwFD_1WbJRgwMqMBu49qhCHlezGJ3gSFdKCsny_oi4BVXJybhm6ODn6j1b0b2QA=N; expires=Fri, 30 May 2025 23:36:07 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.Cvaz-04CLjJezN64J1y_3TOXwK2zrybblmRSRLsDggk=N; expires=Fri, 30 May 2025 23:36:07 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:21:07.136 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:21:07.136 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 11.9715ms
+2025-05-31 08:21:07.205 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" received FIN.
+2025-05-31 08:21:07.206 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" is closed. The last processed stream ID was 1.
+2025-05-31 08:21:07.206 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:21:07.206 +09:00 [DBG] The connection queue processing loop for 0HNCVPVKHSOJU completed.
+2025-05-31 08:21:07.206 +09:00 [DBG] Connection id "0HNCVPVKHSOJU" stopped.
+2025-05-31 08:21:19.109 +09:00 [INF] Application is shutting down...
+2025-05-31 08:21:19.111 +09:00 [DBG] Hosting stopping
+2025-05-31 08:21:19.120 +09:00 [DBG] Hosting stopped
+2025-05-31 08:21:28.384 +09:00 [INF] AzureAd: Microsoft.Extensions.Configuration.ConfigurationSection
+2025-05-31 08:21:28.482 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Create.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Details.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Index.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/ApprovalRequest/Create.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/ApprovalRequest/Details.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/ApprovalRequest/Index.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2025-05-31 08:21:28.483 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2025-05-31 08:21:28.486 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-31 08:21:28.515 +09:00 [DBG] Hosting starting
+2025-05-31 08:21:28.520 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-05-31 08:21:28.525 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-05-31 08:21:28.527 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-05-31 08:21:28.529 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-05-31 08:21:28.532 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-05-31 08:21:28.538 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-05-31 08:21:28.540 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-31 08:21:28.542 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-05-31 08:21:28.543 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-05-31 08:21:28.545 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-05-31 08:21:28.547 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-05-31 08:21:28.553 +09:00 [DBG] Middleware loaded
+2025-05-31 08:21:28.554 +09:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16091 B).
+2025-05-31 08:21:28.557 +09:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (776 B).
+2025-05-31 08:21:28.567 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:21:28.568 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:21:28.569 +09:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-05-31 08:21:28.760 +09:00 [INF] Now listening on: https://localhost:7185
+2025-05-31 08:21:28.760 +09:00 [INF] Now listening on: http://localhost:5107
+2025-05-31 08:21:28.760 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-05-31 08:21:28.761 +09:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-05-31 08:21:28.761 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 08:21:28.761 +09:00 [INF] Hosting environment: Development
+2025-05-31 08:21:28.761 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-05-31 08:21:28.761 +09:00 [DBG] Hosting started
+2025-05-31 08:21:29.051 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" accepted.
+2025-05-31 08:21:29.056 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" started.
+2025-05-31 08:21:29.126 +09:00 [DBG] Connection 0HNCVQ2QBHNJN established using the following protocol: "Tls12"
+2025-05-31 08:21:29.152 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:21:29.199 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:21:29.199 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:21:29.200 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:21:29.208 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:21:29.210 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:21:29.212 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:21:29.215 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:21:29.216 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:21:29.225 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 05/30/2025 23:21:29. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-05-31 08:21:29.658 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-05-31 08:21:29.666 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:21:29.666 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-05-31 08:21:29.899 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:21:29.899 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-05-31 08:21:29.906 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:21:29.915 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842440899068080.YTVmM2M0NmUtODVkNi00ZGEyLTg1MGUtMjAwZGZmNjQ5NzNmMjNlODY0NDAtOTk2MS00NGIzLTg0MjUtNWQ3MjRmZmNjYzYx&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP0n7XmoK5FOdmNd5R8fM1AEIEsfTXKg2kl7SaECy_Ouvp90VDrtNYd6EifFTzM6tOIrD-wl4N5wxEFYhH0QFQ__8ZivhQw6YatCDSeeqRQNrosAds87eSxiVbF9t_MnA58sD3H--XTkjG1JJ67F8P7MQufWGlGgnliTHr5bbyZsA8PxrWmL8aSVJrwK4Cz1TlmvuaNZPbZiE7mGndEYBAO7QGmX0bReV7CyK1W5pyLbZ5YSmxeIMwQSy7khYxtwJO15fkSBNkJnylmo5OSBRVuR&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP082nQ9MsRQgFOXbUxZ69XHRAQqQ4HQIwfv8qFDJrwaDxLhlDvdyQhrqoBKD20PrX-AvxXvJ383rQb8BSvdZZreAzofpU6yAzS2YCJ2MTCBeRS_Z-g_ifqQyb7eSkavCmmKXPjmCcc_nSqWkC4WL1qJ3-aAp48SXVIDayqz9XQTovdd_MQzzXbD9KK5ln6ofejJqZzpAgVIFAj_7ZUt2g1CeIw3xsNQ7H0Xy1icEP1Z92BvAWiXqRbPb5b-xSE0gMU=N; expires=Fri, 30 May 2025 23:36:29 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.MfB_AXnmL1or9DV5XUAnkeQ-zmi9f8vFTXTTwH-9bl4=N; expires=Fri, 30 May 2025 23:36:29 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:21:29.915 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:21:29.917 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 766.3157ms
+2025-05-31 08:21:32.208 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" received FIN.
+2025-05-31 08:21:32.211 +09:00 [DBG] The connection queue processing loop for 0HNCVQ2QBHNJN completed.
+2025-05-31 08:21:32.213 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" is closed. The last processed stream ID was 1.
+2025-05-31 08:21:32.214 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:21:32.223 +09:00 [DBG] Connection id "0HNCVQ2QBHNJN" stopped.
+2025-05-31 08:23:03.562 +09:00 [INF] Application is shutting down...
+2025-05-31 08:23:03.564 +09:00 [DBG] Hosting stopping
+2025-05-31 08:23:03.572 +09:00 [DBG] Hosting stopped
+2025-05-31 08:23:09.217 +09:00 [INF] AzureAd: Microsoft.Extensions.Configuration.ConfigurationSection
+2025-05-31 08:23:09.297 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-31 08:23:09.318 +09:00 [DBG] Hosting starting
+2025-05-31 08:23:09.323 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-05-31 08:23:09.329 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-05-31 08:23:09.331 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-05-31 08:23:09.333 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-05-31 08:23:09.335 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-05-31 08:23:09.337 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-05-31 08:23:09.338 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-31 08:23:09.340 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-05-31 08:23:09.340 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-05-31 08:23:09.342 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-05-31 08:23:09.343 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-05-31 08:23:09.351 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:23:09.352 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:23:09.581 +09:00 [INF] Now listening on: https://localhost:7185
+2025-05-31 08:23:09.581 +09:00 [INF] Now listening on: http://localhost:5107
+2025-05-31 08:23:09.581 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-05-31 08:23:09.582 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 08:23:09.582 +09:00 [INF] Hosting environment: Development
+2025-05-31 08:23:09.582 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-05-31 08:23:09.582 +09:00 [DBG] Hosting started
+2025-05-31 08:23:12.712 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" accepted.
+2025-05-31 08:23:12.713 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" started.
+2025-05-31 08:23:12.762 +09:00 [DBG] Connection 0HNCVQ3P84KEF established using the following protocol: "Tls12"
+2025-05-31 08:23:12.794 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:23:12.832 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:23:12.832 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:23:12.833 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:23:12.842 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:23:12.843 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:23:12.844 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:23:12.845 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:23:12.846 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:23:12.859 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 05/30/2025 23:23:12. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-05-31 08:23:13.691 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-05-31 08:23:13.708 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:23:13.708 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-05-31 08:23:13.960 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:23:13.961 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-05-31 08:23:13.968 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:23:13.976 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842441939690720.OTc3ZjM5ODktMzcwOC00NzkwLWJhYWYtN2IyMjFiN2UzN2RhNzM1OWNlZmItMzU3NS00ZjRhLTk3N2EtMTZjNGYxMmFiMDQ0&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP02sCLsStfpyQcR02CpRpaROhPAMonmGrZQ4inl4LVpsnsJ3IP56cG5QuFQn3qB9jXoiKF7LVX8GmwwaOHmSr6nkmAalTAf2IA7eUaUQPxEi72rFBfMpi116trS5uvA67-fQqhFYozXu3DgxenkeW9UogIgoNIJIzkqBsz5h1eRIpbrsXYx6MLmYgoz69AsKZmZieUbb7KFRRVZNhrVKs1bFUWQLUjX3jsmhw3JRRvIfsBSN1jSHye5aGLwhKaF2uAQmlyQeRhLfb5jbj8oHGCr&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP0HINxBo2Nwu-ekugUmW3q5RSkbMNH5xwdEaO1plIFyeg-51NnPhe9r1eD81HxgX4V5j0oXRtL4HotOGS2nPR1Ttvk4BiYXzXcXUHV8ULhkHus-2y5HtU9rHrDbvrdKwt984TJRdu_WutcfRM4dK8ZyUAGvL0fdVQ8bCqr_uG8SutSQ75fCeG-4U04UzKMR-Z1AosH-8xFSpT3ie5CYOdgHkiue3VZBMp7dPeHVGnUbkvN8w9hD_TykIRKbsQthCM8=N; expires=Fri, 30 May 2025 23:38:13 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation._RW0YQVDBVjW85CEcBG8FD7YgrHWvsenVfolJn_JdLA=N; expires=Fri, 30 May 2025 23:38:13 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:23:13.977 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:23:13.979 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 1188.6547ms
+2025-05-31 08:23:17.223 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" received FIN.
+2025-05-31 08:23:17.228 +09:00 [DBG] The connection queue processing loop for 0HNCVQ3P84KEF completed.
+2025-05-31 08:23:17.232 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" is closed. The last processed stream ID was 1.
+2025-05-31 08:23:17.233 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:23:17.241 +09:00 [DBG] Connection id "0HNCVQ3P84KEF" stopped.
+2025-05-31 08:27:16.178 +09:00 [DBG] Config reload token fired. Checking for changes...
+2025-05-31 08:27:16.191 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:27:16.191 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:27:19.908 +09:00 [INF] Application is shutting down...
+2025-05-31 08:27:19.909 +09:00 [DBG] Hosting stopping
+2025-05-31 08:27:19.918 +09:00 [DBG] Hosting stopped
+2025-05-31 08:27:24.042 +09:00 [INF] AzureAd: Microsoft.Extensions.Configuration.ConfigurationSection
+2025-05-31 08:27:24.131 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-31 08:27:24.156 +09:00 [DBG] Hosting starting
+2025-05-31 08:27:24.170 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-05-31 08:27:24.177 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-05-31 08:27:24.179 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-05-31 08:27:24.181 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-05-31 08:27:24.183 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-05-31 08:27:24.186 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-05-31 08:27:24.187 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-31 08:27:24.194 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-05-31 08:27:24.194 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-05-31 08:27:24.196 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-05-31 08:27:24.196 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-05-31 08:27:24.203 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:27:24.205 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:27:24.426 +09:00 [INF] Now listening on: https://localhost:7185
+2025-05-31 08:27:24.426 +09:00 [INF] Now listening on: http://localhost:5107
+2025-05-31 08:27:24.426 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-05-31 08:27:24.426 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 08:27:24.426 +09:00 [INF] Hosting environment: Development
+2025-05-31 08:27:24.426 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-05-31 08:27:24.426 +09:00 [DBG] Hosting started
+2025-05-31 08:27:37.286 +09:00 [DBG] Connection id "0HNCVQ6839KHL" accepted.
+2025-05-31 08:27:37.289 +09:00 [DBG] Connection id "0HNCVQ6839KHL" started.
+2025-05-31 08:27:37.553 +09:00 [DBG] Connection 0HNCVQ6839KHL established using the following protocol: "Tls12"
+2025-05-31 08:27:37.973 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:27:38.084 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:27:38.368 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:27:38.370 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:27:38.379 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:27:38.381 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:27:38.382 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:27:38.385 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:27:38.386 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:27:38.397 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 05/30/2025 23:27:38. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-05-31 08:27:38.904 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-05-31 08:27:38.911 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:27:38.912 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-05-31 08:27:39.150 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:27:39.150 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-05-31 08:27:39.160 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:27:39.169 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842444591602460.NDk4MTM4MzItNmZlOC00MWYxLWIzNGItODU0YjFiZjkxYmZkZGMyMzlkNjUtNmZmNy00NTdmLTk3MDItZDA0MDg2NTM4ZjQw&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP2FQUi3XyIb2ZYnDqQi-Zna_Z4lfv1SNVNaJ0OEaAeztcnR0mRbw4TwyNtzrTAvwIjufeGn-FXUUAPJnbtsCd64BtEaoWLg24YAmqvB9ZclwfqF4g24U9hP9TlzyEC77B4U4JQQqoZ-2hx7MboxGKR-vYryDzx1ZJuZC3ojMeT4QwY2Rku7BchYYg4MEOWkfXONZ0JkCJWdD5cYbweJ0gEi6PRhnNWPZUl_Y62I6nvBu2h_tjSuGlyNyPOgSgFtRmNyYoijy6Os8enZW4GkX6c1&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP31_ZPR-r1tvHa9ZOGB6nUtPvptfQnYW9e4NH4CQcHv78g9_McD0eQ4vJ08KREwxf62qK7QNNyzCbmyMsfu5CMFVyjlbTw9caox1IqtSODZFsiIOGgSieMc4_RwKSu5mRvXnpwBe3fm01YyDGVYF26nMLRIkJIyWaJ5aHgWHa93mAFssxkHhrWuq9PykuFXW55k6CjCu4CrxoxyGr8Dt8BThmELKPdr_r_bbqQOiURq_Et4qAOg0jy5hDF4Yzq-BU8=N; expires=Fri, 30 May 2025 23:42:39 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.rXOCaLflyB0uVtEveb-nS62J3j4pFLFhX_-HZBa4NKA=N; expires=Fri, 30 May 2025 23:42:39 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:27:39.170 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:27:39.172 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 1200.1506ms
+2025-05-31 08:27:42.264 +09:00 [DBG] Connection id "0HNCVQ6839KHL" received FIN.
+2025-05-31 08:27:42.288 +09:00 [DBG] The connection queue processing loop for 0HNCVQ6839KHL completed.
+2025-05-31 08:27:42.290 +09:00 [DBG] Connection id "0HNCVQ6839KHL" is closed. The last processed stream ID was 1.
+2025-05-31 08:27:42.300 +09:00 [DBG] Connection id "0HNCVQ6839KHL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:27:42.326 +09:00 [DBG] Connection id "0HNCVQ6839KHL" stopped.
+2025-05-31 08:40:37.806 +09:00 [INF] Application is shutting down...
+2025-05-31 08:40:37.811 +09:00 [DBG] Hosting stopping
+2025-05-31 08:40:37.836 +09:00 [DBG] Hosting stopped
+2025-05-31 08:41:12.394 +09:00 [INF] AzureAd: Microsoft.Extensions.Configuration.ConfigurationSection
+2025-05-31 08:41:12.503 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-05-31 08:41:12.535 +09:00 [DBG] Hosting starting
+2025-05-31 08:41:12.542 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-05-31 08:41:12.547 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-05-31 08:41:12.549 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-05-31 08:41:12.551 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-05-31 08:41:12.553 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-05-31 08:41:12.556 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-05-31 08:41:12.557 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-05-31 08:41:12.560 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-05-31 08:41:12.560 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-05-31 08:41:12.561 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-05-31 08:41:12.562 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-05-31 08:41:12.570 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-05-31 08:41:12.571 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-05-31 08:41:12.814 +09:00 [INF] Now listening on: https://localhost:7185
+2025-05-31 08:41:12.815 +09:00 [INF] Now listening on: http://localhost:5107
+2025-05-31 08:41:12.815 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-05-31 08:41:12.815 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 08:41:12.815 +09:00 [INF] Hosting environment: Development
+2025-05-31 08:41:12.815 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-05-31 08:41:12.815 +09:00 [DBG] Hosting started
+2025-05-31 08:41:30.197 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" accepted.
+2025-05-31 08:41:30.200 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" started.
+2025-05-31 08:41:30.367 +09:00 [DBG] Connection 0HNCVQE0AIFUP established using the following protocol: "Tls12"
+2025-05-31 08:41:30.594 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-05-31 08:41:30.904 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-05-31 08:41:30.905 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-05-31 08:41:30.905 +09:00 [DBG] The request path / does not match a supported file type
+2025-05-31 08:41:30.921 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-05-31 08:41:30.927 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)' with route pattern '{controller=ApprovalRequest}/{action=Index}/{id?}' is valid for the request path '/'
+2025-05-31 08:41:30.942 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalRequestController.Index (ApprovalWeb)'
+2025-05-31 08:41:30.948 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-05-31 08:41:30.950 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-31 08:41:30.988 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 05/30/2025 23:41:30. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-05-31 08:41:31.318 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-05-31 08:41:31.326 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:41:31.326 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-05-31 08:41:31.652 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-05-31 08:41:31.653 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-05-31 08:41:31.659 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-05-31 08:41:31.665 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638842452916591210.ZmEwMjIxYTYtZjUxMS00NzBjLWFjYTUtNTIyODdmZDY3OTM2NTBlN2ExMmMtZmU4MS00OTkyLWJhYmMtNDBhYzI5Y2YyZWRm&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP08IGO7Mi5DW84uV_NG4eY8acr105kVfPGJolsB7RXEBMe3UrAMUSq5OWp4LoxNuVHFW2L51FTBNVF290fmPYvHstZwI1n1kj8GngEfNqjbvpzyoBGqG3gS8Y3h4VFLBcj4Ab4X1RFZD8XWaQTVpQ1uJaPXMGrrkyEQ-lpAejb1pqDieNM0LHA3FkwRCVeVXr9AtrXClBnPI30ctCn1IgAuznn2x6uE3Jj0h9gqNL04XWeOjqsfg_f_KNjYA9bocUjmepek06oj9_1hWpFqQOE3&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP13VZs22m8fAZE7iWyT1hkU0KKR1IQ8rLxVShB6khnPAUql8Zt2NnKxzVYDNEw__W9OC92dwsZx9IcZjIk4e9BFshlndiBhdtFcM7Xv6K9iklIkrirDmWrFSDSZHMkteuDAZYRphgRn5C_iS2-SbUyZysJp4Rrz0fNcLCg1XbYLmFE1aSWfP_fncWalUUzxf5AKlRQYUkZ4jPGRvB4r5jT7pSFRu3qGzqkli3NgT2UvWewv_RPSPeywsYL59D08YR0=N; expires=Fri, 30 May 2025 23:56:31 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.dioRl7Aw8q4ZMDZzhsYcY4omLc1aNSZWBQ_Hv88JzUo=N; expires=Fri, 30 May 2025 23:56:31 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-05-31 08:41:31.665 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-05-31 08:41:31.667 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 1074.4884ms
+2025-05-31 08:41:32.868 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" received FIN.
+2025-05-31 08:41:32.872 +09:00 [DBG] The connection queue processing loop for 0HNCVQE0AIFUP completed.
+2025-05-31 08:41:32.875 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" is closed. The last processed stream ID was 1.
+2025-05-31 08:41:32.876 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-05-31 08:41:32.885 +09:00 [DBG] Connection id "0HNCVQE0AIFUP" stopped.
+2025-05-31 08:43:44.965 +09:00 [INF] Application is shutting down...
+2025-05-31 08:43:44.966 +09:00 [DBG] Hosting stopping
+2025-05-31 08:43:44.973 +09:00 [DBG] Hosting stopped

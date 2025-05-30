@@ -11,4 +11,5 @@ public interface IApprovalRequestRepository<T> : IRepository<T> where T : class
     Task<T?> GetRequestByIdAsync(Guid requestId);
     Task ApproveRequestAsync(Guid requestId);
     Task RejectRequestAsync(Guid requestId);
+    Task<T> CreateApprovalRequestAsync(T request);
 }

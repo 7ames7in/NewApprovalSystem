@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApprovalWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c69a49ccfe3965b8d1c1d5a3f3440b4e90333769")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57776e87ea995e56155ba71735256e82eced027d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApprovalWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApprovalWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

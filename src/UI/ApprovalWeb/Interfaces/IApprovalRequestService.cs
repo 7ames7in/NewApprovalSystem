@@ -11,4 +11,5 @@ public interface IApprovalRequestService
     Task<ApprovalRequestViewModel?> GetRequestByIdAsync(string requestId);
     Task ApproveRequestAsync(string requestId);
     Task RejectRequestAsync(string requestId);
+    Task<ResultViewModel> CreateApprovalRequestAsync(ApprovalRequestViewModel model);
 }

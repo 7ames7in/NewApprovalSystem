@@ -1,8 +1,27 @@
 using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
 using UserService.Domain.Entities;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.Identity.Web;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/approval_web_log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog();
+// Serilog 설정 완료
+// Add services to the container.
+
+Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd")}");
+
+builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
+    .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
+
 
 builder.Services.AddControllersWithViews();
 var useMock = builder.Configuration.GetValue<bool>("UseMockService");
@@ -48,3 +67,22 @@ app.MapControllerRoute(
     pattern: "{controller=ApprovalRequest}/{action=Index}/{id?}");
 
 app.Run();
+
+
+// builder.Services.AddAuthentication(options =>
+// {
+//     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//     options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+// })
+// .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
+//     .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+//     {
+//         options.Authority = builder.Configuration["AzureAd:Instance"] + builder.Configuration["AzureAd:TenantId"];
+//         options.ClientId = builder.Configuration["AzureAd:ClientId"];
+//         options.ResponseType = "code";
+//         options.SaveTokens = true;
+//         options.GetClaimsFromUserInfoEndpoint = true;
+//         options.Scope.Add("openid");
+//         options.Scope.Add("profile");
+//         options.Scope.Add("email");
+//     });

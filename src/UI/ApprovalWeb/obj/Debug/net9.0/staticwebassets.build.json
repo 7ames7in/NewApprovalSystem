@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BK4bKing0S5oSM92R981nJ5EU3dSMic+fwy51wKPltI=",
+  "Hash": "UU2ADBLPyfLXB7duL+ElUwlvjmEgyG5uqLLvQLhG0So=",
   "Source": "ApprovalWeb",
   "BasePath": "_content/ApprovalWeb",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "js/utility#[.{fingerprint=l8x7a8m5la}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/js/utility.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "9ciqi7duq5",
+      "Integrity": "Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/js/utility.js"
     },
     {
       "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/2irttrz1yn-d7shbmvgxk.gz",
@@ -2535,6 +2556,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/js/utility.js",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "js/utility#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l8x7a8m5la",
+      "Integrity": "Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/utility.js"
     },
     {
       "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/css/bootstrap-grid.css",
@@ -6679,7 +6721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6732,7 +6774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6769,7 +6811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6816,7 +6858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6877,7 +6919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6922,7 +6964,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6977,7 +7019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7038,7 +7080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7083,7 +7125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7138,7 +7180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7191,7 +7233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7228,7 +7270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:46:08 GMT"
+          "Value": "Fri, 30 May 2025 14:10:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8141,6 +8183,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.js",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004926108374"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.js",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/js/utility.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.js.gz",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.l8x7a8m5la.js",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004926108374"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8x7a8m5la"
+        },
+        {
+          "Name": "label",
+          "Value": "js/utility.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.l8x7a8m5la.js",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/js/utility.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8x7a8m5la"
+        },
+        {
+          "Name": "label",
+          "Value": "js/utility.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ba668l1VuGkwxk4ySdJbJB/4iQI9MTrVKsT7DqW2dAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/utility.l8x7a8m5la.js.gz",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:31:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8x7a8m5la"
+        },
+        {
+          "Name": "label",
+          "Value": "js/utility.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wf3XkEmaU80g4MHKqm5GHTsR95ofJhPrCUtSu6FknEI="
         }
       ]
     },

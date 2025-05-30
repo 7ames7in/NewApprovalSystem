@@ -28,6 +28,7 @@ namespace UserService.Infrastructure.Seed
                     EmployeeNumber = "1001",
                     Name = "Kim Minsoo",
                     Department = "IT",
+                    Position = "Software Engineer",
                     Email = "minsoo.kim@example.com",
                     Role = "Admin",
                     CreatedAt = DateTime.UtcNow.AddDays(-5)
@@ -37,6 +38,7 @@ namespace UserService.Infrastructure.Seed
                     EmployeeNumber = "1002",
                     Name = "Lee Jiyoung",
                     Department = "HR",
+                    Position = "HR Manager",
                     Email = "jiyoung.lee@example.com",
                     Role = "Manager",
                     CreatedAt = DateTime.UtcNow.AddDays(-4)
@@ -46,6 +48,7 @@ namespace UserService.Infrastructure.Seed
                     EmployeeNumber = "1003",
                     Name = "Park Jihye",
                     Department = "Finance",
+                    Position = "Accountant",
                     Email = "jihye.park@example.com",
                     Role = "Employee",
                     CreatedAt = DateTime.UtcNow.AddDays(-3)

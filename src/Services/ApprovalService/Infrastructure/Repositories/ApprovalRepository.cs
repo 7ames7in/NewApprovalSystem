@@ -11,6 +11,13 @@ public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : cla
 {
     private readonly ApprovalDbContext _context;
 
+    public async Task<T> CreateApprovalRequestAsync(T entity)
+    {
+        await _context.Set<T>().AddAsync(entity);
+        await _context.SaveChangesAsync();
+        return entity;
+    }
+
     public ApprovalRepository(ApprovalDbContext context)
     {
         _context = context;

@@ -919,45 +919,6 @@
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
-      "ApprovalService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        }
-      },
-      "AttachmentService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        }
-      },
-      "AttachmentService.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AttachmentService.Domain": "1.0.0",
-          "Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
-        },
-        "compile": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        }
-      },
       "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -971,26 +932,11 @@
           "bin/placeholder/Infrastructure.dll": {}
         }
       },
-      "NotificationService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/NotificationService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/NotificationService.Domain.dll": {}
-        }
-      },
       "NotificationService.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "ApprovalService.Domain": "1.0.0",
-          "AttachmentService.Infrastructure": "1.0.0",
-          "Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
-          "NotificationService.Domain": "1.0.0"
+          "Microsoft.EntityFrameworkCore": "9.0.5"
         },
         "compile": {
           "bin/placeholder/NotificationService.Infrastructure.dll": {}
@@ -2433,30 +2379,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ApprovalService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../../ApprovalService/Domain/ApprovalService.Domain.csproj",
-      "msbuildProject": "../../ApprovalService/Domain/ApprovalService.Domain.csproj"
-    },
-    "AttachmentService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../../AttachmentService/Domain/AttachmentService.Domain.csproj",
-      "msbuildProject": "../../AttachmentService/Domain/AttachmentService.Domain.csproj"
-    },
-    "AttachmentService.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj",
-      "msbuildProject": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
-    },
     "Infrastructure/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
       "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
-    },
-    "NotificationService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/NotificationService.Domain.csproj",
-      "msbuildProject": "../Domain/NotificationService.Domain.csproj"
     },
     "NotificationService.Infrastructure/1.0.0": {
       "type": "project",
