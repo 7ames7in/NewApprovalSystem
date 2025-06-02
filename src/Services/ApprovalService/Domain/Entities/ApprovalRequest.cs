@@ -19,4 +19,6 @@ public class ApprovalRequest
     public string? ApproverComment { get; set; }
     public string? ApprovalType { get; set; }
     public string? MisKey { get; set; }
+
+    public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>();
 }

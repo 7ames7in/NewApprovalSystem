@@ -15,6 +15,36 @@ public class UserApiService<T> : IUserService<T> where T : User, new()
     {
         _http = factory.CreateClient("UserApi");
     }
+
+    // public async Task<bool> ValidateLoginAsync(string emailid)
+    // {
+    //     var response = await UserLoginAndInformationAsync(emailid);
+    //     if (!response.IsSuccessStatusCode)
+    //     {
+    //         throw new InvalidOperationException($"Login validation failed for email ID {emailid}.");
+    //     }
+    //     return await response.Content.ReadFromJsonAsync<T>() ?? new T();
+    // }
+
+    public async Task<T> UserLoginAndInformationAsync(string emailid)
+    {
+        var response = await _http.PostAsJsonAsync("api/userservice/login", new { EmailId = emailid, Password = "1234" });
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new InvalidOperationException($"Login validation failed for email ID {emailid}.");
+        }
+        return await response.Content.ReadFromJsonAsync<T>() ?? new T();
+    }
+
+    public async Task<T?> GetUserByUsernameAsync(string username)
+    {
+        return await _http.GetFromJsonAsync<T>($"api/users/username/{Uri.EscapeDataString(username)}");
+    }
+
+    public async Task<IEnumerable<T>> GetUsersByRoleAsync(string role)
+    {
+        return await _http.GetFromJsonAsync<IEnumerable<T>>($"api/users/role/{Uri.EscapeDataString(role)}") ?? new List<T>();
+    }
     public async Task<IEnumerable<T>> GetAllUsersAsync()
     {
         return await _http.GetFromJsonAsync<IEnumerable<T>>("api/users") ?? new List<T>();

@@ -1,4 +1,14 @@
 @model ApprovalRequestViewModel
+@using System.Security.Claims
+@using System.Text.Json
+
+@{
+    var options = new JsonSerializerOptions
+    {
+        PropertyNamingPolicy = null // <- 이것이 핵심!
+    };
+    var stepsData = JsonSerializer.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>(), options);
+}
 
 <h2>Submit Approval Request</h2>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -9,8 +19,10 @@
         const $results = $("#autocompleteResults");
 
         // Load existing steps into a JavaScript variable
-        const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
-        console.log("Existing Steps Data:", stepsData);
+        @* const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+        console.log("Existing Steps Data:", stepsData); *@
+
+        const stepsData = @Html.Raw(stepsData);
         
         // Call the function to display steps
         displaySteps(stepsData);
@@ -45,10 +57,10 @@
                 }
 
                 const newStep = {
-                    approverName: approverName,
-                    approverEmployeeNumber: approverEmployeeNumber,
-                    position: position,
-                    stepType: stepType
+                    ApproverName: approverName,
+                    ApproverEmployeeNumber: approverEmployeeNumber,
+                    Position: position,
+                    StepType: stepType
                 };
 
                 // Add the new step to stepsData
@@ -79,8 +91,8 @@
         const $results = $("#autocompleteResults");
         $results.empty();
 
-        if (data.result.length > 0) {
-            data.result.forEach(user => {
+        if (data.length > 0) { //data.result.length
+            data.forEach(user => {
             const $item = $("<li class='list-group-item'></li>")
                 .html(`<strong>${user.name} (${user.employeeNumber})</strong> - <em>${user.department}</em> / <span>${user.position}</span>`)
                 .data("id", user.employeeNumber)
@@ -97,6 +109,7 @@
 
     // Display existing steps in the list
     function displaySteps(stepsData) {
+        document.getElementById("StepsJson").value = JSON.stringify(stepsData);
         const $stepsList = $(".list-group");
         $stepsList.empty(); // Clear existing steps
 
@@ -108,7 +121,7 @@
 
             sortedSteps.forEach((step, index) => {
                 const $stepItem = $("<li class='list-group-item'></li>")
-                .html(`<strong>Step ${index + 1}:</strong> <span>${step.approverName}</span> (<span>${step.approverEmployeeNumber}</span>) / <span>${step.position}</span> / <em>${step.stepType}</em>`);
+                .html(`<strong>Step ${index + 1}:</strong> <span>${step.ApproverName}</span> (<span>${step.ApproverEmployeeNumber}</span>) / <span>${step.Position}</span> / <em>${step.StepType}</em>`);
                 $stepsList.append($stepItem);
             });
         } else {
@@ -206,13 +219,14 @@
 
 <!-- Form -->
 <form asp-action="Create" method="post">
-    <div class="form-group mb-3">
-        <label>Request ID</label>
-        <input asp-for="ApprovalId" class="form-control" />
+    
+    <div class="form-group mb-3" style="display: none;">
+        <label>ApplicationEmployeeNumber</label>
+        <input type="hidden" asp-for="ApplicantEmployeeNumber" class="form-control" readonly value="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value" />
     </div>
     <div class="form-group mb-3">
         <label>ApplicantName</label>
-        <input asp-for="ApplicantName" class="form-control" />
+        <input asp-for="ApplicantName" class="form-control" readonly value="@User.Identity?.Name" />
     </div>
     <div class="form-group mb-3">
         <label>Title</label>
@@ -231,8 +245,8 @@
 
     <script>
         function prepareFormData() {
-            const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
-            document.getElementById("StepsJson").value = JSON.stringify(stepsData);
+            //const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+            //document.getElementById("StepsJson").value = JSON.stringify(stepsData);
         }
     </script>
 </form>

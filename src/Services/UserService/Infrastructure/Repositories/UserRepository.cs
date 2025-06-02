@@ -9,6 +9,12 @@ public class UserRepository<T> : IUserRepository<T> where T : class
 {
     private readonly UserDbContext _context;
 
+    public async Task<T?> ValidateLoginAndInfomationAsync(string email)
+    {
+        return await _context.Set<T>().FirstOrDefaultAsync(e =>
+            EF.Property<string>(e, "Email") == email);
+    }
+
     public UserRepository(UserDbContext context)
     {
         _context = context;

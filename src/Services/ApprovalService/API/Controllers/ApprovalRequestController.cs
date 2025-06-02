@@ -45,7 +45,7 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{requestid}")]
         public async Task<IActionResult> GetRequestById(Guid requestid)
         {
             var request = await _approvalRequestRepository.GetRequestByIdAsync(requestid);
@@ -61,16 +61,23 @@ namespace ApprovalService.API.Controllers
         {
             _logger.LogInformation("Creating a new approval request.");
             _logger.LogDebug("Approval Request Details: {@ApprovalRequest}", approvalRequest);
-            _logger.LogInformation("Approval Request Created at: {Time}", DateTime.UtcNow);
-            
+
             if (approvalRequest == null)
-            {
                 return BadRequest("Approval request cannot be null.");
+
+            if (approvalRequest.Steps == null || !approvalRequest.Steps.Any())
+                return BadRequest("At least one approval step must be provided.");
+
+            // 🔽 관계 설정
+            foreach (var step in approvalRequest.Steps)
+            {
+                step.ApprovalRequest = approvalRequest;
+                step.ApprovalId = approvalRequest.ApprovalId; // 명시적 지정도 병행 추천
             }
 
             var createdRequest = await _approvalRequestRepository.CreateApprovalRequestAsync(approvalRequest);
+
             return CreatedAtAction(nameof(GetRequestById), new { id = createdRequest.ApprovalId }, createdRequest);
-        }
-        
+        }        
     }
 }

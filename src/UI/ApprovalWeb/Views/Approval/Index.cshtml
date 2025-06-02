@@ -27,9 +27,9 @@
                 {
                     <tr>
                         <td class="text-start">
-                            <a href="/Approval/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
+                            @* <a href="/Approval/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
                                 @item.RequestTitle
-                            </a>
+                            </a> *@
                         </td>
                         <td>@item.ApplicantName</td>
                         <td>@item.ApplicantDepartment</td>
@@ -46,7 +46,7 @@
                         <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
                         <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
                         <td>
-                            <a href="/Approval/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info">View</a>
+                            @* <a href="/Approval/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info">View</a> *@
                         </td>
                     </tr>
                 }

@@ -626,39 +626,6 @@
           }
         }
       },
-      "ApprovalService.Domain/1.0.0": {
-        "dependencies": {
-          "Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "ApprovalService.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "AttachmentService.Domain/1.0.0": {
-        "runtime": {
-          "AttachmentService.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "AttachmentService.Infrastructure/1.0.0": {
-        "dependencies": {
-          "AttachmentService.Domain": "1.0.0",
-          "Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
-        },
-        "runtime": {
-          "AttachmentService.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
@@ -680,11 +647,8 @@
       },
       "NotificationService.Infrastructure/1.0.0": {
         "dependencies": {
-          "ApprovalService.Domain": "1.0.0",
-          "AttachmentService.Infrastructure": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
           "NotificationService.Domain": "1.0.0"
         },
         "runtime": {
@@ -1051,21 +1015,6 @@
       "sha512": "sha512-rnP61ZfloTgPQPe7ecr36loNiGX3g1PocxlKHdY/FUpDSsExKkTxpMAlB4X35wNEPr1X7mkYZuQvW3Lhxmu7KA==",
       "path": "system.text.json/9.0.5",
       "hashPath": "system.text.json.9.0.5.nupkg.sha512"
-    },
-    "ApprovalService.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "AttachmentService.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "AttachmentService.Infrastructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Infrastructure/1.0.0": {
       "type": "project",

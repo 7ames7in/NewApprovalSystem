@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApprovalService.Infrastructure.Repositories;
 
-public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : class
+public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : Approval
 {
     private readonly ApprovalDbContext _context;
 
@@ -26,9 +26,9 @@ public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : cla
     public async Task<IEnumerable<T>> GetMyRequestsAsync(string userId)
     {
         // Implement logic to fetch requests for the given userId
-        return await _context.Set<T>()
-            .Where(request => EF.Property<string>(request, "ApplicantEmployeeNumber") == userId) // Assuming T has a UserId property
-            .ToListAsync();
+            return await _context.Set<T>()
+                .Where(request => EF.Property<string>(request, "ApplicantEmployeeNumber") == userId) // Assuming T has a UserId property
+                .ToListAsync();
     }
 
     public async Task<IEnumerable<T>> GetMyPendingRequestsAsync(string userId)
@@ -52,7 +52,9 @@ public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : cla
     public async Task<T?> GetRequestByIdAsync(Guid id)
     {
         // Implement logic to fetch a request by its ID
-        return await _context.Set<T>().FindAsync(id);
+        var entity = await _context.Set<T>().FindAsync(id);
+        
+        return entity;
     }
 
     public async Task ApproveRequestAsync(Guid id)

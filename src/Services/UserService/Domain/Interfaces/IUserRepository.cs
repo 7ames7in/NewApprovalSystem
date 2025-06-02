@@ -12,4 +12,6 @@ public interface IUserRepository<T> : IRepository<T> where T : class
     Task AddUserAsync(T user);
     Task UpdateUserAsync(T user);
     Task DeleteUserAsync(Guid userId);
+    // LoginAttempt
+    Task<T?> ValidateLoginAndInfomationAsync(string emailId);    
 }

@@ -6,6 +6,7 @@ using ApprovalService.Domain.Entities;
 using ApprovalService.Infrastructure.Repositories;
 using ApprovalService.Domain.Interfaces;
 using Serilog;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerGen(); // Add Swagger generation
@@ -20,16 +21,23 @@ builder.Host.UseSerilog(); // Serilog 사용
 // Serilog 설정 완료
 // Serilog 미들웨어 추가
 
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
+
 // SQLite 연결 등록
 builder.Services.AddDbContext<ApprovalDbContext>(options =>
     options.UseSqlite("Data Source=Data/ApprovalService.db"));
 
-builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
+builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 builder.Services.AddScoped<IRepository<Approval>, ApprovalRepository<Approval>>();
 builder.Services.AddScoped<IRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
 builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 
-builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
+builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 // builder.Services.AddScoped<IApprovalTemplateRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
 // builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 

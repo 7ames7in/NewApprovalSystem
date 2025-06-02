@@ -9,4 +9,5 @@ public class User
     public string Email { get; set; }
     public string Role { get; set; }
     public DateTime CreatedAt { get; set; }
+    //public bool IsValidLogin { get; set; } = false;
 }

@@ -10,4 +10,9 @@ public interface IUserService<T> where T : class
     Task<T> CreateUserAsync(T user);
     Task<bool> UpdateUserAsync(int id, T updatedUser);
     Task<bool> DeleteUserAsync(int id);
+    //LoginAttempt
+    //Task<bool> ValidateLoginAsync(string emailid);
+    Task<T> UserLoginAndInformationAsync(string emailid);
+    Task<T?> GetUserByUsernameAsync(string username);
+    Task<IEnumerable<T>> GetUsersByRoleAsync(string role);
 }

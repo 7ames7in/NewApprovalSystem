@@ -1,7 +1,9 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata;
 using UserService.Domain.Entities;
 using UserService.Domain.Interfaces;
+using UserService.API.Dtos;
 
 namespace UserService.API.Controllers
 {
@@ -16,6 +18,27 @@ namespace UserService.API.Controllers
         {
             _repository = repository;
             this._userRoleRepository = userRoleRepository;
+        }
+
+        // Example: Login Attempt
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto user) // Marked method as async and changed return type
+        {
+            var userinfo = await this._repository.ValidateLoginAndInfomationAsync(user.EmailId);
+
+            // Replace with actual login logic
+            if (userinfo != null && userinfo.Email == user.EmailId) // Simulated password check
+            {
+                // Simulate successful login
+                return Ok(new { 
+                    Message = "Login successful",
+                    EmployeeNumber = userinfo?.EmployeeNumber,
+                    Name = userinfo?.Name,
+                    Email = userinfo?.Email
+                });
+            }
+            // Simulate failed login
+            return Unauthorized(new { Message = "Invalid login attempt" });
         }
 
         // Example: Get all users
@@ -33,7 +56,7 @@ namespace UserService.API.Controllers
         }
 
         [HttpGet("search")]
-        public IActionResult SearchUsers([FromQuery] string query)
+        public async Task<IActionResult> SearchUsers([FromQuery] string query)
         {
             // Replace with actual logic to search users
             if (string.IsNullOrWhiteSpace(query))
@@ -41,8 +64,7 @@ namespace UserService.API.Controllers
                 return new JsonResult(new List<object>());
             }
 
-            var list = this._repository.SearchUsersAsync(query, 1, 10);
-
+            var list = await this._repository.SearchUsersAsync(query, 1, 10);
 
             return new JsonResult(list);
         }

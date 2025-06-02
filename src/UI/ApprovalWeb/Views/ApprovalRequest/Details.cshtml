@@ -1,4 +1,33 @@
+@using System.Security.Claims
 @model ApprovalRequestViewModel
+@using System.Text.Json
+
+@{
+    var options = new JsonSerializerOptions
+    {
+        PropertyNamingPolicy = null // <- 이것이 핵심!
+    };
+    var stepsData = JsonSerializer.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>(), options);
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/utility.js"></script>
+<script>
+    $(document).ready(function () {
+        const $input = $("#userSearchInput");
+        const $results = $("#autocompleteResults");
+
+        // Load existing steps into a JavaScript variable
+        @* const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+        console.log("Existing Steps Data:", stepsData); *@
+
+        const stepsData = @Html.Raw(stepsData);
+        
+        // Call the function to display steps
+        //displaySteps(stepsData);
+    }
+
+</script>
 
 <div class="card shadow-sm">
     <div class="card-header bg-primary text-white">
@@ -49,10 +78,41 @@
                 </tr>
             </tbody>
         </table>
+
+        <div class="section-box">
+
+        <!-- Approval Steps -->
+        <div class="mb-4">
+            <h4>Approval Steps</h4>
+            <ul class="list-group">
+            
+                @if (Model.Steps != null && Model.Steps.Any())
+                {
+                    var stepCount = 0;
+                    foreach (var step in Model.Steps)
+                    {
+                        stepCount++;
+                        <li class="list-group-item">
+                            <strong>Step @stepCount:</strong> 
+                            <span>@step.ApproverName</span> 
+                            (<span>@step.ApproverEmployeeNumber</span>) / 
+                            <em>@step.StepType</em>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p>No steps available.</p>
+                }
+
+            </ul>
+        </div>
+        </div>
+
     </div>
     <div class="card-footer">
         <h5>Actions</h5>
-        @if (Model.Status == "Pending")
+        @if (Model.Status == "Pending" && Model.ApplicantEmployeeNumber != @User.FindFirst(ClaimTypes.NameIdentifier)?.Value)
         {
             <form asp-action="Approve" method="post" class="d-inline">
                 <input type="hidden" name="ApprovalId" value="@Model.ApprovalId" />
@@ -69,3 +129,29 @@
         }
     </div>
 </div>
+<style>
+    .section-box {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+    #autocompleteResults {
+        top: 40px;
+        max-height: 250px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+    }
+
+    #autocompleteResults .list-group-item {
+        cursor: pointer;
+    }
+
+    #autocompleteResults .list-group-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>

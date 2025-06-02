@@ -16,6 +16,7 @@ public class ApprovalRequestApiService : IApprovalRequestService
     }
     public async Task<ResultViewModel> CreateApprovalRequestAsync(ApprovalRequestViewModel model)
     {
+        model.ApprovalId = Guid.NewGuid(); // Ensure RequestId is set
         var response = await _http.PostAsJsonAsync("api/approvalrequest/create", model);
         if (!response.IsSuccessStatusCode)
         {

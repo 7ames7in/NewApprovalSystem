@@ -50,10 +50,18 @@ namespace ApprovalService.Infrastructure.Persistence
                 nav.Property(p => p.Department).HasColumnName("ApproverDepartment");
             });
 
+            // 🔐 Key 설정
             modelBuilder.Entity<Approval>().HasKey(a => a.Id);
             modelBuilder.Entity<ApprovalRequest>().HasKey(r => r.ApprovalId);
             modelBuilder.Entity<ApprovalStep>().HasKey(s => s.StepId);
             modelBuilder.Entity<ApprovalTemplate>().HasKey(t => t.TemplateId);
+
+            // ✅ 관계 명시: ApprovalRequest 1:N ApprovalSteps
+            modelBuilder.Entity<ApprovalRequest>()
+                .HasMany(r => r.Steps)
+                .WithOne(s => s.ApprovalRequest)          // ApprovalStep 내 Navigation Property 필요
+                .HasForeignKey(s => s.ApprovalId)
+                .OnDelete(DeleteBehavior.Cascade);        // ApprovalRequest 삭제 시 Steps도 삭제
         }
     }
 }

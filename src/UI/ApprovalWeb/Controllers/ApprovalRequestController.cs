@@ -18,7 +18,7 @@ public class ApprovalRequestController : Controller
 
     public async Task<IActionResult> Index()
     {
-         var user = HttpContext.User;
+        var user = HttpContext.User;
 
         // 1. 사용자 ID (보통은 Claim의 NameIdentifier)
         var userId = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "EC20505";
@@ -33,7 +33,7 @@ public class ApprovalRequestController : Controller
         ViewBag.UserName = userName;
         ViewBag.Email = email;
 
-        
+
         //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         //var userId = "EC20505";
         var requests = await _apiService.GetMyRequestsAsync(userId);
@@ -46,6 +46,18 @@ public class ApprovalRequestController : Controller
         if (!ModelState.IsValid)
         {
             return View(model);
+        }
+
+        if (!string.IsNullOrEmpty(model.StepsJson))
+        {
+            var steps = System.Text.Json.JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(model.StepsJson);
+            if (steps != null)
+            {
+                foreach (var step in steps)
+                {
+                    model.Steps.Add(step);
+                }
+            }
         }
 
         var result = await _apiService.CreateApprovalRequestAsync(model);
@@ -62,6 +74,20 @@ public class ApprovalRequestController : Controller
 
     public IActionResult Create()
     {
+        var model = new ApprovalRequestViewModel();
+
+        return View(model);
+    }
+
+    public async Task<IActionResult> Details(string id)
+    {
+        var model = await _apiService.GetRequestByIdAsync(id);
+        return View(model);
+    }
+    
+    public async Task<IActionResult> Modify(string id)
+    {
+        //var model = await _apiService.GetApprovalRequestByIdAsync(id);
         var model = new ApprovalRequestViewModel();
 
         List<ApprovalStepViewModel> list = new() {
@@ -117,8 +143,10 @@ public class ApprovalRequestController : Controller
         // Example: Adding a default step to the list
         foreach (var step in list)
         {
-            model.Steps.Add(step);
+            //model.Steps.Add(step);
         }
+
+        await Task.Delay(1000); // Simulate async delay
 
         return View(model);
     }

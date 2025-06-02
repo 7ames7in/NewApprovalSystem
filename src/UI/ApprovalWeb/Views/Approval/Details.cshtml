@@ -7,10 +7,10 @@
     <div class="card-body">
         <table class="table table-bordered table-striped">
             <tbody>
-                <tr>
+                @* <tr>
                     <th style="width:200px">Approval ID</th>
                     <td>@Model.ApprovalId</td>
-                </tr>
+                </tr> *@
                 <tr>
                     <th>Title</th>
                     <td>@Model.RequestTitle</td>
@@ -54,14 +54,14 @@
         <h5>Actions</h5>
         @if (Model.Status == "Pending")
         {
-            <form asp-action="Approve" method="post" class="d-inline">
+            @* <form asp-action="Approve" method="post" class="d-inline">
                 <input type="hidden" name="ApprovalId" value="@Model.ApprovalId" />
                 <button type="submit" class="btn btn-success">Approve</button>
             </form>
             <form asp-action="Reject" method="post" class="d-inline ms-2">
                 <input type="hidden" name="ApprovalId" value="@Model.ApprovalId" />
                 <button type="submit" class="btn btn-danger">Reject</button>
-            </form>
+            </form> *@
         }
         else
         {
