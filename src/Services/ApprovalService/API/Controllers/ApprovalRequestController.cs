@@ -45,17 +45,17 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
-        [HttpGet("{requestid}")]
-        public async Task<IActionResult> GetRequestById(Guid requestid)
+        [HttpGet("{approvalId}")]
+        public async Task<IActionResult> GetRequestById(Guid approvalId)
         {
-            var request = await _approvalRequestRepository.GetRequestByIdAsync(requestid);
+            var request = await _approvalRequestRepository.GetRequestByIdAsync(approvalId);
             if (request == null)
             {
                 return NotFound();
             }
             return Ok(request);
         }
-        
+
         [HttpPost("create")]
         public async Task<IActionResult> CreateApprovalRequest([FromBody] ApprovalRequest approvalRequest)
         {
@@ -77,7 +77,10 @@ namespace ApprovalService.API.Controllers
 
             var createdRequest = await _approvalRequestRepository.CreateApprovalRequestAsync(approvalRequest);
 
-            return CreatedAtAction(nameof(GetRequestById), new { id = createdRequest.ApprovalId }, createdRequest);
+            _logger.LogInformation("Approval request created successfully with ID: {ApprovalId}", createdRequest.ApprovalId);
+            //_logger.LogDebug("Created Approval Request Details: {@CreatedRequest}", createdRequest);
+            //return Ok(createdRequest); // Alternatively, you can return the created request directly
+            return CreatedAtAction(nameof(GetRequestById), new { approvalId = createdRequest.ApprovalId }, createdRequest);
         }        
     }
 }

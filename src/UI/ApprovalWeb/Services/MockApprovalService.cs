@@ -7,6 +7,9 @@ public class MockApprovalService : IApprovalService
     public Task<List<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
         => Task.FromResult(MockApprovalData.Approvals);
 
+    public Task<List<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string userId)
+        => Task.FromResult(MockApprovalData.Approvals);
+
     public Task<Guid> SubmitApprovalAsync(ApprovalRequestViewModel model)
     {
         MockApprovalData.Add(model);

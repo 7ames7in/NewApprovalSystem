@@ -34,7 +34,7 @@ namespace ApprovalService.Infrastructure.Persistence
     {
         public ApprovalDbContext(DbContextOptions<ApprovalDbContext> options) : base(options) { }
 
-        public DbSet<Approval> Approvals { get; set; }
+        //public DbSet<Approval> Approvals { get; set; }
         public DbSet<ApprovalRequest> ApprovalRequests { get; set; }
         public DbSet<ApprovalStep> ApprovalSteps { get; set; }
         public DbSet<ApprovalTemplate> ApprovalTemplates { get; set; }
@@ -42,16 +42,16 @@ namespace ApprovalService.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // ValueObject: Approver 설정
-            modelBuilder.Entity<Approval>().OwnsOne(a => a.Approver, nav =>
-            {
-                nav.Property(p => p.EmployeeNumber).HasColumnName("ApproverEmployeeNumber").IsRequired();
-                nav.Property(p => p.Name).HasColumnName("ApproverName");
-                nav.Property(p => p.Position).HasColumnName("ApproverPosition");
-                nav.Property(p => p.Department).HasColumnName("ApproverDepartment");
-            });
+            // modelBuilder.Entity<Approval>().OwnsOne(a => a.Approver, nav =>
+            // {
+            //     nav.Property(p => p.EmployeeNumber).HasColumnName("ApproverEmployeeNumber").IsRequired();
+            //     nav.Property(p => p.Name).HasColumnName("ApproverName");
+            //     nav.Property(p => p.Position).HasColumnName("ApproverPosition");
+            //     nav.Property(p => p.Department).HasColumnName("ApproverDepartment");
+            // });
 
             // 🔐 Key 설정
-            modelBuilder.Entity<Approval>().HasKey(a => a.Id);
+            //modelBuilder.Entity<Approval>().HasKey(a => a.Id);
             modelBuilder.Entity<ApprovalRequest>().HasKey(r => r.ApprovalId);
             modelBuilder.Entity<ApprovalStep>().HasKey(s => s.StepId);
             modelBuilder.Entity<ApprovalTemplate>().HasKey(t => t.TemplateId);

@@ -4,18 +4,19 @@ using ApprovalService.Domain.Interfaces;
 using ApprovalService.Infrastructure.Persistence;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using ApprovalService.Domain.Enums;
 
 namespace ApprovalService.Infrastructure.Repositories;
 
-public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : Approval
+public class ApprovalRepository<T> : IApprovalRepository<T> where T : ApprovalRequest
 {
     private readonly ApprovalDbContext _context;
 
-    public async Task<T> CreateApprovalRequestAsync(T entity)
+    public async Task<IEnumerable<T>> GetMyRejectedApprovalRequestsAsync(string userId)
     {
-        await _context.Set<T>().AddAsync(entity);
-        await _context.SaveChangesAsync();
-        return entity;
+        return await _context.Set<T>()
+            .Where(approval => EF.Property<string>(approval, "ApplicantEmployeeNumber") == userId && approval.Status == "Rejected")
+            .ToListAsync();
     }
 
     public ApprovalRepository(ApprovalDbContext context)
@@ -23,86 +24,61 @@ public class ApprovalRepository<T> : IApprovalRequestRepository<T> where T : App
         _context = context;
     }
 
-    public async Task<IEnumerable<T>> GetMyRequestsAsync(string userId)
+    public async Task<IEnumerable<T>> GetMyApprovalRequestsAsync(string userId)
     {
-        // Implement logic to fetch requests for the given userId
-            return await _context.Set<T>()
-                .Where(request => EF.Property<string>(request, "ApplicantEmployeeNumber") == userId) // Assuming T has a UserId property
-                .ToListAsync();
+        return await _context.Set<T>()
+            .Where(approval => approval.Steps.Any(step => step.ApproverEmployeeNumber == userId))
+            .Include(approval => approval.Steps)
+            .ToListAsync();
     }
 
-    public async Task<IEnumerable<T>> GetMyPendingRequestsAsync(string userId)
+    public async Task<IEnumerable<T>> GetMyPendingApprovalRequestsAsync(string userId)
     {
-        // Implement logic to fetch pending requests for the given userId
-        return await _context.Set<T>().ToListAsync();
+        return await _context.Set<T>()
+            .Where(approval => EF.Property<string>(approval, "ApplicantEmployeeNumber") == userId && approval.Status == "Pending")
+            .ToListAsync();
     }
 
-    public async Task<IEnumerable<T>> GetMyApprovedRequestsAsync(string userId)
+    public async Task<IEnumerable<T>> GetMyApprovedApprovalRequestsAsync(string userId)
     {
-        // Implement logic to fetch approved requests for the given userId
-        return await _context.Set<T>().ToListAsync();
+        return await _context.Set<T>()
+            .Where(approval => EF.Property<string>(approval, "ApplicantEmployeeNumber") == userId && approval.Status == "Approved")
+            .OrderByDescending(approval => approval.RequestedAt)
+            .Include(approval => approval.Steps)
+            //.ThenByDescending(step => step.Sequence)
+            .ToListAsync();
     }
 
-    public async Task<IEnumerable<T>> GetMyRejectedRequestsAsync(string userId)
-    {
-        // Implement logic to fetch rejected requests for the given userId
-        return await _context.Set<T>().ToListAsync();
-    }
-
-    public async Task<T?> GetRequestByIdAsync(Guid id)
-    {
-        // Implement logic to fetch a request by its ID
-        var entity = await _context.Set<T>().FindAsync(id);
-        
-        return entity;
-    }
-
-    public async Task ApproveRequestAsync(Guid id)
-    {
-        // Implement logic to approve a request by its ID
-        var entity = await _context.Set<T>().FindAsync(id);
-        if (entity != null)
-        {
-            // Update entity to mark it as approved
-            await _context.SaveChangesAsync();
-        }
-    }
-
-    public async Task RejectRequestAsync(Guid id)
-    {
-        // Implement logic to reject a request by its ID
-        var entity = await _context.Set<T>().FindAsync(id);
-        if (entity != null)
-        {
-            // Update entity to mark it as rejected
-            await _context.SaveChangesAsync();
-        }
-    }
-
-
-    public async Task<T?> GetByIdAsync(Guid id) =>
-        await _context.Set<T>().FindAsync(id);
-    public async Task<IEnumerable<T>> GetAllAsync() =>
-        await _context.Set<T>().ToListAsync();
     public async Task AddAsync(T entity)
     {
         await _context.Set<T>().AddAsync(entity);
-        await _context.SaveChangesAsync();
     }
-    public async Task UpdateAsync(T entity)
+
+    public async Task<T?> GetByIdAsync(Guid id)
+    {
+        return await _context.Set<T>().FindAsync(id);
+    }
+
+    public async Task<IEnumerable<T>> GetAllAsync()
+    {
+        return await _context.Set<T>().ToListAsync();
+    }
+
+    public Task UpdateAsync(T entity)
     {
         _context.Set<T>().Update(entity);
-        await _context.SaveChangesAsync();
+        return Task.CompletedTask;
     }
+
     public async Task DeleteAsync(Guid id)
     {
-        var entity = await _context.Set<T>().FindAsync(id);
+        var entity = await GetByIdAsync(id);
         if (entity != null)
         {
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
         }
     }
+
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();

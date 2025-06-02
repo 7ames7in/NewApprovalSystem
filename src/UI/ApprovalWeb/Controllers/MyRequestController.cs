@@ -3,15 +3,16 @@ using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace ApprovalWeb.Controllers;
 
 [Authorize]
-public class ApprovalRequestController : Controller
+public class MyRequestController : Controller
 {
     private readonly IApprovalRequestService _apiService;
 
-    public ApprovalRequestController(IApprovalRequestService apiService)
+    public MyRequestController(IApprovalRequestService apiService)
     {
         _apiService = apiService;
     }
@@ -21,17 +22,30 @@ public class ApprovalRequestController : Controller
         var user = HttpContext.User;
 
         // 1. 사용자 ID (보통은 Claim의 NameIdentifier)
-        var userId = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "EC20505";
+        var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
         // 2. 사용자 이름
         var userName = user.Identity?.Name;
 
         // 3. 사용자 이메일
-        var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
+        var email = user.FindFirst(ClaimTypes.Email)?.Value;
+
+        // 4. 사용자 역할 (예: "Admin", "User" 등)
+        var role = user.FindFirst(ClaimTypes.Role)?.Value;
+        // 5. 사용자 부서 (예: "IT", "HR" 등)
+        var department = user.FindFirst("Department")?.Value;
+        // ViewBag에 사용자 정보를 저장
+
+        if (string.IsNullOrEmpty(userId))
+        {
+            return RedirectToAction("Login", "Account");
+        }
 
         ViewBag.UserId = userId;
         ViewBag.UserName = userName;
         ViewBag.Email = email;
+        ViewBag.Role = role;
+        ViewBag.Department = "test"; //department;
 
 
         //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);

@@ -5,7 +5,6 @@ namespace ApprovalService.Application.Interfaces;
 
 public interface IApprovalRepository
 {
-    Task AddAsync(Approval approval);
-    Task<Approval?> GetByIdAsync(Guid id);
+    Task AddAsync(ApprovalRequest approval);
     Task SaveChangesAsync();
 }

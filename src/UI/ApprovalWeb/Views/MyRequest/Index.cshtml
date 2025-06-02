@@ -3,7 +3,7 @@
 <h2 class="text-center my-4">Approval Request List</h2>
 
 <div class="d-flex justify-content-end mb-4">
-    <a href="/ApprovalRequest/Create" class="btn btn-primary shadow-sm">+ Submit New Request</a>
+    <a href="/MyRequest/Create" class="btn btn-primary shadow-sm">+ Submit New Request</a>
 </div>
 
 <div class="card shadow-sm">
@@ -16,7 +16,7 @@
                             <input type="checkbox" class="form-check-input">
                         </th>
                         <th style="width:500px">Title</th>
-                        <th>Type</th>
+                        @* <th>Type</th> *@
                         <th style="width:200px">Created</th>
                         <th style="width:200px">Approved</th>
                         <th>Status</th>
@@ -33,11 +33,11 @@
                                     <input type="checkbox" class="form-check-input">
                                 </td>
                                 <td class="text-start">
-                                    <a href="/ApprovalRequest/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
+                                    <a href="/MyRequest/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
                                         @item.RequestTitle
                                     </a>
                                 </td>
-                                <td>@item.ApprovalType</td>
+                                @* <td>@item.ApprovalType</td> *@
                                 <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
                                 <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
                                 <td>
@@ -50,7 +50,7 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="/ApprovalRequest/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info shadow-sm">View</a>
+                                    <a href="/MyRequest/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info shadow-sm">View</a>
                                 </td>
                             </tr>
                         }

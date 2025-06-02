@@ -4,6 +4,7 @@ using ApprovalService.Infrastructure.Repositories;
 using ApprovalService.Domain.Entities;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using System.Threading.Tasks;
+using ApprovalService.Domain.Interfaces;
 
 namespace ApprovalService.API.Controllers;
 
@@ -11,9 +12,9 @@ namespace ApprovalService.API.Controllers;
 [Route("api/[controller]")]
 public class ApprovalController : ControllerBase
 {
-    private readonly IRepository<ApprovalRequest> _approvalRepository;
+    private readonly IApprovalRepository<ApprovalRequest> _approvalRepository;
 
-    public ApprovalController(IRepository<ApprovalRequest> approvalRepository)
+    public ApprovalController(IApprovalRepository<ApprovalRequest> approvalRepository)
     {
         _approvalRepository = approvalRepository;
     }
@@ -37,24 +38,10 @@ public class ApprovalController : ControllerBase
 
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetMyApprovalAll()
     {
-        // await _approvalRepository.GetAllAsync().ContinueWith(task =>
-        // {
-        //     if (task.IsCompletedSuccessfully)
-        //     {
-        //         return Ok(task.Result);
-        //     }
-        //     return StatusCode(500, "Internal server error");
-        // });
-
-        // return Ok();
-        //For simplicity, returning the static list instead of fetching from repository
-
-
         var list = await _approvalRepository.GetAllAsync();
         return Ok(list);
-        // return Ok(_approvalRequests);
     }
 
     [HttpGet("{id}")]
@@ -68,6 +55,41 @@ public class ApprovalController : ControllerBase
         //return Ok(_approvalRequest);
         return Ok(approval);
     }
+
+    [HttpGet("my-pending/{approverId}")]
+    public async Task<IActionResult> GetMyPendingApprovals(string approverId)
+    {
+        var approvals = await _approvalRepository.GetMyPendingApprovalRequestsAsync(approverId);
+        return Ok(approvals);
+    }
+
+    [HttpGet("my-approved/{approverId}")]
+    public async Task<IActionResult> GetMyApprovedApprovals(string approverId)
+    {
+        var approvals = await _approvalRepository.GetMyApprovedApprovalRequestsAsync(approverId);
+        return Ok(approvals);
+    }
+
+    [HttpGet("my-rejected/{approverId}")]
+    public async Task<IActionResult> GetMyRejectedApprovals(string approverId)
+    {
+        var approvals = await _approvalRepository.GetMyRejectedApprovalRequestsAsync(approverId);
+        return Ok(approvals);
+    }
+    [HttpGet("my-requests/{approverId}")]
+    public async Task<IActionResult> GetMyApprovalRequests(string approverId)
+    {
+        var approvals = await _approvalRepository.GetMyApprovalRequestsAsync(approverId);
+        return Ok(approvals);
+    }
+
+    [HttpGet("my-approvals/{approverId}")]
+    public async Task<IActionResult> GetMyApprovals(string approverId)
+    {
+        var approvals = await _approvalRepository.GetMyApprovalRequestsAsync(approverId);
+        return Ok(approvals);
+    }
+    
 
     [HttpPost("submit")]
     public IActionResult Submit([FromBody] ApprovalDto dto)

@@ -47,6 +47,7 @@
             const approverEmployeeNumber = selectedItem.data("id");
             const position = selectedItem.data("position");
             const stepType = $("#approvalType").val();
+            const department = selectedItem.data("department");
 
             if (approverName && stepType) {
                 // Check for duplicates
@@ -57,9 +58,11 @@
                 }
 
                 const newStep = {
+                    Sequence: stepsData.length + 1, // Incremental sequence number
                     ApproverName: approverName,
                     ApproverEmployeeNumber: approverEmployeeNumber,
                     Position: position,
+                    Department: department,
                     StepType: stepType
                 };
 
@@ -138,12 +141,11 @@
     <div class="col-md-4">
         <h4>Approval Type</h4>
         <div class="form-group">
-            
             <select id="approvalType" class="form-control" asp-for="ApprovalType">
             <option value="Approval">Approval</option>
-            <option value="Notification">Notification</option>
             <option value="Agreement">Agreement</option>
-            <option value="Reference">Reference</option>
+            <option value="Review">Review</option>
+            <option value="Notification">Notification</option>
             </select>
         </div>
     </div>
@@ -229,6 +231,10 @@
         <input asp-for="ApplicantName" class="form-control" readonly value="@User.Identity?.Name" />
     </div>
     <div class="form-group mb-3">
+        <label>Department</label>
+        <input asp-for="ApplicantDepartment" class="form-control" readonly value="@User.FindFirst("Department")?.Value" />
+    </div>
+    <div class="form-group mb-3">
         <label>Title</label>
         <input asp-for="RequestTitle" class="form-control" />
     </div>
@@ -238,9 +244,25 @@
     </div>
     <div class="form-group mb-3">
         <label>Attach File</label>
-        <input type="file" class="form-control" />
+        <div class="input-group">
+            <input type="file" class="form-control" />
+            <button type="button" class="btn btn-secondary">Add</button>
+        </div>
+        <div class="mt-2">
+            <ul class="list-group-attched">
+                <li class="list-group-attached-item">
+                    <span>example.txt</span>
+                    <button type="button" class="btn btn-danger btn-sm float-end">Remove</button>
+                </li>
+            </ul>
+        </div>
+        @* <input type="hidden" asp-for="AttachedFiles" class="form-control" />
+        <input type="hidden" name="AttachedFiles" value="@Model.AttachedFiles" /> *@
+        <small class="form-text text-muted">Optional: Attach any relevant files.</small>
     </div>
+    @* <input type="hidden" asp-for="ApplicantDepartment" class="form-control" value="@User.FindFirst("Department")?.Value" /> *@
     <input type="hidden" name="StepsJson" id="StepsJson" />
+    
     <button type="submit" class="btn btn-success" onclick="prepareFormData()">Submit</button>
 
     <script>

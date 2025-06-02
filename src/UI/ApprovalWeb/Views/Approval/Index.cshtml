@@ -1,17 +1,17 @@
 @model List<ApprovalRequestViewModel>
 
-<h2 class="text-center my-4">Approval Request List</h2>
-
+<h2 class="text-center my-4">My Approval List</h2>
+@* 
 <div class="d-flex justify-content-end mb-3">
     <a href="/Approval/Create" class="btn btn-primary">+ Submit New Request</a>
-</div>
+</div> *@
 
 <div class="table-responsive">
     <table class="table table-bordered table-hover align-middle text-center">
         <thead class="table-dark">
             <tr>
                 <th>Title</th>
-                <th>Applicant</th>
+                <th>Name</th>
                 <th>Department</th>
                 <th>Status</th>
                 <th>Type</th>
@@ -26,14 +26,7 @@
                 foreach (var item in Model)
                 {
                     <tr>
-                        <td class="text-start">
-                            @* <a href="/Approval/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
-                                @item.RequestTitle
-                            </a> *@
-                        </td>
-                        <td>@item.ApplicantName</td>
-                        <td>@item.ApplicantDepartment</td>
-                        <td>
+                        <td class="text-start" style="width: 400px;" onclick="toggleSteps('@item.ApprovalId')" style="cursor: pointer;">
                             <span class="badge @(item.Status switch {
                                 "Approved" => "bg-success",
                                 "Rejected" => "bg-danger",
@@ -41,12 +34,69 @@
                             })">
                                 @item.Status
                             </span>
+                            <span class="fw-bold text-decoration-none text-dark">
+                                @item.RequestTitle
+                            </span>
+                            
+                            <script>
+                                function toggleSteps(approvalId) {
+                                    //console.log(`Toggling steps for approvalId: ${approvalId}`);
+                                    const row = document.getElementById(`steps-${approvalId}`);
+                                    if (row.classList.contains("d-none")) {
+                                        row.classList.remove("d-none");
+                                        //console.log(`Steps for approvalId: ${approvalId} are now visible.`);
+                                    } else {
+                                        row.classList.add("d-none");
+                                        //console.log(`Steps for approvalId: ${approvalId} are now hidden.`);
+                                    }
+                                }
+                            </script>
+                        </td>
+                        <td>@item.ApplicantName</td>
+                        <td>@item.ApplicantDepartment</td>
+                        <td>
+                            
                         </td>
                         <td>@item.ApprovalType</td>
-                        <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                        <td style="width:180px">@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
                         <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
                         <td>
-                            @* <a href="/Approval/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info">View</a> *@
+                            <form asp-action="Approve" method="post" class="d-inline">
+                                <input type="hidden" name="ApprovalId" value="@item.ApprovalId" />
+                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                            </form>
+                            <form asp-action="Reject" method="post" class="d-inline ms-2">
+                                <input type="hidden" name="ApprovalId" value="@item.ApprovalId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr id="steps-@item.ApprovalId" class="steps-row d-none">
+                        <td colspan="8">
+
+                            <ul class="list-group"> 
+                            @foreach (var step in item.Steps.OrderBy(s => s.Sequence))
+                            {
+                                <li class="list-group-item text-start">
+                                    <strong>Step @step.Sequence:</strong>
+                                    <span>@step.ApproverName</span>
+                                    (<span>@step.ApproverEmployeeNumber</span>) /
+                                    <em>@step.Position</em>
+                                    -- <em>@step.StepType</em>
+                                    @if (step.ActionStatus == "Pending")
+                                    {
+                                        <form asp-action="Resend" method="post" class="d-inline float-end ms-2">
+                                            <input type="hidden" name="StepId" value="@step.StepId" />
+                                            <button type="submit" class="btn btn-warning btn-sm">Resend</button>
+                                        </form>
+                                    }
+                                    @if (step.ActionStatus == "Approved")
+                                    {
+                                        <span class="text-success float-end">Approved</span>
+                                    }
+                                </li>
+                            }
+                            </ul>
                         </td>
                     </tr>
                 }
@@ -60,3 +110,31 @@
         </tbody>
     </table>
 </div>
+
+
+<style>
+    .section-box {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+    #autocompleteResults {
+        top: 40px;
+        max-height: 250px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+    }
+
+    #autocompleteResults .list-group-item {
+        cursor: pointer;
+    }
+
+    #autocompleteResults .list-group-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>

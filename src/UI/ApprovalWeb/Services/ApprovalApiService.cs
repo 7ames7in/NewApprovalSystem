@@ -13,8 +13,8 @@ public class ApprovalApiService : IApprovalService
         _http = factory.CreateClient("ApprovalApi");
     }
 
-    public async Task<List<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
-        => await _http.GetFromJsonAsync<List<ApprovalRequestViewModel>>("api/approval") ?? new();
+    public async Task<List<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string approverId)
+        => await _http.GetFromJsonAsync<List<ApprovalRequestViewModel>>($"api/approval/my-approvals/{approverId}") ?? new List<ApprovalRequestViewModel>();
 
     public async Task<Guid> SubmitApprovalAsync(ApprovalRequestViewModel model)
     {

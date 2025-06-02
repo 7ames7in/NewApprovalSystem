@@ -30,11 +30,15 @@ namespace UserService.API.Controllers
             if (userinfo != null && userinfo.Email == user.EmailId) // Simulated password check
             {
                 // Simulate successful login
-                return Ok(new { 
+                return Ok(new
+                {
                     Message = "Login successful",
                     EmployeeNumber = userinfo?.EmployeeNumber,
                     Name = userinfo?.Name,
-                    Email = userinfo?.Email
+                    Email = userinfo?.Email,
+                    Department = userinfo?.Department,
+                    Position = userinfo?.Position,
+                    Role = userinfo?.Role
                 });
             }
             // Simulate failed login

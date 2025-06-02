@@ -11,7 +11,7 @@ public class ApprovalStepViewModel
     public string? JobTitle { get; set; } = string.Empty;
     public int Sequence { get; set; } = 1;
     public bool IsFinalApprover { get; set; } = true;
-    public string? ActionStatus { get; set; }
+    public string? ActionStatus { get; set; } = "Pending";
     public string StepType { get; set; } = default!;
     public DateTime? ActionDate { get; set; }
     public string? Comment { get; set; }

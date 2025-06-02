@@ -2,6 +2,7 @@ using ApprovalWeb.Models;
 using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ApprovalWeb.Controllers;
 
@@ -16,7 +17,8 @@ public class ApprovalController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var approvals = await _apiService.GetApprovalRequestsAsync();
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new InvalidOperationException("User ID not found in claims.");
+        var approvals = await _apiService.GetMyApprovalRequestsAsync(userId);
         return View(approvals);
     }
 

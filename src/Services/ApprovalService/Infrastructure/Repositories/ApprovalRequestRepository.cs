@@ -28,6 +28,8 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
         // Implement logic to fetch requests for the given userId
             return await _context.Set<T>()
                 .Where(request => EF.Property<string>(request, "ApplicantEmployeeNumber") == userId) // Assuming T has a UserId property
+                .Include(request => request.Steps) // Include related steps if necessary
+                .OrderByDescending(request => request.RequestedAt) // Assuming T has a CreatedAt property
                 .ToListAsync();
     }
 

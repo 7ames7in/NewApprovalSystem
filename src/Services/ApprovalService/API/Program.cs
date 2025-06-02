@@ -33,11 +33,12 @@ builder.Services.AddDbContext<ApprovalDbContext>(options =>
     options.UseSqlite("Data Source=Data/ApprovalService.db"));
 
 builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
-builder.Services.AddScoped<IRepository<Approval>, ApprovalRepository<Approval>>();
+//builder.Services.AddScoped<IRepository<Approval>, ApprovalRepository<Approval>>();
 builder.Services.AddScoped<IRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
 builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 
 builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
+builder.Services.AddScoped<IApprovalRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
 // builder.Services.AddScoped<IApprovalTemplateRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
 // builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 

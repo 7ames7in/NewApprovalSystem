@@ -17,6 +17,8 @@ public class ApprovalStep
     // 내용을 추가로 관리하기 위한 속성들
     public string? ApproverName { get; set; } = string.Empty;
     public string? Position { get; set; } = string.Empty;
+    public string? Department { get; set; } = string.Empty;
+    public string? StepType { get; set; } = string.Empty; // StepType: "Agreement", "Review", "Approval" 등
 
     // 🔽 관계 명확하게
     public ApprovalRequest? ApprovalRequest { get; set; } = default!;

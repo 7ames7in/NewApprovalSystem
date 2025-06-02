@@ -21,4 +21,6 @@ public class ApprovalRequest
     public string? MisKey { get; set; }
 
     public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>();
+
+    public List<ApprovalAttachment> Attachments { get; set; } = new List<ApprovalAttachment>();
 }
