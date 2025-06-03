@@ -1,8 +1,18 @@
-namespace ApprovalWeb.Models;
-
-public class ErrorViewModel
+namespace ApprovalWeb.Models
 {
-    public string? RequestId { get; set; }
+    /// <summary>
+    /// Represents the model for error views.
+    /// </summary>
+    public class ErrorViewModel
+    {
+        /// <summary>
+        /// Gets or sets the request ID associated with the error.
+        /// </summary>
+        public string? RequestId { get; set; }
 
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        /// <summary>
+        /// Indicates whether the request ID should be displayed.
+        /// </summary>
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }

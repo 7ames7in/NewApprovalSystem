@@ -4,23 +4,22 @@ using System.ComponentModel.DataAnnotations;
 
 public class ApprovalRequest
 {
-    [Key] // 또는 이름이 Id 혹은 ApprovalId이면 EF가 자동으로 인식함
-    public Guid ApprovalId { get; set; }
+    [Key] // Entity Framework recognizes this as the primary key
+    public Guid ApprovalId { get; set; } // Unique identifier for the approval request
 
-    public string RequestTitle { get; set; } = string.Empty;
-    public string? RequestContent { get; set; }
-    public string ApplicantEmployeeNumber { get; set; } = string.Empty;
-    public string ApplicantName { get; set; } = string.Empty;
-    public string? ApplicantPosition { get; set; }
-    public string? ApplicantDepartment { get; set; }
-    public string Status { get; set; } = "Pending";
-    public DateTime RequestedAt { get; set; } = DateTime.UtcNow;
-    public DateTime? RespondedAt { get; set; }
-    public string? ApproverComment { get; set; }
-    public string? ApprovalType { get; set; }
-    public string? MisKey { get; set; }
+    public string RequestTitle { get; set; } = string.Empty; // Title of the approval request
+    public string? RequestContent { get; set; } // Detailed content of the request
+    public string ApplicantEmployeeNumber { get; set; } = string.Empty; // Employee number of the applicant
+    public string ApplicantName { get; set; } = string.Empty; // Name of the applicant
+    public string? ApplicantPosition { get; set; } // Position of the applicant
+    public string? ApplicantDepartment { get; set; } // Department of the applicant
+    public string Status { get; set; } = "Pending"; // Current status of the request (e.g., Pending, Approved, Rejected)
+    public DateTime RequestedAt { get; set; } = DateTime.UtcNow; // Timestamp when the request was created
+    public DateTime? RespondedAt { get; set; } // Timestamp when the request was responded to
+    public string? ApproverComment { get; set; } // Comments from the approver
+    public string? ApprovalType { get; set; } // Type/category of the approval request
+    public string? MisKey { get; set; } // Optional key for integration with external systems
 
-    public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>();
-
-    public List<ApprovalAttachment> Attachments { get; set; } = new List<ApprovalAttachment>();
+    public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>(); // List of steps in the approval process
+    public List<ApprovalAttachment> Attachments { get; set; } = new List<ApprovalAttachment>(); // List of attachments related to the request
 }

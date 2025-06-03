@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xgXwkUN6m1J4PHP88rVJy5TGQsMCmoV79sIOoJfmyao=",
+  "Hash": "BLLOD8ErgFKgpU8R7pPp7BzzITsGDNYup9AC6V3wmPA=",
   "Source": "ApprovalWeb",
   "BasePath": "_content/ApprovalWeb",
   "Mode": "Default",
@@ -6695,6 +6695,48 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1)#[.{fingerprint}]?.hwp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ivgxpe9flg",
+      "Integrity": "rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!#[.{fingerprint}]?.hwp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d9us5achjn",
+      "Integrity": "MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp"
+    },
+    {
       "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
       "SourceId": "ApprovalWeb",
       "SourceType": "Discovered",
@@ -6861,6 +6903,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/한의학용어 소스 9주차.pdf"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 합본.hwp",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/한의학용어 소스 합본#[.{fingerprint}]?.hwp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b3y5mqwjcp",
+      "Integrity": "KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/한의학용어 소스 합본.hwp"
     }
   ],
   "Endpoints": [
@@ -48485,6 +48548,170 @@
       ]
     },
     {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).ivgxpe9flg.hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ivgxpe9flg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.d9us5achjn.hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d9us5achjn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas="
+        }
+      ]
+    },
+    {
       "Route": "uploads/9주차.pdf",
       "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
       "Selectors": [],
@@ -49137,6 +49364,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 합본.b3y5mqwjcp.hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 합본.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2602496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b3y5mqwjcp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/한의학용어 소스 합본.hwp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 합본.hwp",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 합본.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2602496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg="
         }
       ]
     }

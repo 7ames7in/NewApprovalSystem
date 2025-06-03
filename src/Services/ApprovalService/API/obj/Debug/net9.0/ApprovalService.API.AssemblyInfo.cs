@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApprovalService.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e281c28fb14b84372edefe7f92c1b27a0d37674d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4584fb2bc2d181864ea491eb91202d2b5ee6d94f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApprovalService.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApprovalService.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

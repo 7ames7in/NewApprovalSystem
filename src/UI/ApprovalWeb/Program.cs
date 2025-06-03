@@ -12,32 +12,38 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Load user secrets for configuration
 builder.Configuration.AddUserSecrets<Program>();
 
+// Configure controllers and JSON options
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     });
 
-
-#region //Serilog 설정
-    Log.Logger = new LoggerConfiguration()
-        .MinimumLevel.Debug()
-        .WriteTo.Console()
-        .WriteTo.File("Logs/approval_web_log.txt", rollingInterval: RollingInterval.Day)
-        .CreateLogger();
-    builder.Host.UseSerilog();
+#region Serilog Configuration
+// Configure Serilog for logging
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/approval_web_log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog();
 #endregion
 
+// Register Serilog as a singleton service
 builder.Services.AddSingleton<Serilog.ILogger>(Log.Logger);
 
+// Register HTTP context accessor
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-// 현재는 로컬 인증 방식
+
+// Register authentication and user context services
 builder.Services.AddScoped<IAuthenticationService, LocalAuthenticationService>();
 builder.Services.AddScoped<IUserContext, ClaimUserContext>();
 
-// Authentication 설정
+#region Authentication Configuration
+// Configure cookie-based authentication
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -45,65 +51,44 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LogoutPath = "/Account/Logout";
         options.AccessDeniedPath = "/Account/AccessDenied";
     });
-// Cookie 인증 설정 완료
-// Authorization 설정
+#endregion
+
+#region Authorization Configuration
+// Configure authorization policies
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Administrator"));
     options.AddPolicy("RequireManagerRole", policy => policy.RequireRole("Manager"));
     options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
 });
+#endregion
 
-// // Authentication 설정
-// builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-//     .AddCookie(options =>
-//     {
-//         options.LoginPath = "/Account/Login";
-//         options.AccessDeniedPath = "/Account/AccessDenied";
-//     });
-// // Cookie 인증 설정 완료
-// // Authorization 설정
-// builder.Services.AddAuthorization(options =>
-// {
-//     options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Administrator"));
-//     options.AddPolicy("RequireManagerRole", policy => policy.RequireRole("Manager"));
-//     options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
-// });
-// Authorization 정책 설정 완료
+// Add controllers with views
 builder.Services.AddControllersWithViews();
-// MVC 설정
-// builder.Services.AddControllersWithViews(options =>
-// {
-//     var policy = new AuthorizationPolicyBuilder()
-//         .RequireAuthenticatedUser()
-//         .Build();
-//     options.Filters.Add(new AuthorizeFilter(policy));
-// });
-// builder.Services.AddRazorPages();
 
-#region Azure AD Authentication
-// Azure AD Authentication 설정
+#region Azure AD Authentication (Commented Out)
+// Example configuration for Azure AD authentication (currently disabled)
 /*
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("Instance")}");
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("ClientId")}");
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("TenantId")}");
 
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-        .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
-    
-    builder.Services.AddControllersWithViews(options =>
-    {
-        var policy = new AuthorizationPolicyBuilder()
-            .RequireAuthenticatedUser()
-            .Build();
-        options.Filters.Add(new AuthorizeFilter(policy));
-    });
-    builder.Services.AddRazorPages();
+    .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
+
+builder.Services.AddControllersWithViews(options =>
+{
+    var policy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+    options.Filters.Add(new AuthorizeFilter(policy));
+});
+builder.Services.AddRazorPages();
 */
 #endregion
 
-
-
+#region Service Registration
+// Register ApprovalService based on configuration
 var useMock = builder.Configuration.GetValue<bool>("UseMockService");
 if (!useMock)
 {
@@ -111,7 +96,7 @@ if (!useMock)
 }
 else
 {
-    // ApprovalService API Client
+    // Configure ApprovalService API client
     builder.Services.AddHttpClient("ApprovalApi", client =>
     {
         client.BaseAddress = new Uri("https://localhost:5001/");
@@ -119,17 +104,19 @@ else
     builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
 }
 
-// UserService API Client
+// Configure UserService API client
 builder.Services.AddHttpClient("UserApi", client =>
 {
     client.BaseAddress = new Uri("https://localhost:7129/");
 });
-
 builder.Services.AddScoped<IUserService<User>, UserApiService<User>>();
 builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
+#endregion
 
 var app = builder.Build();
 
+#region Middleware Configuration
+// Configure middleware for error handling, HTTPS redirection, and static files
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -141,14 +128,18 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-//app.UseAuthentication();
+// Uncomment the following line to enable authentication middleware
+// app.UseAuthentication();
+
 app.UseAuthorization();
 
+// Map default controller route
 app.MapDefaultControllerRoute();
 
+// Example custom route mapping (commented out)
 // app.MapControllerRoute(
 //     name: "default",
 //     pattern: "{controller=ApprovalRequest}/{action=Index}/{id?}");
+#endregion
 
 app.Run();
-

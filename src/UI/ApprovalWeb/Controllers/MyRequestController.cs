@@ -13,55 +13,50 @@ public class MyRequestController : Controller
 {
     private readonly IApprovalRequestService _apiService;
 
+    // Constructor to inject the approval request service
     public MyRequestController(IApprovalRequestService apiService)
     {
         _apiService = apiService;
     }
 
+    // Displays the list of approval requests for the logged-in user
     public async Task<IActionResult> Index()
     {
         var user = HttpContext.User;
 
-        // 1. 사용자 ID (보통은 Claim의 NameIdentifier)
+        // Retrieve user information from claims
         var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-        // 2. 사용자 이름
         var userName = user.Identity?.Name;
-
-        // 3. 사용자 이메일
         var email = user.FindFirst(ClaimTypes.Email)?.Value;
-
-        // 4. 사용자 역할 (예: "Admin", "User" 등)
         var role = user.FindFirst(ClaimTypes.Role)?.Value;
-        // 5. 사용자 부서 (예: "IT", "HR" 등)
         var department = user.FindFirst("Department")?.Value;
-        // ViewBag에 사용자 정보를 저장
 
+        // Redirect to login if user ID is not found
         if (string.IsNullOrEmpty(userId))
         {
             return RedirectToAction("Login", "Account");
         }
 
+        // Store user information in ViewBag for use in the view
         ViewBag.UserId = userId;
         ViewBag.UserName = userName;
         ViewBag.Email = email;
         ViewBag.Role = role;
-        ViewBag.Department = "test"; //department;
+        ViewBag.Department = "test"; // Replace with actual department if available
 
-
-        //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        //var userId = "EC20505";
+        // Fetch the user's approval requests
         var requests = await _apiService.GetMyRequestsAsync(userId);
         return View(requests);
     }
 
+    // Handles the creation of a new approval request
     [HttpPost]
-    public async Task<IActionResult> Create(
-        [FromForm] ApprovalRequestViewModel model)
-        // ,List<IFormFile>? files)
+    public async Task<IActionResult> Create([FromForm] ApprovalRequestViewModel model)
     {
+        // Validate the model
         if (!ModelState.IsValid) return View(model);
-        
+
+        // Handle file uploads
         if (model.Files != null)
         {
             foreach (var file in model.Files)
@@ -69,6 +64,8 @@ public class MyRequestController : Controller
                 var filePath = Path.Combine("wwwroot/uploads", file.FileName);
                 using var stream = new FileStream(filePath, FileMode.Create);
                 await file.CopyToAsync(stream);
+
+                // Create attachment metadata
                 var attachment = new ApprovalAttachmentViewModel
                 {
                     FileName = file.FileName,
@@ -82,18 +79,17 @@ public class MyRequestController : Controller
             }
         }
 
+        // Deserialize steps from JSON
         if (!string.IsNullOrEmpty(model.StepsJson))
         {
             var steps = JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(model.StepsJson);
             if (steps != null)
             {
-                foreach (var step in steps)
-                {
-                    model.Steps.Add(step);
-                }
+                model.Steps.AddRange(steps);
             }
         }
-        
+
+        // Create the approval request
         var result = await _apiService.CreateApprovalRequestAsync(model);
         if (result.IsSuccess)
         {
@@ -101,24 +97,26 @@ public class MyRequestController : Controller
             return RedirectToAction("Index");
         }
 
+        // Handle errors
         ModelState.AddModelError(string.Empty, "An error occurred while creating the approval request.");
         return View(model);
     }
 
+    // Displays the form for creating a new approval request
     public IActionResult Create()
     {
         var model = new ApprovalRequestViewModel();
-
         return View(model);
     }
 
+    // Displays an alternate form for creating a new approval request
     public IActionResult Create2()
     {
         var model = new ApprovalRequestViewModel();
-
         return View(model);
     }
 
+    // Handles creation of approval requests with file uploads and JSON data
     [HttpPost]
     [Route("CreateWithFiles")]
     public async Task<IActionResult> CreateWithFiles(
@@ -126,7 +124,7 @@ public class MyRequestController : Controller
         [FromForm] string StepsJson,
         [FromForm] string AttachmentsJson)
     {
-        // 1. 파일 저장
+        // Save uploaded files
         foreach (var file in files)
         {
             var filePath = Path.Combine("wwwroot/uploads", file.FileName);
@@ -134,28 +132,30 @@ public class MyRequestController : Controller
             await file.CopyToAsync(stream);
         }
 
-        // 2. JSON 디시리얼라이즈
+        // Deserialize JSON data
         var steps = JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(StepsJson);
         var attachments = JsonSerializer.Deserialize<List<ApprovalAttachmentViewModel>>(AttachmentsJson);
 
-        // 3. DB 저장 등 로직 처리
+        // Process the data (e.g., save to database)
 
         return Ok(new { Message = "Success" });
     }
 
-
+    // Displays the details of a specific approval request
     public async Task<IActionResult> Details(string id)
     {
         var model = await _apiService.GetRequestByIdAsync(id);
         return View(model);
     }
-    
+
+    // Displays the form for modifying an existing approval request
     public async Task<IActionResult> Modify(string id)
     {
-        //var model = await _apiService.GetApprovalRequestByIdAsync(id);
         var model = new ApprovalRequestViewModel();
 
-        List<ApprovalStepViewModel> list = new() {
+        // Example: Prepopulate steps for the approval request
+        List<ApprovalStepViewModel> list = new()
+        {
             new ApprovalStepViewModel
             {
                 StepId = Guid.NewGuid(),
@@ -205,15 +205,10 @@ public class MyRequestController : Controller
                 Comment = ""
             }
         };
-        // Example: Adding a default step to the list
-        foreach (var step in list)
-        {
-            //model.Steps.Add(step);
-        }
 
-        await Task.Delay(1000); // Simulate async delay
+        // Simulate async delay
+        await Task.Delay(1000);
 
         return View(model);
     }
-
 }

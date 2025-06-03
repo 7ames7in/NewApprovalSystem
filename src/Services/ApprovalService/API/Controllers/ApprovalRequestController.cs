@@ -11,12 +11,20 @@ namespace ApprovalService.API.Controllers
     {
         private readonly IApprovalRequestRepository<ApprovalRequest> _approvalRequestRepository;
         private readonly ILogger<ApprovalRequestController> _logger;
-        public ApprovalRequestController(IApprovalRequestRepository<ApprovalRequest> approvalRequestRepository, ILogger<ApprovalRequestController> logger)
+
+        public ApprovalRequestController(
+            IApprovalRequestRepository<ApprovalRequest> approvalRequestRepository, 
+            ILogger<ApprovalRequestController> logger)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _approvalRequestRepository = approvalRequestRepository;
+            _approvalRequestRepository = approvalRequestRepository ?? throw new ArgumentNullException(nameof(approvalRequestRepository));
         }
 
+        /// <summary>
+        /// Get all approval requests for a specific user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>A list of approval requests.</returns>
         [HttpGet("my-requests/{userId}")]
         public async Task<IActionResult> GetMyRequests(string userId)
         {
@@ -24,6 +32,11 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
+        /// <summary>
+        /// Get all pending approval requests for a specific user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>A list of pending approval requests.</returns>
         [HttpGet("my-pending-requests/{userId}")]
         public async Task<IActionResult> GetMyPendingRequests(string userId)
         {
@@ -31,6 +44,11 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
+        /// <summary>
+        /// Get all approved approval requests for a specific user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>A list of approved approval requests.</returns>
         [HttpGet("my-approved-requests/{userId}")]
         public async Task<IActionResult> GetMyApprovedRequests(string userId)
         {
@@ -38,6 +56,11 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
+        /// <summary>
+        /// Get all rejected approval requests for a specific user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>A list of rejected approval requests.</returns>
         [HttpGet("my-rejected-requests/{userId}")]
         public async Task<IActionResult> GetMyRejectedRequests(string userId)
         {
@@ -45,6 +68,11 @@ namespace ApprovalService.API.Controllers
             return Ok(requests);
         }
 
+        /// <summary>
+        /// Get a specific approval request by its ID.
+        /// </summary>
+        /// <param name="approvalId">The ID of the approval request.</param>
+        /// <returns>The approval request if found, otherwise NotFound.</returns>
         [HttpGet("{approvalId}")]
         public async Task<IActionResult> GetRequestById(Guid approvalId)
         {
@@ -56,38 +84,45 @@ namespace ApprovalService.API.Controllers
             return Ok(request);
         }
 
+        /// <summary>
+        /// Create a new approval request.
+        /// </summary>
+        /// <param name="approvalRequest">The approval request to create.</param>
+        /// <returns>The created approval request with a 201 Created status.</returns>
         [HttpPost("create")]
         public async Task<IActionResult> CreateApprovalRequest([FromBody] ApprovalRequest approvalRequest)
         {
             _logger.LogInformation("Creating a new approval request.");
             _logger.LogDebug("Approval Request Details: {@ApprovalRequest}", approvalRequest);
 
+            // Validate the incoming approval request
             if (approvalRequest == null)
                 return BadRequest("Approval request cannot be null.");
 
             if (approvalRequest.Steps == null || !approvalRequest.Steps.Any())
                 return BadRequest("At least one approval step must be provided.");
 
-            // 🔽 관계 설정
+            // Set relationships for approval steps
             foreach (var step in approvalRequest.Steps)
             {
                 step.ApprovalRequest = approvalRequest;
-                step.ApprovalId = approvalRequest.ApprovalId; // 명시적 지정도 병행 추천
+                step.ApprovalId = approvalRequest.ApprovalId; // Explicit assignment recommended
             }
 
-            // 🔽 관계 설정
+            // Set relationships for attachments
             foreach (var attachment in approvalRequest.Attachments)
             {
                 attachment.ApprovalRequest = approvalRequest;
-                attachment.ApprovalId = approvalRequest.ApprovalId; // 명시적 지정도 병행 추천
+                attachment.ApprovalId = approvalRequest.ApprovalId; // Explicit assignment recommended
             }
 
+            // Create the approval request
             var createdRequest = await _approvalRequestRepository.CreateApprovalRequestAsync(approvalRequest);
 
             _logger.LogInformation("Approval request created successfully with ID: {ApprovalId}", createdRequest.ApprovalId);
-            //_logger.LogDebug("Created Approval Request Details: {@CreatedRequest}", createdRequest);
-            //return Ok(createdRequest); // Alternatively, you can return the created request directly
+
+            // Return the created approval request with a 201 Created status
             return CreatedAtAction(nameof(GetRequestById), new { approvalId = createdRequest.ApprovalId }, createdRequest);
-        }        
+        }
     }
 }

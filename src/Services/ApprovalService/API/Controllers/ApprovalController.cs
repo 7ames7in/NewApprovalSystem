@@ -19,7 +19,8 @@ public class ApprovalController : ControllerBase
         _approvalRepository = approvalRepository;
     }
 
-#region Sample Data
+    #region Sample Data
+    // Sample data for demonstration purposes
     private static readonly List<ApprovalDto> _approvals = new()
     {
         new ApprovalDto { ApprovalId = Guid.NewGuid(), RequestId = "REQ001", ApproverName = "Alice", Status = "Pending", RequestedAt = DateTime.UtcNow },
@@ -36,7 +37,11 @@ public class ApprovalController : ControllerBase
         new ApprovalRequestDto { ApprovalId = Guid.Parse("c6421493-17a0-4985-ab9f-a240d99a031a"), RequestTitle = "출장 신청", ApplicantEmployeeNumber = "EMP001", ApplicantName = "홍길동", Status = "Pending", RequestedAt = DateTime.UtcNow };
     #endregion
 
+    #region API Endpoints
 
+    /// <summary>
+    /// Retrieves all approvals.
+    /// </summary>
     [HttpGet]
     public async Task<IActionResult> GetMyApprovalAll()
     {
@@ -44,18 +49,19 @@ public class ApprovalController : ControllerBase
         return Ok(list);
     }
 
+    /// <summary>
+    /// Retrieves an approval by its ID.
+    /// </summary>
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
         var approval = await _approvalRepository.GetByIdAsync(id);
-        // if (approval == null)
-        // {
-        //     return NotFound();
-        // }
-        //return Ok(_approvalRequest);
         return Ok(approval);
     }
 
+    /// <summary>
+    /// Retrieves pending approvals for a specific approver.
+    /// </summary>
     [HttpGet("my-pending/{approverId}")]
     public async Task<IActionResult> GetMyPendingApprovals(string approverId)
     {
@@ -63,6 +69,9 @@ public class ApprovalController : ControllerBase
         return Ok(approvals);
     }
 
+    /// <summary>
+    /// Retrieves approved approvals for a specific approver.
+    /// </summary>
     [HttpGet("my-approved/{approverId}")]
     public async Task<IActionResult> GetMyApprovedApprovals(string approverId)
     {
@@ -70,12 +79,19 @@ public class ApprovalController : ControllerBase
         return Ok(approvals);
     }
 
+    /// <summary>
+    /// Retrieves rejected approvals for a specific approver.
+    /// </summary>
     [HttpGet("my-rejected/{approverId}")]
     public async Task<IActionResult> GetMyRejectedApprovals(string approverId)
     {
         var approvals = await _approvalRepository.GetMyRejectedApprovalRequestsAsync(approverId);
         return Ok(approvals);
     }
+
+    /// <summary>
+    /// Retrieves all approval requests for a specific approver.
+    /// </summary>
     [HttpGet("my-requests/{approverId}")]
     public async Task<IActionResult> GetMyApprovalRequests(string approverId)
     {
@@ -83,14 +99,19 @@ public class ApprovalController : ControllerBase
         return Ok(approvals);
     }
 
+    /// <summary>
+    /// Retrieves all approvals for a specific approver.
+    /// </summary>
     [HttpGet("my-approvals/{approverId}")]
     public async Task<IActionResult> GetMyApprovals(string approverId)
     {
         var approvals = await _approvalRepository.GetMyApprovalRequestsAsync(approverId);
         return Ok(approvals);
     }
-    
 
+    /// <summary>
+    /// Submits a new approval request.
+    /// </summary>
     [HttpPost("submit")]
     public IActionResult Submit([FromBody] ApprovalDto dto)
     {
@@ -100,6 +121,6 @@ public class ApprovalController : ControllerBase
         _approvals.Add(dto);
         return Ok(new { ApprovalId = dto.ApprovalId });
     }
+
+    #endregion
 }
-
-

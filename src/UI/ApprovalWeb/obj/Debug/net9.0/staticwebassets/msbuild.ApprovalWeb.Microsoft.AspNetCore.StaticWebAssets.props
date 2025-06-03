@@ -3618,6 +3618,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ApprovalWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ApprovalWeb</BasePath>
+      <RelativePath>uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ivgxpe9flg</Fingerprint>
+      <Integrity>rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ApprovalWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ApprovalWeb</BasePath>
+      <RelativePath>uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d9us5achjn</Fingerprint>
+      <Integrity>MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\9주차.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>ApprovalWeb</SourceId>
@@ -3761,6 +3797,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\한의학용어 소스 9주차.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\한의학용어 소스 합본.hwp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ApprovalWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ApprovalWeb</BasePath>
+      <RelativePath>uploads/한의학용어 소스 합본.hwp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b3y5mqwjcp</Fingerprint>
+      <Integrity>KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\한의학용어 소스 합본.hwp'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

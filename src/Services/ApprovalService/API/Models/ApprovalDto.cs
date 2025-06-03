@@ -1,33 +1,12 @@
 namespace ApprovalService.API.Models;
 
+// DTO for transferring approval information between API and client
 public class ApprovalDto
 {
-    public Guid ApprovalId { get; set; }
-    public string RequestId { get; set; } = string.Empty;
-    public string ApproverName { get; set; } = string.Empty;
-    public string Status { get; set; } = string.Empty;
-    public string? Comments { get; set; }
-    public DateTime RequestedAt { get; set; }
+    public Guid ApprovalId { get; set; } // Unique identifier for the approval
+    public string RequestId { get; set; } = string.Empty; // Identifier for the request
+    public string ApproverName { get; set; } = string.Empty; // Name of the approver
+    public string Status { get; set; } = string.Empty; // Current status of the approval
+    public string? Comments { get; set; } // Optional comments from the approver
+    public DateTime RequestedAt { get; set; } // Timestamp when the approval was requested
 }
-
-//ApprovalDto는 ApprovalRequest와 Approval 엔티티의 정보를 포함하는 DTO(Data Transfer Object)입니다.
-// 이 DTO는 API에서 ApprovalRequest와 Approval 엔티티의 정보를 클라이언트에 전달하기 위해 사용됩니다.
-
-// ApprovalRequestDto는 ApprovalRequest 엔티티의 정보를 포함합니다.
-public class ApprovalRequestDto
-{
-    public Guid ApprovalId { get; set; }
-    public string RequestTitle { get; set; } = string.Empty;
-    public string? RequestContent { get; set; }
-    public string ApplicantEmployeeNumber { get; set; } = string.Empty;
-    public string ApplicantName { get; set; } = string.Empty;
-    public string? ApplicantPosition { get; set; }
-    public string? ApplicantDepartment { get; set; }
-    public string Status { get; set; } = "Pending";
-    public DateTime RequestedAt { get; set; } = DateTime.UtcNow;
-    public DateTime? RespondedAt { get; set; }
-    public string? ApproverComment { get; set; }
-    public string? ApprovalType { get; set; }
-    public string? MisKey { get; set; }
-}
-// ApprovalRequestDto는 ApprovalRequest 엔티티의 정보를 포함하는 DTO(Data Transfer Object)입니다.

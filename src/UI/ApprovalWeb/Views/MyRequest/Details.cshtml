@@ -3,13 +3,17 @@
 @using System.Text.Json
 
 @{
+    // JSON Serializer options to ensure property names are not changed
     var options = new JsonSerializerOptions
     {
-        PropertyNamingPolicy = null // <- 이것이 핵심!
+        PropertyNamingPolicy = null
     };
+
+    // Serialize the steps data for use in JavaScript
     var stepsData = JsonSerializer.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>(), options);
 }
 
+<!-- Include necessary JavaScript libraries -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/utility.js"></script>
 <script>
@@ -18,17 +22,14 @@
         const $results = $("#autocompleteResults");
 
         // Load existing steps into a JavaScript variable
-        @* const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
-        console.log("Existing Steps Data:", stepsData); *@
-
         const stepsData = @Html.Raw(stepsData);
-        
-        // Call the function to display steps
-        //displaySteps(stepsData);
-    }
 
+        // Placeholder for displaying steps (functionality not implemented)
+        // displaySteps(stepsData);
+    });
 </script>
 
+<!-- Approval Details Card -->
 <div class="card shadow-sm">
     <div class="card-header bg-primary text-white">
         <h2 class="mb-0">Approval Details</h2>
@@ -36,51 +37,49 @@
     <div class="card-body">
         <div class="section-box">
 
-        <!-- Approval Steps -->
-        <div class="mb-4">
-            <h4>Approval Steps</h4>
-            <ul class="list-group">
-            
-                @if (Model.Steps != null && Model.Steps.Any())
-                {
-                    var stepCount = 0;
-                    foreach (var step in Model.Steps.OrderBy(step => step.Sequence))
+            <!-- Approval Steps Section -->
+            <div class="mb-4">
+                <h4>Approval Steps</h4>
+                <ul class="list-group">
+                    @if (Model.Steps != null && Model.Steps.Any())
                     {
-                        stepCount++;
-                        <li class="list-group-item">
-                            <strong>Step @step.Sequence:</strong> 
-                            <span>@step.ApproverName</span> 
-                            (<span>@step.ApproverEmployeeNumber</span>) / 
-                            <em>@step.Position</em>
-                            -- <em>@step.StepType</em>
-                            @if (step.ActionStatus == "Pending")
-                            {
-                                <form asp-action="Resend" method="post" class="d-inline float-end ms-2">
-                                    <input type="hidden" name="StepId" value="@step.StepId" />
-                                    <button type="submit" class="btn btn-warning btn-sm">Resend</button>
-                                </form>
-                            } 
-                            @if (step.ActionStatus == "Approved")
-                            {
-                                <span class="text-success float-end">Approved</span>
-                            }
-                        </li>
+                        var stepCount = 0;
+                        foreach (var step in Model.Steps.OrderBy(step => step.Sequence))
+                        {
+                            stepCount++;
+                            <li class="list-group-item">
+                                <strong>Step @step.Sequence:</strong> 
+                                <span>@step.ApproverName</span> 
+                                (<span>@step.ApproverEmployeeNumber</span>) / 
+                                <em>@step.Position</em>
+                                -- <em>@step.StepType</em>
+                                @if (step.ActionStatus == "Pending")
+                                {
+                                    <!-- Resend button for pending steps -->
+                                    <form asp-action="Resend" method="post" class="d-inline float-end ms-2">
+                                        <input type="hidden" name="StepId" value="@step.StepId" />
+                                        <button type="submit" class="btn btn-warning btn-sm">Resend</button>
+                                    </form>
+                                } 
+                                @if (step.ActionStatus == "Approved")
+                                {
+                                    <!-- Display approved status -->
+                                    <span class="text-success float-end">Approved</span>
+                                }
+                            </li>
+                        }
                     }
-                }
-                else
-                {
-                    <p>No steps available.</p>
-                }
+                    else
+                    {
+                        <p>No steps available.</p>
+                    }
+                </ul>
+            </div>
+        </div>
 
-            </ul>
-        </div>
-        </div>
+        <!-- Approval Details Table -->
         <table class="table table-bordered table-striped">
             <tbody>
-                @* <tr>
-                    <th style="width:200px">Approval ID</th>
-                    <td>@Model.ApprovalId</td>
-                </tr> *@
                 <tr>
                     <th style="width:200px">Title</th>
                     <td>@Model.RequestTitle</td>
@@ -105,10 +104,6 @@
                         </span>
                     </td>
                 </tr>
-                @* <tr>
-                    <th>Approval Type</th>
-                    <td>@(Model.ApprovalType ?? "—")</td>
-                </tr> *@
                 <tr>
                     <th>Requested At</th>
                     <td>@Model.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
@@ -127,14 +122,14 @@
                 </tr>
             </tbody>
         </table>
-
-        
-
     </div>
+
+    <!-- Actions Section -->
     <div class="card-footer">
         <h5>Actions</h5>
         @if (Model.Status == "Pending" && Model.ApplicantEmployeeNumber != @User.FindFirst(ClaimTypes.NameIdentifier)?.Value)
         {
+            <!-- Approve and Reject buttons -->
             <form asp-action="Approve" method="post" class="d-inline">
                 <input type="hidden" name="ApprovalId" value="@Model.ApprovalId" />
                 <button type="submit" class="btn btn-success">Approve</button>
@@ -150,6 +145,8 @@
         }
     </div>
 </div>
+
+<!-- Custom Styles -->
 <style>
     .section-box {
         border: 1px solid #ddd;
@@ -158,6 +155,7 @@
         margin-bottom: 20px;
         background-color: #f9f9f9;
     }
+
     #autocompleteResults {
         top: 40px;
         max-height: 250px;

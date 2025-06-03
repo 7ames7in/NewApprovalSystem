@@ -41325,6 +41325,170 @@
       ]
     },
     {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "AssetFile": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).ivgxpe9flg.hwp",
+      "AssetFile": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ivgxpe9flg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtSP9G42kdBXH3S8n08t3dgNywCjGL4pe4azhHJ0RGI="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본! (1).hwp"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.d9us5achjn.hwp",
+      "AssetFile": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d9us5achjn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "AssetFile": "uploads/(1유형 양식) 2025년 파란사다리 참가신청서(1유형) 작성본!.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MRVlQrHMnykd8EvRphv0c6It2oB+GcB6uU8CQouGEas="
+        }
+      ]
+    },
+    {
       "Route": "uploads/9주차.pdf",
       "AssetFile": "uploads/9주차.pdf",
       "Selectors": [],
@@ -41977,6 +42141,88 @@
         {
           "Name": "label",
           "Value": "uploads/한의학용어 소스 9주차.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 합본.b3y5mqwjcp.hwp",
+      "AssetFile": "uploads/한의학용어 소스 합본.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2602496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b3y5mqwjcp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/한의학용어 소스 합본.hwp"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 합본.hwp",
+      "AssetFile": "uploads/한의학용어 소스 합본.hwp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2602496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:53:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYbSKMb2j+HHpRd3svGQEJAJYUp2id9xzUuWI3ILRPg="
         }
       ]
     }

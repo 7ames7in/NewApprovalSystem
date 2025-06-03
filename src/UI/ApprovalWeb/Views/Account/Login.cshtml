@@ -1,26 +1,33 @@
 @model LoginViewModel
 
 @{
+    // Set the page title
     ViewData["Title"] = "Login";
 }
 
 <h2>Login</h2>
 
 <form asp-action="Login" method="post">
+    <!-- Email input field -->
     <div class="form-group">
         <label asp-for="EmailId"></label>
         <input asp-for="EmailId" class="form-control" />
         <span asp-validation-for="EmailId" class="text-danger"></span>
     </div>
+
+    <!-- Password input field -->
     <div class="form-group">
         <label asp-for="Password"></label>
         <input asp-for="Password" class="form-control" type="password" />
         <span asp-validation-for="Password" class="text-danger"></span>
     </div>
+
+    <!-- Submit button -->
     <button type="submit" class="btn btn-primary">Login</button>
 </form>
 
 @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
 {
+    // Display error message if it exists
     <div class="alert alert-danger mt-3">@ViewBag.ErrorMessage</div>
 }

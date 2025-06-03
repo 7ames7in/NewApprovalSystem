@@ -9,58 +9,54 @@ using Serilog;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSwaggerGen(); // Add Swagger generation
 
-// Serilog 설정
+// Add Swagger generation for API documentation
+builder.Services.AddSwaggerGen();
+
+// Configure Serilog for logging
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
     .WriteTo.File("Logs/approval_service_log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
-builder.Host.UseSerilog(); // Serilog 사용
-// Serilog 설정 완료
-// Serilog 미들웨어 추가
+builder.Host.UseSerilog(); // Use Serilog as the logging provider
 
+// Configure controllers and JSON serialization options
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
-        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; // Handle circular references
     });
 
-
-// SQLite 연결 등록
+// Register SQLite database context
 builder.Services.AddDbContext<ApprovalDbContext>(options =>
     options.UseSqlite("Data Source=Data/ApprovalService.db"));
 
+// Register repositories for dependency injection
 builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
-//builder.Services.AddScoped<IRepository<Approval>, ApprovalRepository<Approval>>();
 builder.Services.AddScoped<IRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
-builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
-
 builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 builder.Services.AddScoped<IApprovalRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
-// builder.Services.AddScoped<IApprovalTemplateRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
-// builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
 
-
-builder.Services.AddControllers();
+// Build the application
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger(); // Enable Swagger in development mode
+    app.UseSwaggerUI(); // Enable Swagger UI
 }
 
-app.MapControllers();
+app.MapControllers(); // Map controller routes
 
-// 데이터베이스 생성 및 시드
+// Ensure database is created and seed initial data
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApprovalDbContext>();
-    db.Database.EnsureCreated(); // 또는 db.Database.Migrate();
-    await ApprovalSeedData.InitializeAsync(db);
+    db.Database.EnsureCreated(); // Ensure the database is created
+    await ApprovalSeedData.InitializeAsync(db); // Seed initial data
 }
 
+// Run the application
 app.Run();
