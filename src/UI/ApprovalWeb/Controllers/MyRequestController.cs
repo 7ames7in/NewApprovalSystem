@@ -4,6 +4,7 @@ using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace ApprovalWeb.Controllers;
 
@@ -55,16 +56,35 @@ public class MyRequestController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(ApprovalRequestViewModel model)
+    public async Task<IActionResult> Create(
+        [FromForm] ApprovalRequestViewModel model)
+        // ,List<IFormFile>? files)
     {
-        if (!ModelState.IsValid)
+        if (!ModelState.IsValid) return View(model);
+        
+        if (model.Files != null)
         {
-            return View(model);
+            foreach (var file in model.Files)
+            {
+                var filePath = Path.Combine("wwwroot/uploads", file.FileName);
+                using var stream = new FileStream(filePath, FileMode.Create);
+                await file.CopyToAsync(stream);
+                var attachment = new ApprovalAttachmentViewModel
+                {
+                    FileName = file.FileName,
+                    FilePath = filePath,
+                    FileSize = file.Length,
+                    FileType = file.ContentType,
+                    UploadedByEmployeeNumber = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "Unknown",
+                    UploadedAt = DateTime.UtcNow
+                };
+                model.Attachments.Add(attachment);
+            }
         }
 
         if (!string.IsNullOrEmpty(model.StepsJson))
         {
-            var steps = System.Text.Json.JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(model.StepsJson);
+            var steps = JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(model.StepsJson);
             if (steps != null)
             {
                 foreach (var step in steps)
@@ -73,9 +93,8 @@ public class MyRequestController : Controller
                 }
             }
         }
-
+        
         var result = await _apiService.CreateApprovalRequestAsync(model);
-
         if (result.IsSuccess)
         {
             TempData["SuccessMessage"] = "Approval request created successfully.";
@@ -92,6 +111,38 @@ public class MyRequestController : Controller
 
         return View(model);
     }
+
+    public IActionResult Create2()
+    {
+        var model = new ApprovalRequestViewModel();
+
+        return View(model);
+    }
+
+    [HttpPost]
+    [Route("CreateWithFiles")]
+    public async Task<IActionResult> CreateWithFiles(
+        List<IFormFile> files,
+        [FromForm] string StepsJson,
+        [FromForm] string AttachmentsJson)
+    {
+        // 1. 파일 저장
+        foreach (var file in files)
+        {
+            var filePath = Path.Combine("wwwroot/uploads", file.FileName);
+            using var stream = new FileStream(filePath, FileMode.Create);
+            await file.CopyToAsync(stream);
+        }
+
+        // 2. JSON 디시리얼라이즈
+        var steps = JsonSerializer.Deserialize<List<ApprovalStepViewModel>>(StepsJson);
+        var attachments = JsonSerializer.Deserialize<List<ApprovalAttachmentViewModel>>(AttachmentsJson);
+
+        // 3. DB 저장 등 로직 처리
+
+        return Ok(new { Message = "Success" });
+    }
+
 
     public async Task<IActionResult> Details(string id)
     {

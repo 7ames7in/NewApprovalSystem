@@ -805,6 +805,38 @@
       "PackagePath": "staticwebassets/lib/jquery/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
+      "PackagePath": "staticwebassets/uploads/9주차.pdf"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Ticket.cs",
+      "PackagePath": "staticwebassets/uploads/Ticket.cs"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/excel_test.xls",
+      "PackagePath": "staticwebassets/uploads/excel_test.xls"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls",
+      "PackagePath": "staticwebassets/uploads/sns@746087_domeggook_buy_20250529170643.xls"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/무제.pdf",
+      "PackagePath": "staticwebassets/uploads/무제.pdf"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/볼보노동조합달력.jpeg",
+      "PackagePath": "staticwebassets/uploads/볼보노동조합달력.jpeg"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학 용어 소스 합본.pdf",
+      "PackagePath": "staticwebassets/uploads/한의학 용어 소스 합본.pdf"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 9주차.pdf",
+      "PackagePath": "staticwebassets/uploads/한의학용어 소스 9주차.pdf"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.ApprovalWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

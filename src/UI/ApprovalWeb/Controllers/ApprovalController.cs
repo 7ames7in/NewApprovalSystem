@@ -2,10 +2,12 @@ using ApprovalWeb.Models;
 using ApprovalWeb.Services;
 using ApprovalWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 
 namespace ApprovalWeb.Controllers;
 
+[Authorize]
 public class ApprovalController : Controller
 {
     private readonly IApprovalService _apiService;

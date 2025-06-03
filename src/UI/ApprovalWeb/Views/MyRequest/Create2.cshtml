@@ -1,0 +1,344 @@
+@model ApprovalRequestViewModel
+@using System.Security.Claims
+@using System.Text.Json
+
+@{
+    var options = new JsonSerializerOptions
+    {
+        PropertyNamingPolicy = null // <- 이것이 핵심!
+    };
+    var stepsData = JsonSerializer.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>(), options);
+    var attachmentsData = JsonSerializer.Serialize(Model.Attachments ?? new List<ApprovalAttachmentViewModel>(), options); 
+}
+
+<h2>Submit Approval Request</h2>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/utility.js"></script>
+<script>
+    $(document).ready(function () {
+        const $input = $("#userSearchInput");
+        const $results = $("#autocompleteResults");
+
+        // Load existing steps into a JavaScript variable
+        const stepsData = @Html.Raw(stepsData);
+        const attachmentsData = @Html.Raw(attachmentsData);
+
+        console.log("Existing Steps Data:", stepsData);
+        console.log("Existing Attachments Data:", attachmentsData);
+
+        // Call the function to display steps and attachments
+        displaySteps(stepsData);
+        displayAttachments(attachmentsData);
+
+        console.log("Existing Steps Data:", stepsData); 
+
+        $input.on("input", function () {
+            const query = $input.val();
+            $("#addButton").prop("disabled", true); // Disable the add button initially
+            
+            if (query.length < 2) {
+                $results.hide();
+                return;
+            }
+
+            fetchData("https://localhost:7129/api/UserService/search", query, callback);
+        });
+
+        // Add button click event to add a new attachment
+        $("#addAttachmentButton").on("click", function () {
+            const fileInput = document.querySelector('input[type="file"]');
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const newAttachment = {
+                    FileName: file.name,
+                    FileSize: file.size,
+                    FileType: file.type
+                };
+
+                // Add the new attachment to attachmentsData
+                attachmentsData.push(newAttachment);
+
+                // Display updated attachments
+                displayAttachments(attachmentsData);
+                
+                // Clear the file input
+                fileInput.value = "";
+            } else {
+                alert("Please select a file to attach.");
+            }
+        });
+
+        // Add button click event to add a new step
+        $("#addButton").on("click", function () {
+            const approverInfo = $("#userSearchInput").val();
+            const selectedItem = $results.find("li:contains('" + approverInfo + "')");
+            const approverName = selectedItem.data("name");
+            const approverEmployeeNumber = selectedItem.data("id");
+            const position = selectedItem.data("position");
+            const stepType = $("#approvalType").val();
+            const department = selectedItem.data("department");
+
+            if (approverName && stepType) {
+                // Check for duplicates
+                const isDuplicate = stepsData.some(step => step.approverEmployeeNumber === approverEmployeeNumber);
+                if (isDuplicate) {
+                    alert("This approver is already added to the steps.");
+                    return;
+                }
+
+                const newStep = {
+                    Sequence: stepsData.length + 1, // Incremental sequence number
+                    ApproverName: approverName,
+                    ApproverEmployeeNumber: approverEmployeeNumber,
+                    Position: position,
+                    Department: department,
+                    StepType: stepType
+                };
+
+                // Add the new step to stepsData
+                stepsData.push(newStep);
+
+                // Display updated steps
+                displaySteps(stepsData);
+                $("#addButton").prop("disabled", true);
+
+                // Clear the input field
+                $("#userSearchInput").val("");
+            } else {
+                alert("Please select an approver and approval type.");
+            }
+        });
+
+        // 클릭 이벤트로 사용자 선택
+        $results.on("click", "li", function () {
+            const userId = $(this).data("id");
+            const userName = $(this).text();
+            $results.hide();
+            $input.val(userName); // 선택된 사용자 이름을 입력 필드에 표시
+            $("#addButton").prop("disabled", false); // Enable the add button
+        });
+    });
+    
+    function callback(data) {
+        const $results = $("#autocompleteResults");
+        $results.empty();
+
+        if (data.length > 0) { //data.result.length
+            data.forEach(user => {
+            const $item = $("<li class='list-group-item'></li>")
+                .html(`<strong>${user.name} (${user.employeeNumber})</strong> - <em>${user.department}</em> / <span>${user.position}</span>`)
+                .data("id", user.employeeNumber)
+                .data("name", user.name)
+                .data("position", user.position)
+                .data("department", user.department);
+            $results.append($item);
+        });
+        $results.show();
+    } else {
+        $results.hide();
+    }
+    }
+
+    // Display existing steps in the list
+    function displaySteps(stepsData) {
+        document.getElementById("StepsJson").value = JSON.stringify(stepsData);
+        const $stepsList = $(".list-group");
+        $stepsList.empty(); // Clear existing steps
+
+        if (stepsData.length > 0) {
+            const sortedSteps = stepsData.sort((a, b) => {
+                    const order = { "Approval": 1, "Agreement": 2, "Notification": 3, "Reference": 4, "Review": 5 };
+                    return order[a.stepType] - order[b.stepType];
+            });
+
+            sortedSteps.forEach((step, index) => {
+                const $stepItem = $("<li class='list-group-item'></li>")
+                .html(`<strong>Step ${index + 1}:</strong> <span>${step.ApproverName}</span> (<span>${step.ApproverEmployeeNumber}</span>) / <span>${step.Position}</span> / <em>${step.StepType}</em>`);
+                $stepsList.append($stepItem);
+            });
+        } else {
+            $stepsList.append("<p>No steps available.</p>");
+        }
+    }
+
+
+    function displayAttachments(attachmentsData) {
+        document.getElementById("AttachmentsJson").value = JSON.stringify(attachmentsData);
+        const $attachmentsList = $(".list-group-attched");
+        $attachmentsList.empty(); // Clear existing attachments
+
+        if (attachmentsData.length > 0) {
+        attachmentsData.forEach((attachment, index) => {
+            const $attachmentItem = $("<li class='list-group-attached-item'></li>")
+            .html(`<span>${attachment.FileName}</span> 
+                    <button type="button" class="btn btn-danger btn-sm float-end" data-index="${index}">Remove</button>`);
+            $attachmentsList.append($attachmentItem);
+        });
+
+        // Add event listener for remove buttons
+        $attachmentsList.on("click", ".btn-danger", function () {
+            const index = $(this).data("index");
+            attachmentsData.splice(index, 1); // Remove the attachment from the array
+            displayAttachments(attachmentsData); // Refresh the list
+        });
+        } else {
+        $attachmentsList.append("<p>No attachments available.</p>");
+        }
+    }
+
+</script>
+
+<div class="section-box">
+
+<!-- Approver Add -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <h4>Approval Type</h4>
+        <div class="form-group">
+            <select id="approvalType" class="form-control" asp-for="ApprovalType">
+            <option value="Approval">Approval</option>
+            <option value="Agreement">Agreement</option>
+            <option value="Review">Review</option>
+            <option value="Notification">Notification</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <!-- User Search -->
+        <div class="mb-4">
+            <h4>Find Approver</h4>
+            <div class="input-group">
+                <input type="text" class="form-control me-2" placeholder="Search for user..." id="userSearchInput" />
+                <ul class="list-group position-absolute" id="autocompleteResults" style="z-index: 1000; display: none;"></ul>
+                <button type="button" class="btn btn-secondary" data-bs-target="#userSearchModal" id="addButton" disabled>Add</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<hr />
+
+<div class="section-box">
+
+<!-- Approval Steps -->
+<div class="mb-4">
+    <h4>Approval Steps</h4>
+    <ul class="list-group">
+    
+    </ul>
+</div>
+</div>
+
+<hr />
+
+<div class="section-box">
+
+<!-- Modal for User Search -->
+<div class="modal fade" id="userSearchModal" tabindex="-1" aria-labelledby="userSearchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userSearchModalLabel">Search User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Search functionality goes here...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Select User</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form -->
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    
+    <div class="form-group mb-3" style="display: none;">
+        <label>ApplicationEmployeeNumber</label>
+        <input type="hidden" asp-for="ApplicantEmployeeNumber" class="form-control" readonly value="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value" />
+    </div>
+    <div class="form-group mb-3">
+        <label>ApplicantName</label>
+        <input asp-for="ApplicantName" class="form-control" readonly value="@User.Identity?.Name" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Department</label>
+        <input asp-for="ApplicantDepartment" class="form-control" readonly value="@User.FindFirst("Department")?.Value" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Title</label>
+        <input asp-for="RequestTitle" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Content</label>
+        <textarea asp-for="RequestContent" class="form-control" rows="5"></textarea>
+    </div>
+    <div class="form-group mb-3">
+        <label>Attach File</label>
+        <div class="input-group">
+            @* <input type="file" class="form-control" /> *@
+            <input type="file" id="fileInput" name="files" multiple class="form-control" />
+
+            <button type="button" class="btn btn-secondary" id="addAttachmentButton">Add</button>
+        </div>
+        <div class="mt-2">
+            <ul class="list-group-attched">
+                <li class="list-group-attached-item">
+                    <span>example.txt</span>
+                    <button type="button" class="btn btn-danger btn-sm float-end" onclick="removeAttachment(this)">Remove</button>
+                </li>
+            </ul>
+        </div>
+        @* <input type="hidden" asp-for="AttachedFiles" class="form-control" />
+        <input type="hidden" name="AttachedFiles" value="@Model.AttachedFiles" /> *@
+        <small class="form-text text-muted">Optional: Attach any relevant files.</small>
+    </div>  
+    <input type="hidden" name="StepsJson" id="StepsJson" />
+    <input type="hidden" name="AttachmentsJson" id="AttachmentsJson" />
+
+    <button type="submit" class="btn btn-success" onclick="prepareFormData()">Submit</button>
+
+    <script>
+        function prepareFormData() {
+            //const stepsData = @Html.Raw(Json.Serialize(Model.Steps ?? new List<ApprovalStepViewModel>()));
+            //document.getElementById("StepsJson").value = JSON.stringify(stepsData);
+        }
+    </script>
+</form>
+</div>
+
+<style>
+    .section-box {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+    #autocompleteResults {
+        top: 40px;
+        max-height: 250px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+    }
+
+    #autocompleteResults .list-group-item {
+        cursor: pointer;
+    }
+
+    #autocompleteResults .list-group-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+<div class="section-box">
+    <h4>Notice</h4>
+    <p>Please ensure all required fields are filled out before submitting the approval request. Double-check the approval steps for accuracy.</p>
+</div>

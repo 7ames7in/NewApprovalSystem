@@ -19,4 +19,6 @@ public class ApprovalRequestViewModel
 
     public List<ApprovalStepViewModel> Steps { get; set; } = new List<ApprovalStepViewModel>();
     public List<ApprovalAttachmentViewModel> Attachments { get; set; } = new List<ApprovalAttachmentViewModel>();
+
+    public List<IFormFile>? Files { get; set; }  // ✅ 반드시 public이어야 하며 속성명이 files와 일치
 }

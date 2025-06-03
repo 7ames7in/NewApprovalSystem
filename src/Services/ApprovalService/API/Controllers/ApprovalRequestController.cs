@@ -75,6 +75,13 @@ namespace ApprovalService.API.Controllers
                 step.ApprovalId = approvalRequest.ApprovalId; // 명시적 지정도 병행 추천
             }
 
+            // 🔽 관계 설정
+            foreach (var attachment in approvalRequest.Attachments)
+            {
+                attachment.ApprovalRequest = approvalRequest;
+                attachment.ApprovalId = approvalRequest.ApprovalId; // 명시적 지정도 병행 추천
+            }
+
             var createdRequest = await _approvalRequestRepository.CreateApprovalRequestAsync(approvalRequest);
 
             _logger.LogInformation("Approval request created successfully with ID: {ApprovalId}", createdRequest.ApprovalId);

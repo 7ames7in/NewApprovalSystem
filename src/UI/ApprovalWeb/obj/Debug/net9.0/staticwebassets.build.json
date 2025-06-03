@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UU2ADBLPyfLXB7duL+ElUwlvjmEgyG5uqLLvQLhG0So=",
+  "Hash": "xgXwkUN6m1J4PHP88rVJy5TGQsMCmoV79sIOoJfmyao=",
   "Source": "ApprovalWeb",
   "BasePath": "_content/ApprovalWeb",
   "Mode": "Default",
@@ -6693,6 +6693,174 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/9주차#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vy2rmgujkd",
+      "Integrity": "x/1rNFNC8FU1/2pyo8gAO88ShM/kDz4Sv1DPKZXqG8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/9주차.pdf"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/excel_test.xls",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/excel_test#[.{fingerprint}]?.xls",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fvcxz8flov",
+      "Integrity": "axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/excel_test.xls"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/sns@746087_domeggook_buy_20250529170643#[.{fingerprint}]?.xls",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w81d2x3cgo",
+      "Integrity": "cCJcx+OVSY+5rDwu/f/6b33cPg1JFhiPIlzwVJWbSXM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Ticket.cs",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/Ticket#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "whb4ew4lgd",
+      "Integrity": "NOEpXCOyBsMe6PtkeZhCd347d/no2iyu/GDAGcX7yV0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/Ticket.cs"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/무제.pdf",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/무제#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "44sbk87iuz",
+      "Integrity": "FAcS0KBgbLUTGBFXVPqtCzSopONlsgZU7tGzSRor9lA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/무제.pdf"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/볼보노동조합달력.jpeg",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/볼보노동조합달력#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "clazlfbee7",
+      "Integrity": "oN41H8mXpcHQ9OefQI0rdZobqz865MQz8h4woljXdpA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/볼보노동조합달력.jpeg"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학 용어 소스 합본.pdf",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/한의학 용어 소스 합본#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jvzzxsedem",
+      "Integrity": "oY78mF/K15rouc+J4k1+ydtpyXpxaVLGgvfVnYqVCnQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/한의학 용어 소스 합본.pdf"
+    },
+    {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 9주차.pdf",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/한의학용어 소스 9주차#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qa81906a38",
+      "Integrity": "QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/한의학용어 소스 9주차.pdf"
     }
   ],
   "Endpoints": [
@@ -48313,6 +48481,662 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9주차.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x/1rNFNC8FU1/2pyo8gAO88ShM/kDz4Sv1DPKZXqG8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:28:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x/1rNFNC8FU1/2pyo8gAO88ShM/kDz4Sv1DPKZXqG8c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9주차.vy2rmgujkd.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/9주차.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x/1rNFNC8FU1/2pyo8gAO88ShM/kDz4Sv1DPKZXqG8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:28:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vy2rmgujkd"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9주차.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x/1rNFNC8FU1/2pyo8gAO88ShM/kDz4Sv1DPKZXqG8c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/excel_test.fvcxz8flov.xls",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/excel_test.xls",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:21:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fvcxz8flov"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/excel_test.xls"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/excel_test.xls",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/excel_test.xls",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:21:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sns@746087_domeggook_buy_20250529170643.w81d2x3cgo.xls",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15360"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cCJcx+OVSY+5rDwu/f/6b33cPg1JFhiPIlzwVJWbSXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:21:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w81d2x3cgo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/sns@746087_domeggook_buy_20250529170643.xls"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cCJcx+OVSY+5rDwu/f/6b33cPg1JFhiPIlzwVJWbSXM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sns@746087_domeggook_buy_20250529170643.xls",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15360"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cCJcx+OVSY+5rDwu/f/6b33cPg1JFhiPIlzwVJWbSXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:21:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cCJcx+OVSY+5rDwu/f/6b33cPg1JFhiPIlzwVJWbSXM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Ticket.cs",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Ticket.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOEpXCOyBsMe6PtkeZhCd347d/no2iyu/GDAGcX7yV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:24:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOEpXCOyBsMe6PtkeZhCd347d/no2iyu/GDAGcX7yV0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Ticket.whb4ew4lgd.cs",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Ticket.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOEpXCOyBsMe6PtkeZhCd347d/no2iyu/GDAGcX7yV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:24:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "whb4ew4lgd"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Ticket.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOEpXCOyBsMe6PtkeZhCd347d/no2iyu/GDAGcX7yV0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/무제.44sbk87iuz.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/무제.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17002446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FAcS0KBgbLUTGBFXVPqtCzSopONlsgZU7tGzSRor9lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "44sbk87iuz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/무제.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FAcS0KBgbLUTGBFXVPqtCzSopONlsgZU7tGzSRor9lA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/무제.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/무제.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17002446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FAcS0KBgbLUTGBFXVPqtCzSopONlsgZU7tGzSRor9lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FAcS0KBgbLUTGBFXVPqtCzSopONlsgZU7tGzSRor9lA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/볼보노동조합달력.clazlfbee7.jpeg",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/볼보노동조합달력.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oN41H8mXpcHQ9OefQI0rdZobqz865MQz8h4woljXdpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:24:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clazlfbee7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/볼보노동조합달력.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oN41H8mXpcHQ9OefQI0rdZobqz865MQz8h4woljXdpA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/볼보노동조합달력.jpeg",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/볼보노동조합달력.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oN41H8mXpcHQ9OefQI0rdZobqz865MQz8h4woljXdpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:24:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oN41H8mXpcHQ9OefQI0rdZobqz865MQz8h4woljXdpA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학 용어 소스 합본.jvzzxsedem.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학 용어 소스 합본.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6051126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oY78mF/K15rouc+J4k1+ydtpyXpxaVLGgvfVnYqVCnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jvzzxsedem"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/한의학 용어 소스 합본.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oY78mF/K15rouc+J4k1+ydtpyXpxaVLGgvfVnYqVCnQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학 용어 소스 합본.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학 용어 소스 합본.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6051126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oY78mF/K15rouc+J4k1+ydtpyXpxaVLGgvfVnYqVCnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oY78mF/K15rouc+J4k1+ydtpyXpxaVLGgvfVnYqVCnQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 9주차.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 9주차.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "402045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:28:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/한의학용어 소스 9주차.qa81906a38.pdf",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/한의학용어 소스 9주차.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "402045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 23:28:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qa81906a38"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/한의학용어 소스 9주차.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QmkTXWpWqqsFX4IlCQO60p7v8AQjXjDn/zxxONt4nFA="
         }
       ]
     }

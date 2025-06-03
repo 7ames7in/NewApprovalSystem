@@ -71,6 +71,31 @@ namespace ApprovalService.Infrastructure.Seed
                 CreatedAt = DateTime.UtcNow.AddDays(-7)
             };
 
+            var attachment1 = new ApprovalAttachment
+            {
+                AttachmentId = Guid.NewGuid(),
+                ApprovalId = approvalid1,
+                FileName = "출장계획서.pdf",
+                FilePath = "/attachments/출장계획서.pdf",
+                UploadedAt = DateTime.UtcNow,
+                FileSize = 1024,
+                FileType = "application/pdf",
+                UploadedByEmployeeNumber = "EC20505"
+            };
+            var attachment2 = new ApprovalAttachment
+            {
+                AttachmentId = Guid.NewGuid(),
+                ApprovalId = approvalid2,
+                FileName = "회의안건.docx",
+                FilePath = "/attachments/회의안건.docx",
+                UploadedAt = DateTime.UtcNow.AddDays(-1),
+                FileSize = 2048,
+                FileType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                UploadedByEmployeeNumber = "EC20505"
+            };
+            request1.Attachments.Add(attachment1);
+            request2.Attachments.Add(attachment2);
+
             await context.ApprovalRequests.AddAsync(request1);
             await context.ApprovalRequests.AddAsync(request2);
             await context.ApprovalSteps.AddAsync(step1);
