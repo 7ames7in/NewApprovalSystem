@@ -1,0 +1,21 @@
+﻿@model ApprovalRequestViewModel
+
+
+<ul class="list-group">
+    @if (Model.Attachments != null && Model.Attachments.Any())
+    {
+        var stepCount = 0;
+        foreach (var attachedfile in Model.Attachments.OrderBy(attached => attached.AttachmentId))
+        {
+            stepCount++;
+            <li class="list-group-item">
+                <span>@attachedfile.FileName</span> 
+                <button type="button" class="btn btn-danger btn-sm float-end" data-index="@stepCount">Remove</button>
+            </li>
+        }
+    }
+    else
+    {
+        <p>No steps available.</p>
+    }
+    </ul>

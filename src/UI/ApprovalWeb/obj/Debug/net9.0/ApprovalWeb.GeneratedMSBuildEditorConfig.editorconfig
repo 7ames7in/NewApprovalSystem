@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/Views/Shared/_ApprovalSteps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BcHByb3ZhbFN0ZXBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/Views/Shared/_AttachedFiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BdHRhY2hlZEZpbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

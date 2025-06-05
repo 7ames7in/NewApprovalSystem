@@ -1,0 +1,29 @@
+2025-06-05 05:45:23.025 +09:00 [WRN] As of ""2025-06-04T20:45:17.7357460+00:00"", the heartbeat has been running for ""00:00:01.9211080"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2025-06-05 05:56:32.389 +09:00 [DBG] Connection id "0HND34J9SBORB" accepted.
+2025-06-05 05:56:32.396 +09:00 [DBG] Connection id "0HND34J9SBORB" started.
+2025-06-05 05:56:32.439 +09:00 [DBG] Connection 0HND34J9SBORB established using the following protocol: "Tls12"
+2025-06-05 05:56:32.474 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Approval - null null
+2025-06-05 05:56:32.490 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-05 05:56:32.490 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-05 05:56:32.490 +09:00 [DBG] The request path /Approval does not match a supported file type
+2025-06-05 05:56:32.491 +09:00 [DBG] 1 candidate(s) found for the request path '/Approval'
+2025-06-05 05:56:32.493 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Approval'
+2025-06-05 05:56:32.494 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)'
+2025-06-05 05:56:32.504 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-06-05 05:56:32.506 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-05 05:56:32.525 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-05 05:56:32.532 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-06-05 05:56:32.545 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638846673925258040.YmQ2YzdjN2EtODUwNy00YWY1LWJmMzYtNWMyYzBhNzI1ZjQ4ZjAzYTk1ODUtNjNhMi00ZWQxLTlhNzEtNWU2NGZlYjc4MTVj&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP1ce5_uefFN7D74qw7YLcMT8mrl9cTw63hrlnN3JLK4OzszyxFwJFo6dIUTzQg3p1b5KWOyTBRe_P0AeM8gd51IJDN0Ew-D2rt6lfL2R2Sjyr7ahLSE24gsVvN1BA8rzgXNtE8ApXXeCQNan346g-iiuPOBFFU4_9b_x9D3QQWGLtX2Jud-1VypFRckd3SDGCXSmvFvjUnuJptBzg4Fy_XzLaXNYyrL8tUofpqPW5zPPyHpW2Hb79Nkz2cl9Tfc133-nfEwgpMaYXOWAtHPA0oWlOIbG1jSMnazTwQQtGbGuA&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP0BbRRKAsJ2CJ6bDgDlE_qw032WeUojRPF2SN2chTFVCZr0o1Fl92WKANQf2Z7z2AYTkwXZSe_8ujIKGgeSv0QVTLdLO6imQsPLRG5S3XEv9Q-bwS7Uh961AN8ITFYR0n6rw-h0xocmDNjeurMQXPqa91QMejY9YYvHkNRS1LTyV82rNuOd0TxwTI6Vn5_lZ2gYn1IPVxjGJLYflkdLAeAqToludnF5GYXxYBBPjf0zqhwEzA2ias20F9Kvn_IfOCw=N; expires=Wed, 04 Jun 2025 21:11:32 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.DEtQBscvxSOQM4L0di2sSu9R-Sn2m_gb5SIneqLVAwQ=N; expires=Wed, 04 Jun 2025 21:11:32 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-05 05:56:32.545 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-05 05:56:32.547 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Approval - 302 0 null 73.718ms
+2025-06-05 05:56:32.681 +09:00 [DBG] Connection id "0HND34J9SBORB" received FIN.
+2025-06-05 05:56:32.682 +09:00 [DBG] Connection id "0HND34J9SBORB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-05 05:56:32.682 +09:00 [DBG] Connection id "0HND34J9SBORB" is closed. The last processed stream ID was 1.
+2025-06-05 05:56:32.684 +09:00 [DBG] The connection queue processing loop for 0HND34J9SBORB completed.
+2025-06-05 05:56:32.684 +09:00 [DBG] Connection id "0HND34J9SBORB" stopped.
+2025-06-05 05:56:33.122 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-06-05 05:56:33.125 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-05 05:56:33.125 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-06-05 05:56:33.434 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-05 05:56:33.434 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.

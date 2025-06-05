@@ -88,6 +88,7 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
     {
         return await _context.Set<T>()
             .Include(p => p.Steps)
+            .Include(p => p.Attachments)
             .SingleOrDefaultAsync(request => request.ApprovalId == id);
     }
 

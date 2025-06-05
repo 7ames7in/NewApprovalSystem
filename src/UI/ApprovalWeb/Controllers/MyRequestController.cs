@@ -61,14 +61,25 @@ public class MyRequestController : Controller
         {
             foreach (var file in model.Files)
             {
+                var fileName = Path.GetFileNameWithoutExtension(file.FileName);
+                var extension = Path.GetExtension(file.FileName);
                 var filePath = Path.Combine("wwwroot/uploads", file.FileName);
+
+                // Ensure unique file name if file already exists
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
+                {
+                    filePath = Path.Combine("wwwroot/uploads", $"{fileName}_{counter}{extension}");
+                    counter++;
+                }
+
                 using var stream = new FileStream(filePath, FileMode.Create);
                 await file.CopyToAsync(stream);
 
                 // Create attachment metadata
                 var attachment = new ApprovalAttachmentViewModel
                 {
-                    FileName = file.FileName,
+                    FileName = Path.GetFileName(filePath),
                     FilePath = filePath,
                     FileSize = file.Length,
                     FileType = file.ContentType,

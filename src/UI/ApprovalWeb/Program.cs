@@ -42,6 +42,7 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<IAuthenticationService, LocalAuthenticationService>();
 builder.Services.AddScoped<IUserContext, ClaimUserContext>();
 
+/*
 #region Authentication Configuration
 // Configure cookie-based authentication
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -62,13 +63,13 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
 });
 #endregion
+*/
 
 // Add controllers with views
 builder.Services.AddControllersWithViews();
 
 #region Azure AD Authentication (Commented Out)
 // Example configuration for Azure AD authentication (currently disabled)
-/*
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("Instance")}");
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("ClientId")}");
 Log.Information($"AzureAd: {builder.Configuration.GetSection("AzureAd").GetValue<string>("TenantId")}");
@@ -84,7 +85,7 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AuthorizeFilter(policy));
 });
 builder.Services.AddRazorPages();
-*/
+
 #endregion
 
 #region Service Registration
