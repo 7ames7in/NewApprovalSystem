@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApprovalService.API.Controllers
 {
@@ -9,11 +10,11 @@ namespace ApprovalService.API.Controllers
     [ApiController]
     public class ApprovalRequestController : ControllerBase
     {
-        private readonly IApprovalRequestRepository<ApprovalRequest> _approvalRequestRepository;
+        private readonly IApprovalRequestRepository<ApprovalRequestWithCurrentStepDto> _approvalRequestRepository;
         private readonly ILogger<ApprovalRequestController> _logger;
 
         public ApprovalRequestController(
-            IApprovalRequestRepository<ApprovalRequest> approvalRequestRepository, 
+            IApprovalRequestRepository<ApprovalRequestWithCurrentStepDto> approvalRequestRepository, 
             ILogger<ApprovalRequestController> logger)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
@@ -27,6 +28,18 @@ namespace ApprovalService.API.Controllers
         /// <returns>A list of approval requests.</returns>
         [HttpGet("my-requests/{userId}")]
         public async Task<IActionResult> GetMyRequests(string userId)
+        {
+            // IQueryable을 먼저 가져온다
+            var query = _approvalRequestRepository.GetApprovalRequestsWithCurrentStep(userId);
+
+            // 여기서 실제 쿼리를 날림 (비동기 실행)
+            var requests = await query.ToListAsync();
+
+            return Ok(requests);
+        }
+
+        [HttpGet("my-requests2/{userId}")]
+        public async Task<IActionResult> GetMyRequests2(string userId)
         {
             var requests = await _approvalRequestRepository.GetMyRequestsAsync(userId);
             return Ok(requests);
@@ -90,7 +103,7 @@ namespace ApprovalService.API.Controllers
         /// <param name="approvalRequest">The approval request to create.</param>
         /// <returns>The created approval request with a 201 Created status.</returns>
         [HttpPost("create")]
-        public async Task<IActionResult> CreateApprovalRequest([FromBody] ApprovalRequest approvalRequest)
+        public async Task<IActionResult> CreateApprovalRequest([FromBody] ApprovalRequestWithCurrentStepDto approvalRequest)
         {
             _logger.LogInformation("Creating a new approval request.");
             _logger.LogDebug("Approval Request Details: {@ApprovalRequest}", approvalRequest);
@@ -105,6 +118,14 @@ namespace ApprovalService.API.Controllers
             // Set relationships for approval steps
             foreach (var step in approvalRequest.Steps)
             {
+                if (step.Sequence == 1)
+                {
+                    // Set the first step as the current step
+                    approvalRequest.CurrentApproverEmployeeNumber = step.ApproverEmployeeNumber;
+                    approvalRequest.CurrentStep = step.Sequence;
+                    approvalRequest.CurrentActionStatus = step.ActionStatus;
+                    approvalRequest.CurrentApproverName = step.ApproverName;
+                }
                 step.ApprovalRequest = approvalRequest;
                 step.ApprovalId = approvalRequest.ApprovalId; // Explicit assignment recommended
             }

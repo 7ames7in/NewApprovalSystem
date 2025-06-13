@@ -9,14 +9,15 @@ using System.Text.Json;
 namespace ApprovalWeb.Controllers;
 
 [Authorize]
-public class MyRequestController : Controller
+public class MyRequestController : BaseController
 {
     private readonly IApprovalRequestService _apiService;
+    private readonly IUserContext _userContext;
 
-    // Constructor to inject the approval request service
-    public MyRequestController(IApprovalRequestService apiService)
+    public MyRequestController(IApprovalRequestService apiService, IUserContext userContext)
     {
-        _apiService = apiService;
+        _apiService = apiService ?? throw new ArgumentNullException(nameof(apiService));
+        _userContext = userContext ?? throw new ArgumentNullException(nameof(userContext));
     }
 
     // Displays the list of approval requests for the logged-in user
@@ -24,28 +25,15 @@ public class MyRequestController : Controller
     {
         var user = HttpContext.User;
 
-        // Retrieve user information from claims
-        var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        var userName = user.Identity?.Name;
-        var email = user.FindFirst(ClaimTypes.Email)?.Value;
-        var role = user.FindFirst(ClaimTypes.Role)?.Value;
-        var department = user.FindFirst("Department")?.Value;
-
-        // Redirect to login if user ID is not found
-        if (string.IsNullOrEmpty(userId))
-        {
-            return RedirectToAction("Login", "Account");
-        }
-
         // Store user information in ViewBag for use in the view
-        ViewBag.UserId = userId;
-        ViewBag.UserName = userName;
-        ViewBag.Email = email;
-        ViewBag.Role = role;
-        ViewBag.Department = "test"; // Replace with actual department if available
+        ViewBag.UserId = _userContext.UserId;
+        ViewBag.UserName = _userContext.UserName;
+        ViewBag.Email = _userContext.Email;
+        ViewBag.Role = _userContext.Role;
+        ViewBag.Department = _userContext.Department;
 
         // Fetch the user's approval requests
-        var requests = await _apiService.GetMyRequestsAsync(userId);
+        var requests = await _apiService.GetMyRequestsAsync(_userContext.UserId?? string.Empty);
         return View(requests);
     }
 

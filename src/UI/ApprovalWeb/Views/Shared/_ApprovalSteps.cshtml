@@ -14,6 +14,11 @@
                 (<span>@step.ApproverEmployeeNumber</span>) / 
                 <em>@step.Position</em>
                 -- <em>@step.StepType</em>
+                <span class="badge @(step.ActionStatus switch {
+                            "Approved" => "bg-success",
+                            "Rejected" => "bg-danger",
+                            _ => "bg-warning text-dark"
+                        })">@step.ActionStatus</span>
                 @if (step.ActionStatus == "Pending")
                 {
                     <!-- Resend button for pending steps -->

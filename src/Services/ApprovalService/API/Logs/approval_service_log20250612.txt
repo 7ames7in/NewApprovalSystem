@@ -1,0 +1,865 @@
+2025-06-12 20:34:08.045 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-12 20:34:08.152 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-12 20:34:08.548 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 20:34:08.562 +09:00 [DBG] Creating DbConnection.
+2025-06-12 20:34:08.575 +09:00 [DBG] Created DbConnection. (10ms).
+2025-06-12 20:34:08.581 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.588 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.590 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.592 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 20:34:08.595 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-12 20:34:08.596 +09:00 [DBG] Creating DbConnection.
+2025-06-12 20:34:08.596 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 20:34:08.601 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2025-06-12 20:34:08.602 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2025-06-12 20:34:08.602 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.603 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.607 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-12 20:34:08.621 +09:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-12 20:34:08.623 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.624 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (1ms).
+2025-06-12 20:34:08.633 +09:00 [DBG] Creating DbConnection.
+2025-06-12 20:34:08.633 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 20:34:08.633 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.633 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.633 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.633 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 20:34:08.633 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-12 20:34:08.633 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-12 20:34:08.634 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-12 20:34:08.634 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.634 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.634 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-12 20:34:08.634 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-12 20:34:08.634 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.635 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 20:34:08.678 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalRequest>()
+    .Any()'
+2025-06-12 20:34:08.843 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalRequests AS a)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalRequests AS a), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: ApprovalService.Infrastructure.Persistence.ApprovalDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-12 20:34:08.859 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.860 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.860 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 20:34:08.860 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 20:34:08.860 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 20:34:08.860 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalRequests" AS "a")
+2025-06-12 20:34:08.861 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalRequests" AS "a")
+2025-06-12 20:34:08.864 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.865 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 2ms reading results.
+2025-06-12 20:34:08.866 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 20:34:08.866 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 20:34:08.867 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 20:34:08.868 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 20:34:08.868 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 20:34:08.872 +09:00 [DBG] Hosting starting
+2025-06-12 20:34:08.910 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-12 20:34:08.910 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 20:34:09.328 +09:00 [INF] Now listening on: https://localhost:5001
+2025-06-12 20:34:09.328 +09:00 [INF] Now listening on: http://localhost:5229
+2025-06-12 20:34:09.328 +09:00 [DBG] Loaded hosting startup assembly ApprovalService.API
+2025-06-12 20:34:09.328 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 20:34:09.329 +09:00 [INF] Hosting environment: Development
+2025-06-12 20:34:09.329 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API
+2025-06-12 20:34:09.329 +09:00 [DBG] Hosting started
+2025-06-12 21:00:06.062 +09:00 [DBG] Connection id "0HND9L2LUR7PV" accepted.
+2025-06-12 21:00:06.071 +09:00 [DBG] Connection id "0HND9L2LUR7PV" started.
+2025-06-12 21:00:06.131 +09:00 [DBG] Connection 0HND9L2LUR7PV established using the following protocol: "Tls12"
+2025-06-12 21:00:06.166 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - null null
+2025-06-12 21:00:06.194 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:06.197 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)' with route pattern 'api/ApprovalRequest/my-requests/{userId}' is valid for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:06.197 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:06.224 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-12 21:00:06.224 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:06.252 +09:00 [INF] Route matched with {action = "GetMyRequests", controller = "ApprovalRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyRequests(System.String) on controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API).
+2025-06-12 21:00:06.253 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-12 21:00:06.253 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-12 21:00:06.254 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 21:00:06.254 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:06.254 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 21:00:06.255 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:06.259 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:06.263 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:06.263 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' using the name 'userId' in request data ...
+2025-06-12 21:00:06.264 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:06.264 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:06.264 +09:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:06.268 +09:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:06.288 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 21:00:06.300 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalRequest>()
+    .Where(request => EF.Property<string>(request, "ApplicantEmployeeNumber") == __userId_0)
+    .Include(request => request.Steps)
+    .OrderByDescending(request => request.RequestedAt)'
+2025-06-12 21:00:06.312 +09:00 [DBG] Including navigation: 'ApprovalRequest.Steps'.
+2025-06-12 21:00:06.375 +09:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<ApprovalRequest>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: ApprovalRequest.ApprovalId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApprovalRequest.ApplicantDepartment (string), 1], [Property: ApprovalRequest.ApplicantEmployeeNumber (string) Required, 2], [Property: ApprovalRequest.ApplicantName (string) Required, 3], [Property: ApprovalRequest.ApplicantPosition (string), 4], [Property: ApprovalRequest.ApprovalType (string), 5], [Property: ApprovalRequest.ApproverComment (string), 6], [Property: ApprovalRequest.MisKey (string), 7], [Property: ApprovalRequest.RequestContent (string), 8], [Property: ApprovalRequest.RequestTitle (string) Required, 9], [Property: ApprovalRequest.RequestedAt (DateTime) Required, 10], [Property: ApprovalRequest.RespondedAt (DateTime?), 11], [Property: ApprovalRequest.Status (string) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: ApprovalStep.StepId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ApprovalStep.ActionDate (DateTime?), 14], [Property: ApprovalStep.ActionStatus (string), 15], [Property: ApprovalStep.ApprovalId (Guid) Required FK Index, 16], [Property: ApprovalStep.ApproverEmployeeNumber (string) Required, 17], [Property: ApprovalStep.ApproverName (string), 18], [Property: ApprovalStep.Comment (string), 19], [Property: ApprovalStep.Department (string), 20], [Property: ApprovalStep.IsFinalApprover (bool) Required, 21], [Property: ApprovalStep.Position (string), 22], [Property: ApprovalStep.Sequence (int) Required, 23], [Property: ApprovalStep.StepType (string), 24] }
+            3 -> 13
+        SELECT a.ApprovalId, a.ApplicantDepartment, a.ApplicantEmployeeNumber, a.ApplicantName, a.ApplicantPosition, a.ApprovalType, a.ApproverComment, a.MisKey, a.RequestContent, a.RequestTitle, a.RequestedAt, a.RespondedAt, a.Status, a0.StepId, a0.ActionDate, a0.ActionStatus, a0.ApprovalId, a0.ApproverEmployeeNumber, a0.ApproverName, a0.Comment, a0.Department, a0.IsFinalApprover, a0.Position, a0.Sequence, a0.StepType
+        FROM ApprovalRequests AS a
+        LEFT JOIN ApprovalSteps AS a0 ON a.ApprovalId == a0.ApprovalId
+        WHERE a.ApplicantEmployeeNumber == @__userId_0
+        ORDER BY a.RequestedAt DESC, a.ApprovalId ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: ApprovalRequest.ApprovalId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApprovalRequest.ApplicantDepartment (string), 1], [Property: ApprovalRequest.ApplicantEmployeeNumber (string) Required, 2], [Property: ApprovalRequest.ApplicantName (string) Required, 3], [Property: ApprovalRequest.ApplicantPosition (string), 4], [Property: ApprovalRequest.ApprovalType (string), 5], [Property: ApprovalRequest.ApproverComment (string), 6], [Property: ApprovalRequest.MisKey (string), 7], [Property: ApprovalRequest.RequestContent (string), 8], [Property: ApprovalRequest.RequestTitle (string) Required, 9], [Property: ApprovalRequest.RequestedAt (DateTime) Required, 10], [Property: ApprovalRequest.RespondedAt (DateTime?), 11], [Property: ApprovalRequest.Status (string) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: ApprovalStep.StepId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ApprovalStep.ActionDate (DateTime?), 14], [Property: ApprovalStep.ActionStatus (string), 15], [Property: ApprovalStep.ApprovalId (Guid) Required FK Index, 16], [Property: ApprovalStep.ApproverEmployeeNumber (string) Required, 17], [Property: ApprovalStep.ApproverName (string), 18], [Property: ApprovalStep.Comment (string), 19], [Property: ApprovalStep.Department (string), 20], [Property: ApprovalStep.IsFinalApprover (bool) Required, 21], [Property: ApprovalStep.Position (string), 22], [Property: ApprovalStep.Sequence (int) Required, 23], [Property: ApprovalStep.StepType (string), 24] }
+            3 -> 13
+        SELECT a.ApprovalId, a.ApplicantDepartment, a.ApplicantEmployeeNumber, a.ApplicantName, a.ApplicantPosition, a.ApprovalType, a.ApproverComment, a.MisKey, a.RequestContent, a.RequestTitle, a.RequestedAt, a.RespondedAt, a.Status, a0.StepId, a0.ActionDate, a0.ActionStatus, a0.ApprovalId, a0.ApproverEmployeeNumber, a0.ApproverName, a0.Comment, a0.Department, a0.IsFinalApprover, a0.Position, a0.Sequence, a0.StepType
+        FROM ApprovalRequests AS a
+        LEFT JOIN ApprovalSteps AS a0 ON a.ApprovalId == a0.ApprovalId
+        WHERE a.ApplicantEmployeeNumber == @__userId_0
+        ORDER BY a.RequestedAt DESC, a.ApprovalId ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        resultContext.Values == null ? 
+        {
+            ApprovalRequest entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                ApprovalRequest instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(ApprovalRequest);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: ApprovalRequest.ApprovalId PK | Resolver: c => c.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (ApprovalRequest)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")]: 
+                            {
+                                return 
+                                {
+                                    ApprovalRequest instance;
+                                    instance = new ApprovalRequest();
+                                    instance.<ApprovalId>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<ApplicantDepartment>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                    instance.<ApplicantEmployeeNumber>k__BackingField = dataReader.GetString(2);
+                                    instance.<ApplicantName>k__BackingField = dataReader.GetString(3);
+                                    instance.<ApplicantPosition>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<ApprovalType>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                    instance.<ApproverComment>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                    instance.<MisKey>k__BackingField = dataReader.IsDBNull(7) ? default(string) : dataReader.GetString(7);
+                                    instance.<RequestContent>k__BackingField = dataReader.IsDBNull(8) ? default(string) : dataReader.GetString(8);
+                                    instance.<RequestTitle>k__BackingField = dataReader.GetString(9);
+                                    instance.<RequestedAt>k__BackingField = dataReader.GetDateTime(10);
+                                    instance.<RespondedAt>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<Status>k__BackingField = dataReader.GetString(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(ApprovalRequest)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            resultContext.Values = new object[]{ entity };
+            ShaperProcessingExpressionVisitor.InitializeIncludeCollection<ApprovalRequest, ApprovalRequest>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                entity: (ApprovalRequest)(resultContext.Values[0]), 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+                navigation: [LIFTABLE Constant: Navigation: ApprovalRequest.Steps (List<ApprovalStep>) Collection ToDependent ApprovalStep Inverse: ApprovalRequest | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps")], 
+                clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<ApprovalRequest, List<ApprovalStep>, ApprovalStep> | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps").GetCollectionAccessor()], 
+                trackingQuery: True, 
+                setLoaded: True);
+        } : default(void);
+        ShaperProcessingExpressionVisitor.PopulateIncludeCollection<ApprovalRequest, ApprovalStep>(
+            collectionId: 0, 
+            queryContext: queryContext, 
+            dbDataReader: dataReader, 
+            resultCoordinator: resultCoordinator, 
+            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+            selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)dataReader.IsDBNull(13) ? default(Guid?) : (Guid?)dataReader.GetGuid(13) }], 
+            parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+            {
+                ApprovalStep entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext2;
+                    IEntityType entityType2;
+                    ApprovalStep instance2;
+                    InternalEntityEntry entry2;
+                    bool hasNullKey2;
+                    materializationContext2 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance2 = default(ApprovalStep);
+                    entry2 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: ApprovalStep.StepId PK | Resolver: c => c.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep").FindPrimaryKey()], 
+                        keyValues: new object[]{ dataReader.IsDBNull(13) ? default(object) : (object)dataReader.GetGuid(13) }, 
+                        throwOnNullKey: False, 
+                        hasNullKey: hasNullKey2);
+                    !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                    {
+                        entityType2 = entry2.EntityType;
+                        return instance2 = (ApprovalStep)entry2.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot2;
+                        shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType2 = [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")];
+                        instance2 = switch (entityType2)
+                        {
+                            case [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")]: 
+                                {
+                                    return 
+                                    {
+                                        ApprovalStep instance;
+                                        instance = new ApprovalStep();
+                                        instance.<StepId>k__BackingField = dataReader.IsDBNull(13) ? default(Guid) : dataReader.GetGuid(13);
+                                        instance.<ActionDate>k__BackingField = dataReader.IsDBNull(14) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(14);
+                                        instance.<ActionStatus>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                        instance.<ApprovalId>k__BackingField = dataReader.IsDBNull(16) ? default(Guid) : dataReader.GetGuid(16);
+                                        instance.<ApproverEmployeeNumber>k__BackingField = dataReader.IsDBNull(17) ? default(string) : dataReader.GetString(17);
+                                        instance.<ApproverName>k__BackingField = dataReader.IsDBNull(18) ? default(string) : dataReader.GetString(18);
+                                        instance.<Comment>k__BackingField = dataReader.IsDBNull(19) ? default(string) : dataReader.GetString(19);
+                                        instance.<Department>k__BackingField = dataReader.IsDBNull(20) ? default(string) : dataReader.GetString(20);
+                                        instance.<IsFinalApprover>k__BackingField = dataReader.IsDBNull(21) ? default(bool) : dataReader.GetBoolean(21);
+                                        instance.<Position>k__BackingField = dataReader.IsDBNull(22) ? default(string) : dataReader.GetString(22);
+                                        instance.<Sequence>k__BackingField = dataReader.IsDBNull(23) ? default(int) : dataReader.GetInt32(23);
+                                        instance.<StepType>k__BackingField = dataReader.IsDBNull(24) ? default(string) : dataReader.GetString(24);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext2.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(ApprovalStep)
+                        }
+                        ;
+                        entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType2, 
+                            entity: instance2, 
+                            snapshot: shadowSnapshot2);
+                        return instance2;
+                    } : default(void);
+                    return instance2;
+                };
+                return entity;
+            }, 
+            inverseNavigation: [LIFTABLE Constant: Navigation: ApprovalStep.ApprovalRequest (ApprovalRequest) ToPrincipal ApprovalRequest Inverse: Steps | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep").FindNavigation("ApprovalRequest")], 
+            fixup: (namelessParameter{9}, namelessParameter{10}) => 
+            {
+                [LIFTABLE Constant: ClrICollectionAccessor<ApprovalRequest, List<ApprovalStep>, ApprovalStep> | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{9}, 
+                    value: namelessParameter{10}, 
+                    forMaterialization: True);
+                return namelessParameter{10}.<ApprovalRequest>k__BackingField = namelessParameter{9};
+            }, 
+            trackingQuery: True);
+        return IsTrue(resultCoordinator.ResultReady)
+         ? (ApprovalRequest)(resultContext.Values[0]) : default(ApprovalRequest);
+    }, 
+    contextType: ApprovalService.Infrastructure.Persistence.ApprovalDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-06-12 21:00:06.395 +09:00 [DBG] Creating DbConnection.
+2025-06-12 21:00:06.397 +09:00 [DBG] Created DbConnection. (5ms).
+2025-06-12 21:00:06.398 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:06.435 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:06.436 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 21:00:06.436 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:06.439 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-06-12 21:00:06.447 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:06.460 +09:00 [INF] Executed DbCommand (20ms) [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:06.461 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:06.461 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 1ms reading results.
+2025-06-12 21:00:06.461 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:06.461 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:06.464 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 21:00:06.464 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-12 21:00:06.464 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 21:00:06.464 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 21:00:06.465 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-12 21:00:06.465 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequest, ApprovalService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 21:00:06.513 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API) in 257.1356ms
+2025-06-12 21:00:06.515 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:06.516 +09:00 [DBG] Connection id "0HND9L2LUR7PV" completed keep alive response.
+2025-06-12 21:00:06.516 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 21:00:06.518 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:06.518 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:06.519 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - 200 null application/json; charset=utf-8 354.2898ms
+2025-06-12 21:00:30.378 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - null null
+2025-06-12 21:00:30.381 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:30.381 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)' with route pattern 'api/ApprovalRequest/my-requests/{userId}' is valid for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:30.381 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:30.390 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-12 21:00:30.390 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:30.391 +09:00 [INF] Route matched with {action = "GetMyRequests", controller = "ApprovalRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyRequests(System.String) on controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API).
+2025-06-12 21:00:30.391 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-12 21:00:30.391 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-12 21:00:30.392 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 21:00:30.392 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:30.392 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 21:00:30.393 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:30.396 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:30.396 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:30.397 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' using the name 'userId' in request data ...
+2025-06-12 21:00:30.397 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:30.397 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:30.397 +09:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:30.397 +09:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:30.429 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 21:00:30.432 +09:00 [DBG] Creating DbConnection.
+2025-06-12 21:00:30.432 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 21:00:30.432 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:30.432 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:30.433 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 21:00:30.433 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:30.433 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:30.433 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:30.433 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:30.434 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:30.434 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 0ms reading results.
+2025-06-12 21:00:30.434 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:30.434 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:30.434 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 21:00:30.434 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-12 21:00:30.434 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 21:00:30.434 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 21:00:30.434 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-12 21:00:30.434 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequest, ApprovalService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 21:00:30.435 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API) in 42.3287ms
+2025-06-12 21:00:30.435 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:30.435 +09:00 [DBG] Connection id "0HND9L2LUR7PV" completed keep alive response.
+2025-06-12 21:00:30.435 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 21:00:30.435 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:30.435 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:30.435 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - 200 null application/json; charset=utf-8 59.4746ms
+2025-06-12 21:00:32.234 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - null null
+2025-06-12 21:00:32.234 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:32.234 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (ApprovalService.API)' with route pattern 'api/Approval/my-approvals/{approverId}' is valid for the request path '/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:32.234 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (ApprovalService.API)'
+2025-06-12 21:00:32.236 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-12 21:00:32.236 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (ApprovalService.API)'
+2025-06-12 21:00:32.243 +09:00 [INF] Route matched with {action = "GetMyApprovals", controller = "Approval"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyApprovals(System.String) on controller ApprovalService.API.Controllers.ApprovalController (ApprovalService.API).
+2025-06-12 21:00:32.244 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-12 21:00:32.244 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-12 21:00:32.244 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 21:00:32.244 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:32.244 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 21:00:32.244 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalController (ApprovalService.API)
+2025-06-12 21:00:32.244 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalController (ApprovalService.API)
+2025-06-12 21:00:32.245 +09:00 [DBG] Attempting to bind parameter 'approverId' of type 'System.String' ...
+2025-06-12 21:00:32.245 +09:00 [DBG] Attempting to bind parameter 'approverId' of type 'System.String' using the name 'approverId' in request data ...
+2025-06-12 21:00:32.245 +09:00 [DBG] Done attempting to bind parameter 'approverId' of type 'System.String'.
+2025-06-12 21:00:32.245 +09:00 [DBG] Done attempting to bind parameter 'approverId' of type 'System.String'.
+2025-06-12 21:00:32.245 +09:00 [DBG] Attempting to validate the bound parameter 'approverId' of type 'System.String' ...
+2025-06-12 21:00:32.245 +09:00 [DBG] Done attempting to validate the bound parameter 'approverId' of type 'System.String'.
+2025-06-12 21:00:32.248 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 21:00:32.248 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalRequest>()
+    .Where(approval => approval.Steps
+        .Any(step => step.ApproverEmployeeNumber == __userId_0))
+    .Include(approval => approval.Steps)'
+2025-06-12 21:00:32.255 +09:00 [DBG] Including navigation: 'ApprovalRequest.Steps'.
+2025-06-12 21:00:32.274 +09:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<ApprovalRequest>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: ApprovalRequest.ApprovalId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApprovalRequest.ApplicantDepartment (string), 1], [Property: ApprovalRequest.ApplicantEmployeeNumber (string) Required, 2], [Property: ApprovalRequest.ApplicantName (string) Required, 3], [Property: ApprovalRequest.ApplicantPosition (string), 4], [Property: ApprovalRequest.ApprovalType (string), 5], [Property: ApprovalRequest.ApproverComment (string), 6], [Property: ApprovalRequest.MisKey (string), 7], [Property: ApprovalRequest.RequestContent (string), 8], [Property: ApprovalRequest.RequestTitle (string) Required, 9], [Property: ApprovalRequest.RequestedAt (DateTime) Required, 10], [Property: ApprovalRequest.RespondedAt (DateTime?), 11], [Property: ApprovalRequest.Status (string) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: ApprovalStep.StepId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ApprovalStep.ActionDate (DateTime?), 14], [Property: ApprovalStep.ActionStatus (string), 15], [Property: ApprovalStep.ApprovalId (Guid) Required FK Index, 16], [Property: ApprovalStep.ApproverEmployeeNumber (string) Required, 17], [Property: ApprovalStep.ApproverName (string), 18], [Property: ApprovalStep.Comment (string), 19], [Property: ApprovalStep.Department (string), 20], [Property: ApprovalStep.IsFinalApprover (bool) Required, 21], [Property: ApprovalStep.Position (string), 22], [Property: ApprovalStep.Sequence (int) Required, 23], [Property: ApprovalStep.StepType (string), 24] }
+            3 -> 13
+        SELECT a.ApprovalId, a.ApplicantDepartment, a.ApplicantEmployeeNumber, a.ApplicantName, a.ApplicantPosition, a.ApprovalType, a.ApproverComment, a.MisKey, a.RequestContent, a.RequestTitle, a.RequestedAt, a.RespondedAt, a.Status, a1.StepId, a1.ActionDate, a1.ActionStatus, a1.ApprovalId, a1.ApproverEmployeeNumber, a1.ApproverName, a1.Comment, a1.Department, a1.IsFinalApprover, a1.Position, a1.Sequence, a1.StepType
+        FROM ApprovalRequests AS a
+        LEFT JOIN ApprovalSteps AS a1 ON a.ApprovalId == a1.ApprovalId
+        WHERE EXISTS (
+            SELECT 1
+            FROM ApprovalSteps AS a0
+            WHERE ((a.ApprovalId != NULL) && (a.ApprovalId == a0.ApprovalId)) && (a0.ApproverEmployeeNumber == @__userId_0))
+        ORDER BY a.ApprovalId ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: ApprovalRequest.ApprovalId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApprovalRequest.ApplicantDepartment (string), 1], [Property: ApprovalRequest.ApplicantEmployeeNumber (string) Required, 2], [Property: ApprovalRequest.ApplicantName (string) Required, 3], [Property: ApprovalRequest.ApplicantPosition (string), 4], [Property: ApprovalRequest.ApprovalType (string), 5], [Property: ApprovalRequest.ApproverComment (string), 6], [Property: ApprovalRequest.MisKey (string), 7], [Property: ApprovalRequest.RequestContent (string), 8], [Property: ApprovalRequest.RequestTitle (string) Required, 9], [Property: ApprovalRequest.RequestedAt (DateTime) Required, 10], [Property: ApprovalRequest.RespondedAt (DateTime?), 11], [Property: ApprovalRequest.Status (string) Required, 12] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: ApprovalStep.StepId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ApprovalStep.ActionDate (DateTime?), 14], [Property: ApprovalStep.ActionStatus (string), 15], [Property: ApprovalStep.ApprovalId (Guid) Required FK Index, 16], [Property: ApprovalStep.ApproverEmployeeNumber (string) Required, 17], [Property: ApprovalStep.ApproverName (string), 18], [Property: ApprovalStep.Comment (string), 19], [Property: ApprovalStep.Department (string), 20], [Property: ApprovalStep.IsFinalApprover (bool) Required, 21], [Property: ApprovalStep.Position (string), 22], [Property: ApprovalStep.Sequence (int) Required, 23], [Property: ApprovalStep.StepType (string), 24] }
+            3 -> 13
+        SELECT a.ApprovalId, a.ApplicantDepartment, a.ApplicantEmployeeNumber, a.ApplicantName, a.ApplicantPosition, a.ApprovalType, a.ApproverComment, a.MisKey, a.RequestContent, a.RequestTitle, a.RequestedAt, a.RespondedAt, a.Status, a1.StepId, a1.ActionDate, a1.ActionStatus, a1.ApprovalId, a1.ApproverEmployeeNumber, a1.ApproverName, a1.Comment, a1.Department, a1.IsFinalApprover, a1.Position, a1.Sequence, a1.StepType
+        FROM ApprovalRequests AS a
+        LEFT JOIN ApprovalSteps AS a1 ON a.ApprovalId == a1.ApprovalId
+        WHERE EXISTS (
+            SELECT 1
+            FROM ApprovalSteps AS a0
+            WHERE ((a.ApprovalId != NULL) && (a.ApprovalId == a0.ApprovalId)) && (a0.ApproverEmployeeNumber == @__userId_0))
+        ORDER BY a.ApprovalId ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        resultContext.Values == null ? 
+        {
+            ApprovalRequest entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                ApprovalRequest instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(ApprovalRequest);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: ApprovalRequest.ApprovalId PK | Resolver: c => c.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (ApprovalRequest)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")]: 
+                            {
+                                return 
+                                {
+                                    ApprovalRequest instance;
+                                    instance = new ApprovalRequest();
+                                    instance.<ApprovalId>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<ApplicantDepartment>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                    instance.<ApplicantEmployeeNumber>k__BackingField = dataReader.GetString(2);
+                                    instance.<ApplicantName>k__BackingField = dataReader.GetString(3);
+                                    instance.<ApplicantPosition>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<ApprovalType>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                    instance.<ApproverComment>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                    instance.<MisKey>k__BackingField = dataReader.IsDBNull(7) ? default(string) : dataReader.GetString(7);
+                                    instance.<RequestContent>k__BackingField = dataReader.IsDBNull(8) ? default(string) : dataReader.GetString(8);
+                                    instance.<RequestTitle>k__BackingField = dataReader.GetString(9);
+                                    instance.<RequestedAt>k__BackingField = dataReader.GetDateTime(10);
+                                    instance.<RespondedAt>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<Status>k__BackingField = dataReader.GetString(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: ApprovalRequest | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(ApprovalRequest)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            resultContext.Values = new object[]{ entity };
+            ShaperProcessingExpressionVisitor.InitializeIncludeCollection<ApprovalRequest, ApprovalRequest>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                entity: (ApprovalRequest)(resultContext.Values[0]), 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+                navigation: [LIFTABLE Constant: Navigation: ApprovalRequest.Steps (List<ApprovalStep>) Collection ToDependent ApprovalStep Inverse: ApprovalRequest | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps")], 
+                clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<ApprovalRequest, List<ApprovalStep>, ApprovalStep> | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps").GetCollectionAccessor()], 
+                trackingQuery: True, 
+                setLoaded: True);
+        } : default(void);
+        ShaperProcessingExpressionVisitor.PopulateIncludeCollection<ApprovalRequest, ApprovalStep>(
+            collectionId: 0, 
+            queryContext: queryContext, 
+            dbDataReader: dataReader, 
+            resultCoordinator: resultCoordinator, 
+            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)(Guid?)dataReader.GetGuid(0) }], 
+            selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)dataReader.IsDBNull(13) ? default(Guid?) : (Guid?)dataReader.GetGuid(13) }], 
+            parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+            {
+                ApprovalStep entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext2;
+                    IEntityType entityType2;
+                    ApprovalStep instance2;
+                    InternalEntityEntry entry2;
+                    bool hasNullKey2;
+                    materializationContext2 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance2 = default(ApprovalStep);
+                    entry2 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: ApprovalStep.StepId PK | Resolver: c => c.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep").FindPrimaryKey()], 
+                        keyValues: new object[]{ dataReader.IsDBNull(13) ? default(object) : (object)dataReader.GetGuid(13) }, 
+                        throwOnNullKey: False, 
+                        hasNullKey: hasNullKey2);
+                    !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                    {
+                        entityType2 = entry2.EntityType;
+                        return instance2 = (ApprovalStep)entry2.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot2;
+                        shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType2 = [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")];
+                        instance2 = switch (entityType2)
+                        {
+                            case [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")]: 
+                                {
+                                    return 
+                                    {
+                                        ApprovalStep instance;
+                                        instance = new ApprovalStep();
+                                        instance.<StepId>k__BackingField = dataReader.IsDBNull(13) ? default(Guid) : dataReader.GetGuid(13);
+                                        instance.<ActionDate>k__BackingField = dataReader.IsDBNull(14) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(14);
+                                        instance.<ActionStatus>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                        instance.<ApprovalId>k__BackingField = dataReader.IsDBNull(16) ? default(Guid) : dataReader.GetGuid(16);
+                                        instance.<ApproverEmployeeNumber>k__BackingField = dataReader.IsDBNull(17) ? default(string) : dataReader.GetString(17);
+                                        instance.<ApproverName>k__BackingField = dataReader.IsDBNull(18) ? default(string) : dataReader.GetString(18);
+                                        instance.<Comment>k__BackingField = dataReader.IsDBNull(19) ? default(string) : dataReader.GetString(19);
+                                        instance.<Department>k__BackingField = dataReader.IsDBNull(20) ? default(string) : dataReader.GetString(20);
+                                        instance.<IsFinalApprover>k__BackingField = dataReader.IsDBNull(21) ? default(bool) : dataReader.GetBoolean(21);
+                                        instance.<Position>k__BackingField = dataReader.IsDBNull(22) ? default(string) : dataReader.GetString(22);
+                                        instance.<Sequence>k__BackingField = dataReader.IsDBNull(23) ? default(int) : dataReader.GetInt32(23);
+                                        instance.<StepType>k__BackingField = dataReader.IsDBNull(24) ? default(string) : dataReader.GetString(24);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext2.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: ApprovalStep | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(ApprovalStep)
+                        }
+                        ;
+                        entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType2, 
+                            entity: instance2, 
+                            snapshot: shadowSnapshot2);
+                        return instance2;
+                    } : default(void);
+                    return instance2;
+                };
+                return entity;
+            }, 
+            inverseNavigation: [LIFTABLE Constant: Navigation: ApprovalStep.ApprovalRequest (ApprovalRequest) ToPrincipal ApprovalRequest Inverse: Steps | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalStep").FindNavigation("ApprovalRequest")], 
+            fixup: (namelessParameter{9}, namelessParameter{10}) => 
+            {
+                [LIFTABLE Constant: ClrICollectionAccessor<ApprovalRequest, List<ApprovalStep>, ApprovalStep> | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("ApprovalService.Domain.Entities.ApprovalRequest").FindNavigation("Steps").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{9}, 
+                    value: namelessParameter{10}, 
+                    forMaterialization: True);
+                return namelessParameter{10}.<ApprovalRequest>k__BackingField = namelessParameter{9};
+            }, 
+            trackingQuery: True);
+        return IsTrue(resultCoordinator.ResultReady)
+         ? (ApprovalRequest)(resultContext.Values[0]) : default(ApprovalRequest);
+    }, 
+    contextType: ApprovalService.Infrastructure.Persistence.ApprovalDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-06-12 21:00:32.281 +09:00 [DBG] Creating DbConnection.
+2025-06-12 21:00:32.281 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 21:00:32.281 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:32.282 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:32.282 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 21:00:32.282 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:32.282 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:32.282 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a1"."StepId", "a1"."ActionDate", "a1"."ActionStatus", "a1"."ApprovalId", "a1"."ApproverEmployeeNumber", "a1"."ApproverName", "a1"."Comment", "a1"."Department", "a1"."IsFinalApprover", "a1"."Position", "a1"."Sequence", "a1"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a1" ON "a"."ApprovalId" = "a1"."ApprovalId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "ApprovalSteps" AS "a0"
+    WHERE "a"."ApprovalId" = "a0"."ApprovalId" AND "a0"."ApproverEmployeeNumber" = @__userId_0)
+ORDER BY "a"."ApprovalId"
+2025-06-12 21:00:32.283 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a1"."StepId", "a1"."ActionDate", "a1"."ActionStatus", "a1"."ApprovalId", "a1"."ApproverEmployeeNumber", "a1"."ApproverName", "a1"."Comment", "a1"."Department", "a1"."IsFinalApprover", "a1"."Position", "a1"."Sequence", "a1"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a1" ON "a"."ApprovalId" = "a1"."ApprovalId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "ApprovalSteps" AS "a0"
+    WHERE "a"."ApprovalId" = "a0"."ApprovalId" AND "a0"."ApproverEmployeeNumber" = @__userId_0)
+ORDER BY "a"."ApprovalId"
+2025-06-12 21:00:32.283 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:32.283 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 0ms reading results.
+2025-06-12 21:00:32.283 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:32.283 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:32.283 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 21:00:32.283 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-12 21:00:32.283 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 21:00:32.283 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 21:00:32.283 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-12 21:00:32.283 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequest, ApprovalService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 21:00:32.283 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (ApprovalService.API) in 39.4652ms
+2025-06-12 21:00:32.284 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (ApprovalService.API)'
+2025-06-12 21:00:32.284 +09:00 [DBG] Connection id "0HND9L2LUR7PV" completed keep alive response.
+2025-06-12 21:00:32.284 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 21:00:32.284 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:32.284 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:32.284 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - 200 null application/json; charset=utf-8 50.2986ms
+2025-06-12 21:00:33.400 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - null null
+2025-06-12 21:00:33.401 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:33.402 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)' with route pattern 'api/ApprovalRequest/my-requests/{userId}' is valid for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:00:33.402 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:33.402 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-12 21:00:33.402 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:33.403 +09:00 [INF] Route matched with {action = "GetMyRequests", controller = "ApprovalRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyRequests(System.String) on controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API).
+2025-06-12 21:00:33.403 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-12 21:00:33.403 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-12 21:00:33.403 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 21:00:33.403 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:33.404 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 21:00:33.404 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:33.410 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:00:33.410 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:33.410 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' using the name 'userId' in request data ...
+2025-06-12 21:00:33.410 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:33.411 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:33.411 +09:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.String' ...
+2025-06-12 21:00:33.422 +09:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.String'.
+2025-06-12 21:00:33.426 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 21:00:33.427 +09:00 [DBG] Creating DbConnection.
+2025-06-12 21:00:33.427 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 21:00:33.427 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:33.427 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:33.428 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 21:00:33.428 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:33.428 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:00:33.429 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:33.430 +09:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:00:33.431 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:33.431 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 0ms reading results.
+2025-06-12 21:00:33.432 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:00:33.434 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (1ms).
+2025-06-12 21:00:33.435 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 21:00:33.435 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-12 21:00:33.435 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 21:00:33.435 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 21:00:33.442 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-12 21:00:33.442 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequest, ApprovalService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 21:00:33.443 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API) in 39.0427ms
+2025-06-12 21:00:33.443 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:00:33.477 +09:00 [DBG] Connection id "0HND9L2LUR7PV" completed keep alive response.
+2025-06-12 21:00:33.478 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 21:00:33.478 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:00:33.478 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:00:33.478 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - 200 null application/json; charset=utf-8 78.0065ms
+2025-06-12 21:00:48.851 +09:00 [DBG] Connection id "0HND9L2LUR7PV" received FIN.
+2025-06-12 21:00:48.852 +09:00 [DBG] Connection id "0HND9L2LUR7PV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:48.856 +09:00 [DBG] Connection id "0HND9L2LUR7PV" disconnecting.
+2025-06-12 21:00:48.860 +09:00 [DBG] Connection id "0HND9L2LUR7PV" stopped.
+2025-06-12 21:01:41.882 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" accepted.
+2025-06-12 21:01:41.883 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" started.
+2025-06-12 21:01:41.905 +09:00 [DBG] Connection 0HND9L2LUR7Q0 established using the following protocol: "Tls12"
+2025-06-12 21:01:41.911 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - null null
+2025-06-12 21:01:41.912 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:01:41.912 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)' with route pattern 'api/ApprovalRequest/my-requests/{userId}' is valid for the request path '/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4'
+2025-06-12 21:01:41.912 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:01:41.913 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-12 21:01:41.913 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:01:41.913 +09:00 [INF] Route matched with {action = "GetMyRequests", controller = "ApprovalRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyRequests(System.String) on controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API).
+2025-06-12 21:01:41.913 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-12 21:01:41.913 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-12 21:01:41.913 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 21:01:41.913 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:01:41.913 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 21:01:41.914 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:01:41.914 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalRequestController (ApprovalService.API)
+2025-06-12 21:01:41.914 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' ...
+2025-06-12 21:01:41.914 +09:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' using the name 'userId' in request data ...
+2025-06-12 21:01:41.914 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:01:41.914 +09:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-06-12 21:01:41.914 +09:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.String' ...
+2025-06-12 21:01:41.915 +09:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.String'.
+2025-06-12 21:01:41.915 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-12 21:01:41.916 +09:00 [DBG] Creating DbConnection.
+2025-06-12 21:01:41.916 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-12 21:01:41.916 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:01:41.917 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:01:41.917 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-12 21:01:41.917 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:01:41.917 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-12 21:01:41.917 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:01:41.917 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 43)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."ApplicantDepartment", "a"."ApplicantEmployeeNumber", "a"."ApplicantName", "a"."ApplicantPosition", "a"."ApprovalType", "a"."ApproverComment", "a"."MisKey", "a"."RequestContent", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."Status", "a0"."StepId", "a0"."ActionDate", "a0"."ActionStatus", "a0"."ApprovalId", "a0"."ApproverEmployeeNumber", "a0"."ApproverName", "a0"."Comment", "a0"."Department", "a0"."IsFinalApprover", "a0"."Position", "a0"."Sequence", "a0"."StepType"
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a0" ON "a"."ApprovalId" = "a0"."ApprovalId"
+WHERE "a"."ApplicantEmployeeNumber" = @__userId_0
+ORDER BY "a"."RequestedAt" DESC, "a"."ApprovalId"
+2025-06-12 21:01:41.918 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:01:41.918 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db' is being disposed after spending 0ms reading results.
+2025-06-12 21:01:41.918 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Data/ApprovalService.db'.
+2025-06-12 21:01:41.918 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:01:41.918 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 21:01:41.918 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-12 21:01:41.918 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 21:01:41.918 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 21:01:41.918 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-12 21:01:41.918 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequest, ApprovalService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 21:01:41.918 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API) in 4.9231ms
+2025-06-12 21:01:41.918 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalRequestController.GetMyRequests (ApprovalService.API)'
+2025-06-12 21:01:41.919 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" completed keep alive response.
+2025-06-12 21:01:41.919 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-12 21:01:41.919 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-12 21:01:41.919 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-12 21:01:41.919 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4 - 200 null application/json; charset=utf-8 7.5894ms
+2025-06-12 21:02:56.905 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" received FIN.
+2025-06-12 21:02:56.916 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:02:56.921 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" disconnecting.
+2025-06-12 21:02:56.924 +09:00 [DBG] Connection id "0HND9L2LUR7Q0" stopped.

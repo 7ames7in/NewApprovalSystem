@@ -75,6 +75,10 @@ public class ApprovalRequestViewModel
     /// </summary>
     public string? StepsJson { get; set; } = string.Empty;
 
+    public string? CurrentApproverName { get; set; } = string.Empty;
+    public string? CurrentApproverEmployeeNumber { get; set; } = string.Empty;
+    public string? CurrentActionStatus { get; set; } = "Pending";
+
     /// <summary>
     /// List of approval steps associated with the request.
     /// </summary>

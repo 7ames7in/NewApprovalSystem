@@ -1,0 +1,1213 @@
+2025-06-12 20:34:33.409 +09:00 [INF] AzureAd: https://login.microsoftonline.com/
+2025-06-12 20:34:33.441 +09:00 [INF] AzureAd: 17c2af6d-3640-4fa1-b58a-8132c3141fb
+2025-06-12 20:34:33.441 +09:00 [INF] AzureAd: f25493ae-1c98-41d7-8a33-0be75f5fe603
+2025-06-12 20:34:33.498 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-12 20:34:33.504 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Index.cshtml'.
+2025-06-12 20:34:33.504 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2025-06-12 20:34:33.504 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Create.cshtml'.
+2025-06-12 20:34:33.504 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Details.cshtml'.
+2025-06-12 20:34:33.504 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Index.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create2.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Details.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Index.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ApprovalSteps.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_AttachedFiles.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2025-06-12 20:34:33.505 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2025-06-12 20:34:33.513 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-12 20:34:33.543 +09:00 [DBG] Hosting starting
+2025-06-12 20:34:33.548 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-06-12 20:34:33.551 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-06-12 20:34:33.552 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-06-12 20:34:33.555 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-06-12 20:34:33.559 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-12 20:34:33.560 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 20:34:33.562 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 20:34:33.563 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 20:34:33.564 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-12 20:34:33.564 +09:00 [DBG] Key {fdb991f0-84eb-43a2-8430-2e196962c0fd} is no longer under consideration as default key because it is expired, revoked, or cannot be deciphered.
+2025-06-12 20:34:33.565 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 20:34:33.565 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 20:34:33.566 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 20:34:33.567 +09:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-06-12 20:34:33.567 +09:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-06-12 20:34:33.568 +09:00 [INF] Creating key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} with creation date 2025-06-12 11:34:33Z, activation date 2025-06-13 01:37:14Z, and expiration date 2025-09-10 11:34:33Z.
+2025-06-12 20:34:33.569 +09:00 [DBG] Descriptor deserializer type for key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-06-12 20:34:33.570 +09:00 [DBG] No key escrow sink found. Not writing key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} to escrow.
+2025-06-12 20:34:33.570 +09:00 [WRN] No XML encryptor configured. Key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} may be persisted to storage in unencrypted form.
+2025-06-12 20:34:33.572 +09:00 [INF] Writing data to file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-41ecc33a-45bd-41d6-9620-662d8ec10bcf.xml'.
+2025-06-12 20:34:33.572 +09:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-06-12 20:34:33.572 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-06-12 20:34:33.573 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-41ecc33a-45bd-41d6-9620-662d8ec10bcf.xml'.
+2025-06-12 20:34:33.573 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-06-12 20:34:33.574 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-06-12 20:34:33.574 +09:00 [DBG] Found key {41ecc33a-45bd-41d6-9620-662d8ec10bcf}.
+2025-06-12 20:34:33.574 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-06-12 20:34:33.574 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-12 20:34:33.574 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 20:34:33.575 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 20:34:33.575 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-06-12 20:34:33.575 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-06-12 20:34:33.586 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-12 20:34:33.587 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 20:34:33.909 +09:00 [INF] Now listening on: https://localhost:7185
+2025-06-12 20:34:33.910 +09:00 [INF] Now listening on: http://localhost:5107
+2025-06-12 20:34:33.910 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-06-12 20:34:33.910 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 20:34:33.911 +09:00 [INF] Hosting environment: Development
+2025-06-12 20:34:33.911 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-06-12 20:34:33.911 +09:00 [DBG] Hosting started
+2025-06-12 20:34:36.255 +09:00 [DBG] Connection id "0HND9KKE1H5OP" accepted.
+2025-06-12 20:34:36.258 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" accepted.
+2025-06-12 20:34:36.258 +09:00 [DBG] Connection id "0HND9KKE1H5OP" started.
+2025-06-12 20:34:36.267 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" started.
+2025-06-12 20:34:36.409 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" received FIN.
+2025-06-12 20:34:36.413 +09:00 [DBG] Connection 0HND9KKE1H5OP established using the following protocol: "Tls12"
+2025-06-12 20:34:36.413 +09:00 [DBG] Connection 0HND9KKE1H5OQ established using the following protocol: "Tls12"
+2025-06-12 20:34:36.425 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" is closed. The last processed stream ID was 0.
+2025-06-12 20:34:36.427 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:34:36.430 +09:00 [DBG] The connection queue processing loop for 0HND9KKE1H5OQ completed.
+2025-06-12 20:34:36.433 +09:00 [DBG] Connection id "0HND9KKE1H5OQ" stopped.
+2025-06-12 20:34:36.480 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-06-12 20:34:36.530 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-12 20:34:36.530 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-12 20:34:36.530 +09:00 [DBG] The request path / does not match a supported file type
+2025-06-12 20:34:36.538 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-06-12 20:34:36.539 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+2025-06-12 20:34:36.540 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:34:36.542 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:34:36.553 +09:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ApprovalWeb.Controllers.HomeController (ApprovalWeb).
+2025-06-12 20:34:36.554 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 20:34:36.554 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:34:36.554 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 20:34:36.555 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 20:34:36.555 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:34:36.561 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-12 20:34:36.562 +09:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-06-12 20:34:36.562 +09:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2025-06-12 20:34:36.573 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 06/12/2025 11:34:36. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-06-12 20:34:37.541 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-06-12 20:34:37.549 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:34:37.549 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-06-12 20:34:38.128 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:34:38.128 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-06-12 20:34:38.135 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-12 20:34:38.142 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638853248781353320.ODA1OTRlNzQtOTVjOS00MzU5LWExZjgtZWE5MjNjODAwYTFhNmYyYjg5YTYtNmJhMy00NTM5LThkOGItN2FjOTU4MWJkNTUz&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP1CPiGe9E44Z-B8376qBHRSfYxveMTYfXYQHf53_w7231GOYvb-to76WA18vDw_tjVTrT4TISoMV17B-bkmLUll-jM4fH5IFPBajsUufIZFC-SkyQUkoWG4JWv3-9HRPtoMcxkQDvbn_tPF3jNuWZL1W2gPyNm9M93sAqeKwwr6eVa57v8JOcDZPACHuFPXpJJSmSJ47fdmqRA_BtuOVNx2_axe-GNAGSS5AT3PekurqnypzUfkoXWazfdU5jf4jVjsAiit5ZRKqideaMNBryE0&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP3RlIg9fWeeSJxdQn1w6aojogTlys0a0z3nUvuHhf352YXsXCy0JokJM8ju8feLD7zimt7QYSXjQkTjT7BUhZVmIHCLVjxeAC5arfLhr-3ins7CqHcdgXh8DczRDhYIWzeC7i0830CLU9bbz8ky3i2EM0RAS_p5u5hGrkId4ubgjg-dsORg9yaFfKnob6YBbMzBYpT30Naifzjz0eAnsDFgVr5lLrlTEmlbYjUFEUhh2luE1OGfmm31wzLk4_1f8Xc=N; expires=Thu, 12 Jun 2025 11:49:38 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.jiSRjlzNJbE2n-1bp4THW767Uf02PJaE3eASoVu0wsE=N; expires=Thu, 12 Jun 2025 11:49:38 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-12 20:34:38.144 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-12 20:34:38.146 +09:00 [INF] Executed action ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb) in 1589.4962ms
+2025-06-12 20:34:38.151 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:34:38.153 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 1674.1196ms
+2025-06-12 20:34:40.374 +09:00 [DBG] Connection id "0HND9KKE1H5OP" received FIN.
+2025-06-12 20:34:40.375 +09:00 [DBG] Connection id "0HND9KKE1H5OP" is closed. The last processed stream ID was 1.
+2025-06-12 20:34:40.375 +09:00 [DBG] Connection id "0HND9KKE1H5OP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:34:40.376 +09:00 [DBG] The connection queue processing loop for 0HND9KKE1H5OP completed.
+2025-06-12 20:34:40.377 +09:00 [DBG] Connection id "0HND9KKE1H5OP" stopped.
+2025-06-12 20:57:05.015 +09:00 [DBG] Config reload token fired. Checking for changes...
+2025-06-12 20:57:05.071 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-12 20:57:05.081 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 20:57:09.023 +09:00 [INF] Application is shutting down...
+2025-06-12 20:57:09.040 +09:00 [DBG] Hosting stopping
+2025-06-12 20:57:09.253 +09:00 [DBG] Hosting stopped
+2025-06-12 20:57:46.077 +09:00 [INF] AzureAd: https://login.microsoftonline.com/
+2025-06-12 20:57:46.195 +09:00 [INF] AzureAd: 17c2af6d-3640-4fa1-b58a-8132c3141fbf
+2025-06-12 20:57:46.195 +09:00 [INF] AzureAd: f25493ae-1c98-41d7-8a33-0be75f5fe603
+2025-06-12 20:57:46.406 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-12 20:57:46.430 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Index.cshtml'.
+2025-06-12 20:57:46.432 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2025-06-12 20:57:46.432 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Create.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Details.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Index.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create2.cshtml'.
+2025-06-12 20:57:46.433 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Details.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Index.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ApprovalSteps.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_AttachedFiles.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2025-06-12 20:57:46.434 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2025-06-12 20:57:46.435 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2025-06-12 20:57:46.467 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-12 20:57:46.600 +09:00 [DBG] Hosting starting
+2025-06-12 20:57:46.640 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-06-12 20:57:46.645 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-41ecc33a-45bd-41d6-9620-662d8ec10bcf.xml'.
+2025-06-12 20:57:46.647 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-06-12 20:57:46.654 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-06-12 20:57:46.664 +09:00 [DBG] Found key {41ecc33a-45bd-41d6-9620-662d8ec10bcf}.
+2025-06-12 20:57:46.666 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-06-12 20:57:46.680 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-12 20:57:46.689 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 20:57:46.703 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 20:57:46.703 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 20:57:46.708 +09:00 [DBG] Considering key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} with expiration date 2025-09-10 11:34:33Z as default key.
+2025-06-12 20:57:46.713 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 20:57:46.719 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 20:57:46.719 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 20:57:46.724 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-06-12 20:57:46.733 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-06-12 20:57:46.761 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-12 20:57:46.763 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 20:57:47.327 +09:00 [INF] Now listening on: https://localhost:7185
+2025-06-12 20:57:47.327 +09:00 [INF] Now listening on: http://localhost:5107
+2025-06-12 20:57:47.328 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-06-12 20:57:47.328 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 20:57:47.329 +09:00 [INF] Hosting environment: Development
+2025-06-12 20:57:47.329 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-06-12 20:57:47.329 +09:00 [DBG] Hosting started
+2025-06-12 20:57:50.462 +09:00 [DBG] Connection id "0HND9L1DHN9T5" accepted.
+2025-06-12 20:57:50.462 +09:00 [DBG] Connection id "0HND9L1DHN9T5" started.
+2025-06-12 20:57:50.563 +09:00 [DBG] Connection 0HND9L1DHN9T5 established using the following protocol: "Tls12"
+2025-06-12 20:57:50.638 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-06-12 20:57:50.749 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-12 20:57:51.706 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-12 20:57:51.724 +09:00 [DBG] The request path / does not match a supported file type
+2025-06-12 20:57:51.906 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-06-12 20:57:51.913 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+2025-06-12 20:57:51.918 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:51.921 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:51.953 +09:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ApprovalWeb.Controllers.HomeController (ApprovalWeb).
+2025-06-12 20:57:51.958 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 20:57:51.959 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:57:51.959 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 20:57:51.959 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 20:57:51.959 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:57:51.970 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-12 20:57:51.971 +09:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-06-12 20:57:51.973 +09:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2025-06-12 20:57:52.249 +09:00 [DBG] Microsoft.IdentityModel Version: 8.11.0.0. Date 06/12/2025 11:57:52. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-06-12 20:57:52.630 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-06-12 20:57:52.650 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:57:52.651 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-06-12 20:57:52.886 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:57:52.887 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-06-12 20:57:52.910 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-12 20:57:52.928 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fbf&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638853262729103120.OTZlOGY1OGMtMzcwNi00NDUzLWJhZmItOGI0ZGUyMTdjNTg2NDI3YjNlM2EtYjNmOS00NGFmLWFkMTQtMTVmMWFhZTMzZjI1&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP2TkDBpRtouH_6oGewQT5HmbqT-ZxTHV8J2zcWDSspxB28OX6q51EoNkYZuHIUpsaWqZk3_UpKbmIew029KBIrehmsgq8lyfGh1C3solZJ7aMKjS6-JEvsnKTuXgZr6VJPGkV0_CWtySjXky0sXJavl7DkXplnl0JHfl6RENcvkiA0bfo10K-_x0XWie9MkqMjk1As3VVmClPJ-yU-hhL24iBCeCNelGBR0V--kdN8LgNTZO7TleYNqScU1TmAqTx6rPPedWP3kHLCctp_Z7B0d&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP0_QQtLsjtorohHugJIdQc67UeFGTKZdqppnZF7ObxmeiMPwUmANA1CpNXAmpcC1qwCs4_RbACNZ4q9dhjTqF9vd8UnK-jNf6FKY3hxN95bmLicvRl3ZhjyfCJWwu94v3muJubpajMB6PKsiPtfpLvZgPtFjJT3raHYWZwqY4b9Sggkl5mafaO2f50AWh90s-Y93WLOWfgeM4LbxmamwJOewFQTsOj4CGqWiZgHMXu3d78ebNsLgTDhNZD0PVBPiOM=N; expires=Thu, 12 Jun 2025 12:12:52 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.0qvxBw5xYoMMb36ad0KdaxUWQc5biIOnJfYzdbuuCmA=N; expires=Thu, 12 Jun 2025 12:12:52 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-12 20:57:53.014 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-12 20:57:53.036 +09:00 [INF] Executed action ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb) in 1070.9957ms
+2025-06-12 20:57:53.058 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:53.061 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 302 0 null 2426.1297ms
+2025-06-12 20:57:53.887 +09:00 [INF] Request starting HTTP/2 POST https://localhost:7185/signin-oidc - application/x-www-form-urlencoded 2259
+2025-06-12 20:57:53.921 +09:00 [DBG] Connection id "0HND9L1DHN9T5", Request id "0HND9L1DHN9T5:00000003": started reading request body.
+2025-06-12 20:57:53.921 +09:00 [DBG] Connection id "0HND9L1DHN9T5", Request id "0HND9L1DHN9T5:00000003": done reading request body.
+2025-06-12 20:57:53.945 +09:00 [DBG] Updating configuration
+2025-06-12 20:57:53.948 +09:00 [DBG] Received 'id_token'
+2025-06-12 20:57:53.999 +09:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2025-06-12 20:57:54.000 +09:00 [DBG] IDX10237: ValidateIssuerSigningKey property on ValidationParameters is set to false. Exiting without validating the issuer signing key.
+2025-06-12 20:57:54.007 +09:00 [INF] IDX10239: Lifetime of the token is valid.
+2025-06-12 20:57:54.020 +09:00 [INF] IDX10234: Audience Validated.Audience: '17c2af6d-3640-4fa1-b58a-8132c3141fbf'
+2025-06-12 20:57:54.025 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-06-12 20:57:54.327 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-06-12 20:57:54.327 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:57:54.327 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-06-12 20:57:54.579 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:57:54.579 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-06-12 20:57:54.596 +09:00 [DBG] IDX10246: ValidateTokenReplay property on ValidationParameters is set to false. Exiting without validating the token replay.
+2025-06-12 20:57:54.599 +09:00 [DBG] IDX10255: TypeValidator property on ValidationParameters is null and ValidTypes is either null or empty. Exiting without validating the token type.
+2025-06-12 20:57:54.639 +09:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 20:57:54.658 +09:00 [DBG] IDX21342: 'RequireStateValidation' = false, not validating the state.
+2025-06-12 20:57:54.663 +09:00 [DBG] IDX21319: Validating the nonce claim found in the id_token.
+2025-06-12 20:57:54.667 +09:00 [DBG] IDX21304: Validating 'c_hash' using id_token and code.
+2025-06-12 20:57:54.667 +09:00 [INF] IDX21305: OpenIdConnectProtocolValidationContext.ProtocolMessage.Code is null, there is no 'code' in the OpenIdConnect Response to validate.
+2025-06-12 20:57:54.668 +09:00 [DBG] IDX21309: Validating 'at_hash' using id_token and access_token.
+2025-06-12 20:57:54.669 +09:00 [INF] IDX21310: OpenIdConnectProtocolValidationContext.ProtocolMessage.AccessToken is null, there is no 'token' in the OpenIdConnect Response to validate.
+2025-06-12 20:57:54.674 +09:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-12 20:57:54.675 +09:00 [INF] Request finished HTTP/2 POST https://localhost:7185/signin-oidc - 302 0 null 788.3176ms
+2025-06-12 20:57:54.683 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-06-12 20:57:54.687 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:54.689 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:54.689 +09:00 [DBG] The request path / does not match a supported file type
+2025-06-12 20:57:54.690 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-06-12 20:57:54.690 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+2025-06-12 20:57:54.690 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:54.690 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:54.691 +09:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ApprovalWeb.Controllers.HomeController (ApprovalWeb).
+2025-06-12 20:57:54.691 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 20:57:54.691 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:57:54.691 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 20:57:54.692 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 20:57:54.692 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 20:57:54.694 +09:00 [DBG] Authorization was successful.
+2025-06-12 20:57:54.697 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.HomeController (ApprovalWeb)
+2025-06-12 20:57:54.699 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.HomeController (ApprovalWeb)
+2025-06-12 20:57:54.709 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'Home'.
+2025-06-12 20:57:54.726 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 20:57:54.726 +09:00 [DBG] The view path '/Views/Home/Index.cshtml' was found in 21.1217ms.
+2025-06-12 20:57:54.752 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'Home'.
+2025-06-12 20:57:55.552 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 20:57:55.555 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 20:57:55.555 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 20:57:55.557 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 20:57:55.557 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 20:57:55.557 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 20:57:55.558 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 20:57:55.559 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 20:57:55.559 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 20:57:55.560 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 20:57:55.560 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 20:57:55.560 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 20:57:55.560 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 20:57:55.561 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 20:57:55.561 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 20:57:55.563 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 20:57:55.563 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 20:57:55.563 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 20:57:55.565 +09:00 [DBG] A new antiforgery cookie token was created.
+2025-06-12 20:57:55.566 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 20:57:55.566 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 20:57:55.567 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 20:57:55.580 +09:00 [INF] Executed ViewResult - view Index executed in 875.4062ms.
+2025-06-12 20:57:55.582 +09:00 [INF] Executed action ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb) in 890.4825ms
+2025-06-12 20:57:55.583 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 20:57:55.587 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 200 null text/html; charset=utf-8 904.7546ms
+2025-06-12 20:57:55.627 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-06-12 20:57:55.628 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ApprovalWeb.styles.css?v=yVUdoZYl1sERGd4FqqYJHdulAYbe1Gt0K8xYV10iZPo - null null
+2025-06-12 20:57:55.628 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.628 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.628 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/lib/jquery/dist/jquery.min.js - null null
+2025-06-12 20:57:55.628 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-06-12 20:57:55.628 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.629 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-06-12 20:57:55.629 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2025-06-12 20:57:55.629 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.630 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.630 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.630 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.632 +09:00 [INF] The file /css/site.css was not modified
+2025-06-12 20:57:55.632 +09:00 [DBG] Handled. Status code: 304 File: /css/site.css
+2025-06-12 20:57:55.632 +09:00 [INF] The file /js/site.js was not modified
+2025-06-12 20:57:55.633 +09:00 [DBG] Handled. Status code: 304 File: /js/site.js
+2025-06-12 20:57:55.634 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 5.2115ms
+2025-06-12 20:57:55.635 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 304 null text/css 6.2132ms
+2025-06-12 20:57:55.655 +09:00 [INF] Sending file. Request path: '/ApprovalWeb.styles.css'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/bundle/ApprovalWeb.styles.css'
+2025-06-12 20:57:55.655 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ApprovalWeb.styles.css?v=yVUdoZYl1sERGd4FqqYJHdulAYbe1Gt0K8xYV10iZPo - 200 1080 text/css 27.8661ms
+2025-06-12 20:57:55.656 +09:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2025-06-12 20:57:55.656 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80721 text/javascript 27.7978ms
+2025-06-12 20:57:55.657 +09:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/jquery/dist/jquery.min.js'
+2025-06-12 20:57:55.657 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/lib/jquery/dist/jquery.min.js - 200 87533 text/javascript 28.7617ms
+2025-06-12 20:57:55.663 +09:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2025-06-12 20:57:55.663 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 36.1571ms
+2025-06-12 20:57:55.970 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/favicon.ico - null null
+2025-06-12 20:57:55.976 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 20:57:55.976 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 20:57:55.977 +09:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/favicon.ico'
+2025-06-12 20:57:55.978 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/favicon.ico - 200 5430 image/x-icon 7.6384ms
+2025-06-12 20:57:58.022 +09:00 [DBG] Connection id "0HND9L1DHN9T5" received FIN.
+2025-06-12 20:57:58.028 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9T5 completed.
+2025-06-12 20:57:58.032 +09:00 [DBG] Connection id "0HND9L1DHN9T5" is closed. The last processed stream ID was 19.
+2025-06-12 20:57:58.032 +09:00 [DBG] Connection id "0HND9L1DHN9T5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:57:58.040 +09:00 [DBG] Connection id "0HND9L1DHN9T5" stopped.
+2025-06-12 20:59:48.857 +09:00 [DBG] Connection id "0HND9L1DHN9T6" accepted.
+2025-06-12 20:59:48.860 +09:00 [DBG] Connection id "0HND9L1DHN9T6" started.
+2025-06-12 20:59:48.860 +09:00 [DBG] Connection id "0HND9L1DHN9T7" accepted.
+2025-06-12 20:59:48.861 +09:00 [DBG] Connection id "0HND9L1DHN9T7" started.
+2025-06-12 20:59:48.865 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:48.927 +09:00 [DBG] Connection id "0HND9L1DHN9T6" stopped.
+2025-06-12 20:59:48.927 +09:00 [DBG] Connection id "0HND9L1DHN9T6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:48.943 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:48.944 +09:00 [DBG] Connection id "0HND9L1DHN9T7" stopped.
+2025-06-12 20:59:48.944 +09:00 [DBG] Connection id "0HND9L1DHN9T7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:48.945 +09:00 [DBG] Connection id "0HND9L1DHN9T8" accepted.
+2025-06-12 20:59:48.945 +09:00 [DBG] Connection id "0HND9L1DHN9T8" started.
+2025-06-12 20:59:48.946 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:48.948 +09:00 [DBG] Connection id "0HND9L1DHN9T8" stopped.
+2025-06-12 20:59:48.948 +09:00 [DBG] Connection id "0HND9L1DHN9T8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:50.053 +09:00 [DBG] Connection id "0HND9L1DHN9T9" accepted.
+2025-06-12 20:59:50.053 +09:00 [DBG] Connection id "0HND9L1DHN9TA" accepted.
+2025-06-12 20:59:50.054 +09:00 [DBG] Connection id "0HND9L1DHN9T9" started.
+2025-06-12 20:59:50.054 +09:00 [DBG] Connection id "0HND9L1DHN9TA" started.
+2025-06-12 20:59:50.065 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:50.068 +09:00 [DBG] Connection id "0HND9L1DHN9T9" stopped.
+2025-06-12 20:59:50.068 +09:00 [DBG] Connection id "0HND9L1DHN9T9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:50.071 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:50.073 +09:00 [DBG] Connection id "0HND9L1DHN9TA" stopped.
+2025-06-12 20:59:50.073 +09:00 [DBG] Connection id "0HND9L1DHN9TA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:50.074 +09:00 [DBG] Connection id "0HND9L1DHN9TB" accepted.
+2025-06-12 20:59:50.074 +09:00 [DBG] Connection id "0HND9L1DHN9TB" started.
+2025-06-12 20:59:50.078 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:50.082 +09:00 [DBG] Connection id "0HND9L1DHN9TB" stopped.
+2025-06-12 20:59:50.082 +09:00 [DBG] Connection id "0HND9L1DHN9TB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:52.687 +09:00 [DBG] Connection id "0HND9L1DHN9TC" accepted.
+2025-06-12 20:59:52.687 +09:00 [DBG] Connection id "0HND9L1DHN9TD" accepted.
+2025-06-12 20:59:52.687 +09:00 [DBG] Connection id "0HND9L1DHN9TC" started.
+2025-06-12 20:59:52.687 +09:00 [DBG] Connection id "0HND9L1DHN9TD" started.
+2025-06-12 20:59:52.688 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:52.689 +09:00 [DBG] Connection id "0HND9L1DHN9TC" stopped.
+2025-06-12 20:59:52.689 +09:00 [DBG] Connection id "0HND9L1DHN9TC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:53.041 +09:00 [DBG] Connection id "0HND9L1DHN9TD" received FIN.
+2025-06-12 20:59:53.043 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:53.044 +09:00 [DBG] Connection id "0HND9L1DHN9TD" stopped.
+2025-06-12 20:59:53.045 +09:00 [DBG] Connection id "0HND9L1DHN9TD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:57.722 +09:00 [DBG] Connection id "0HND9L1DHN9TE" accepted.
+2025-06-12 20:59:57.723 +09:00 [DBG] Connection id "0HND9L1DHN9TF" accepted.
+2025-06-12 20:59:57.723 +09:00 [DBG] Connection id "0HND9L1DHN9TF" started.
+2025-06-12 20:59:57.725 +09:00 [DBG] Connection id "0HND9L1DHN9TE" started.
+2025-06-12 20:59:57.726 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:57.728 +09:00 [DBG] Connection id "0HND9L1DHN9TE" stopped.
+2025-06-12 20:59:57.728 +09:00 [DBG] Connection id "0HND9L1DHN9TE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:57.732 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:57.739 +09:00 [DBG] Connection id "0HND9L1DHN9TF" stopped.
+2025-06-12 20:59:57.739 +09:00 [DBG] Connection id "0HND9L1DHN9TF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 20:59:57.740 +09:00 [DBG] Connection id "0HND9L1DHN9TG" accepted.
+2025-06-12 20:59:57.740 +09:00 [DBG] Connection id "0HND9L1DHN9TG" started.
+2025-06-12 20:59:57.741 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-12 20:59:57.744 +09:00 [DBG] Connection id "0HND9L1DHN9TG" stopped.
+2025-06-12 20:59:57.744 +09:00 [DBG] Connection id "0HND9L1DHN9TG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:05.866 +09:00 [DBG] Connection id "0HND9L1DHN9TH" accepted.
+2025-06-12 21:00:05.867 +09:00 [DBG] Connection id "0HND9L1DHN9TH" started.
+2025-06-12 21:00:05.919 +09:00 [DBG] Connection 0HND9L1DHN9TH established using the following protocol: "Tls12"
+2025-06-12 21:00:05.923 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest - null null
+2025-06-12 21:00:05.927 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:05.927 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:05.928 +09:00 [DBG] The request path /MyRequest does not match a supported file type
+2025-06-12 21:00:05.932 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest'
+2025-06-12 21:00:05.934 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest'
+2025-06-12 21:00:05.939 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:05.952 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:05.952 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:05.967 +09:00 [INF] Route matched with {action = "Index", controller = "MyRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb).
+2025-06-12 21:00:05.968 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:05.968 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:05.968 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:05.968 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:05.968 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:05.968 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:05.968 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:05.972 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:05.997 +09:00 [INF] Start processing HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:05.999 +09:00 [INF] Sending HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:06.513 +09:00 [INF] Received HTTP response headers after 512.8431ms - 200
+2025-06-12 21:00:06.514 +09:00 [INF] End processing HTTP request after 516.5372ms - 200
+2025-06-12 21:00:06.545 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'MyRequest'.
+2025-06-12 21:00:06.547 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:00:06.547 +09:00 [DBG] The view path '/Views/MyRequest/Index.cshtml' was found in 2.1737ms.
+2025-06-12 21:00:06.549 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'MyRequest'.
+2025-06-12 21:00:06.551 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:06.551 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:06.551 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:06.551 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:06.551 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:06.552 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:06.552 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:06.552 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:06.552 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:06.552 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:06.552 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:06.552 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:06.552 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:06.552 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:06.552 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:06.552 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:06.553 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:06.553 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:06.554 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:00:06.554 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:06.554 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:06.554 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:06.555 +09:00 [INF] Executed ViewResult - view Index executed in 10.0827ms.
+2025-06-12 21:00:06.556 +09:00 [INF] Executed action ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb) in 587.9325ms
+2025-06-12 21:00:06.556 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:06.556 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/MyRequest - 200 null text/html; charset=utf-8 633.3459ms
+2025-06-12 21:00:08.047 +09:00 [DBG] Connection id "0HND9L1DHN9TH" received FIN.
+2025-06-12 21:00:08.048 +09:00 [DBG] Connection id "0HND9L1DHN9TH" is closed. The last processed stream ID was 1.
+2025-06-12 21:00:08.048 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9TH completed.
+2025-06-12 21:00:08.048 +09:00 [DBG] Connection id "0HND9L1DHN9TH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:08.049 +09:00 [DBG] Connection id "0HND9L1DHN9TH" stopped.
+2025-06-12 21:00:09.563 +09:00 [DBG] Connection id "0HND9L1DHN9TI" accepted.
+2025-06-12 21:00:09.563 +09:00 [DBG] Connection id "0HND9L1DHN9TI" started.
+2025-06-12 21:00:09.645 +09:00 [DBG] Connection 0HND9L1DHN9TI established using the following protocol: "Tls12"
+2025-06-12 21:00:09.648 +09:00 [INF] Request starting HTTP/2 POST https://localhost:7185/Account/Logout - application/x-www-form-urlencoded 225
+2025-06-12 21:00:09.651 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:09.651 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:09.652 +09:00 [DBG] POST requests are not supported
+2025-06-12 21:00:09.668 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Logout'
+2025-06-12 21:00:09.670 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Logout'
+2025-06-12 21:00:09.671 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:09.671 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:09.680 +09:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:09.680 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:09.680 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:09.680 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:09.680 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:09.680 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:09.681 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:09.681 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:09.682 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:09.684 +09:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-06-12 21:00:09.688 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2025-06-12 21:00:09.689 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and 
+2025-06-12 21:00:09.689 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Login
+2025-06-12 21:00:09.689 +09:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-06-12 21:00:09.689 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb) in 8.9177ms
+2025-06-12 21:00:09.689 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:09.690 +09:00 [INF] Request finished HTTP/2 POST https://localhost:7185/Account/Logout - 302 0 null 41.1987ms
+2025-06-12 21:00:09.690 +09:00 [DBG] Connection id "0HND9L1DHN9TI", Request id "0HND9L1DHN9TI:00000001": started reading request body.
+2025-06-12 21:00:09.690 +09:00 [DBG] Connection id "0HND9L1DHN9TI", Request id "0HND9L1DHN9TI:00000001": done reading request body.
+2025-06-12 21:00:09.705 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Account/Login - null null
+2025-06-12 21:00:09.705 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-12 21:00:09.705 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-12 21:00:09.705 +09:00 [DBG] The request path /Account/Login does not match a supported file type
+2025-06-12 21:00:09.706 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2025-06-12 21:00:09.706 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Login'
+2025-06-12 21:00:09.706 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:09.706 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:09.712 +09:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:09.712 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:09.712 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:09.712 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:09.712 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:09.712 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:09.712 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-12 21:00:09.712 +09:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-06-12 21:00:09.712 +09:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2025-06-12 21:00:09.713 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-12 21:00:09.714 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fbf&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638853264097131110.OTc5OWJiODktNDlmZS00Y2M5LWE2MDYtZDFiNzg1YWI5YjZlNzAwYjhhZWEtYzYzNS00M2UzLWJkZDgtZDE0YTU5ZjZkNTZm&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP3kWKYZ909anaZDnZUe84_bpBHkHKI9-Fe-F7pLC9mKIwKL1emLJXRb0l4ALJHAy0qsIIKMrRDyoV_bXdrT3J5tk55k9iCtgPkZZPh0pWinrwlFLtrx7xBT3zE57-adiyMbg843NMM7bT2K3Qn44gjFgJZ9oaqqrarGZQcfphRzoLPTmWj1U3fkJY6JfJ-1I5jKok8W53aR99uYfhl2EBCEisphkxRdGdAI7JZL2nkoSSRA4_s7s117LPmBZetYC9mz0En29BqA2qoNmtJLrD2ICz7G-PBbontD3RnMYoZQgA&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP29VsS-hhMK_90l2vYet1RGX5DaP7p7O4dYpQ3W3f_MEjl1rToc6Mrjn_zMNcFcxsF5eRfsGS5IH8l4Q5EtjjzEwK0bFRnpI-B7FJGfcjMe0l_GoSy_K5-QSLGXBkWvO_EB9_nPnUFeARoclkp9q3L4Zz7d9O7Jujdao-uJoFBSiF_0q8pcEPJAX7NkHw4KhD9jA0N9tNvRkYfU1jBHKtPyjJNUqxTjNoPpmfomaGzxZL4bpScCzI33OBSSF13Y6dg=N; expires=Thu, 12 Jun 2025 12:15:09 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.cebXgXKLCn2FDHBtarAnb-mNaaX4XWNEQdXeYAhd8ng=N; expires=Thu, 12 Jun 2025 12:15:09 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-12 21:00:09.714 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-12 21:00:09.714 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb) in 2.0746ms
+2025-06-12 21:00:09.714 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:09.714 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Account/Login - 302 0 null 9.5672ms
+2025-06-12 21:00:10.394 +09:00 [INF] Request starting HTTP/2 POST https://localhost:7185/signin-oidc - application/x-www-form-urlencoded 2164
+2025-06-12 21:00:10.395 +09:00 [DBG] Connection id "0HND9L1DHN9TI", Request id "0HND9L1DHN9TI:00000005": started reading request body.
+2025-06-12 21:00:10.395 +09:00 [DBG] Connection id "0HND9L1DHN9TI", Request id "0HND9L1DHN9TI:00000005": done reading request body.
+2025-06-12 21:00:10.396 +09:00 [DBG] Updating configuration
+2025-06-12 21:00:10.396 +09:00 [DBG] Received 'id_token'
+2025-06-12 21:00:10.409 +09:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2025-06-12 21:00:10.409 +09:00 [DBG] IDX10237: ValidateIssuerSigningKey property on ValidationParameters is set to false. Exiting without validating the issuer signing key.
+2025-06-12 21:00:10.409 +09:00 [INF] IDX10239: Lifetime of the token is valid.
+2025-06-12 21:00:10.409 +09:00 [INF] IDX10234: Audience Validated.Audience: '17c2af6d-3640-4fa1-b58a-8132c3141fbf'
+2025-06-12 21:00:10.409 +09:00 [DBG] IDX10246: ValidateTokenReplay property on ValidationParameters is set to false. Exiting without validating the token replay.
+2025-06-12 21:00:10.410 +09:00 [DBG] IDX10255: TypeValidator property on ValidationParameters is null and ValidTypes is either null or empty. Exiting without validating the token type.
+2025-06-12 21:00:10.411 +09:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 21:00:10.411 +09:00 [DBG] IDX21342: 'RequireStateValidation' = false, not validating the state.
+2025-06-12 21:00:10.411 +09:00 [DBG] IDX21319: Validating the nonce claim found in the id_token.
+2025-06-12 21:00:10.411 +09:00 [DBG] IDX21304: Validating 'c_hash' using id_token and code.
+2025-06-12 21:00:10.411 +09:00 [INF] IDX21305: OpenIdConnectProtocolValidationContext.ProtocolMessage.Code is null, there is no 'code' in the OpenIdConnect Response to validate.
+2025-06-12 21:00:10.411 +09:00 [DBG] IDX21309: Validating 'at_hash' using id_token and access_token.
+2025-06-12 21:00:10.411 +09:00 [INF] IDX21310: OpenIdConnectProtocolValidationContext.ProtocolMessage.AccessToken is null, there is no 'token' in the OpenIdConnect Response to validate.
+2025-06-12 21:00:10.412 +09:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-12 21:00:10.412 +09:00 [INF] Request finished HTTP/2 POST https://localhost:7185/signin-oidc - 302 0 null 17.8197ms
+2025-06-12 21:00:10.415 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Account/Login - null null
+2025-06-12 21:00:10.415 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:10.415 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:10.415 +09:00 [DBG] The request path /Account/Login does not match a supported file type
+2025-06-12 21:00:10.415 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2025-06-12 21:00:10.415 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Login'
+2025-06-12 21:00:10.415 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:10.415 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:10.416 +09:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:10.416 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:10.416 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:10.416 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:10.416 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:10.416 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:10.416 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:10.416 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:10.416 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:10.418 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:10.419 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' using the name '' in request data ...
+2025-06-12 21:00:10.419 +09:00 [DBG] Could not find a value in the request with name '' for binding parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:10.419 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:10.419 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:10.419 +09:00 [DBG] Attempting to validate the bound parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:10.419 +09:00 [DBG] Done attempting to validate the bound parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:10.420 +09:00 [DBG] View lookup cache miss for view 'Login' in controller 'Account'.
+2025-06-12 21:00:10.421 +09:00 [INF] Executing ViewResult, running view Login.
+2025-06-12 21:00:10.421 +09:00 [DBG] The view path '/Views/Account/Login.cshtml' was found in 0.7104ms.
+2025-06-12 21:00:10.424 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2025-06-12 21:00:10.424 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and 
+2025-06-12 21:00:10.424 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Login
+2025-06-12 21:00:10.425 +09:00 [DBG] A new antiforgery cookie token was created.
+2025-06-12 21:00:10.449 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'Account'.
+2025-06-12 21:00:10.451 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:10.451 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:10.452 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:10.453 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:10.453 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:10.453 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:10.453 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:10.453 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:10.453 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:10.454 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:10.454 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:10.454 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:10.454 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:10.454 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:10.454 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:10.455 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:10.455 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:10.455 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:10.456 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:10.456 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:10.456 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:10.457 +09:00 [INF] Executed ViewResult - view Login executed in 37.1794ms.
+2025-06-12 21:00:10.458 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb) in 41.7495ms
+2025-06-12 21:00:10.458 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:10.460 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Account/Login - 200 null text/html; charset=utf-8 44.7891ms
+2025-06-12 21:00:12.977 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Account/Login - null null
+2025-06-12 21:00:12.979 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:12.979 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:12.979 +09:00 [DBG] The request path /Account/Login does not match a supported file type
+2025-06-12 21:00:12.979 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2025-06-12 21:00:12.979 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Login'
+2025-06-12 21:00:12.979 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:12.979 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:12.980 +09:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:12.980 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:12.980 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:12.980 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:12.980 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:12.980 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:12.980 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:12.981 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:12.983 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:12.983 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:12.984 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' using the name '' in request data ...
+2025-06-12 21:00:12.984 +09:00 [DBG] Could not find a value in the request with name '' for binding parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:12.985 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:12.985 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:12.985 +09:00 [DBG] Attempting to validate the bound parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:12.985 +09:00 [DBG] Done attempting to validate the bound parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:12.986 +09:00 [DBG] View lookup cache hit for view 'Login' in controller 'Account'.
+2025-06-12 21:00:12.986 +09:00 [INF] Executing ViewResult, running view Login.
+2025-06-12 21:00:12.987 +09:00 [DBG] The view path '/Views/Account/Login.cshtml' was found in 0.69ms.
+2025-06-12 21:00:12.988 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2025-06-12 21:00:12.988 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and 
+2025-06-12 21:00:12.988 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Login
+2025-06-12 21:00:12.989 +09:00 [DBG] A new antiforgery cookie token was created.
+2025-06-12 21:00:12.990 +09:00 [DBG] View lookup cache hit for view '_Layout' in controller 'Account'.
+2025-06-12 21:00:12.990 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:12.990 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:12.990 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:12.991 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:12.991 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:12.991 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:12.991 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:12.991 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:12.991 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:12.991 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:12.992 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:12.992 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:12.992 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:12.992 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:12.993 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:12.993 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:12.993 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:12.993 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:12.993 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:12.993 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:12.993 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:12.994 +09:00 [INF] Executed ViewResult - view Login executed in 8.2501ms.
+2025-06-12 21:00:12.994 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb) in 13.7843ms
+2025-06-12 21:00:12.994 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:12.994 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Account/Login - 200 null text/html; charset=utf-8 17.1462ms
+2025-06-12 21:00:13.051 +09:00 [DBG] Connection id "0HND9L1DHN9TI" received FIN.
+2025-06-12 21:00:13.058 +09:00 [DBG] Connection id "0HND9L1DHN9TI" is closed. The last processed stream ID was 9.
+2025-06-12 21:00:13.061 +09:00 [DBG] Connection id "0HND9L1DHN9TI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:13.065 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9TI completed.
+2025-06-12 21:00:13.065 +09:00 [DBG] Connection id "0HND9L1DHN9TI" stopped.
+2025-06-12 21:00:16.439 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" accepted.
+2025-06-12 21:00:16.439 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" started.
+2025-06-12 21:00:16.479 +09:00 [DBG] Connection 0HND9L1DHN9TJ established using the following protocol: "Tls12"
+2025-06-12 21:00:16.480 +09:00 [INF] Request starting HTTP/2 POST https://localhost:7185/Account/Logout - application/x-www-form-urlencoded 225
+2025-06-12 21:00:16.481 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:16.481 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:16.481 +09:00 [DBG] POST requests are not supported
+2025-06-12 21:00:16.481 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Logout'
+2025-06-12 21:00:16.481 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Logout'
+2025-06-12 21:00:16.481 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:16.481 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:16.481 +09:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:16.481 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:16.481 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:16.481 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:16.482 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:16.482 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:16.482 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:16.482 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:16.482 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:16.482 +09:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-06-12 21:00:16.482 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2025-06-12 21:00:16.482 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and 
+2025-06-12 21:00:16.482 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Login
+2025-06-12 21:00:16.483 +09:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-06-12 21:00:16.483 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb) in 0.9192ms
+2025-06-12 21:00:16.483 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Logout (ApprovalWeb)'
+2025-06-12 21:00:16.483 +09:00 [INF] Request finished HTTP/2 POST https://localhost:7185/Account/Logout - 302 0 null 2.6542ms
+2025-06-12 21:00:16.483 +09:00 [DBG] Connection id "0HND9L1DHN9TJ", Request id "0HND9L1DHN9TJ:00000001": started reading request body.
+2025-06-12 21:00:16.483 +09:00 [DBG] Connection id "0HND9L1DHN9TJ", Request id "0HND9L1DHN9TJ:00000001": done reading request body.
+2025-06-12 21:00:16.486 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Account/Login - null null
+2025-06-12 21:00:16.486 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-12 21:00:16.486 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-12 21:00:16.486 +09:00 [DBG] The request path /Account/Login does not match a supported file type
+2025-06-12 21:00:16.486 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2025-06-12 21:00:16.486 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Login'
+2025-06-12 21:00:16.486 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:16.486 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:16.487 +09:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:16.487 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:16.487 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:16.487 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:16.487 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:16.487 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:16.487 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-12 21:00:16.487 +09:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2025-06-12 21:00:16.488 +09:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2025-06-12 21:00:16.488 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-12 21:00:16.488 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fbf&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638853264164881660.NDZiOWZhMjYtMmQ4Zi00NmQwLWFhYWEtOGJiZWVmNjlmN2UxMmEwZTI0NTUtN2IxMC00NjA5LTkwMTUtZGM4NzhjMTM1ZTYw&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP0ET7yekeJteL4WINz4bTBtpjEC0pyioFtPBJ4SiK7s3vZU0B5G20JTysDog57UggJXTqQhmdQbfbAKJjmam1331DqKD68koA2vdO8NNJB5mHv6iHKktW2XfCYHPvJ3wkpunhKQn-Jy6tHTWjfczItU5XBLw5QrlJOam_KfKaS_bPJrztt95ge8KFWOt3rd93K0hCTsxXmm2lK0BvezB_V6Kd5_y1Z7jKiswXaMrjkNwn5mpmvbhRhE1Nx29NIxy0e0Ll1kxE_dDUP0xw3Z5CPPGiVNANk9_WDfIlXia7HB4g&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP3bMUuxweocFNtsSdIPg_zVIBjKDAC_EirZMub2kwWytxWepYxriSy_qdmUWMG4GtMwszuKaTrscnZ0ZQc8oR9gnIkqiRxgpApsgfwDdpYGwLKu9JKp_63YxfW2ZSu0Q6GgeYI9PT310dwdsaoGWb6mbT5cr0If3pf7xu0VRI1e_O42hq9rgWlnJOyjx6QimdiA3InCNqD_09J0rSLZctn76hYY15R43XzD99Ra4H3eE9CN_xM9u9RJQ3Mz2BMvLd0=N; expires=Thu, 12 Jun 2025 12:15:16 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.8z1ywH5K35fM5MnCiuvBr-OKq_qGioGj1iaDyjChQrU=N; expires=Thu, 12 Jun 2025 12:15:16 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-12 21:00:16.488 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-12 21:00:16.488 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb) in 0.7366ms
+2025-06-12 21:00:16.488 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:16.488 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Account/Login - 302 0 null 2.6738ms
+2025-06-12 21:00:17.127 +09:00 [INF] Request starting HTTP/2 POST https://localhost:7185/signin-oidc - application/x-www-form-urlencoded 2164
+2025-06-12 21:00:17.128 +09:00 [DBG] Connection id "0HND9L1DHN9TJ", Request id "0HND9L1DHN9TJ:00000005": started reading request body.
+2025-06-12 21:00:17.128 +09:00 [DBG] Connection id "0HND9L1DHN9TJ", Request id "0HND9L1DHN9TJ:00000005": done reading request body.
+2025-06-12 21:00:17.128 +09:00 [DBG] Updating configuration
+2025-06-12 21:00:17.128 +09:00 [DBG] Received 'id_token'
+2025-06-12 21:00:17.129 +09:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2025-06-12 21:00:17.129 +09:00 [DBG] IDX10237: ValidateIssuerSigningKey property on ValidationParameters is set to false. Exiting without validating the issuer signing key.
+2025-06-12 21:00:17.129 +09:00 [INF] IDX10239: Lifetime of the token is valid.
+2025-06-12 21:00:17.130 +09:00 [INF] IDX10234: Audience Validated.Audience: '17c2af6d-3640-4fa1-b58a-8132c3141fbf'
+2025-06-12 21:00:17.130 +09:00 [DBG] IDX10246: ValidateTokenReplay property on ValidationParameters is set to false. Exiting without validating the token replay.
+2025-06-12 21:00:17.130 +09:00 [DBG] IDX10255: TypeValidator property on ValidationParameters is null and ValidTypes is either null or empty. Exiting without validating the token type.
+2025-06-12 21:00:17.130 +09:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-12 21:00:17.132 +09:00 [DBG] IDX21342: 'RequireStateValidation' = false, not validating the state.
+2025-06-12 21:00:17.133 +09:00 [DBG] IDX21319: Validating the nonce claim found in the id_token.
+2025-06-12 21:00:17.133 +09:00 [DBG] IDX21304: Validating 'c_hash' using id_token and code.
+2025-06-12 21:00:17.133 +09:00 [INF] IDX21305: OpenIdConnectProtocolValidationContext.ProtocolMessage.Code is null, there is no 'code' in the OpenIdConnect Response to validate.
+2025-06-12 21:00:17.133 +09:00 [DBG] IDX21309: Validating 'at_hash' using id_token and access_token.
+2025-06-12 21:00:17.133 +09:00 [INF] IDX21310: OpenIdConnectProtocolValidationContext.ProtocolMessage.AccessToken is null, there is no 'token' in the OpenIdConnect Response to validate.
+2025-06-12 21:00:17.133 +09:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-06-12 21:00:17.134 +09:00 [INF] Request finished HTTP/2 POST https://localhost:7185/signin-oidc - 302 0 null 6.5663ms
+2025-06-12 21:00:17.139 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Account/Login - null null
+2025-06-12 21:00:17.139 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:17.139 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:17.139 +09:00 [DBG] The request path /Account/Login does not match a supported file type
+2025-06-12 21:00:17.139 +09:00 [DBG] 1 candidate(s) found for the request path '/Account/Login'
+2025-06-12 21:00:17.139 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Account/Login'
+2025-06-12 21:00:17.140 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:17.140 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:17.140 +09:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller ApprovalWeb.Controllers.AccountController (ApprovalWeb).
+2025-06-12 21:00:17.140 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:17.140 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:17.140 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:17.140 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:17.141 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:17.141 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:17.141 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:17.141 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.AccountController (ApprovalWeb)
+2025-06-12 21:00:17.142 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:17.142 +09:00 [DBG] Attempting to bind parameter 'returnUrl' of type 'System.String' using the name '' in request data ...
+2025-06-12 21:00:17.143 +09:00 [DBG] Could not find a value in the request with name '' for binding parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:17.143 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:17.143 +09:00 [DBG] Done attempting to bind parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:17.143 +09:00 [DBG] Attempting to validate the bound parameter 'returnUrl' of type 'System.String' ...
+2025-06-12 21:00:17.143 +09:00 [DBG] Done attempting to validate the bound parameter 'returnUrl' of type 'System.String'.
+2025-06-12 21:00:17.143 +09:00 [DBG] View lookup cache hit for view 'Login' in controller 'Account'.
+2025-06-12 21:00:17.144 +09:00 [INF] Executing ViewResult, running view Login.
+2025-06-12 21:00:17.144 +09:00 [DBG] The view path '/Views/Account/Login.cshtml' was found in 0.407ms.
+2025-06-12 21:00:17.145 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Login],controller=[Account])
+2025-06-12 21:00:17.146 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Login and 
+2025-06-12 21:00:17.146 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Login
+2025-06-12 21:00:17.147 +09:00 [DBG] A new antiforgery cookie token was created.
+2025-06-12 21:00:17.148 +09:00 [DBG] View lookup cache hit for view '_Layout' in controller 'Account'.
+2025-06-12 21:00:17.149 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:17.149 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:17.149 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:17.149 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:17.149 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:17.149 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:17.149 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:17.150 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:17.150 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:17.150 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:17.150 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:17.150 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:17.150 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:17.150 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:17.150 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:17.151 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:17.151 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:17.151 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:17.151 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:17.151 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:17.151 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:17.151 +09:00 [INF] Executed ViewResult - view Login executed in 7.7727ms.
+2025-06-12 21:00:17.151 +09:00 [INF] Executed action ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb) in 10.5847ms
+2025-06-12 21:00:17.151 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.AccountController.Login (ApprovalWeb)'
+2025-06-12 21:00:17.151 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Account/Login - 200 null text/html; charset=utf-8 12.7462ms
+2025-06-12 21:00:18.046 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" received FIN.
+2025-06-12 21:00:18.046 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" is closed. The last processed stream ID was 7.
+2025-06-12 21:00:18.046 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:18.046 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9TJ completed.
+2025-06-12 21:00:18.047 +09:00 [DBG] Connection id "0HND9L1DHN9TJ" stopped.
+2025-06-12 21:00:30.279 +09:00 [DBG] Connection id "0HND9L1DHN9TK" accepted.
+2025-06-12 21:00:30.280 +09:00 [DBG] Connection id "0HND9L1DHN9TK" started.
+2025-06-12 21:00:30.312 +09:00 [DBG] Connection 0HND9L1DHN9TK established using the following protocol: "Tls12"
+2025-06-12 21:00:30.360 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest - null null
+2025-06-12 21:00:30.362 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:30.362 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:30.362 +09:00 [DBG] The request path /MyRequest does not match a supported file type
+2025-06-12 21:00:30.362 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest'
+2025-06-12 21:00:30.362 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest'
+2025-06-12 21:00:30.362 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:30.363 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:30.364 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:30.364 +09:00 [INF] Route matched with {action = "Index", controller = "MyRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb).
+2025-06-12 21:00:30.364 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:30.364 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:30.364 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:30.364 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:30.364 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:30.365 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:30.365 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:30.365 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:30.366 +09:00 [INF] Start processing HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:30.366 +09:00 [INF] Sending HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:30.435 +09:00 [INF] Received HTTP response headers after 69.1809ms - 200
+2025-06-12 21:00:30.435 +09:00 [INF] End processing HTTP request after 69.6049ms - 200
+2025-06-12 21:00:30.436 +09:00 [DBG] View lookup cache hit for view 'Index' in controller 'MyRequest'.
+2025-06-12 21:00:30.436 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:00:30.437 +09:00 [DBG] The view path '/Views/MyRequest/Index.cshtml' was found in 0.4003ms.
+2025-06-12 21:00:30.444 +09:00 [DBG] View lookup cache hit for view '_Layout' in controller 'MyRequest'.
+2025-06-12 21:00:30.447 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:30.447 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:30.448 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:30.448 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:30.448 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:30.448 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:30.448 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:30.448 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:30.448 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:30.448 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:30.448 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:30.448 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:30.448 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:30.448 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:30.448 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:30.448 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:30.449 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:30.449 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:30.449 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:00:30.449 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:30.449 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:30.449 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:30.450 +09:00 [INF] Executed ViewResult - view Index executed in 13.6555ms.
+2025-06-12 21:00:30.450 +09:00 [INF] Executed action ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb) in 85.5632ms
+2025-06-12 21:00:30.450 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:30.450 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/MyRequest - 200 null text/html; charset=utf-8 90.2881ms
+2025-06-12 21:00:32.206 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/Approval - null null
+2025-06-12 21:00:32.207 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:32.207 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:32.207 +09:00 [DBG] The request path /Approval does not match a supported file type
+2025-06-12 21:00:32.208 +09:00 [DBG] 1 candidate(s) found for the request path '/Approval'
+2025-06-12 21:00:32.208 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Approval'
+2025-06-12 21:00:32.208 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)'
+2025-06-12 21:00:32.210 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:32.212 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)'
+2025-06-12 21:00:32.228 +09:00 [INF] Route matched with {action = "Index", controller = "Approval"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.ApprovalController (ApprovalWeb).
+2025-06-12 21:00:32.228 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:32.228 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:32.229 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:32.229 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:32.229 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:32.230 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:32.230 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.ApprovalController (ApprovalWeb)
+2025-06-12 21:00:32.230 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.ApprovalController (ApprovalWeb)
+2025-06-12 21:00:32.232 +09:00 [INF] Start processing HTTP request GET https://localhost:5001/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:32.232 +09:00 [INF] Sending HTTP request GET https://localhost:5001/api/approval/my-approvals/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:32.284 +09:00 [INF] Received HTTP response headers after 51.2984ms - 200
+2025-06-12 21:00:32.284 +09:00 [INF] End processing HTTP request after 51.6351ms - 200
+2025-06-12 21:00:32.286 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'Approval'.
+2025-06-12 21:00:32.287 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:00:32.287 +09:00 [DBG] The view path '/Views/Approval/Index.cshtml' was found in 0.6678ms.
+2025-06-12 21:00:32.290 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'Approval'.
+2025-06-12 21:00:32.291 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:32.291 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:32.291 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:32.291 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:32.291 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:32.291 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:32.291 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:32.291 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:32.291 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:32.291 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:32.291 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:32.291 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:32.291 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:32.291 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:32.291 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:32.292 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:32.292 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:32.292 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:32.292 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:00:32.292 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:32.292 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:32.292 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:32.293 +09:00 [INF] Executed ViewResult - view Index executed in 6.4203ms.
+2025-06-12 21:00:32.293 +09:00 [INF] Executed action ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb) in 63.117ms
+2025-06-12 21:00:32.293 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.ApprovalController.Index (ApprovalWeb)'
+2025-06-12 21:00:32.293 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/Approval - 200 null text/html; charset=utf-8 86.664ms
+2025-06-12 21:00:33.049 +09:00 [DBG] Connection id "0HND9L1DHN9TK" received FIN.
+2025-06-12 21:00:33.053 +09:00 [DBG] Connection id "0HND9L1DHN9TK" is closed. The last processed stream ID was 3.
+2025-06-12 21:00:33.053 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9TK completed.
+2025-06-12 21:00:33.053 +09:00 [DBG] Connection id "0HND9L1DHN9TK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:33.054 +09:00 [DBG] Connection id "0HND9L1DHN9TK" stopped.
+2025-06-12 21:00:33.295 +09:00 [DBG] Connection id "0HND9L1DHN9TL" accepted.
+2025-06-12 21:00:33.295 +09:00 [DBG] Connection id "0HND9L1DHN9TL" started.
+2025-06-12 21:00:33.319 +09:00 [DBG] Connection 0HND9L1DHN9TL established using the following protocol: "Tls12"
+2025-06-12 21:00:33.393 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest - null null
+2025-06-12 21:00:33.394 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:00:33.394 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:00:33.395 +09:00 [DBG] The request path /MyRequest does not match a supported file type
+2025-06-12 21:00:33.395 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest'
+2025-06-12 21:00:33.395 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest'
+2025-06-12 21:00:33.395 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:33.395 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:33.395 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:33.395 +09:00 [INF] Route matched with {action = "Index", controller = "MyRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb).
+2025-06-12 21:00:33.395 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:00:33.395 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:33.396 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:00:33.396 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:00:33.396 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:00:33.396 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:00:33.396 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:33.397 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:00:33.397 +09:00 [INF] Start processing HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:33.398 +09:00 [INF] Sending HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:00:33.478 +09:00 [INF] Received HTTP response headers after 80.5707ms - 200
+2025-06-12 21:00:33.479 +09:00 [INF] End processing HTTP request after 81.1057ms - 200
+2025-06-12 21:00:33.479 +09:00 [DBG] View lookup cache hit for view 'Index' in controller 'MyRequest'.
+2025-06-12 21:00:33.479 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:00:33.479 +09:00 [DBG] The view path '/Views/MyRequest/Index.cshtml' was found in 0.2689ms.
+2025-06-12 21:00:33.479 +09:00 [DBG] View lookup cache hit for view '_Layout' in controller 'MyRequest'.
+2025-06-12 21:00:33.480 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:33.480 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:33.480 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:33.480 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:00:33.480 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:00:33.481 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:00:33.481 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:00:33.481 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:00:33.481 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:00:33.481 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:00:33.481 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:00:33.481 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:00:33.481 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:33.481 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:33.481 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:33.482 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:00:33.482 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:00:33.482 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:00:33.482 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:00:33.482 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:00:33.482 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:00:33.482 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:00:33.483 +09:00 [INF] Executed ViewResult - view Index executed in 3.7939ms.
+2025-06-12 21:00:33.483 +09:00 [INF] Executed action ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb) in 86.9703ms
+2025-06-12 21:00:33.483 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:00:33.483 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/MyRequest - 200 null text/html; charset=utf-8 89.8536ms
+2025-06-12 21:00:38.054 +09:00 [DBG] Connection id "0HND9L1DHN9TL" received FIN.
+2025-06-12 21:00:38.057 +09:00 [DBG] Connection id "0HND9L1DHN9TL" is closed. The last processed stream ID was 1.
+2025-06-12 21:00:38.057 +09:00 [DBG] The connection queue processing loop for 0HND9L1DHN9TL completed.
+2025-06-12 21:00:38.057 +09:00 [DBG] Connection id "0HND9L1DHN9TL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:00:38.060 +09:00 [DBG] Connection id "0HND9L1DHN9TL" stopped.
+2025-06-12 21:00:48.800 +09:00 [INF] Application is shutting down...
+2025-06-12 21:00:48.808 +09:00 [DBG] Hosting stopping
+2025-06-12 21:00:48.820 +09:00 [DBG] Hosting stopped
+2025-06-12 21:01:07.134 +09:00 [INF] AzureAd: https://login.microsoftonline.com/
+2025-06-12 21:01:07.214 +09:00 [INF] AzureAd: 17c2af6d-3640-4fa1-b58a-8132c3141fbf
+2025-06-12 21:01:07.214 +09:00 [INF] AzureAd: f25493ae-1c98-41d7-8a33-0be75f5fe603
+2025-06-12 21:01:23.376 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Index.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Create.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Details.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Approval/Index.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Create2.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Details.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/MyRequest/Index.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ApprovalSteps.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_AttachedFiles.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2025-06-12 21:01:23.378 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2025-06-12 21:01:23.384 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-12 21:01:23.404 +09:00 [INF] User profile is available. Using '/Users/7ames7in/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-12 21:01:23.455 +09:00 [DBG] Hosting starting
+2025-06-12 21:01:23.469 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-06-12 21:01:23.473 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-41ecc33a-45bd-41d6-9620-662d8ec10bcf.xml'.
+2025-06-12 21:01:23.475 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-06-12 21:01:23.481 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-06-12 21:01:23.485 +09:00 [DBG] Found key {41ecc33a-45bd-41d6-9620-662d8ec10bcf}.
+2025-06-12 21:01:23.485 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-06-12 21:01:23.488 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-12 21:01:23.490 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 21:01:23.494 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 21:01:23.495 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 21:01:23.497 +09:00 [DBG] Considering key {41ecc33a-45bd-41d6-9620-662d8ec10bcf} with expiration date 2025-09-10 11:34:33Z as default key.
+2025-06-12 21:01:23.497 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-12 21:01:23.497 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-12 21:01:23.497 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-12 21:01:23.497 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-06-12 21:01:23.498 +09:00 [DBG] Key ring with default key {fdb991f0-84eb-43a2-8430-2e196962c0fd} was loaded during application startup.
+2025-06-12 21:01:23.510 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-12 21:01:23.511 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 21:01:23.793 +09:00 [INF] Now listening on: https://localhost:7185
+2025-06-12 21:01:23.793 +09:00 [INF] Now listening on: http://localhost:5107
+2025-06-12 21:01:23.793 +09:00 [DBG] Loaded hosting startup assembly ApprovalWeb
+2025-06-12 21:01:23.793 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 21:01:23.793 +09:00 [INF] Hosting environment: Development
+2025-06-12 21:01:23.793 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb
+2025-06-12 21:01:23.793 +09:00 [DBG] Hosting started
+2025-06-12 21:01:24.057 +09:00 [DBG] Connection id "0HND9L3D6E01H" accepted.
+2025-06-12 21:01:24.064 +09:00 [DBG] Connection id "0HND9L3D6E01H" started.
+2025-06-12 21:01:24.128 +09:00 [DBG] Connection 0HND9L3D6E01H established using the following protocol: "Tls12"
+2025-06-12 21:01:24.197 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/ - null null
+2025-06-12 21:01:24.294 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:01:24.295 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:01:24.295 +09:00 [DBG] The request path / does not match a supported file type
+2025-06-12 21:01:24.305 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-06-12 21:01:24.306 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+2025-06-12 21:01:24.307 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 21:01:24.308 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 21:01:24.322 +09:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ApprovalWeb.Controllers.HomeController (ApprovalWeb).
+2025-06-12 21:01:24.324 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:01:24.324 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:01:24.324 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:01:24.324 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:01:24.324 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:01:24.327 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:01:24.328 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.HomeController (ApprovalWeb)
+2025-06-12 21:01:24.328 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.HomeController (ApprovalWeb)
+2025-06-12 21:01:24.330 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'Home'.
+2025-06-12 21:01:24.333 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:01:24.335 +09:00 [DBG] The view path '/Views/Home/Index.cshtml' was found in 3.8776ms.
+2025-06-12 21:01:24.350 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'Home'.
+2025-06-12 21:01:24.432 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:01:24.434 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:01:24.434 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:01:24.435 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:01:24.435 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:01:24.435 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:01:24.435 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:01:24.436 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:01:24.436 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:01:24.436 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:01:24.436 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:01:24.436 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:01:24.436 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:01:24.437 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:01:24.437 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:01:24.438 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:01:24.438 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:01:24.438 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:01:24.439 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:01:24.440 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:01:24.440 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:01:24.440 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:01:24.450 +09:00 [INF] Executed ViewResult - view Index executed in 120.3055ms.
+2025-06-12 21:01:24.455 +09:00 [INF] Executed action ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb) in 130.6525ms
+2025-06-12 21:01:24.456 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.HomeController.Index (ApprovalWeb)'
+2025-06-12 21:01:24.471 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/ - 200 null text/html; charset=utf-8 265.5277ms
+2025-06-12 21:01:28.066 +09:00 [DBG] Connection id "0HND9L3D6E01H" received FIN.
+2025-06-12 21:01:28.081 +09:00 [DBG] The connection queue processing loop for 0HND9L3D6E01H completed.
+2025-06-12 21:01:28.083 +09:00 [DBG] Connection id "0HND9L3D6E01H" is closed. The last processed stream ID was 1.
+2025-06-12 21:01:28.083 +09:00 [DBG] Connection id "0HND9L3D6E01H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:01:28.091 +09:00 [DBG] Connection id "0HND9L3D6E01H" stopped.
+2025-06-12 21:01:35.227 +09:00 [DBG] Connection id "0HND9L3D6E01I" accepted.
+2025-06-12 21:01:35.228 +09:00 [DBG] Connection id "0HND9L3D6E01I" started.
+2025-06-12 21:01:35.256 +09:00 [DBG] Connection 0HND9L3D6E01I established using the following protocol: "Tls12"
+2025-06-12 21:01:35.261 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2025-06-12 21:01:35.261 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2025-06-12 21:01:35.264 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:01:35.264 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:01:35.264 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:01:35.264 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:01:35.335 +09:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+2025-06-12 21:01:35.336 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 332090 text/plain 74.9074ms
+2025-06-12 21:01:35.351 +09:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map'
+2025-06-12 21:01:35.351 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 589892 text/plain 90.4175ms
+2025-06-12 21:01:38.060 +09:00 [DBG] Connection id "0HND9L3D6E01I" received FIN.
+2025-06-12 21:01:38.061 +09:00 [DBG] Connection id "0HND9L3D6E01I" is closed. The last processed stream ID was 3.
+2025-06-12 21:01:38.061 +09:00 [DBG] Connection id "0HND9L3D6E01I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:01:38.062 +09:00 [DBG] The connection queue processing loop for 0HND9L3D6E01I completed.
+2025-06-12 21:01:38.063 +09:00 [DBG] Connection id "0HND9L3D6E01I" stopped.
+2025-06-12 21:01:41.669 +09:00 [DBG] Connection id "0HND9L3D6E01J" accepted.
+2025-06-12 21:01:41.669 +09:00 [DBG] Connection id "0HND9L3D6E01J" started.
+2025-06-12 21:01:41.696 +09:00 [DBG] Connection 0HND9L3D6E01J established using the following protocol: "Tls12"
+2025-06-12 21:01:41.794 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest - null null
+2025-06-12 21:01:41.797 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:01:41.797 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:01:41.797 +09:00 [DBG] The request path /MyRequest does not match a supported file type
+2025-06-12 21:01:41.799 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest'
+2025-06-12 21:01:41.799 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest'
+2025-06-12 21:01:41.800 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:01:41.802 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:01:41.804 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:01:41.812 +09:00 [INF] Route matched with {action = "Index", controller = "MyRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb).
+2025-06-12 21:01:41.813 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:01:41.813 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:01:41.813 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:01:41.813 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:01:41.813 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:01:41.815 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:01:41.815 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:01:41.819 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:01:41.863 +09:00 [INF] Start processing HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:01:41.864 +09:00 [INF] Sending HTTP request GET https://localhost:5001/api/approvalrequest/my-requests/CWnq567KN0HgdQQhdWSER0kho59j1asPUX9RuiKNgm4
+2025-06-12 21:01:41.922 +09:00 [INF] Received HTTP response headers after 56.2449ms - 200
+2025-06-12 21:01:41.922 +09:00 [INF] End processing HTTP request after 59.9761ms - 200
+2025-06-12 21:01:41.945 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'MyRequest'.
+2025-06-12 21:01:41.946 +09:00 [INF] Executing ViewResult, running view Index.
+2025-06-12 21:01:41.946 +09:00 [DBG] The view path '/Views/MyRequest/Index.cshtml' was found in 0.6555ms.
+2025-06-12 21:01:41.948 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'MyRequest'.
+2025-06-12 21:01:41.949 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:01:41.949 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:01:41.949 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:01:41.949 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Home])
+2025-06-12 21:01:41.949 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and 
+2025-06-12 21:01:41.949 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /
+2025-06-12 21:01:41.949 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[MyRequest])
+2025-06-12 21:01:41.949 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyRequest and 
+2025-06-12 21:01:41.949 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /MyRequest
+2025-06-12 21:01:41.949 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[Approval])
+2025-06-12 21:01:41.949 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Approval and 
+2025-06-12 21:01:41.949 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Approval
+2025-06-12 21:01:41.950 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:01:41.950 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:01:41.950 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:01:41.950 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (action=[Logout],controller=[Account])
+2025-06-12 21:01:41.950 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and 
+2025-06-12 21:01:41.950 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Account/Logout
+2025-06-12 21:01:41.950 +09:00 [DBG] An antiforgery cookie token was reused.
+2025-06-12 21:01:41.950 +09:00 [DBG] Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2025-06-12 21:01:41.950 +09:00 [DBG] Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2025-06-12 21:01:41.950 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result /Home/Privacy
+2025-06-12 21:01:41.951 +09:00 [INF] Executed ViewResult - view Index executed in 5.9409ms.
+2025-06-12 21:01:41.951 +09:00 [INF] Executed action ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb) in 137.9274ms
+2025-06-12 21:01:41.951 +09:00 [INF] Executed endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:01:41.951 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/MyRequest - 200 null text/html; charset=utf-8 157.2195ms
+2025-06-12 21:01:43.060 +09:00 [DBG] Connection id "0HND9L3D6E01J" received FIN.
+2025-06-12 21:01:43.061 +09:00 [DBG] The connection queue processing loop for 0HND9L3D6E01J completed.
+2025-06-12 21:01:43.061 +09:00 [DBG] Connection id "0HND9L3D6E01J" is closed. The last processed stream ID was 1.
+2025-06-12 21:01:43.061 +09:00 [DBG] Connection id "0HND9L3D6E01J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-12 21:01:43.062 +09:00 [DBG] Connection id "0HND9L3D6E01J" stopped.
+2025-06-12 21:03:00.759 +09:00 [DBG] Connection id "0HND9L3D6E01K" accepted.
+2025-06-12 21:03:00.761 +09:00 [DBG] Connection id "0HND9L3D6E01K" started.
+2025-06-12 21:03:00.790 +09:00 [DBG] Connection 0HND9L3D6E01K established using the following protocol: "Tls12"
+2025-06-12 21:03:00.793 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest - null null
+2025-06-12 21:03:00.796 +09:00 [DBG] AuthenticationScheme: Cookies was successfully authenticated.
+2025-06-12 21:03:00.796 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was successfully authenticated.
+2025-06-12 21:03:00.796 +09:00 [DBG] The request path /MyRequest does not match a supported file type
+2025-06-12 21:03:00.798 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest'
+2025-06-12 21:03:00.798 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest'
+2025-06-12 21:03:00.799 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:03:00.799 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:03:00.800 +09:00 [INF] Executing endpoint 'ApprovalWeb.Controllers.MyRequestController.Index (ApprovalWeb)'
+2025-06-12 21:03:00.800 +09:00 [INF] Route matched with {action = "Index", controller = "MyRequest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb).
+2025-06-12 21:03:00.801 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"]
+2025-06-12 21:03:00.801 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:03:00.801 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-06-12 21:03:00.801 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-12 21:03:00.801 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-06-12 21:03:00.801 +09:00 [DBG] Authorization was successful.
+2025-06-12 21:03:00.802 +09:00 [DBG] Executing controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)
+2025-06-12 21:03:00.802 +09:00 [DBG] Executed controller factory for controller ApprovalWeb.Controllers.MyRequestController (ApprovalWeb)

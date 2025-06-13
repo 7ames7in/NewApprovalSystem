@@ -10,7 +10,7 @@ namespace ApprovalService.Infrastructure.Repositories;
 /// <summary>
 /// Repository for managing approval requests.
 /// </summary>
-public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where T : ApprovalRequest
+public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where T : ApprovalRequestWithCurrentStepDto
 {
     private readonly ApprovalDbContext _context;
 
@@ -30,9 +30,39 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
     /// <returns>The created approval request.</returns>
     public async Task<T> CreateApprovalRequestAsync(T entity)
     {
-        await _context.Set<T>().AddAsync(entity);
+        var approvalRequest = entity as ApprovalRequest;
+        if (approvalRequest == null)
+        {
+            throw new InvalidOperationException("Entity must inherit from ApprovalRequest.");
+        }
+
+        await _context.AddAsync(approvalRequest);
         await _context.SaveChangesAsync();
         return entity;
+    }
+
+    public IQueryable<ApprovalRequestWithCurrentStepDto> GetApprovalRequestsWithCurrentStep(string userId)
+    {
+        return _context.ApprovalRequests
+            .Where(r => r.ApplicantEmployeeNumber == userId)
+            .Select(r => new ApprovalRequestWithCurrentStepDto
+            {
+                ApprovalId = r.ApprovalId,
+                RequestTitle = r.RequestTitle,
+                RequestedAt = r.RequestedAt,
+                CurrentApproverName = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ApproverName)
+                    .FirstOrDefault(),
+                CurrentApproverEmployeeNumber = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ApproverEmployeeNumber)
+                    .FirstOrDefault(),
+                CurrentActionStatus = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ActionStatus)
+                    .FirstOrDefault()
+            });
     }
 
     /// <summary>
@@ -84,9 +114,9 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
     /// </summary>
     /// <param name="id">The approval request ID.</param>
     /// <returns>The approval request entity, or null if not found.</returns>
-    public async Task<T?> GetRequestByIdAsync(Guid id)
-    {
-        return await _context.Set<T>()
+    public async Task<ApprovalRequest?> GetRequestByIdAsync(Guid id)
+    {   
+        return await _context.ApprovalRequests
             .Include(p => p.Steps)
             .Include(p => p.Attachments)
             .SingleOrDefaultAsync(request => request.ApprovalId == id);
@@ -176,4 +206,5 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
     {
         await _context.SaveChangesAsync();
     }
+
 }

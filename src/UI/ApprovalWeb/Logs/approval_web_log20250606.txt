@@ -1,0 +1,36 @@
+2025-06-06 07:00:37.605 +09:00 [DBG] Connection id "0HND34J9SBORC" accepted.
+2025-06-06 07:00:38.736 +09:00 [DBG] Connection id "0HND34J9SBORC" started.
+2025-06-06 07:00:38.827 +09:00 [DBG] Connection 0HND34J9SBORC established using the following protocol: "Tls12"
+2025-06-06 07:00:38.857 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7185/MyRequest/Details/eeb4f889-a3ab-4a22-a4a6-9a96fbd1b2d2 - null null
+2025-06-06 07:00:38.873 +09:00 [DBG] AuthenticationScheme: Cookies was not authenticated.
+2025-06-06 07:00:38.873 +09:00 [DBG] AuthenticationScheme: OpenIdConnect was not authenticated.
+2025-06-06 07:00:38.875 +09:00 [DBG] The request path /MyRequest/Details/eeb4f889-a3ab-4a22-a4a6-9a96fbd1b2d2 does not match a supported file type
+2025-06-06 07:00:38.882 +09:00 [DBG] 1 candidate(s) found for the request path '/MyRequest/Details/eeb4f889-a3ab-4a22-a4a6-9a96fbd1b2d2'
+2025-06-06 07:00:38.883 +09:00 [DBG] Endpoint 'ApprovalWeb.Controllers.MyRequestController.Details (ApprovalWeb)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/MyRequest/Details/eeb4f889-a3ab-4a22-a4a6-9a96fbd1b2d2'
+2025-06-06 07:00:38.885 +09:00 [DBG] Request matched endpoint 'ApprovalWeb.Controllers.MyRequestController.Details (ApprovalWeb)'
+2025-06-06 07:00:38.890 +09:00 [DBG] Policy authentication schemes  did not succeed
+2025-06-06 07:00:38.892 +09:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-06 07:00:38.895 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/v2.0/.well-known/openid-configuration'.
+2025-06-06 07:00:38.895 +09:00 [DBG] IDX21328: Generating nonce for openIdConnect message.
+2025-06-06 07:00:38.943 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-1673dc34-8e41-4389-8f63-60859264302a.xml'.
+2025-06-06 07:00:38.951 +09:00 [DBG] HandleChallenge with Location: https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/oauth2/v2.0/authorize?client_id=17c2af6d-3640-4fa1-b58a-8132c3141fb&redirect_uri=https%3A%2F%2Flocalhost%3A7185%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638847576388963790.NzRkNTFkYTUtNjlhOS00MTlkLWE1MTAtMzIyZTg4ODM2MzhmYjYxZjRhZjctODVlOC00Mjk3LWIxNzUtNmNkNzViOTI4MjNi&client_info=1&x-client-brkrver=IDWeb.3.9.2.0&state=CfDJ8PCRuf3rhKJDhDAuGWliwP3EVkl0j96W22ftcnaTZT_k3g0UdL7vq2SD2AQnot_qw7L7SvRCTntNyKHDSsu21mpgHZTJhtEs-dRG77sW8E2i38xBTQlbUka8sNaHe0i_kC9RWYnbDOIUbhmwmSEpqt_IH-FMZDQsbLh0S18d3n0V1YnXNssisCc66lF6CVkSPMCUsPaG1YVE50T-CkwcHhHReAtUZGdnOcTJS9D2jnl5QW7nzI_H1JZGGUQJwzW-YevbIytFh21vE7VAVYwgU-XKndYuRG0AiRXtnjdXuFPZX6EOIzaJ4JKmE3ttq1zvj1dH1yOo0fBY9CIhfC8cMg9Bazx6Fj7ScP_-BrD8O64p&x-client-SKU=ID_NET9_0&x-client-ver=8.11.0.0; and Set-Cookie: .AspNetCore.OpenIdConnect.Nonce.CfDJ8PCRuf3rhKJDhDAuGWliwP2zbm3sJnYz17TNnLBdZkqW6SSOopANIdyW2VIT6bV1-caY7pHZu1AIqtEaS78z5bwyeGpXGfuHAcJ4VM-cuWkhg1rsfi_QdzyS9l3Ro3ybpAb8gRikAlhMUKklnoHne7CXSrAwpimhYqyBQHTT5uchxR4GM3zRiKXYZdSSiT37Zfs5aX5YaPeeU-XWad6ddL7htr2tbGVs99R4LC9ikNzaZp44lPcudTyHmJTZXpfThB6B3kzMZO8a8uXN2KGIkBM=N; expires=Thu, 05 Jun 2025 22:15:38 GMT; path=/signin-oidc; secure; samesite=none; httponly,.AspNetCore.Correlation.xSa8dmws2UddDqr-StHgc3Txr-PdpMg252QGDCyhdQQ=N; expires=Thu, 05 Jun 2025 22:15:38 GMT; path=/signin-oidc; secure; samesite=none; httponly.
+2025-06-06 07:00:38.951 +09:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2025-06-06 07:00:38.954 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7185/MyRequest/Details/eeb4f889-a3ab-4a22-a4a6-9a96fbd1b2d2 - 302 0 null 97.4127ms
+2025-06-06 07:00:38.960 +09:00 [DBG] Reading data from file '/Users/7ames7in/.aspnet/DataProtection-Keys/key-fdb991f0-84eb-43a2-8430-2e196962c0fd.xml'.
+2025-06-06 07:00:38.964 +09:00 [DBG] Found key {1673dc34-8e41-4389-8f63-60859264302a}.
+2025-06-06 07:00:38.968 +09:00 [DBG] Found key {fdb991f0-84eb-43a2-8430-2e196962c0fd}.
+2025-06-06 07:00:38.987 +09:00 [DBG] Considering key {fdb991f0-84eb-43a2-8430-2e196962c0fd} with expiration date 2025-06-13 01:37:14Z as default key.
+2025-06-06 07:00:38.989 +09:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-06 07:00:38.989 +09:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-06 07:00:38.990 +09:00 [DBG] Using key {fdb991f0-84eb-43a2-8430-2e196962c0fd} as the default key.
+2025-06-06 07:00:39.313 +09:00 [DBG] IDX21811: Deserializing the string: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' obtained from metadata endpoint into openIdConnectConfiguration object.
+2025-06-06 07:00:39.319 +09:00 [DBG] IDX21812: Retrieving json web keys from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-06 07:00:39.320 +09:00 [DBG] IDX20805: Obtaining information from metadata endpoint: 'https://login.microsoftonline.com/f25493ae-1c98-41d7-8a33-0be75f5fe603/discovery/v2.0/keys'.
+2025-06-06 07:00:39.576 +09:00 [DBG] IDX21813: Deserializing json web keys: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-06-06 07:00:39.577 +09:00 [DBG] IDX10806: Deserializing json: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' into 'Microsoft.IdentityModel.Tokens.JsonWebKeySet'.
+2025-06-06 07:00:42.350 +09:00 [DBG] Connection id "0HND34J9SBORC" received FIN.
+2025-06-06 07:00:42.351 +09:00 [DBG] Connection id "0HND34J9SBORC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-06 07:00:42.351 +09:00 [DBG] Connection id "0HND34J9SBORC" is closed. The last processed stream ID was 1.
+2025-06-06 07:00:42.352 +09:00 [DBG] The connection queue processing loop for 0HND34J9SBORC completed.
+2025-06-06 07:00:42.352 +09:00 [DBG] Connection id "0HND34J9SBORC" stopped.

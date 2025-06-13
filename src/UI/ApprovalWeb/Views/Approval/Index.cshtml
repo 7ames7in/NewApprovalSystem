@@ -69,6 +69,9 @@
                                 <input type="hidden" name="ApprovalId" value="@item.ApprovalId" />
                                 <button type="submit" class="btn btn-danger btn-sm">Reject</button>
                             </form>
+                            <!-- View Details Button -->
+                            <a href="/MyRequest/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info shadow-sm ms-2">View</a>
+                                
                         </td>
                     </tr>
                     <tr id="steps-@item.ApprovalId" class="steps-row d-none">

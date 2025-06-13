@@ -22,6 +22,10 @@
                         <th style="width:500px">Title</th>
                         <!-- Approval Type column is commented out -->
                         @* <th>Type</th> *@
+
+                        <th style="width:200px">Approver</th>
+                        <th style="width:200px">Name</th>
+                        <th style="width:200px">Status</th>
                         <th style="width:200px">Created</th>
                         <th style="width:200px">Approved</th>
                         <th>Status</th>
@@ -44,6 +48,15 @@
                                     <a href="/MyRequest/Details/@item.ApprovalId" class="fw-bold text-decoration-none text-dark">
                                         @item.RequestTitle
                                     </a>
+                                </td>
+                                <td>
+                                    @item.CurrentApproverName
+                                </td>
+                                <td>
+                                    @item.CurrentApproverEmployeeNumber
+                                </td>
+                                <td>
+                                    @item.CurrentActionStatus
                                 </td>
                                 <!-- Approval Type column is commented out -->
                                 @* <td>@item.ApprovalType</td> *@

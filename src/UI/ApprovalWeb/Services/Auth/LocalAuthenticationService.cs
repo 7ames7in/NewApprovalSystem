@@ -34,6 +34,7 @@ public class LocalAuthenticationService : ApprovalWeb.Interfaces.IAuthentication
             {
                 new Claim(ClaimTypes.NameIdentifier, userinfo?.EmployeeNumber??string.Empty),
                 new Claim(ClaimTypes.Name, userinfo?.Name ?? string.Empty),
+                new Claim("UserName", userinfo?.Name ?? string.Empty),
                 new Claim(ClaimTypes.Role, userinfo?.Role ?? string.Empty),
                 new Claim("Position", userinfo?.Position ?? string.Empty),
                 new Claim(ClaimTypes.Email, emailid),

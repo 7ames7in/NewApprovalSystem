@@ -33,9 +33,9 @@ builder.Services.AddDbContext<ApprovalDbContext>(options =>
     options.UseSqlite("Data Source=Data/ApprovalService.db"));
 
 // Register repositories for dependency injection
-builder.Services.AddScoped<IRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
+//builder.Services.AddScoped<IRepository<ApprovalRequestWithCurrentStepDto>, ApprovalRequestRepository<ApprovalRequestWithCurrentStepDto>>();
 builder.Services.AddScoped<IRepository<ApprovalTemplate>, ApprovalTemplateRepository<ApprovalTemplate>>();
-builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequest>, ApprovalRequestRepository<ApprovalRequest>>();
+builder.Services.AddScoped<IApprovalRequestRepository<ApprovalRequestWithCurrentStepDto>, ApprovalRequestRepository<ApprovalRequestWithCurrentStepDto>>();
 builder.Services.AddScoped<IApprovalRepository<ApprovalRequest>, ApprovalRepository<ApprovalRequest>>();
 
 // Build the application

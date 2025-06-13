@@ -18,6 +18,8 @@ public class ApprovalRequest
     public DateTime? RespondedAt { get; set; } // Timestamp when the request was responded to
     public string? ApproverComment { get; set; } // Comments from the approver
     public string? ApprovalType { get; set; } // Type/category of the approval request
+    public int CurrentStep { get; set; } = 1; // Current step in the approval process
+    public string? CurrentApproverEmployeeNumber { get; set; } // Employee number of the current approver
     public string? MisKey { get; set; } // Optional key for integration with external systems
 
     public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>(); // List of steps in the approval process
