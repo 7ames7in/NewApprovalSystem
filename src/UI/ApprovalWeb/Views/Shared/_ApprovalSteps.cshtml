@@ -1,6 +1,5 @@
 ﻿@model ApprovalRequestViewModel
 
-
 <ul class="list-group">
     @if (Model.Steps != null && Model.Steps.Any())
     {
@@ -8,7 +7,7 @@
         foreach (var step in Model.Steps.OrderBy(step => step.Sequence))
         {
             stepCount++;
-            <li class="list-group-item">
+            <li class="list-group-item text-start">
                 <strong>Step @step.Sequence:</strong> 
                 <span>@step.ApproverName</span> 
                 (<span>@step.ApproverEmployeeNumber</span>) / 

@@ -5,6 +5,7 @@ using ApprovalService.Infrastructure.Persistence;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using ApprovalService.Domain.Enums;
+using Microsoft.Extensions.Logging;
 
 namespace ApprovalService.Infrastructure.Repositories;
 
@@ -12,17 +13,21 @@ namespace ApprovalService.Infrastructure.Repositories;
 /// Repository implementation for managing ApprovalRequest entities.
 /// </summary>
 /// <typeparam name="T">The type of ApprovalRequest.</typeparam>
-public class ApprovalRepository<T> : IApprovalRepository<T> where T : ApprovalRequest
+public class ApprovalRepository<T> : IApprovalRepository<T> where T : ApprovalRequestWithCurrentStepDto
 {
     private readonly ApprovalDbContext _context;
+    private readonly ILogger<ApprovalRepository<T>> _logger;
+    //private readonly IEventPublisher _eventPublisher;
 
     /// <summary>
     /// Initializes a new instance of the ApprovalRepository class.
     /// </summary>
     /// <param name="context">The database context.</param>
-    public ApprovalRepository(ApprovalDbContext context)
+    public ApprovalRepository(ApprovalDbContext context, ILogger<ApprovalRepository<T>> logger /*, IEventPublisher eventPublisher*/)
     {
-        _context = context;
+        _context = context ?? throw new ArgumentNullException(nameof(context));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        //_eventPublisher = eventPublisher ?? throw new ArgumentNullException(nameof(eventPublisher));
     }
 
     /// <summary>
@@ -42,12 +47,42 @@ public class ApprovalRepository<T> : IApprovalRepository<T> where T : ApprovalRe
     /// </summary>
     /// <param name="userId">The user's employee number.</param>
     /// <returns>A list of approval requests.</returns>
-    public async Task<IEnumerable<T>> GetMyApprovalRequestsAsync(string userId)
+    public async Task<IEnumerable<ApprovalRequestWithCurrentStepDto>> GetMyApprovalRequestsAsync(string userId)
     {
-        return await _context.Set<T>()
+        // return await _context.Set<T>()
+        //     .Where(approval => approval.Steps.Any(step => step.ApproverEmployeeNumber == userId))
+        //     .Include(approval => approval.Steps)
+        //     .ToListAsync();
+
+        return await _context.ApprovalRequests
             .Where(approval => approval.Steps.Any(step => step.ApproverEmployeeNumber == userId))
             .Include(approval => approval.Steps)
-            .ToListAsync();
+            .Select(r => new ApprovalRequestWithCurrentStepDto
+            {
+                ApprovalId = r.ApprovalId,
+                RequestTitle = r.RequestTitle,
+                RequestedAt = r.RequestedAt,
+                RespondedAt = r.RespondedAt,
+                ApplicantEmployeeNumber = r.ApplicantEmployeeNumber,
+                ApplicantDepartment = r.ApplicantDepartment,
+                ApplicantName = r.ApplicantName,
+                ApplicantPosition = r.ApplicantPosition,
+                Status = r.Status,
+                Steps = r.Steps,
+                CurrentStep = r.CurrentStep,
+                CurrentApproverName = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ApproverName)
+                    .FirstOrDefault(),
+                CurrentApproverEmployeeNumber = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ApproverEmployeeNumber)
+                    .FirstOrDefault(),
+                CurrentActionStatus = r.Steps
+                    .Where(s => s.Sequence == r.CurrentStep)
+                    .Select(s => s.ActionStatus)
+                    .FirstOrDefault()
+            }).ToListAsync();
     }
 
     /// <summary>
@@ -133,6 +168,69 @@ public class ApprovalRepository<T> : IApprovalRepository<T> where T : ApprovalRe
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<bool> ApproveRequestAsync(string approvalId, string comment, string approverEmployeeNumber)
+    {
+        // 1. Guid 파싱 (DB 키가 Guid니까)
+        if (!Guid.TryParse(approvalId, out var approvalGuid))
+        {
+            return false;
+        }
+
+        // 2. ApprovalRequest 로드 (Steps 포함하여 한번에 가져옴)
+        var request = await _context.ApprovalRequests
+            .Include(r => r.Steps)
+            .FirstOrDefaultAsync(r => r.ApprovalId == approvalGuid);
+
+        if (request == null)
+            return false;
+
+        // 3. Steps에서 현재 Approver 찾기
+        var currentStep = request.Steps
+            .FirstOrDefault(s => s.ApproverEmployeeNumber == approverEmployeeNumber && s.Sequence == request.CurrentStep);
+
+        if (currentStep == null)
+            return false;
+
+        // 4. ApprovalStep 업데이트
+        currentStep.ActionStatus = "Approved";
+        currentStep.ActionDate = DateTime.UtcNow;
+        currentStep.Comment = comment;
+
+        // 5. ApprovalRequest 업데이트
+        request.CurrentApproverEmployeeNumber = approverEmployeeNumber;
+        request.RespondedAt = DateTime.UtcNow;
+
+        // 6. 다음 단계 이동 or 최종 승인 처리
+        if (request.CurrentStep >= request.Steps.Max(s => s.Sequence))
+        {
+            request.Status = "Approved";
+        }
+        else
+        {
+            request.CurrentStep++; // 다음 Step으로 이동
+            request.CurrentApproverEmployeeNumber = request.Steps
+                .FirstOrDefault(s => s.Sequence == request.CurrentStep)?.ApproverEmployeeNumber;
+        }
+
+        await _context.SaveChangesAsync();
+
+        // 7. 성공적으로 승인 처리됨
+        // 로깅 추가 가능
+        _logger.LogInformation($"Approval {approvalId} approved by {approverEmployeeNumber} with comment: {comment}");
+        // Email Send 이벤트 발행 추가 가능
+        // 예: await _eventPublisher.PublishAsync(new ApprovalApprovedEvent(approvalId, approverEmployeeNumber, comment));
+        // 8. 성공적으로 승인 처리됨
+        // 로깅 추가 가능
+        // 예: _logger.LogInformation($"Approval {approvalId} approved by {approverEmployeeNumber} with comment: {comment}");
+        
+        return true;
+    }
+
+    public Task<bool> RejectRequestAsync(string approveId, string? comment, string approverEmployeeNumber)
+    {
+        throw new NotImplementedException();
     }
 }
 

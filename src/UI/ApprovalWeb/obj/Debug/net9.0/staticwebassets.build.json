@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UNWsqmElEM2d6Rd/vBxnPk/YxtAjBgmYhZ9jJs7cVpM=",
+  "Hash": "QgDN3ih8UzJhpt47986Spj+n2K88eKXXwriRitQl35s=",
   "Source": "ApprovalWeb",
   "BasePath": "_content/ApprovalWeb",
   "Mode": "Default",
@@ -1424,12 +1424,12 @@
       "OriginalItemSpec": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/lib/bootstrap/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz",
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz",
       "SourceId": "ApprovalWeb",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/ApprovalWeb",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=9vnqfel0qw}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1438,8 +1438,8 @@
       "RelatedAsset": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pw5l7j5n1s",
-      "Integrity": "KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=",
+      "Fingerprint": "0r1lkadoet",
+      "Integrity": "5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/css/site.css"
@@ -2509,8 +2509,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "9vnqfel0qw",
+      "Integrity": "VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -6947,6 +6947,27 @@
       "OriginalItemSpec": "wwwroot/uploads/Screenshot 2025-06-04 at 9.11.59\u202FAM.png"
     },
     {
+      "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png",
+      "SourceId": "ApprovalWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/",
+      "BasePath": "_content/ApprovalWeb",
+      "RelativePath": "uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4uw1ucezjc",
+      "Integrity": "fIqqdztaHDFJjswv4IYaqng3qPcvndKzkMatiswdrVA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png"
+    },
+    {
       "Identity": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM.png",
       "SourceId": "ApprovalWeb",
       "SourceType": "Discovered",
@@ -7818,13 +7839,13 @@
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz",
+      "Route": "css/site.9vnqfel0qw.css",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.002544529262"
         }
       ],
       "ResponseHeaders": [
@@ -7834,15 +7855,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "392"
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7862,13 +7883,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "9vnqfel0qw"
         },
         {
           "Name": "label",
@@ -7876,12 +7897,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.9vnqfel0qw.css",
       "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7891,7 +7912,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "881"
         },
         {
           "Name": "Content-Type",
@@ -7899,11 +7920,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7913,7 +7934,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "9vnqfel0qw"
         },
         {
           "Name": "label",
@@ -7921,13 +7942,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz",
+      "Route": "css/site.9vnqfel0qw.css.gz",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7936,7 +7957,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "392"
         },
         {
           "Name": "Content-Type",
@@ -7944,11 +7965,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7966,7 +7987,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "9vnqfel0qw"
         },
         {
           "Name": "label",
@@ -7974,18 +7995,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
+          "Value": "sha256-5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.002544529262"
         }
       ],
       "ResponseHeaders": [
@@ -7995,15 +8016,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "392"
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8023,13 +8044,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc="
         }
       ]
     },
@@ -8044,7 +8065,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "881"
         },
         {
           "Name": "Content-Type",
@@ -8052,11 +8073,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8066,13 +8087,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-VbLOUaVmPFknPUxzQOSECpy9/+454j8hOv3UCbK50pc="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8081,7 +8102,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "392"
         },
         {
           "Name": "Content-Type",
@@ -8089,11 +8110,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 01:43:41 GMT"
+          "Value": "Sat, 14 Jun 2025 13:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8111,7 +8132,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
+          "Value": "sha256-5DeK6+asvKO2X52cy/xvXjbHNY6X5beN+MJnjg8wunI="
         }
       ]
     },
@@ -49822,6 +49843,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-bGh2g60P4d5wvibJCKD077K5XxY1TPl0fxiX9Tmx8hw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.4uw1ucezjc.png",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "836599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fIqqdztaHDFJjswv4IYaqng3qPcvndKzkMatiswdrVA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 13:57:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4uw1ucezjc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fIqqdztaHDFJjswv4IYaqng3qPcvndKzkMatiswdrVA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png",
+      "AssetFile": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "836599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fIqqdztaHDFJjswv4IYaqng3qPcvndKzkMatiswdrVA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 13:57:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fIqqdztaHDFJjswv4IYaqng3qPcvndKzkMatiswdrVA="
         }
       ]
     },

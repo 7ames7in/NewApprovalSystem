@@ -5,7 +5,7 @@ using Serilog;
 using LoggingService.Domain.Entities;
 using LoggingService.Infrastructure.Repositories;
 using LoggingService.Infrastructure.Seed;
-
+using LoggingService.Infrastructure.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerGen(); // Add Swagger generation
@@ -18,13 +18,13 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 builder.Host.UseSerilog(); // Serilog 사용
 // Serilog 설정 완료
-// Serilog 미들웨어 추가
-    
+
 // SQLite 연결 등록
 builder.Services.AddDbContext<SystemLogDbContext>(options =>
-    options.UseSqlite("Data Source=Data/UserService.db"));
+    options.UseSqlite("Data Source=Data/LoggingService.db"));
 
 builder.Services.AddScoped<IRepository<SystemLog>, SystemLogRepository<SystemLog>>();
+builder.Services.AddScoped<ILoggingRepository, LoggingRepository>();
 
 builder.Services.AddControllers();
 var app = builder.Build();

@@ -1,0 +1,219 @@
+2025-06-16 06:13:32.552 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-16 06:13:32.709 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-16 06:13:33.142 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-16 06:13:33.148 +09:00 [DBG] Creating DbConnection.
+2025-06-16 06:13:33.161 +09:00 [DBG] Created DbConnection. (7ms).
+2025-06-16 06:13:33.165 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.176 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.181 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.191 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (1ms).
+2025-06-16 06:13:33.193 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-16 06:13:33.193 +09:00 [DBG] Creating DbConnection.
+2025-06-16 06:13:33.193 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-16 06:13:33.196 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-16 06:13:33.197 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (4ms).
+2025-06-16 06:13:33.197 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.198 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.201 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 06:13:33.222 +09:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 06:13:33.230 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.233 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-16 06:13:33.237 +09:00 [DBG] Creating DbConnection.
+2025-06-16 06:13:33.237 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-16 06:13:33.237 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.238 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.238 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.238 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 06:13:33.238 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-16 06:13:33.238 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-16 06:13:33.238 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-16 06:13:33.238 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.238 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.241 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 06:13:33.243 +09:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 06:13:33.243 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.247 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-16 06:13:33.297 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-06-16 06:13:33.457 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-16 06:13:33.474 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.475 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.475 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-16 06:13:33.475 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-16 06:13:33.475 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-16 06:13:33.475 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-16 06:13:33.476 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-16 06:13:33.480 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.481 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 3ms reading results.
+2025-06-16 06:13:33.482 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 06:13:33.482 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 06:13:33.482 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-16 06:13:33.483 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 06:13:33.483 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 06:13:33.485 +09:00 [DBG] Hosting starting
+2025-06-16 06:13:33.503 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-16 06:13:33.503 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-16 06:13:33.828 +09:00 [INF] Now listening on: https://localhost:7129
+2025-06-16 06:13:33.829 +09:00 [INF] Now listening on: http://localhost:5139
+2025-06-16 06:13:33.830 +09:00 [DBG] Loaded hosting startup assembly UserService.API
+2025-06-16 06:13:33.830 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-16 06:13:33.830 +09:00 [INF] Hosting environment: Development
+2025-06-16 06:13:33.831 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API
+2025-06-16 06:13:33.831 +09:00 [DBG] Hosting started
+2025-06-16 07:10:33.902 +09:00 [INF] Application is shutting down...
+2025-06-16 07:10:33.903 +09:00 [DBG] Hosting stopping
+2025-06-16 07:10:33.945 +09:00 [DBG] Hosting stopped
+2025-06-16 07:10:36.918 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-16 07:10:37.007 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-16 07:10:37.227 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-16 07:10:37.231 +09:00 [DBG] Creating DbConnection.
+2025-06-16 07:10:37.241 +09:00 [DBG] Created DbConnection. (8ms).
+2025-06-16 07:10:37.244 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.254 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.256 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.258 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 07:10:37.260 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-16 07:10:37.260 +09:00 [DBG] Creating DbConnection.
+2025-06-16 07:10:37.260 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-16 07:10:37.262 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-16 07:10:37.263 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-06-16 07:10:37.263 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.264 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.267 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 07:10:37.282 +09:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 07:10:37.283 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.285 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (1ms).
+2025-06-16 07:10:37.288 +09:00 [DBG] Creating DbConnection.
+2025-06-16 07:10:37.288 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-16 07:10:37.288 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.289 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.289 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.289 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 07:10:37.290 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-16 07:10:37.290 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-16 07:10:37.290 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-16 07:10:37.290 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.290 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.290 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 07:10:37.290 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-16 07:10:37.290 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.290 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 07:10:37.311 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-06-16 07:10:37.403 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-16 07:10:37.414 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.415 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.415 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-16 07:10:37.415 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-16 07:10:37.415 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-16 07:10:37.415 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-16 07:10:37.417 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-16 07:10:37.419 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.419 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 2ms reading results.
+2025-06-16 07:10:37.421 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-16 07:10:37.421 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 07:10:37.422 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-16 07:10:37.422 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-16 07:10:37.422 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-16 07:10:37.424 +09:00 [DBG] Hosting starting
+2025-06-16 07:10:37.437 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-16 07:10:37.437 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-16 07:10:37.696 +09:00 [INF] Now listening on: https://localhost:7129
+2025-06-16 07:10:37.696 +09:00 [INF] Now listening on: http://localhost:5139
+2025-06-16 07:10:37.696 +09:00 [DBG] Loaded hosting startup assembly UserService.API
+2025-06-16 07:10:37.696 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-16 07:10:37.696 +09:00 [INF] Hosting environment: Development
+2025-06-16 07:10:37.696 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API
+2025-06-16 07:10:37.696 +09:00 [DBG] Hosting started

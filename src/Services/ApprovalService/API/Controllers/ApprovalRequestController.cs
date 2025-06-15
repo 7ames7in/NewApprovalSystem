@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace ApprovalService.API.Controllers
 {

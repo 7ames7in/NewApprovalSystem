@@ -1,4 +1,5 @@
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using ApprovalService.Domain.Entities;
 
 namespace ApprovalService.Domain.Interfaces;
 
@@ -21,7 +22,7 @@ public interface IApprovalRepository<T> : IRepository<T> where T : class
     /// </summary>
     /// <param name="userId">The ID of the user.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the approval requests.</returns>
-    Task<IEnumerable<T>> GetMyApprovalRequestsAsync(string userId);
+    Task<IEnumerable<ApprovalRequestWithCurrentStepDto>> GetMyApprovalRequestsAsync(string userId);
 
     /// <summary>
     /// Retrieves the pending approval requests for a specific user.
@@ -36,4 +37,8 @@ public interface IApprovalRepository<T> : IRepository<T> where T : class
     /// <param name="userId">The ID of the user.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the approved approval requests.</returns>
     Task<IEnumerable<T>> GetMyApprovedApprovalRequestsAsync(string userId);
+
+    Task<bool> ApproveRequestAsync(string approveId, string? comment, string approverEmployeeNumber);
+    Task<bool> RejectRequestAsync(string approveId, string? comment, string approverEmployeeNumber);
+    //Task<T> CreateApprovalRequestAsync(T request);
 }

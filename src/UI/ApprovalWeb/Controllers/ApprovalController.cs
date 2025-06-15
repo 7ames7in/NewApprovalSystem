@@ -36,17 +36,31 @@ public class ApprovalController : Controller
     }
 
     // Handles the submission of a new approval request
-    [HttpPost]
-    public async Task<IActionResult> Create(ApprovalRequestViewModel model)
-    {
-        if (ModelState.IsValid)
-        {
-            await _apiService.SubmitApprovalAsync(model);
-            return RedirectToAction("Index");
-        }
-        return View(model);
-    }
+    // [HttpPost]
+    // public async Task<IActionResult> Create(ApprovalRequestViewModel model)
+    // {
+    //     if (ModelState.IsValid)
+    //     {
+    //         await _apiService.SubmitApprovalAsync(model);
+    //         return RedirectToAction("Index");
+    //     }
+    //     return View(model);
+    // }
 
+    [HttpPost]
+    public async Task<IActionResult> Approve([FromForm] string ApprovalId, [FromForm] string Comment, [FromForm] string ApproverEmployeeNumber)
+    {
+        // Validate the input
+        if (string.IsNullOrEmpty(ApprovalId) || string.IsNullOrEmpty(ApproverEmployeeNumber))
+        {
+            ModelState.AddModelError("", "Invalid approval request data.");
+            return View("Index");
+        }
+
+        // Call the service to approve the request
+        await _apiService.ApproveRequestAsync(ApprovalId, Comment, ApproverEmployeeNumber);
+        return RedirectToAction("Index");
+    }
     // Displays the details of a specific approval request
     public IActionResult Details(string id)
     {

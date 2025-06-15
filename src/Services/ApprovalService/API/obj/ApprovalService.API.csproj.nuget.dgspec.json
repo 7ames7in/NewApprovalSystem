@@ -359,9 +359,17 @@
               "target": "Package",
               "version": "[9.0.5, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Http": {
+              "target": "Package",
+              "version": "[9.1.1, )"
             },
             "SwashBuckle": {
               "target": "Package",

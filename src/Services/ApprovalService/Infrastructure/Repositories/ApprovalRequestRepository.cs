@@ -45,11 +45,21 @@ public class ApprovalRequestRepository<T> : IApprovalRequestRepository<T> where 
     {
         return _context.ApprovalRequests
             .Where(r => r.ApplicantEmployeeNumber == userId)
+            .OrderByDescending(r => r.RequestedAt)
             .Select(r => new ApprovalRequestWithCurrentStepDto
             {
                 ApprovalId = r.ApprovalId,
                 RequestTitle = r.RequestTitle,
                 RequestedAt = r.RequestedAt,
+                RespondedAt = r.RespondedAt,
+                ApplicantEmployeeNumber = r.ApplicantEmployeeNumber,
+                ApplicantName = r.ApplicantName,
+                ApplicantDepartment = r.ApplicantDepartment,
+                ApplicantPosition = r.ApplicantPosition,
+                Steps = r.Steps,
+                Attachments = r.Attachments,
+                Status = r.Status,
+                CurrentStep = r.CurrentStep,
                 CurrentApproverName = r.Steps
                     .Where(s => s.Sequence == r.CurrentStep)
                     .Select(s => s.ApproverName)

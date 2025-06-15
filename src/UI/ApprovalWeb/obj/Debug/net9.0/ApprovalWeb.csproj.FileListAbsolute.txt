@@ -49,7 +49,6 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/bundle/ApprovalWeb.styles.css
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/projectbundle/ApprovalWeb.bundle.scp.css
-/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-b9sayid5wm.gz
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/fyxf8d3012-61n19gt1b8.gz
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/m6vvu3dc8u-xtxxf3hu2r.gz
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/29x0djmfpy-l8x7a8m5la.gz
@@ -220,3 +219,4 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Serilog.Sinks.Console.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Serilog.Sinks.File.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz

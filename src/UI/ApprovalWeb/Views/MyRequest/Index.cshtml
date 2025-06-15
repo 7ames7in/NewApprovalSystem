@@ -19,17 +19,17 @@
                         <th style="width:30px">
                             <input type="checkbox" class="form-check-input">
                         </th>
-                        <th style="width:500px">Title</th>
+                        <th>Title</th>
                         <!-- Approval Type column is commented out -->
                         @* <th>Type</th> *@
 
-                        <th style="width:200px">Approver</th>
-                        <th style="width:200px">Name</th>
-                        <th style="width:200px">Status</th>
-                        <th style="width:200px">Created</th>
-                        <th style="width:200px">Approved</th>
-                        <th>Status</th>
-                        <th>Details</th>
+                        <th style="width:100px">Approver</th>
+                        <th style="width:100px">Name</th>
+                        <th style="width:100px">Status</th>
+                        <th style="width:130px">Created</th>
+                        <th style="width:130px">Approved</th>
+                        <th style="width:100px">Status</th>
+                        <th style="width:80px">Details</th>
                     </tr>
                 </thead>
                 <!-- Table Body -->
@@ -61,9 +61,13 @@
                                 <!-- Approval Type column is commented out -->
                                 @* <td>@item.ApprovalType</td> *@
                                 <!-- Request Creation Date -->
-                                <td>@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                                <td>
+                                    @item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")
+                                </td>
                                 <!-- Approval Response Date -->
-                                <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
+                                <td>
+                                    @(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")
+                                </td>
                                 <!-- Request Status -->
                                 <td>
                                     <span class="badge @(item.Status switch {
@@ -85,7 +89,7 @@
                     {
                         <!-- Message when no requests are found -->
                         <tr>
-                            <td colspan="7" class="text-center text-muted py-4">No approval requests found.</td>
+                            <td colspan="9" class="text-center text-muted py-4">No approval requests found.</td>
                         </tr>
                     }
                 </tbody>

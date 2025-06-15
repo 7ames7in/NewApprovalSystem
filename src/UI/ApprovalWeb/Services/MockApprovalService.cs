@@ -4,11 +4,11 @@ using ApprovalWeb.Services;
 
 public class MockApprovalService : IApprovalService
 {
-    public Task<List<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
-        => Task.FromResult(MockApprovalData.Approvals);
+    public Task<IEnumerable<ApprovalRequestViewModel>> GetApprovalRequestsAsync()
+        => Task.FromResult(MockApprovalData.Approvals.AsEnumerable());
 
-    public Task<List<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string userId)
-        => Task.FromResult(MockApprovalData.Approvals);
+    public Task<IEnumerable<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string userId)
+        => Task.FromResult(MockApprovalData.Approvals.AsEnumerable());
 
     public Task<Guid> SubmitApprovalAsync(ApprovalRequestViewModel model)
     {
@@ -23,5 +23,15 @@ public class MockApprovalService : IApprovalService
     {
         MockApprovalData.UpdateStatus(requestId, status, comment);
         return Task.CompletedTask;
+    }
+
+    public Task<bool> ApproveRequestAsync(string approverId, string? comment, string approverEmployeeNumber)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<bool> RejectRequestAsync(string approverId, string? comment, string approverEmployeeNumber)
+    {
+        throw new NotImplementedException();
     }
 }

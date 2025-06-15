@@ -5,6 +5,8 @@ using ApprovalService.Domain.Entities;
 using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
 using System.Threading.Tasks;
 using ApprovalService.Domain.Interfaces;
+using ApprovalService.API.DTOs;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ApprovalService.API.Controllers;
 
@@ -12,9 +14,9 @@ namespace ApprovalService.API.Controllers;
 [Route("api/[controller]")]
 public class ApprovalController : ControllerBase
 {
-    private readonly IApprovalRepository<ApprovalRequest> _approvalRepository;
+    private readonly IApprovalRepository<ApprovalRequestWithCurrentStepDto> _approvalRepository;
 
-    public ApprovalController(IApprovalRepository<ApprovalRequest> approvalRepository)
+    public ApprovalController(IApprovalRepository<ApprovalRequestWithCurrentStepDto> approvalRepository)
     {
         _approvalRepository = approvalRepository;
     }
@@ -69,6 +71,7 @@ public class ApprovalController : ControllerBase
         return Ok(approvals);
     }
 
+
     /// <summary>
     /// Retrieves approved approvals for a specific approver.
     /// </summary>
@@ -121,6 +124,31 @@ public class ApprovalController : ControllerBase
         _approvals.Add(dto);
         return Ok(new { ApprovalId = dto.ApprovalId });
     }
+
+    /// <summary>
+    /// Submits a approval request.
+    /// </summary>
+    [HttpPost("approve")]
+    public async Task<IActionResult> Approve(ApproveRequestDto approveRequest)
+    {
+        if(ModelState.IsValid == false)
+        {
+            return BadRequest(ModelState);
+        }
+        if (string.IsNullOrEmpty(approveRequest.ApprovalId))
+        {
+            return BadRequest("ApprovalId is required.");
+        }
+        if (string.IsNullOrEmpty(approveRequest.CurrentApproverEmployeeNumber))
+        {
+            return BadRequest("CurrentApproverEmployeeNumber is required.");
+        }
+
+        var approval = await _approvalRepository.ApproveRequestAsync(approveRequest.ApprovalId, approveRequest.Comment, approveRequest.CurrentApproverEmployeeNumber);
+        
+        return Ok(approval);
+    }
+
 
     #endregion
 }

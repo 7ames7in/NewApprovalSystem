@@ -26,11 +26,15 @@ public class ApprovalApiService : IApprovalService
     /// </summary>
     /// <param name="approverId">The ID of the approver.</param>
     /// <returns>A list of approval requests.</returns>
-    public async Task<List<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string approverId)
+    public async Task<IEnumerable<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string approverId)
     {
-        return await _http.GetFromJsonAsync<List<ApprovalRequestViewModel>>($"api/approval/my-approvals/{approverId}") 
+        return await _http.GetFromJsonAsync<IEnumerable<ApprovalRequestViewModel>>($"api/approval/my-approvals/{approverId}") 
                ?? new List<ApprovalRequestViewModel>();
     }
+
+    // public async Task<IEnumerable<ApprovalRequestViewModel>> GetMyApprovalRequestsAsync(string approverId)
+    //     => await _http.GetFromJsonAsync<IEnumerable<ApprovalRequestViewModel>>($"api/approvalrequest/my-requests/{approverId}") ?? new List<ApprovalRequestViewModel>();
+
 
     /// <summary>
     /// Submits a new approval request.
@@ -64,5 +68,48 @@ public class ApprovalApiService : IApprovalService
     {
         var content = JsonContent.Create(new { requestId, status, comment });
         await _http.PostAsync("api/approval/update-status", content);
+    }
+
+    /// <summary>
+    /// Approves an approval request.
+    /// </summary>
+    /// <param name="ApprovalId">The ID of the approver.</param>
+    /// <param name="comment">An optional comment for the approval.</param>
+    /// <returns>A task that represents the asynchronous operation, containing a boolean indicating success.</returns>
+    public async Task<bool> ApproveRequestAsync(string approvalId, string? comment, string approverEmployeeNumber)
+    {
+        var payload = new 
+        {
+            ApprovalId = approvalId,
+            Comment = comment,
+            CurrentApproverEmployeeNumber = approverEmployeeNumber
+        };
+
+        var response = await _http.PostAsJsonAsync("api/approval/approve", payload);
+        if (response.IsSuccessStatusCode)
+        {
+            // API가 true/false 결과를 Body로 보내는 경우
+            var result = await response.Content.ReadFromJsonAsync<bool>();
+            return result;
+        }
+        else
+        {
+            // 실패 처리
+            // 로깅 추가 가능
+            return false;
+        }
+    }
+
+    public Task<bool> RejectRequestAsync(string approverId, string? comment, string approverEmployeeNumber)
+    {
+        var payload = new 
+        {
+            ApprovalId = approverId,
+            Comment = comment,
+            ApproverEmployeeNumber = approverEmployeeNumber
+        };
+
+        return _http.PostAsJsonAsync("api/approval/reject", payload)
+            .ContinueWith(response => response.Result.IsSuccessStatusCode);
     }
 }

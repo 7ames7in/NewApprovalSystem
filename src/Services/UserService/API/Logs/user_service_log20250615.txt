@@ -1,0 +1,67 @@
+2025-06-15 20:39:09.238 +09:00 [DBG] Connection id "0HNDAP5C07IVC" accepted.
+2025-06-15 20:39:09.307 +09:00 [DBG] Connection id "0HNDAP5C07IVC" started.
+2025-06-15 20:39:09.347 +09:00 [DBG] Connection 0HNDAP5C07IVC established using the following protocol: "Tls12"
+2025-06-15 20:39:09.359 +09:00 [INF] Request starting HTTP/1.1 POST https://localhost:7129/api/userservice/login - application/json; charset=utf-8 null
+2025-06-15 20:39:09.361 +09:00 [DBG] 1 candidate(s) found for the request path '/api/userservice/login'
+2025-06-15 20:39:09.362 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.Login (UserService.API)' with route pattern 'api/UserService/login' is valid for the request path '/api/userservice/login'
+2025-06-15 20:39:09.363 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.Login (UserService.API)'
+2025-06-15 20:39:09.364 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-15 20:39:09.365 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.Login (UserService.API)'
+2025-06-15 20:39:09.369 +09:00 [INF] Route matched with {action = "Login", controller = "UserService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UserService.API.Dtos.LoginDto) on controller UserService.API.Controllers.UserServiceController (UserService.API).
+2025-06-15 20:39:09.370 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-15 20:39:09.370 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-15 20:39:09.370 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-15 20:39:09.370 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-15 20:39:09.370 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-15 20:39:09.370 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-06-15 20:39:09.377 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (UserService.API)
+2025-06-15 20:39:09.378 +09:00 [DBG] Attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto' ...
+2025-06-15 20:39:09.379 +09:00 [DBG] Attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto' using the name '' in request data ...
+2025-06-15 20:39:09.379 +09:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+2025-06-15 20:39:09.380 +09:00 [DBG] Connection id "0HNDAP5C07IVC", Request id "0HNDAP5C07IVC:00000001": started reading request body.
+2025-06-15 20:39:09.381 +09:00 [DBG] Connection id "0HNDAP5C07IVC", Request id "0HNDAP5C07IVC:00000001": done reading request body.
+2025-06-15 20:39:09.382 +09:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserService.API.Dtos.LoginDto'
+2025-06-15 20:39:09.382 +09:00 [DBG] Done attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-15 20:39:09.382 +09:00 [DBG] Done attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-15 20:39:09.382 +09:00 [DBG] Attempting to validate the bound parameter 'user' of type 'UserService.API.Dtos.LoginDto' ...
+2025-06-15 20:39:09.383 +09:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-15 20:39:09.389 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-15 20:39:09.398 +09:00 [DBG] Creating DbConnection.
+2025-06-15 20:39:09.400 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-15 20:39:09.400 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-15 20:39:09.408 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-15 20:39:09.410 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-15 20:39:09.410 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-06-15 20:39:09.410 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-06-15 20:39:09.410 +09:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-06-15 20:39:09.414 +09:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-06-15 20:39:09.416 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-15 20:39:09.416 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-15 20:39:09.416 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db' is being disposed after spending 2ms reading results.
+2025-06-15 20:39:09.417 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Data/UserService.db'.
+2025-06-15 20:39:09.417 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-15 20:39:09.418 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-15 20:39:09.418 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-15 20:39:09.418 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-15 20:39:09.418 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-15 20:39:09.418 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-15 20:39:09.418 +09:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`7[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:39:09.421 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.Login (UserService.API) in 50.108ms
+2025-06-15 20:39:09.421 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.Login (UserService.API)'
+2025-06-15 20:39:09.421 +09:00 [DBG] Connection id "0HNDAP5C07IVC" completed keep alive response.
+2025-06-15 20:39:09.421 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-15 20:39:09.421 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-15 20:39:09.421 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (0ms).
+2025-06-15 20:39:09.421 +09:00 [INF] Request finished HTTP/1.1 POST https://localhost:7129/api/userservice/login - 200 null application/json; charset=utf-8 62.4155ms
+2025-06-15 20:40:24.202 +09:00 [DBG] Connection id "0HNDAP5C07IVC" received FIN.
+2025-06-15 20:40:24.207 +09:00 [DBG] Connection id "0HNDAP5C07IVC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-15 20:40:24.209 +09:00 [DBG] Connection id "0HNDAP5C07IVC" disconnecting.
+2025-06-15 20:40:24.212 +09:00 [DBG] Connection id "0HNDAP5C07IVC" stopped.

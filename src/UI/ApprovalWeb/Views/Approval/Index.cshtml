@@ -1,4 +1,6 @@
 @model List<ApprovalRequestViewModel>
+@using System.Security.Claims
+@using System.Text.Json
 
 <h2 class="text-center my-4">My Approval List</h2>
 @* 
@@ -11,10 +13,11 @@
         <thead class="table-dark">
             <tr>
                 <th>Title</th>
-                <th>Name</th>
+                <th>Requester</th>
                 <th>Department</th>
+                <th>Approver</th>
+                <th>ApproverId</th>
                 <th>Status</th>
-                <th>Type</th>
                 <th>Requested At</th>
                 <th>Responded At</th>
                 <th>Details</th>
@@ -52,22 +55,33 @@
                                 }
                             </script>
                         </td>
-                        <td>@item.ApplicantName</td>
+                        <td style="width:120px;">@item.ApplicantName</td>
                         <td>@item.ApplicantDepartment</td>
                         <td>
-                            
+                            @item.CurrentApproverName
                         </td>
-                        <td>@item.ApprovalType</td>
-                        <td style="width:180px">@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
-                        <td>@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
                         <td>
+                            @item.CurrentApproverEmployeeNumber
+                        </td>
+                        <td>@item.CurrentActionStatus</td>
+                        <td style="width:160px">@item.RequestedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                        <td style="width:160px">@(item.RespondedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
+                        <td style="width: 230px;">
+                            @{
+                                var isCurrentApprover = (item.CurrentApproverEmployeeNumber == User.FindFirst(ClaimTypes.NameIdentifier)?.Value) && (item.CurrentActionStatus == "Pending");
+                            }
                             <form asp-action="Approve" method="post" class="d-inline">
                                 <input type="hidden" name="ApprovalId" value="@item.ApprovalId" />
-                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                <input type="hidden" name="ApproverEmployeeNumber" value="@item.CurrentApproverEmployeeNumber" />
+                                <input type="hidden" name="Comment" value="" />
+                                <button type="submit" class="btn btn-success btn-sm" @(isCurrentApprover ? "" : "disabled")>Approve</button>
                             </form>
+
                             <form asp-action="Reject" method="post" class="d-inline ms-2">
                                 <input type="hidden" name="ApprovalId" value="@item.ApprovalId" />
-                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                                <input type="hidden" name="Comment" value="" />
+                                <input type="hidden" name="ApproverEmployeeNumber" value="@item.CurrentApproverEmployeeNumber" />
+                                <button type="submit" class="btn btn-danger btn-sm" @(isCurrentApprover ? "" : "disabled")>Reject</button>
                             </form>
                             <!-- View Details Button -->
                             <a href="/MyRequest/Details/@item.ApprovalId" class="btn btn-sm btn-outline-info shadow-sm ms-2">View</a>
@@ -75,9 +89,10 @@
                         </td>
                     </tr>
                     <tr id="steps-@item.ApprovalId" class="steps-row d-none">
-                        <td colspan="8">
+                        <td colspan="9">
+                            @await Html.PartialAsync("_ApprovalSteps", @item)
 
-                            <ul class="list-group"> 
+                            @* <ul class="list-group"> 
                             @foreach (var step in item.Steps.OrderBy(s => s.Sequence))
                             {
                                 <li class="list-group-item text-start">
@@ -99,7 +114,7 @@
                                     }
                                 </li>
                             }
-                            </ul>
+                            </ul> *@
                         </td>
                     </tr>
                 }
