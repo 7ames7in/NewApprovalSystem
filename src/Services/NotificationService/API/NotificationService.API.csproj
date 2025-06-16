@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj" />
+    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Core.csproj" />
     <ProjectReference Include="../Infrastructure/NotificationService.Infrastructure.csproj" />
   </ItemGroup>
 

@@ -919,17 +919,17 @@
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
-      "Infrastructure/1.0.0": {
+      "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
         },
         "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Core.dll": {}
         }
       },
       "NotificationService.Domain/1.0.0": {
@@ -946,7 +946,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Infrastructure": "1.0.0",
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "NotificationService.Domain": "1.0.0"
         },
@@ -2391,10 +2391,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Infrastructure/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
-      "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+      "path": "../../../../BuildingBlocks/Core/Core.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Core/Core.csproj"
     },
     "NotificationService.Domain/1.0.0": {
       "type": "project",
@@ -2410,7 +2410,6 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "FluentValidation.AspNetCore >= 11.3.0",
-      "Infrastructure >= 1.0.0",
       "MediatR >= 12.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
@@ -2447,9 +2446,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
-            },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/NotificationService.Infrastructure.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Infrastructure/NotificationService.Infrastructure.csproj"
             }

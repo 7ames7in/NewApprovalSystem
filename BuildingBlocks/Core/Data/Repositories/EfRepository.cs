@@ -1,4 +1,4 @@
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace BuildingBlocks.Core.Infrastructure.Data.Repositories;

@@ -275,7 +275,7 @@
       },
       "ApprovalService.Domain/1.0.0": {
         "dependencies": {
-          "Infrastructure": "1.0.0"
+          "Core": "1.0.0"
         },
         "runtime": {
           "ApprovalService.Domain.dll": {
@@ -284,12 +284,12 @@
           }
         }
       },
-      "Infrastructure/1.0.0": {
+      "Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
         },
         "runtime": {
-          "Infrastructure.dll": {
+          "Core.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -494,7 +494,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Infrastructure/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

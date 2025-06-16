@@ -10,7 +10,7 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ref/ApprovalService.Domain.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.sourcelink.json
-/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/Infrastructure.dll
-/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/Infrastructure.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/ApprovalService.Domain.csproj.AssemblyReference.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/obj/Debug/net9.0/Approval.E54B7753.Up2Date
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/Core.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/bin/Debug/net9.0/Core.pdb

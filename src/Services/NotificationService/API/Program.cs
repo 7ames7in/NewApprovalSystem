@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using NotificationService.Infrastructure.Repositories;
 using NotificationService.Infrastructure.Persistence;
 using Serilog;

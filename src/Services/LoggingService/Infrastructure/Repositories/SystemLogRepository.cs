@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using LoggingService.Infrastructure.Persistence;
 
 namespace LoggingService.Infrastructure.Repositories;

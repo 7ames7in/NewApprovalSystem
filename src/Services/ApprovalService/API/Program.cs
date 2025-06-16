@@ -1,33 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using ApprovalService.Infrastructure.Persistence;
 using ApprovalService.Infrastructure.Seed;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Infrastructure.Repositories;
 using ApprovalService.Domain.Interfaces;
 using Serilog;
 using System.Text.Json.Serialization;
 using Serilog.Sinks.Http;
+using Polly;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add Swagger generation for API documentation
 builder.Services.AddSwaggerGen();
-
-// Serilog.Debugging.SelfLog.Enable(Console.Error);
-// Log.Logger = new LoggerConfiguration()
-//     .MinimumLevel.Debug()
-//     .WriteTo.Console()
-//     .WriteTo.File("Logs/approval_service_log.txt", rollingInterval: RollingInterval.Day)
-//     .WriteTo.Http(
-//         requestUri: "https://localhost:6001/api/logs",
-//         queueLimitBytes: 1024 * 1024,
-//         period: TimeSpan.FromSeconds(2),
-//         textFormatter: new Serilog.Formatting.Json.JsonFormatter(),
-//         restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information
-        
-//     )
-//     .CreateLogger();
 
 // Serilog 내부 오류를 파일로 기록 (콘솔 대신)
 Serilog.Debugging.SelfLog.Enable(msg => 

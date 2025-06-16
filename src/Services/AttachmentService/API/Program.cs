@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using AttachmentService.Domain.Entities;
 using AttachmentService.Infrastructure.Persistence;
 using AttachmentService.Infrastructure.Repositories;

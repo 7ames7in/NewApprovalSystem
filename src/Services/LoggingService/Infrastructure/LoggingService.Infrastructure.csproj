@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj" />
+    <ProjectReference Include="../../../../BuildingBlocks/Core/Core.csproj" />
+    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Core.csproj" />
     <ProjectReference Include="../Domain/LoggingService.Domain.csproj" />
   </ItemGroup>
 

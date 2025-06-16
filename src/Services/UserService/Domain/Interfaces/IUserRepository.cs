@@ -1,5 +1,5 @@
 using UserService.Domain.Entities;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 
 namespace UserService.Domain.Interfaces;
 

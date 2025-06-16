@@ -12,7 +12,6 @@
           "ApprovalService.Domain": "1.0.0",
           "AttachmentService.Domain": "1.0.0",
           "AttachmentService.Infrastructure": "1.0.0",
-          "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
@@ -919,7 +918,7 @@
       },
       "ApprovalService.Domain/1.0.0": {
         "dependencies": {
-          "Infrastructure": "1.0.0"
+          "Core": "1.0.0"
         },
         "runtime": {
           "ApprovalService.Domain.dll": {
@@ -939,7 +938,7 @@
       "AttachmentService.Infrastructure/1.0.0": {
         "dependencies": {
           "AttachmentService.Domain": "1.0.0",
-          "Infrastructure": "1.0.0",
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
         },
@@ -950,12 +949,12 @@
           }
         }
       },
-      "Infrastructure/1.0.0": {
+      "Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
         },
         "runtime": {
-          "Infrastructure.dll": {
+          "Core.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1414,7 +1413,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Infrastructure/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

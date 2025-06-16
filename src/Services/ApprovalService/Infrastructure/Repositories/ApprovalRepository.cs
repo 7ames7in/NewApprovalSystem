@@ -2,7 +2,7 @@ using ApprovalService.Application.Interfaces;
 using ApprovalService.Domain.Entities;
 using ApprovalService.Domain.Interfaces;
 using ApprovalService.Infrastructure.Persistence;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using ApprovalService.Domain.Enums;
 using Microsoft.Extensions.Logging;

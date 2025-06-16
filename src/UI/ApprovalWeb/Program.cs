@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using System.Text.Json.Serialization;
 using System.Security.Claims;
+using Polly;
+using Polly.Extensions.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -91,19 +93,7 @@ builder.Services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.Authentic
                 // Handle case where user is not found or email is not valid
                 context.Fail("User not found or invalid email.");
             }
-
-                // Optional: Add additional claims from userService if needed
-            
-
-
-            // var user = await userService.GetUserByEmailAsync(email);
-                // if (user != null)
-                // {
-                //     claimsIdentity.AddClaim(new Claim("EmployeeNumber", user.EmployeeNumber ?? ""));
-                //     claimsIdentity.AddClaim(new Claim("Position", user.Position ?? ""));
-                //     claimsIdentity.AddClaim(new Claim("Department", user.Department ?? ""));
-                // }
-            }
+        }
     };
 });
 
@@ -138,14 +128,19 @@ else
     builder.Services.AddHttpClient("ApprovalApi", client =>
     {
         client.BaseAddress = new Uri("https://localhost:5001/");
-    });
+    }).AddTransientHttpErrorPolicy(policyBuilder =>
+        policyBuilder.WaitAndRetryAsync(3, retryAttempt =>
+            TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)))); // ;
     builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
 }
 
 builder.Services.AddHttpClient("UserApi", client =>
 {
     client.BaseAddress = new Uri("https://localhost:7129/");
-});
+}).AddTransientHttpErrorPolicy(policyBuilder =>
+        policyBuilder.WaitAndRetryAsync(3, retryAttempt =>
+            TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
+
 builder.Services.AddScoped<IUserService<User>, UserApiService<User>>();
 builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
 

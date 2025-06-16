@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using UserService.Infrastructure.Seed;
 using Serilog;
 using UserService.Domain.Entities;

@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj" />
+    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Core.csproj" />
     <ProjectReference Include="../Domain/UserService.Domain.csproj" />
     <ProjectReference Include="../Infrastructure/UserService.Infrastructure.csproj" />
   </ItemGroup>

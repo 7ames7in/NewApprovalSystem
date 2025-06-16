@@ -1,4 +1,4 @@
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using ApprovalService.Domain.Entities;
 
 namespace ApprovalService.Domain.Interfaces;

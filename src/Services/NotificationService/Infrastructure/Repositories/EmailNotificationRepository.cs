@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NotificationService.Infrastructure.Persistence; // Ensure this is the correct namespace for NotificationDbContext
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Pagination;
+using BuildingBlocks.Core.Interfaces;
 
 namespace NotificationService.Infrastructure.Repositories;
 

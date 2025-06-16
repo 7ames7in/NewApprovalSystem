@@ -450,7 +450,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Infrastructure": "1.0.0"
+          "Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApprovalService.Domain.dll": {}
@@ -459,17 +459,17 @@
           "bin/placeholder/ApprovalService.Domain.dll": {}
         }
       },
-      "Infrastructure/1.0.0": {
+      "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
         },
         "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Core.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -1269,10 +1269,10 @@
       "path": "../Domain/ApprovalService.Domain.csproj",
       "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
     },
-    "Infrastructure/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
-      "path": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../../../../BuildingBlocks/Core/Infrastructure/Infrastructure.csproj"
+      "path": "../../../../BuildingBlocks/Core/Core.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Core/Core.csproj"
     },
     "SharedKernel/1.0.0": {
       "type": "project",

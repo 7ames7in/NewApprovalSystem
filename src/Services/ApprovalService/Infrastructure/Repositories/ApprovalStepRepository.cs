@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using ApprovalService.Infrastructure.Persistence;
 
 public class ApprovalStepRepository<T> : IRepository<T> where T : class

@@ -33,10 +33,8 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
-/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Infrastructure.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/UserService.Domain.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/UserService.Domain.pdb
-/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Infrastructure.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/ApprovalWeb.csproj.AssemblyReference.cache
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/ApprovalWeb.GeneratedMSBuildEditorConfig.editorconfig
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/ApprovalWeb.AssemblyInfoInputs.cache
@@ -220,3 +218,16 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Serilog.Sinks.File.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/compressed/jc4cff4m2u-9vnqfel0qw.gz
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Configuration.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Diagnostics.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Http.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Http.Polly.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Polly.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Polly.Core.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Polly.Extensions.Http.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Core.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/bin/Debug/net9.0/Core.pdb

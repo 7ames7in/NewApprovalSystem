@@ -1,4 +1,4 @@
-namespace BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+namespace BuildingBlocks.Core.Interfaces;
 
 public interface IRepository<T> where T : class
 {

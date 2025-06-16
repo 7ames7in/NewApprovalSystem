@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ApprovalService.API.Models;
 using ApprovalService.Infrastructure.Repositories;
 using ApprovalService.Domain.Entities;
-using BuildingBlocks.Core.Infrastructure.Data.Interfaces;
+using BuildingBlocks.Core.Interfaces;
 using System.Threading.Tasks;
 using ApprovalService.Domain.Interfaces;
 using ApprovalService.API.DTOs;
