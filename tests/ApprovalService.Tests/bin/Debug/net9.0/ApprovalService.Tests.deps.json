@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v9.0": {
       "ApprovalService.Tests/1.0.0": {
         "dependencies": {
-          "ApprovalService.Application": "1.0.0",
-          "ApprovalService.Domain": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
+          "Volvo.Service.Approval.Application": "1.0.0",
+          "Volvo.Service.Approval.Domain": "1.0.0",
           "coverlet.collector": "6.0.2",
           "xunit": "2.9.2",
           "xunit.runner.visualstudio": "2.8.2"
@@ -595,34 +595,6 @@
         }
       },
       "xunit.runner.visualstudio/2.8.2": {},
-      "ApprovalService.Application/1.0.0": {
-        "dependencies": {
-          "ApprovalService.Domain": "1.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "FluentValidation": "12.0.0",
-          "MediatR": "12.0.1",
-          "Microsoft.Extensions.Logging": "9.0.5",
-          "Microsoft.Extensions.Logging.Console": "8.0.0",
-          "SharedKernel": "1.0.0"
-        },
-        "runtime": {
-          "ApprovalService.Application.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "ApprovalService.Domain/1.0.0": {
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "runtime": {
-          "ApprovalService.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5"
@@ -640,6 +612,34 @@
         },
         "runtime": {
           "SharedKernel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Volvo.Service.Approval.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FluentValidation": "12.0.0",
+          "MediatR": "12.0.1",
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.Extensions.Logging.Console": "8.0.0",
+          "SharedKernel": "1.0.0",
+          "Volvo.Service.Approval.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Volvo.Service.Approval.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Volvo.Service.Approval.Domain/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "runtime": {
+          "Volvo.Service.Approval.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -933,22 +933,22 @@
       "path": "xunit.runner.visualstudio/2.8.2",
       "hashPath": "xunit.runner.visualstudio.2.8.2.nupkg.sha512"
     },
-    "ApprovalService.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ApprovalService.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Volvo.Service.Approval.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Volvo.Service.Approval.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -5,6 +5,11 @@ using NotificationService.Infrastructure.Persistence;
 using Serilog;
 using NotificationService.Domain.Entities;
 using NotificationService.Infrastructure.Seed;
+using BuildingBlocks.EventBus;
+using NotificationService.API.EventHandlers;
+using BuildingBlocks.EventContracts;
+using Polly;
+using Polly.Extensions.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerGen(); // Add Swagger generation
@@ -24,6 +29,29 @@ builder.Services.AddDbContext<NotificationDbContext>(options =>
     options.UseSqlite("Data Source=Data/NotificationService.db"));
 
 builder.Services.AddScoped<IRepository<EmailNotification>, EmailNotificationRepository<EmailNotification>>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+
+var emailServiceUri = builder.Configuration["ApiConfigs:EmailService:Uri"]??string.Empty;
+builder.Services.AddHttpClient("EmailServiceApi", client =>
+{
+    client.BaseAddress = new Uri(emailServiceUri);
+});
+// .AddTransientHttpErrorPolicy(policyBuilder =>
+//     policyBuilder.WaitAndRetryAsync(3, retryAttempt =>
+//         TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
+
+builder.Services.AddSingleton<IEventBus>(provider =>
+{
+    var logger = provider.GetRequiredService<ILogger<RabbitMQEventBus>>();
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var hostName = configuration["RabbitMQ:HostName"] ?? "localhost";
+    var userName = configuration["RabbitMQ:UserName"] ?? "guest";
+    var password = configuration["RabbitMQ:Password"] ?? "guest";
+    return new RabbitMQEventBus(provider, logger, hostName, userName, password);
+});
+
+builder.Services.AddTransient<EmailEventHandler>();
 
 builder.Services.AddControllers();
 var app = builder.Build();
@@ -44,5 +72,13 @@ using (var scope = app.Services.CreateScope())
     db.Database.EnsureCreated(); // 또는 db.Database.Migrate();
     await NotificationSeedData.InitializeAsync(db);
 }
+
+//var eventBus = app.Services.GetRequiredService<IEventBus>();
+// Subscribe 설정
+//eventBus.SubscribeAsync<EmailEvent, EmailEventHandler>();
+var eventBus = app.Services.GetRequiredService<IEventBus>();
+await eventBus.SubscribeAsync<EmailEvent, EmailEventHandler>();
+
+app.MapGet("/", () => "EventBus Service running");
 
 app.Run();

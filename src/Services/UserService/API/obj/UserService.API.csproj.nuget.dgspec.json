@@ -93,6 +93,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj": {
+                "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj"
+              },
               "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj": {
                 "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj"
               },
@@ -261,6 +264,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj": {
+                "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj"
+              },
               "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj": {
                 "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj"
               }

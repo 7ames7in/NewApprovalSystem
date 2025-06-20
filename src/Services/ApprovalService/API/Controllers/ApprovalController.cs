@@ -12,6 +12,7 @@ namespace ApprovalService.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[ApiVersion("1.0")]
 public class ApprovalController : ControllerBase
 {
     private readonly IApprovalRepository<ApprovalRequestWithCurrentStepDto> _approvalRepository;

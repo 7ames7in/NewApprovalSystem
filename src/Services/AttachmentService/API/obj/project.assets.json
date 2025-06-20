@@ -1531,32 +1531,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "AttachmentService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        }
-      },
-      "AttachmentService.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AttachmentService.Domain": "1.0.0",
-          "Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
-        },
-        "compile": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        }
-      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1568,6 +1542,32 @@
         },
         "runtime": {
           "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Volvo.Service.Attachment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Volvo.Service.Attachment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Attachment.Domain.dll": {}
+        }
+      },
+      "Volvo.Service.Attachment.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
+          "Volvo.Service.Attachment.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Attachment.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Attachment.Infrastructure.dll": {}
         }
       }
     }
@@ -4347,25 +4347,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "AttachmentService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/AttachmentService.Domain.csproj",
-      "msbuildProject": "../Domain/AttachmentService.Domain.csproj"
-    },
-    "AttachmentService.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../Infrastructure/AttachmentService.Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/AttachmentService.Infrastructure.csproj"
-    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/Core/Core.csproj",
       "msbuildProject": "../../../../BuildingBlocks/Core/Core.csproj"
+    },
+    "Volvo.Service.Attachment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Volvo.Service.Attachment.Domain.csproj",
+      "msbuildProject": "../Domain/Volvo.Service.Attachment.Domain.csproj"
+    },
+    "Volvo.Service.Attachment.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "AttachmentService.Infrastructure >= 1.0.0",
+      "Core >= 1.0.0",
       "FluentValidation.AspNetCore >= 11.3.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
@@ -4374,7 +4374,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.5",
       "Serilog.AspNetCore >= 9.0.0",
       "SwashBukle.AspNetCore >= 2.0.0",
-      "Swashbuckle.AspNetCore >= 8.1.2"
+      "Swashbuckle.AspNetCore >= 8.1.2",
+      "Volvo.Service.Attachment.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4383,9 +4384,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/AttachmentService.API.csproj",
-      "projectName": "AttachmentService.API",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/AttachmentService.API.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Volvo.Service.Attachment.API.csproj",
+      "projectName": "Volvo.Service.Attachment.API",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Volvo.Service.Attachment.API.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/obj/",
       "projectStyle": "PackageReference",
@@ -4403,8 +4404,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj"
             }
           }
         }

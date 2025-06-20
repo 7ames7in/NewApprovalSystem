@@ -10,6 +10,7 @@ public class SortedListPaginator<T> : IPaginated<T>
     private readonly int _pageSize;
     private readonly int _pagesCount;
     private readonly IComparer<T> _comparer;
+    private int _currentPageNumber;
 
     public SortedListPaginator(IEnumerable<T> source, int pageSize, IComparer<T> comparer)
     {
@@ -25,9 +26,23 @@ public class SortedListPaginator<T> : IPaginated<T>
         });
 
         _pagesCount = (data.Count + pageSize - 1) / pageSize;
+        _currentPageNumber = 1; // Default to the first page
     }
 
     public int PagesCount => _pagesCount;
+
+    public int PageNumber
+    {
+        get => _currentPageNumber;
+        set
+        {
+            if (value < 1 || value > _pagesCount)
+                throw new ArgumentOutOfRangeException(nameof(value), "Page number must be within valid range.");
+            _currentPageNumber = value;
+        }
+    }
+
+    public IPage<T> CurrentPage => this[_currentPageNumber - 1];
 
     public IPage<T> this[int index]
     {

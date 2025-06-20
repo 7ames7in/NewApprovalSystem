@@ -9,7 +9,9 @@
         {
             stepCount++;
             <li class="list-group-item">
-                <span>@attachedfile.FileName</span> 
+                <a href="@Url.Action("DownloadAttachment", "Attachment", new { id = attachedfile.AttachmentId })" target="_blank">
+                    @attachedfile.FileName
+                </a>
                 <button type="button" class="btn btn-danger btn-sm float-end" data-index="@stepCount">Remove</button>
             </li>
         }

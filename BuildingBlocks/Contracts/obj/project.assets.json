@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/Contracts.csproj",
-      "projectName": "Contracts",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/Contracts.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/EventContracts.csproj",
+      "projectName": "EventContracts",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/EventContracts.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/obj/",
       "projectStyle": "PackageReference",

@@ -1,0 +1,6 @@
+@Volvo.Service.Email.API_HostAddress = http://localhost:5126
+
+GET {{Volvo.Service.Email.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

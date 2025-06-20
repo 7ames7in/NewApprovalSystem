@@ -12,6 +12,8 @@ using System.Text.Json.Serialization;
 using System.Security.Claims;
 using Polly;
 using Polly.Extensions.Http;
+using Microsoft.AspNetCore.Mvc;
+using ApprovalWeb.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +43,8 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 // Custom Services 등록
 builder.Services.AddScoped<IAuthenticationService, LocalAuthenticationService>();
+builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
+builder.Services.AddScoped<IAttachmentService, AttachmentApiService>();
 builder.Services.AddScoped<IUserContext, ClaimUserContext>();
 
 #region Hybrid Authentication 구성
@@ -55,47 +59,7 @@ builder.Services.AddAuthentication(options =>
 .EnableTokenAcquisitionToCallDownstreamApi()
     .AddInMemoryTokenCaches();
 
-builder.Services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.AuthenticationScheme, options =>
-{
-    options.Events = new OpenIdConnectEvents
-    {
-        OnTokenValidated = async context =>
-        {
-            var claimsIdentity = context.Principal?.Identity as ClaimsIdentity;
-            if (claimsIdentity == null) return;
-
-            var userService = context.HttpContext.RequestServices.GetRequiredService<IUserService<User>>();
-
-            // email claim 찾기 (provider 마다 살짝 다름)
-            var email = claimsIdentity.FindFirst(ClaimTypes.Email)?.Value
-                        ?? claimsIdentity.FindFirst("preferred_username")?.Value;
-
-            if (string.IsNullOrEmpty(email)) return;
-
-            var userinfo  = await userService.UserLoginAndInformationAsync(email);
-            if (userinfo != null && userinfo.Email.Length > 0)
-            {
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.NameIdentifier, userinfo?.EmployeeNumber??string.Empty),
-                    new Claim(ClaimTypes.Name, userinfo?.Name ?? string.Empty),
-                    new Claim("UserName", userinfo?.Name ?? string.Empty),
-                    new Claim(ClaimTypes.Role, userinfo?.Role ?? string.Empty),
-                    new Claim("Position", userinfo?.Position ?? string.Empty),
-                    new Claim("Department", userinfo?.Department ?? string.Empty),
-                };
-                
-                claimsIdentity.RemoveClaim(claimsIdentity.FindFirst(ClaimTypes.NameIdentifier));
-                claimsIdentity.AddClaims(claims);
-            }
-            else
-            {
-                // Handle case where user is not found or email is not valid
-                context.Fail("User not found or invalid email.");
-            }
-        }
-    };
-});
+// ConfigurationAuthentication will be called after app is built, so userService can be resolved from app.Services
 
 builder.Services.Configure<CookieAuthenticationOptions>(
     CookieAuthenticationDefaults.AuthenticationScheme,
@@ -103,8 +67,6 @@ builder.Services.Configure<CookieAuthenticationOptions>(
         options.LoginPath = "/Account/Login";
         options.AccessDeniedPath = "/Account/AccessDenied";
     });
-
-
 
 builder.Services.AddControllersWithViews(options =>
 {
@@ -116,7 +78,20 @@ builder.Services.AddControllersWithViews(options =>
 
 #endregion
 
+builder.Services.AddApiVersioning(options => {
+    options.ReportApiVersions = true;
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+});
+
 #region ApprovalService & UserService API 클라이언트 등록
+
+var approvalServiceUri = builder.Configuration["ApiConfigs:ApprovalService:Uri"]??string.Empty;
+var attachmentServiceUri = builder.Configuration["ApiConfigs:AttachmentService:Uri"]??string.Empty;
+var loggingServiceUri = builder.Configuration["ApiConfigs:LoggingService:Uri"]??string.Empty;
+var notificationServiceUri = builder.Configuration["ApiConfigs:NotificationService:Uri"]??string.Empty;
+var userServiceUri = builder.Configuration["ApiConfigs:UserService:Uri"]??string.Empty;
+var ApprovalWeb = builder.Configuration["ApiConfigs:ApprovalWeb:Uri"]??string.Empty;
 
 var useMock = builder.Configuration.GetValue<bool>("UseMockService");
 if (!useMock)
@@ -127,25 +102,27 @@ else
 {
     builder.Services.AddHttpClient("ApprovalApi", client =>
     {
-        client.BaseAddress = new Uri("https://localhost:5001/");
+        client.BaseAddress = new Uri(approvalServiceUri);
     }).AddTransientHttpErrorPolicy(policyBuilder =>
         policyBuilder.WaitAndRetryAsync(3, retryAttempt =>
-            TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)))); // ;
+            TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
     builder.Services.AddScoped<IApprovalService, ApprovalApiService>();
 }
 
 builder.Services.AddHttpClient("UserApi", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7129/");
+    client.BaseAddress = new Uri(userServiceUri);
 }).AddTransientHttpErrorPolicy(policyBuilder =>
         policyBuilder.WaitAndRetryAsync(3, retryAttempt =>
             TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
 
 builder.Services.AddScoped<IUserService<User>, UserApiService<User>>();
 builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
+builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestApiService>();
 
 #endregion
 
+builder.Services.ConfigureAuthentication();
 var app = builder.Build();
 
 #region Middleware
@@ -154,6 +131,11 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
+}
+else
+{
+    app.UseDeveloperExceptionPage();
+    app.UseExceptionHandler("/Home/Error-Development");
 }
 
 app.UseHttpsRedirection();

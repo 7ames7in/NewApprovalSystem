@@ -446,19 +446,6 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "ApprovalService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        }
-      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -483,6 +470,19 @@
         },
         "runtime": {
           "bin/placeholder/SharedKernel.dll": {}
+        }
+      },
+      "Volvo.Service.Approval.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Approval.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Approval.Domain.dll": {}
         }
       }
     }
@@ -1264,11 +1264,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ApprovalService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/ApprovalService.Domain.csproj",
-      "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
-    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/Core/Core.csproj",
@@ -1278,17 +1273,22 @@
       "type": "project",
       "path": "../../../../BuildingBlocks/SharedKernel/SharedKernel.csproj",
       "msbuildProject": "../../../../BuildingBlocks/SharedKernel/SharedKernel.csproj"
+    },
+    "Volvo.Service.Approval.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Volvo.Service.Approval.Domain.csproj",
+      "msbuildProject": "../Domain/Volvo.Service.Approval.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "ApprovalService.Domain >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "FluentValidation >= 12.0.0",
       "MediatR >= 12.0.1",
       "Microsoft.Extensions.Logging >= 9.0.5",
       "Microsoft.Extensions.Logging.Console >= 8.0.0",
-      "SharedKernel >= 1.0.0"
+      "SharedKernel >= 1.0.0",
+      "Volvo.Service.Approval.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1297,9 +1297,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/ApprovalService.Application.csproj",
-      "projectName": "ApprovalService.Application",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/ApprovalService.Application.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/Volvo.Service.Approval.Application.csproj",
+      "projectName": "Volvo.Service.Approval.Application",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/Volvo.Service.Approval.Application.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/obj/",
       "projectStyle": "PackageReference",
@@ -1320,8 +1320,8 @@
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/SharedKernel.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/SharedKernel/SharedKernel.csproj"
             },
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/Volvo.Service.Approval.Domain.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/Volvo.Service.Approval.Domain.csproj"
             }
           }
         }

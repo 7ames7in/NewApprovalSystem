@@ -2393,9 +2393,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/LoggingService.API.csproj",
-      "projectName": "LoggingService.API",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/LoggingService.API.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Volvo.Service.Logging.API.csproj",
+      "projectName": "Volvo.Service.Logging.API",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Volvo.Service.Logging.API.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/obj/",
       "projectStyle": "PackageReference",

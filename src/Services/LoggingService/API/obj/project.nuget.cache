@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ck94FXXhGAs=",
+  "dgSpecHash": "3NPs1lMs55w=",
   "success": true,
-  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/LoggingService.API.csproj",
+  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/LoggingService/API/Volvo.Service.Logging.API.csproj",
   "expectedPackageFiles": [
     "/Users/7ames7in/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

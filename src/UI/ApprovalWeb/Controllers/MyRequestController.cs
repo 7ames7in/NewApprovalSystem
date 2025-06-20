@@ -5,10 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Text.Json;
+using BuildingBlocks.Core.Extensions;
+using Azure;
+using Serilog;
 
 namespace ApprovalWeb.Controllers;
 
 [Authorize]
+[ApiVersion("2")]
 public class MyRequestController : BaseController
 {
     private readonly IApprovalRequestService _apiService;
@@ -21,6 +25,7 @@ public class MyRequestController : BaseController
     }
 
     // Displays the list of approval requests for the logged-in user
+    [ApiVersion("1", Deprecated = true)]
     public async Task<IActionResult> Index()
     {
         var user = HttpContext.User;
@@ -32,9 +37,56 @@ public class MyRequestController : BaseController
         ViewBag.Role = _userContext.Role;
         ViewBag.Department = _userContext.Department;
 
+        // Get the page number from the query string, default to 1 if not provided
+        int pageNumber = 1;
+        if (Request.Query.ContainsKey("page") && int.TryParse(Request.Query["page"], out var page))
+        {
+            pageNumber = page > 0 ? page : 1;
+        }
+        
         // Fetch the user's approval requests
-        var requests = await _apiService.GetMyRequestsAsync(_userContext.UserId?? string.Empty);
-        return View(requests);
+        var myrequestlist = await _apiService.GetMyRequestsAsync(_userContext.UserId ?? string.Empty);
+        
+        // Filtering by User Name or Request Title
+        string? searchUserName = Request.Query["userName"];
+        string? searchRequestTitle = Request.Query["requestTitle"];
+
+        if (!string.IsNullOrWhiteSpace(searchUserName))
+        {
+            myrequestlist = myrequestlist
+            .Where(r => !string.IsNullOrEmpty(r.ApplicantName) && r.ApplicantName.Contains(searchUserName, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+        }
+
+        if (!string.IsNullOrWhiteSpace(searchRequestTitle))
+        {
+            myrequestlist = myrequestlist
+            .Where(r => !string.IsNullOrEmpty(r.RequestTitle) && r.RequestTitle.Contains(searchRequestTitle, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+        }
+        
+        // Fetch the paginated data for the specified page
+        var paginatedRequests = myrequestlist.ToPaginated(pageSize: 10, comparer: ApprovalRequestViewModel.DateComparer);
+
+        ViewBag.TotalPage = paginatedRequests.PagesCount;
+        ViewBag.CurrentPage = pageNumber;
+
+        var currentPageList = paginatedRequests[pageNumber - 1];
+        #region Foreach for Debugging
+
+        // foreach (var currentPageList in paginatedRequests)
+        // {
+
+        //     Log.Information($"[Page {currentPageList.Ordinal}]");
+        //     foreach (var request in currentPageList)
+        //     {
+        //             Log.Information($"{request.RequestTitle} - {request.ApplicantName} - {request.RequestedAt:yyyy-MM-dd}");
+        //     }
+        // }
+
+
+        #endregion
+        return View(currentPageList);
     }
 
     // Handles the creation of a new approval request

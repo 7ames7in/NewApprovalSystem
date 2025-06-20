@@ -1,0 +1,195 @@
+./
+├── add-projects-to-solution.sh*
+├── app/
+│   └── publish/
+├── ApprovalSystem.sln
+├── BuildingBlocks/
+│   ├── Contracts/
+│   │   ├── AttachmentDto.cs
+│   │   ├── bin/
+│   │   │   └── Debug/
+│   │   ├── EventContracts.cs
+│   │   ├── EventContracts.csproj
+│   │   ├── Events/
+│   │   └── obj/
+│   │       ├── Contracts.csproj.nuget.dgspec.json
+│   │       ├── Contracts.csproj.nuget.g.props
+│   │       ├── Contracts.csproj.nuget.g.targets
+│   │       ├── Debug/
+│   │       ├── EventContracts.csproj.nuget.dgspec.json
+│   │       ├── EventContracts.csproj.nuget.g.props
+│   │       ├── EventContracts.csproj.nuget.g.targets
+│   │       ├── project.assets.json
+│   │       └── project.nuget.cache
+│   ├── Core/
+│   │   ├── bin/
+│   │   │   ├── Debug/
+│   │   │   └── Release/
+│   │   ├── Core/
+│   │   ├── Core.csproj
+│   │   ├── Data/
+│   │   │   └── Repositories/
+│   │   ├── Debug/
+│   │   │   └── net9.0/
+│   │   ├── Extensions/
+│   │   │   ├── EnumerableExtensions.cs
+│   │   │   └── PaginationExtensions.cs
+│   │   ├── Infrastructure/
+│   │   │   └── Class1.cs
+│   │   ├── Interfaces/
+│   │   │   └── IRepository.cs
+│   │   ├── Models/
+│   │   ├── obj/
+│   │   │   ├── Core.csproj.nuget.dgspec.json
+│   │   │   ├── Core.csproj.nuget.g.props
+│   │   │   ├── Core.csproj.nuget.g.targets
+│   │   │   ├── Debug/
+│   │   │   ├── Infrastructure.csproj.nuget.dgspec.json
+│   │   │   ├── Infrastructure.csproj.nuget.g.props
+│   │   │   ├── Infrastructure.csproj.nuget.g.targets
+│   │   │   ├── project.assets.json
+│   │   │   ├── project.nuget.cache
+│   │   │   └── Release/
+│   │   └── Pagination/
+│   │       ├── IPage.cs
+│   │       ├── IPaginated.cs
+│   │       ├── ProjectingPage.cs
+│   │       └── SortedListPaginator.cs
+│   ├── EventBus/
+│   │   ├── bin/
+│   │   │   └── Debug/
+│   │   ├── EventBus.csproj
+│   │   ├── IEventBus.cs
+│   │   ├── IEventHandler.cs
+│   │   ├── InMemoryEventBus.cs
+│   │   ├── obj/
+│   │   │   ├── Debug/
+│   │   │   ├── EventBus.csproj.nuget.dgspec.json
+│   │   │   ├── EventBus.csproj.nuget.g.props
+│   │   │   ├── EventBus.csproj.nuget.g.targets
+│   │   │   ├── project.assets.json
+│   │   │   └── project.nuget.cache
+│   │   └── RabbitMQEventBus.cs
+│   └── SharedKernel/
+│       ├── bin/
+│       │   └── Debug/
+│       ├── Class1.cs
+│       ├── obj/
+│       │   ├── Debug/
+│       │   ├── project.assets.json
+│       │   ├── project.nuget.cache
+│       │   ├── SharedKernel.csproj.nuget.dgspec.json
+│       │   ├── SharedKernel.csproj.nuget.g.props
+│       │   └── SharedKernel.csproj.nuget.g.targets
+│       └── SharedKernel.csproj
+├── docker-compose.yml
+├── folder_structure.txt
+├── folder_structure2.txt
+├── folder_structure3.txt
+├── generate-approval-sources.sh*
+├── github_respository_upload.sh*
+├── install-nugets.sh*
+├── kill-all-services.sh*
+├── README.md
+├── run-all-services.sh*
+├── scripts/
+│   ├── install-nugets-all.sh*
+│   └── install-nugets-microservices.sh
+├── setup-approval-mvc-ui.sh*
+├── setup-approval-service-di.sh
+├── setup-approval-system_re.sh*
+├── setup-approval-system.sh*
+├── setup-microservices.sh*
+├── setup-models.sh*
+├── setup-projects.sh
+├── setup-repositories.sh*
+├── setup-source-files.sh*
+├── src/
+│   ├── Services/
+│   │   ├── ApprovalService/
+│   │   │   ├── API/
+│   │   │   ├── Application/
+│   │   │   ├── Domain/
+│   │   │   └── Infrastructure/
+│   │   ├── AttachmentService/
+│   │   │   ├── API/
+│   │   │   ├── Domain/
+│   │   │   └── Infrastructure/
+│   │   ├── EmailService/
+│   │   │   └── API/
+│   │   ├── LoggingService/
+│   │   │   ├── API/
+│   │   │   ├── Domain/
+│   │   │   └── Infrastructure/
+│   │   ├── NotificationService/
+│   │   │   ├── API/
+│   │   │   ├── Application/
+│   │   │   ├── Domain/
+│   │   │   └── Infrastructure/
+│   │   └── UserService/
+│   │       ├── API/
+│   │       ├── Domain/
+│   │       └── Infrastructure/
+│   └── UI/
+│       └── ApprovalWeb/
+│           ├── app/
+│           ├── appsettings.Development.json
+│           ├── appsettings.json
+│           ├── bin/
+│           ├── Controllers/
+│           ├── Dockerfile
+│           ├── Extensions/
+│           ├── Interfaces/
+│           ├── libman.json
+│           ├── Logs/
+│           ├── Middleware/
+│           ├── Models/
+│           ├── obj/
+│           ├── Program.cs
+│           ├── Properties/
+│           ├── Services/
+│           ├── SQLs/
+│           ├── Views/
+│           ├── Volvo.Web.Approval.csproj
+│           └── wwwroot/
+├── tests/
+│   ├── ApprovalPaging/
+│   │   ├── ApprovalPaging.csproj
+│   │   ├── bin/
+│   │   │   └── Debug/
+│   │   ├── Model/
+│   │   ├── Models/
+│   │   │   ├── ApprovalAttachmentViewModel.cs
+│   │   │   ├── ApprovalRequestViewModel.cs
+│   │   │   ├── ApprovalStepViewModel.cs
+│   │   │   └── Worker.cs
+│   │   ├── obj/
+│   │   │   ├── ApprovalPaging.csproj.nuget.dgspec.json
+│   │   │   ├── ApprovalPaging.csproj.nuget.g.props
+│   │   │   ├── ApprovalPaging.csproj.nuget.g.targets
+│   │   │   ├── Debug/
+│   │   │   ├── project.assets.json
+│   │   │   └── project.nuget.cache
+│   │   ├── Pagination/
+│   │   │   ├── IPage.cs
+│   │   │   ├── IPaginated.cs
+│   │   │   ├── PaginationExtensions.cs
+│   │   │   ├── ProjectingPage.cs
+│   │   │   └── SortedListPaginator.cs
+│   │   └── Program.cs
+│   └── ApprovalService.Tests/
+│       ├── ApprovalService.Tests.csproj
+│       ├── ApprovalTests.cs
+│       ├── bin/
+│       │   └── Debug/
+│       ├── obj/
+│       │   ├── ApprovalService.Tests.csproj.nuget.dgspec.json
+│       │   ├── ApprovalService.Tests.csproj.nuget.g.props
+│       │   ├── ApprovalService.Tests.csproj.nuget.g.targets
+│       │   ├── Debug/
+│       │   ├── project.assets.json
+│       │   └── project.nuget.cache
+│       └── UnitTest1.cs
+└── user-service-run.sh*
+
+94 directories, 99 files

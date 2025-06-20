@@ -42473,6 +42473,88 @@
       ]
     },
     {
+      "Route": "uploads/file_12.86dsd0ldff.oga",
+      "AssetFile": "uploads/file_12.oga",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/ogg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 23:36:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "86dsd0ldff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/file_12.oga"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/file_12.oga",
+      "AssetFile": "uploads/file_12.oga",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/ogg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 23:36:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA="
+        }
+      ]
+    },
+    {
       "Route": "uploads/sns@746087_domeggook_buy_20250529170643.w81d2x3cgo.xls",
       "AssetFile": "uploads/sns@746087_domeggook_buy_20250529170643.xls",
       "Selectors": [],

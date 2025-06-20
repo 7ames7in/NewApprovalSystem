@@ -1,0 +1,77 @@
+./
+├── add-projects-to-solution.sh*
+├── ApprovalSystem.sln
+├── BuildingBlocks/
+│   ├── Contracts/
+│   │   ├── bin/
+│   │   ├── EventContracts.cs
+│   │   ├── EventContracts.csproj
+│   │   ├── Events/
+│   │   └── obj/
+│   ├── Core/
+│   │   ├── bin/
+│   │   ├── Core/
+│   │   ├── Core.csproj
+│   │   ├── Data/
+│   │   ├── Debug/
+│   │   ├── Extensions/
+│   │   ├── Infrastructure/
+│   │   ├── Interfaces/
+│   │   ├── Models/
+│   │   ├── obj/
+│   │   └── Pagination/
+│   ├── EventBus/
+│   │   ├── bin/
+│   │   ├── EventBus.csproj
+│   │   ├── IEventBus.cs
+│   │   ├── IEventHandler.cs
+│   │   ├── InMemoryEventBus.cs
+│   │   └── obj/
+│   └── SharedKernel/
+│       ├── bin/
+│       ├── Class1.cs
+│       ├── obj/
+│       └── SharedKernel.csproj
+├── folder_structure.txt
+├── generate-approval-sources.sh*
+├── github_respository_upload.sh*
+├── install-nugets.sh*
+├── README.md
+├── scripts/
+│   ├── install-nugets-all.sh*
+│   └── install-nugets-microservices.sh
+├── setup-approval-mvc-ui.sh*
+├── setup-approval-service-di.sh
+├── setup-approval-system_re.sh*
+├── setup-approval-system.sh*
+├── setup-microservices.sh*
+├── setup-models.sh*
+├── setup-projects.sh
+├── setup-repositories.sh*
+├── setup-source-files.sh*
+├── src/
+│   ├── Services/
+│   │   ├── ApprovalService/
+│   │   ├── AttachmentService/
+│   │   ├── LoggingService/
+│   │   ├── NotificationService/
+│   │   └── UserService/
+│   └── UI/
+│       └── ApprovalWeb/
+└── tests/
+    ├── ApprovalPaging/
+    │   ├── ApprovalPaging.csproj
+    │   ├── bin/
+    │   ├── Model/
+    │   ├── Models/
+    │   ├── obj/
+    │   ├── Pagination/
+    │   └── Program.cs
+    └── ApprovalService.Tests/
+        ├── ApprovalService.Tests.csproj
+        ├── ApprovalTests.cs
+        ├── bin/
+        ├── obj/
+        └── UnitTest1.cs
+
+43 directories, 32 files

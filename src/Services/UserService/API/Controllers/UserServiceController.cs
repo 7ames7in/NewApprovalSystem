@@ -86,10 +86,23 @@ namespace UserService.API.Controllers
         /// </summary>
         /// <param name="id">User ID.</param>
         /// <returns>Returns the user details or a not found response.</returns>
-        [HttpGet("users/{id}")]
-        public IActionResult GetUserById(int id)
+        // [HttpGet("users/{id}")]
+        // public async Task<IActionResult> GetUserById(string id)
+        // {
+        //     var user = await _repository.GetByIdAsync(Guid.TryParse(id, out var userId) ? userId : Guid.Empty);
+
+        //     if (user == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     return Ok(user);
+        // }
+
+        [HttpGet("users/{employeeNumber}")]
+        public async Task<IActionResult> GetByEmailAsync(string employeeNumber)
         {
-            var user = new { Id = id, Name = "John Doe", Email = "john.doe@example.com" };
+            var user = await _repository.GetByEmployeeNoAsync(employeeNumber);
 
             if (user == null)
             {
@@ -107,7 +120,8 @@ namespace UserService.API.Controllers
         [HttpPost("users")]
         public IActionResult CreateUser([FromBody] object newUser)
         {
-            return CreatedAtAction(nameof(GetUserById), new { id = 1 }, newUser);
+            // Replace "employeeNumber" with the actual property from newUser if available
+            return CreatedAtAction(nameof(GetByEmailAsync), new { employeeNumber = 1 }, newUser);
         }
 
         /// <summary>

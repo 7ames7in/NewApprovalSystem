@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ApprovalService.Domain.Entities;
 
 /// <summary>
@@ -8,6 +11,9 @@ public class ApprovalAttachment
     /// <summary>
     /// Unique identifier for the attachment.
     /// </summary>
+    [Key]
+    [Required]
+    [Display(Name = "Attachment ID")]
     public Guid AttachmentId { get; set; } = Guid.NewGuid();
 
     /// <summary>

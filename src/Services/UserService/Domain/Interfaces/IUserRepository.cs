@@ -5,7 +5,7 @@ namespace UserService.Domain.Interfaces;
 
 public interface IUserRepository<T> : IRepository<T> where T : class
 {
-    Task<T?> GetByEmailAsync(string email);
+    Task<T?> GetByEmployeeNoAsync(string employeeNumber);
     Task<IEnumerable<T>> GetUsersByRoleAsync(string roleName);
     Task<IAsyncEnumerable<T>> SearchUsersAsync(string searchTerm, int pageNumber, int pageSize);
     Task<bool> UserExistsAsync(string email);

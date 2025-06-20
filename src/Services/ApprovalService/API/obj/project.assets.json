@@ -754,6 +754,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -2130,6 +2146,23 @@
           }
         }
       },
+      "RabbitMQ.Client/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0",
+          "System.Threading.RateLimiting": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog/4.2.0": {
         "type": "package",
         "compile": {
@@ -2706,15 +2739,15 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.IO.Pipelines/7.0.0": {
+      "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/_._": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
@@ -2905,6 +2938,22 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "System.Threading.RateLimiting/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.6.0": {
         "type": "package",
         "compile": {
@@ -2926,94 +2975,6 @@
           "lib/net40/WebActivatorEx.dll": {}
         }
       },
-      "ApprovalService.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "ApprovalService.Domain": "1.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "FluentValidation": "12.0.0",
-          "MediatR": "12.0.1",
-          "Microsoft.Extensions.Logging": "9.0.5",
-          "Microsoft.Extensions.Logging.Console": "8.0.0",
-          "SharedKernel": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ApprovalService.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApprovalService.Application.dll": {}
-        }
-      },
-      "ApprovalService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApprovalService.Domain.dll": {}
-        }
-      },
-      "ApprovalService.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "ApprovalService.Application": "1.0.0",
-          "ApprovalService.Domain": "1.0.0",
-          "AttachmentService.Domain": "1.0.0",
-          "AttachmentService.Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
-          "NotificationService.Domain": "1.0.0",
-          "SharedKernel": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ApprovalService.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApprovalService.Infrastructure.dll": {}
-        }
-      },
-      "AttachmentService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Domain.dll": {}
-        }
-      },
-      "AttachmentService.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AttachmentService.Domain": "1.0.0",
-          "Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
-        },
-        "compile": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AttachmentService.Infrastructure.dll": {}
-        }
-      },
-      "Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contracts.dll": {}
-        }
-      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3030,11 +2991,26 @@
       "EventBus/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "9.0.6",
+          "Microsoft.Extensions.Logging": "9.0.6",
+          "RabbitMQ.Client": "7.1.2"
+        },
         "compile": {
           "bin/placeholder/EventBus.dll": {}
         },
         "runtime": {
           "bin/placeholder/EventBus.dll": {}
+        }
+      },
+      "EventContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/EventContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventContracts.dll": {}
         }
       },
       "NotificationService.Domain/1.0.0": {
@@ -3077,6 +3053,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
           "UserService.Domain": "1.0.0"
@@ -3086,6 +3063,84 @@
         },
         "runtime": {
           "bin/placeholder/UserService.Infrastructure.dll": {}
+        }
+      },
+      "Volvo.Service.Approval.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FluentValidation": "12.0.0",
+          "MediatR": "12.0.1",
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.Extensions.Logging.Console": "8.0.0",
+          "SharedKernel": "1.0.0",
+          "Volvo.Service.Approval.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Approval.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Approval.Application.dll": {}
+        }
+      },
+      "Volvo.Service.Approval.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Approval.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Approval.Domain.dll": {}
+        }
+      },
+      "Volvo.Service.Approval.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
+          "NotificationService.Domain": "1.0.0",
+          "SharedKernel": "1.0.0",
+          "Volvo.Service.Approval.Application": "1.0.0",
+          "Volvo.Service.Approval.Domain": "1.0.0",
+          "Volvo.Service.Attachment.Domain": "1.0.0",
+          "Volvo.Service.Attachment.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Approval.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Approval.Infrastructure.dll": {}
+        }
+      },
+      "Volvo.Service.Attachment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Volvo.Service.Attachment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Attachment.Domain.dll": {}
+        }
+      },
+      "Volvo.Service.Attachment.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
+          "Volvo.Service.Attachment.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Volvo.Service.Attachment.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Volvo.Service.Attachment.Infrastructure.dll": {}
         }
       }
     }
@@ -3676,6 +3731,29 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.xml",
         "microsoft.aspnetcore.mvc.taghelpers.2.3.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.taghelpers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+      "sha512": "UX8w9BlCiZpr6Ox4YAve1w0CkI1CAovukGNzKd7v0+5pZc8lzuG5tRovucr1RWIKHs0E/Yx8563CN7KzaB3bpw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.3.0": {
@@ -6283,6 +6361,23 @@
         "polly.extensions.http.nuspec"
       ]
     },
+    "RabbitMQ.Client/7.1.2": {
+      "sha512": "y3c6ulgULScWthHw5PLM1ShHRLhxg0vCtzX/hh61gRgNecL3ZC3WoBW2HYHoXOVRqTl99Br9E7CZEytGZEsCyQ==",
+      "type": "package",
+      "path": "rabbitmq.client/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/RabbitMQ.Client.dll",
+        "lib/net8.0/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.7.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "Serilog/4.2.0": {
       "sha512": "gmoWVOvKgbME8TYR+gwMf7osROiWAURterc6Rt2dQyX7wtjZYpqFiA/pY6ztjGQKKV62GGCyOcmtP1UKMHgSmA==",
       "type": "package",
@@ -7049,10 +7144,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.IO.Pipelines/7.0.0": {
-      "sha512": "jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
-      "path": "system.io.pipelines/7.0.0",
+      "path": "system.io.pipelines/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7069,9 +7164,11 @@
         "lib/net6.0/System.IO.Pipelines.xml",
         "lib/net7.0/System.IO.Pipelines.dll",
         "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.7.0.0.nupkg.sha512",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7448,6 +7545,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Threading.RateLimiting/8.0.0": {
+      "sha512": "7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
+      "type": "package",
+      "path": "system.threading.ratelimiting/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.RateLimiting.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Threading.RateLimiting.targets",
+        "lib/net462/System.Threading.RateLimiting.dll",
+        "lib/net462/System.Threading.RateLimiting.xml",
+        "lib/net6.0/System.Threading.RateLimiting.dll",
+        "lib/net6.0/System.Threading.RateLimiting.xml",
+        "lib/net7.0/System.Threading.RateLimiting.dll",
+        "lib/net7.0/System.Threading.RateLimiting.xml",
+        "lib/net8.0/System.Threading.RateLimiting.dll",
+        "lib/net8.0/System.Threading.RateLimiting.xml",
+        "lib/netstandard2.0/System.Threading.RateLimiting.dll",
+        "lib/netstandard2.0/System.Threading.RateLimiting.xml",
+        "system.threading.ratelimiting.8.0.0.nupkg.sha512",
+        "system.threading.ratelimiting.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Threading.Tasks.Extensions/4.6.0": {
       "sha512": "I5G6Y8jb0xRtGUC9Lahy7FUvlYlnGMMkbuKAQBy8Jb7Y6Yn8OlBEiUOY0PqZ0hy6Ua8poVA1ui1tAIiXNxGdsg==",
       "type": "package",
@@ -7480,36 +7606,6 @@
         "webactivatorex.nuspec"
       ]
     },
-    "ApprovalService.Application/1.0.0": {
-      "type": "project",
-      "path": "../Application/ApprovalService.Application.csproj",
-      "msbuildProject": "../Application/ApprovalService.Application.csproj"
-    },
-    "ApprovalService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/ApprovalService.Domain.csproj",
-      "msbuildProject": "../Domain/ApprovalService.Domain.csproj"
-    },
-    "ApprovalService.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../Infrastructure/ApprovalService.Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/ApprovalService.Infrastructure.csproj"
-    },
-    "AttachmentService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../../AttachmentService/Domain/AttachmentService.Domain.csproj",
-      "msbuildProject": "../../AttachmentService/Domain/AttachmentService.Domain.csproj"
-    },
-    "AttachmentService.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj",
-      "msbuildProject": "../../AttachmentService/Infrastructure/AttachmentService.Infrastructure.csproj"
-    },
-    "Contracts/1.0.0": {
-      "type": "project",
-      "path": "../../../../BuildingBlocks/Contracts/Contracts.csproj",
-      "msbuildProject": "../../../../BuildingBlocks/Contracts/Contracts.csproj"
-    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../../../../BuildingBlocks/Core/Core.csproj",
@@ -7519,6 +7615,11 @@
       "type": "project",
       "path": "../../../../BuildingBlocks/EventBus/EventBus.csproj",
       "msbuildProject": "../../../../BuildingBlocks/EventBus/EventBus.csproj"
+    },
+    "EventContracts/1.0.0": {
+      "type": "project",
+      "path": "../../../../BuildingBlocks/Contracts/EventContracts.csproj",
+      "msbuildProject": "../../../../BuildingBlocks/Contracts/EventContracts.csproj"
     },
     "NotificationService.Domain/1.0.0": {
       "type": "project",
@@ -7539,20 +7640,43 @@
       "type": "project",
       "path": "../../UserService/Infrastructure/UserService.Infrastructure.csproj",
       "msbuildProject": "../../UserService/Infrastructure/UserService.Infrastructure.csproj"
+    },
+    "Volvo.Service.Approval.Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Volvo.Service.Approval.Application.csproj",
+      "msbuildProject": "../Application/Volvo.Service.Approval.Application.csproj"
+    },
+    "Volvo.Service.Approval.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Volvo.Service.Approval.Domain.csproj",
+      "msbuildProject": "../Domain/Volvo.Service.Approval.Domain.csproj"
+    },
+    "Volvo.Service.Approval.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Volvo.Service.Approval.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Volvo.Service.Approval.Infrastructure.csproj"
+    },
+    "Volvo.Service.Attachment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Domain/Volvo.Service.Attachment.Domain.csproj",
+      "msbuildProject": "../../AttachmentService/Domain/Volvo.Service.Attachment.Domain.csproj"
+    },
+    "Volvo.Service.Attachment.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../AttachmentService/Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj",
+      "msbuildProject": "../../AttachmentService/Infrastructure/Volvo.Service.Attachment.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "ApprovalService.Application >= 1.0.0",
-      "ApprovalService.Domain >= 1.0.0",
-      "ApprovalService.Infrastructure >= 1.0.0",
-      "AttachmentService.Domain >= 1.0.0",
-      "Contracts >= 1.0.0",
+      "Core >= 1.0.0",
       "EventBus >= 1.0.0",
+      "EventContracts >= 1.0.0",
       "FluentValidation.AspNetCore >= 11.3.0",
       "MediatR >= 12.5.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.AspNetCore.Mvc >= 2.3.0",
+      "Microsoft.AspNetCore.Mvc.Versioning >= 5.1.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
@@ -7565,7 +7689,11 @@
       "SwashBuckle >= 5.6.0",
       "SwashBuckle.AspNetCore >= 8.1.2",
       "UserService.Domain >= 1.0.0",
-      "UserService.Infrastructure >= 1.0.0"
+      "UserService.Infrastructure >= 1.0.0",
+      "Volvo.Service.Approval.Application >= 1.0.0",
+      "Volvo.Service.Approval.Domain >= 1.0.0",
+      "Volvo.Service.Approval.Infrastructure >= 1.0.0",
+      "Volvo.Service.Attachment.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7574,9 +7702,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/ApprovalService.API.csproj",
-      "projectName": "ApprovalService.API",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/ApprovalService.API.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Volvo.Service.Approval.API.csproj",
+      "projectName": "Volvo.Service.Approval.API",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Volvo.Service.Approval.API.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/obj/",
       "projectStyle": "PackageReference",
@@ -7594,23 +7722,26 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/Contracts.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/Contracts.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/EventContracts.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Contracts/EventContracts.csproj"
+            },
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj"
             },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/EventBus.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/EventBus/EventBus.csproj"
             },
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/ApprovalService.Application.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/ApprovalService.Application.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/Volvo.Service.Approval.Application.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Application/Volvo.Service.Approval.Application.csproj"
             },
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/ApprovalService.Domain.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/Volvo.Service.Approval.Domain.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Domain/Volvo.Service.Approval.Domain.csproj"
             },
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/ApprovalService.Infrastructure.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/ApprovalService.Infrastructure.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/Volvo.Service.Approval.Infrastructure.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/Volvo.Service.Approval.Infrastructure.csproj"
             },
-            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/AttachmentService.Domain.csproj": {
-              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/AttachmentService.Domain.csproj"
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/Volvo.Service.Attachment.Domain.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/Domain/Volvo.Service.Attachment.Domain.csproj"
             },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj"
@@ -7652,6 +7783,10 @@
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
             "version": "[2.3.0, )"
+          },
+          "Microsoft.AspNetCore.Mvc.Versioning": {
+            "target": "Package",
+            "version": "[5.1.0, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",

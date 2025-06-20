@@ -97,3 +97,7 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/Core.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/Core.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/EventBus.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/EventContracts.dll
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/EventBus.pdb
+/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/API/bin/Debug/net9.0/EventContracts.pdb

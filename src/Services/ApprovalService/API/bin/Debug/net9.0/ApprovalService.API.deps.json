@@ -13,11 +13,13 @@
           "ApprovalService.Infrastructure": "1.0.0",
           "AttachmentService.Domain": "1.0.0",
           "Contracts": "1.0.0",
+          "Core": "1.0.0",
           "EventBus": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR": "12.5.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Mvc": "2.3.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.3",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
@@ -400,6 +402,14 @@
           "Microsoft.Extensions.Caching.Memory": "9.0.5",
           "Microsoft.Extensions.FileSystemGlobbing": "8.0.0",
           "Microsoft.Extensions.Primitives": "9.0.6"
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.8270.41513"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.3.0": {
@@ -1795,6 +1805,7 @@
       },
       "UserService.Infrastructure/1.0.0": {
         "dependencies": {
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
           "UserService.Domain": "1.0.0"
@@ -2114,6 +2125,13 @@
       "sha512": "sha512-7lG10p3eiO03NHii0wXUTVMf+BCvNfDZ6idtI4HVAt1pgYxdJHA2e4zMJHGZYUUMTneCWVzZousOtZGA8HpPZA==",
       "path": "microsoft.aspnetcore.mvc.taghelpers/2.3.0",
       "hashPath": "microsoft.aspnetcore.mvc.taghelpers.2.3.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UX8w9BlCiZpr6Ox4YAve1w0CkI1CAovukGNzKd7v0+5pZc8lzuG5tRovucr1RWIKHs0E/Yx8563CN7KzaB3bpw==",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.1.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.3.0": {
       "type": "package",

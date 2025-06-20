@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/projectbundle/ApprovalWeb.bundle.scp.css",
-      "PackagePath": "staticwebassets/ApprovalWeb.p8pokrmy0v.bundle.scp.css"
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/obj/Debug/net9.0/scopedcss/projectbundle/Volvo.Web.Approval.bundle.scp.css",
+      "PackagePath": "staticwebassets/Volvo.Web.Approval.rkghphl5ld.bundle.scp.css"
     },
     {
       "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/css/site.css",
@@ -817,6 +817,10 @@
       "PackagePath": "staticwebassets/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_1.png"
     },
     {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_2.png",
+      "PackagePath": "staticwebassets/uploads/Screenshot 2025-06-04 at 9.13.37\u202FAM_2.png"
+    },
+    {
       "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/excel_test.xls",
       "PackagePath": "staticwebassets/uploads/excel_test.xls"
     },
@@ -861,12 +865,28 @@
       "PackagePath": "staticwebassets/uploads/excel_test_9.xls"
     },
     {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/file_11.oga",
+      "PackagePath": "staticwebassets/uploads/file_11.oga"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/file_12.oga",
+      "PackagePath": "staticwebassets/uploads/file_12.oga"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/file_12_1.oga",
+      "PackagePath": "staticwebassets/uploads/file_12_1.oga"
+    },
+    {
       "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643.xls",
       "PackagePath": "staticwebassets/uploads/sns@746087_domeggook_buy_20250529170643.xls"
     },
     {
       "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643_1.xls",
       "PackagePath": "staticwebassets/uploads/sns@746087_domeggook_buy_20250529170643_1.xls"
+    },
+    {
+      "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643_10.xls",
+      "PackagePath": "staticwebassets/uploads/sns@746087_domeggook_buy_20250529170643_10.xls"
     },
     {
       "Id": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/UI/ApprovalWeb/wwwroot/uploads/sns@746087_domeggook_buy_20250529170643_2.xls",
@@ -909,24 +929,24 @@
       "PackagePath": "staticwebassets/uploads/한의학용어 소스 9주차.pdf"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.ApprovalWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Volvo.Web.Approval.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.ApprovalWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Volvo.Web.Approval.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.ApprovalWeb.props",
-      "PackagePath": "build\\ApprovalWeb.props"
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Volvo.Web.Approval.props",
+      "PackagePath": "build\\Volvo.Web.Approval.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.ApprovalWeb.props",
-      "PackagePath": "buildMultiTargeting\\ApprovalWeb.props"
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Volvo.Web.Approval.props",
+      "PackagePath": "buildMultiTargeting\\Volvo.Web.Approval.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.ApprovalWeb.props",
-      "PackagePath": "buildTransitive\\ApprovalWeb.props"
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Volvo.Web.Approval.props",
+      "PackagePath": "buildTransitive\\Volvo.Web.Approval.props"
     }
   ],
   "ElementsToRemove": []

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "UIxBMSJEOsg/3woPZSOD7xONYZ2s0Z/Pew3kvzooxU4=",
-  "Source": "ApprovalService.API",
-  "BasePath": "_content/ApprovalService.API",
+  "Hash": "hNWeB9CXj9CTF3byYqWeBVLDJ7esEZGl79Mczh18eJM=",
+  "Source": "Volvo.Service.Approval.API",
+  "BasePath": "_content/Volvo.Service.Approval.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

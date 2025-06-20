@@ -1,0 +1,327 @@
+2025-06-20 07:29:36.706 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-20 07:29:36.751 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-20 07:29:40.247 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-20 07:29:43.645 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'AttachmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-20 07:29:43.650 +09:00 [DBG] Creating DbConnection.
+2025-06-20 07:29:43.656 +09:00 [DBG] Created DbConnection. (4ms).
+2025-06-20 07:29:43.658 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.665 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.667 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.669 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 07:29:43.671 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 07:29:43.671 +09:00 [DBG] Creating DbConnection.
+2025-06-20 07:29:43.671 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 07:29:43.673 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-20 07:29:43.674 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-06-20 07:29:43.674 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.675 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.677 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 07:29:43.690 +09:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 07:29:43.690 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.692 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (1ms).
+2025-06-20 07:29:43.694 +09:00 [DBG] Creating DbConnection.
+2025-06-20 07:29:43.694 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 07:29:43.694 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.694 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.694 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.694 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 07:29:43.694 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 07:29:43.694 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 07:29:43.695 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 07:29:43.695 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.695 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.695 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 07:29:43.695 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 07:29:43.695 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.695 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 07:29:43.719 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalAttachment>()
+    .Any()'
+2025-06-20 07:29:43.811 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: AttachmentService.Infrastructure.Persistence.AttachmentDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-20 07:29:43.823 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.823 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.823 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-20 07:29:43.823 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 07:29:43.823 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 07:29:43.824 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 07:29:43.824 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 07:29:43.827 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.827 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db' is being disposed after spending 2ms reading results.
+2025-06-20 07:29:43.828 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 07:29:43.828 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 07:29:43.829 +09:00 [DBG] 'AttachmentDbContext' disposed.
+2025-06-20 07:29:43.829 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 07:29:43.829 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 07:29:43.830 +09:00 [DBG] Hosting starting
+2025-06-20 07:29:43.860 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-20 07:29:43.860 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-20 07:29:44.121 +09:00 [INF] Now listening on: https://localhost:7224
+2025-06-20 07:29:44.122 +09:00 [INF] Now listening on: http://localhost:5176
+2025-06-20 07:29:44.122 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.Attachment.API
+2025-06-20 07:29:44.122 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-20 07:29:44.123 +09:00 [INF] Hosting environment: Development
+2025-06-20 07:29:44.123 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API
+2025-06-20 07:29:44.123 +09:00 [DBG] Hosting started
+2025-06-20 08:09:33.899 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-20 08:09:33.941 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-20 08:09:37.463 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-20 08:09:38.972 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'AttachmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-20 08:09:38.979 +09:00 [DBG] Creating DbConnection.
+2025-06-20 08:09:38.985 +09:00 [DBG] Created DbConnection. (5ms).
+2025-06-20 08:09:38.988 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:38.997 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:38.999 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.002 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 08:09:39.004 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 08:09:39.004 +09:00 [DBG] Creating DbConnection.
+2025-06-20 08:09:39.004 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 08:09:39.006 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-20 08:09:39.007 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-06-20 08:09:39.007 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.008 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.012 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 08:09:39.034 +09:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 08:09:39.035 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.036 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (1ms).
+2025-06-20 08:09:39.039 +09:00 [DBG] Creating DbConnection.
+2025-06-20 08:09:39.039 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 08:09:39.039 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.039 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.039 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.039 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 08:09:39.040 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 08:09:39.040 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 08:09:39.040 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 08:09:39.040 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.040 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.040 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 08:09:39.040 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 08:09:39.040 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.040 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 08:09:39.105 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalAttachment>()
+    .Any()'
+2025-06-20 08:09:39.311 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: AttachmentService.Infrastructure.Persistence.AttachmentDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-20 08:09:39.346 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.348 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.348 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-20 08:09:39.348 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 08:09:39.349 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 08:09:39.349 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 08:09:39.352 +09:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 08:09:39.359 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.363 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db' is being disposed after spending 7ms reading results.
+2025-06-20 08:09:39.364 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 08:09:39.364 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 08:09:39.366 +09:00 [DBG] 'AttachmentDbContext' disposed.
+2025-06-20 08:09:39.367 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 08:09:39.367 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 08:09:39.371 +09:00 [DBG] Hosting starting
+2025-06-20 08:09:39.459 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-20 08:09:39.460 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-20 08:09:39.893 +09:00 [INF] Now listening on: https://localhost:7224
+2025-06-20 08:09:39.893 +09:00 [INF] Now listening on: http://localhost:5176
+2025-06-20 08:09:39.893 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.Attachment.API
+2025-06-20 08:09:39.899 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-20 08:09:39.900 +09:00 [INF] Hosting environment: Development
+2025-06-20 08:09:39.900 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API
+2025-06-20 08:09:39.900 +09:00 [DBG] Hosting started
+2025-06-20 14:06:03.589 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-20 14:06:04.025 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-20 14:06:04.112 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-20 14:06:07.045 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'AttachmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-20 14:06:07.056 +09:00 [DBG] Creating DbConnection.
+2025-06-20 14:06:07.314 +09:00 [DBG] Created DbConnection. (173ms).
+2025-06-20 14:06:07.320 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.337 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.340 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.360 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 14:06:07.363 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 14:06:07.364 +09:00 [DBG] Creating DbConnection.
+2025-06-20 14:06:07.364 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 14:06:07.369 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-06-20 14:06:07.371 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (8ms).
+2025-06-20 14:06:07.372 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.373 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.379 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 14:06:07.406 +09:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 14:06:07.412 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.415 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (7ms).
+2025-06-20 14:06:07.419 +09:00 [DBG] Creating DbConnection.
+2025-06-20 14:06:07.419 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-20 14:06:07.419 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.420 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.420 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.421 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 14:06:07.421 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-20 14:06:07.421 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 14:06:07.421 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-20 14:06:07.421 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:07.421 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.422 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 14:06:07.422 +09:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-20 14:06:07.422 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:07.422 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 14:06:08.225 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalAttachment>()
+    .Any()'
+2025-06-20 14:06:10.434 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalAttachments AS a), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: AttachmentService.Infrastructure.Persistence.AttachmentDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-20 14:06:10.487 +09:00 [DBG] Opening connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:10.489 +09:00 [DBG] Opened connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:10.489 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-20 14:06:10.490 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 14:06:10.490 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-20 14:06:10.496 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 14:06:10.502 +09:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalAttachments" AS "a")
+2025-06-20 14:06:10.506 +09:00 [DBG] Closing data reader to 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:10.507 +09:00 [DBG] A data reader for 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db' is being disposed after spending 4ms reading results.
+2025-06-20 14:06:10.515 +09:00 [DBG] Closing connection to database 'main' on server '/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API/Data/AttachmentService.db'.
+2025-06-20 14:06:10.562 +09:00 [DBG] Closed connection to database 'main' on server 'Data/AttachmentService.db' (30ms).
+2025-06-20 14:06:10.704 +09:00 [DBG] 'AttachmentDbContext' disposed.
+2025-06-20 14:06:10.705 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/AttachmentService.db'.
+2025-06-20 14:06:10.706 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/AttachmentService.db' (0ms).
+2025-06-20 14:06:10.710 +09:00 [DBG] Hosting starting
+2025-06-20 14:06:11.253 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-20 14:06:11.253 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-20 14:06:12.648 +09:00 [INF] Now listening on: https://localhost:7224
+2025-06-20 14:06:12.648 +09:00 [INF] Now listening on: http://localhost:5176
+2025-06-20 14:06:12.648 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.Attachment.API
+2025-06-20 14:06:12.649 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-20 14:06:12.649 +09:00 [INF] Hosting environment: Development
+2025-06-20 14:06:12.650 +09:00 [INF] Content root path: /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/AttachmentService/API
+2025-06-20 14:06:12.650 +09:00 [DBG] Hosting started

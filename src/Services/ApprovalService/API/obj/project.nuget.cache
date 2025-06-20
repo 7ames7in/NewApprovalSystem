@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zBnd8BDko7Y=",
+  "dgSpecHash": "2FBWfUFRwAw=",
   "success": true,
-  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/ApprovalService.API.csproj",
+  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/API/Volvo.Service.Approval.API.csproj",
   "expectedPackageFiles": [
     "/Users/7ames7in/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -47,6 +47,7 @@
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/2.3.0/microsoft.aspnetcore.mvc.razor.extensions.2.3.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.mvc.razorpages/2.3.0/microsoft.aspnetcore.mvc.razorpages.2.3.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.mvc.taghelpers/2.3.0/microsoft.aspnetcore.mvc.taghelpers.2.3.0.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.1.0/microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.mvc.viewfeatures/2.3.0/microsoft.aspnetcore.mvc.viewfeatures.2.3.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.openapi/9.0.3/microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/microsoft.aspnetcore.razor/2.3.0/microsoft.aspnetcore.razor.2.3.0.nupkg.sha512",
@@ -116,6 +117,7 @@
     "/Users/7ames7in/.nuget/packages/polly/8.6.0/polly.8.6.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/polly.core/8.6.0/polly.core.8.6.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/rabbitmq.client/7.1.2/rabbitmq.client.7.1.2.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/serilog/4.2.0/serilog.4.2.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/serilog.aspnetcore/9.0.0/serilog.aspnetcore.9.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/serilog.extensions.hosting/9.0.0/serilog.extensions.hosting.9.0.0.nupkg.sha512",
@@ -147,7 +149,7 @@
     "/Users/7ames7in/.nuget/packages/system.composition.runtime/7.0.0/system.composition.runtime.7.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.composition.typedparts/7.0.0/system.composition.typedparts.7.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.diagnostics.diagnosticsource/8.0.1/system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
-    "/Users/7ames7in/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.reflection.metadata/7.0.0/system.reflection.metadata.7.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
@@ -158,6 +160,7 @@
     "/Users/7ames7in/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.text.json/9.0.5/system.text.json.9.0.5.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
+    "/Users/7ames7in/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/system.threading.tasks.extensions/4.6.0/system.threading.tasks.extensions.4.6.0.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/webactivatorex/2.0.0/webactivatorex.2.0.0.nupkg.sha512"
   ],

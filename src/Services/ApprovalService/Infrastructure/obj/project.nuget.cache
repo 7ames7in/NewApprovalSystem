@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RL+te2drOBQ=",
+  "dgSpecHash": "px/aoQCCxgo=",
   "success": true,
-  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/ApprovalService.Infrastructure.csproj",
+  "projectFilePath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/ApprovalService/Infrastructure/Volvo.Service.Approval.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/7ames7in/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/7ames7in/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

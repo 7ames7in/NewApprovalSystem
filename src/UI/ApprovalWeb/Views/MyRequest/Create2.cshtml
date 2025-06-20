@@ -124,12 +124,20 @@
 
         if (data.length > 0) {
             data.forEach(user => {
+                // Disable if user.employeeNumber matches current user's employee number
+                const isCurrentUser = user.employeeNumber === '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value';
                 const $item = $("<li class='list-group-item'></li>")
                     .html(`<strong>${user.name} (${user.employeeNumber})</strong> - <em>${user.department}</em> / <span>${user.position}</span>`)
                     .data("id", user.employeeNumber)
                     .data("name", user.name)
                     .data("position", user.position)
                     .data("department", user.department);
+
+                if (isCurrentUser) {
+                    $item.addClass("disabled").css("pointer-events", "none").css("opacity", "0.5")
+                        .attr("title", "You cannot select yourself as an approver.");
+                }
+
                 $results.append($item);
             });
             $results.show();
@@ -146,14 +154,30 @@
 
         if (stepsData.length > 0) {
             const sortedSteps = stepsData.sort((a, b) => {
-                const order = { "Approval": 1, "Agreement": 2, "Notification": 3, "Reference": 4, "Review": 5 };
-                return order[a.stepType] - order[b.stepType];
+            const order = { "Approval": 1, "Agreement": 2, "Notification": 3, "Reference": 4, "Review": 5 };
+            return order[a.stepType] - order[b.stepType];
             });
 
             sortedSteps.forEach((step, index) => {
-                const $stepItem = $("<li class='list-group-item'></li>")
-                    .html(`<strong>Step ${index + 1}:</strong> <span>${step.ApproverName}</span> (<span>${step.ApproverEmployeeNumber}</span>) / <span>${step.Position}</span> / <em>${step.StepType}</em>`);
-                $stepsList.append($stepItem);
+            const $stepItem = $("<li class='list-group-item d-flex justify-content-between align-items-center'></li>")
+                .html(
+                `<div>
+                    <strong>Step ${index + 1}:</strong> <span>${step.ApproverName}</span> (<span>${step.ApproverEmployeeNumber}</span>) / <span>${step.Position}</span> / <em>${step.StepType}</em>
+                </div>
+                <button type="button" class="btn btn-link text-danger btn-sm remove-step-btn" data-index="${index}" title="Remove Step">
+                    <i class="bi bi-x-lg"></i>
+                </button>`
+                );
+            $stepsList.append($stepItem);
+            });
+
+            // Remove step event
+            $stepsList.off("click", ".remove-step-btn").on("click", ".remove-step-btn", function () {
+            const idx = $(this).data("index");
+            stepsData.splice(idx, 1);
+            // Re-sequence steps after removal
+            stepsData.forEach((s, i) => s.Sequence = i + 1);
+            displaySteps(stepsData);
             });
         } else {
             $stepsList.append("<p>No steps available.</p>");
@@ -207,7 +231,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control me-2" placeholder="Search for user..." id="userSearchInput" />
                     <ul class="list-group position-absolute" id="autocompleteResults" style="z-index: 1000; display: none;"></ul>
-                    <button type="button" class="btn btn-secondary" data-bs-target="#userSearchModal" id="addButton" disabled>Add</button>
+                    @* <button type="button" class="btn btn-secondary" data-bs-target="#userSearchModal" id="addButton" disabled>Add</button> *@
                 </div>
             </div>
         </div>
@@ -254,12 +278,20 @@
         </div>
         <div class="form-group mb-3">
             <label>ApplicantName</label>
-            <input asp-for="ApplicantName" class="form-control" readonly value="@User.FindFirst("UserName")?.Value" />
+            <input asp-for="ApplicantName" class="form-control readonly-muted" readonly value="@User.FindFirst("UserName")?.Value" />
         </div>
         <div class="form-group mb-3">
             <label>Department</label>
-            <input asp-for="ApplicantDepartment" class="form-control" readonly value="@User.FindFirst("Department")?.Value" />
+            <input asp-for="ApplicantDepartment" class="form-control readonly-muted" readonly value="@User.FindFirst("Department")?.Value" />
         </div>
+        <style>
+            .readonly-muted[readonly] {
+                background-color: #f5f5f5 !important;
+                color: #888 !important;
+                opacity: 1;
+                cursor: not-allowed;
+            }
+        </style>
         <div class="form-group mb-3">
             <label>Title</label>
             <input asp-for="RequestTitle" class="form-control" />
@@ -282,7 +314,35 @@
         <input type="hidden" name="StepsJson" id="StepsJson" />
         <input type="hidden" name="AttachmentsJson" id="AttachmentsJson" />
 
-        <button type="submit" class="btn btn-success" onclick="prepareFormData()">Submit</button>
+        <button type="submit" class="btn btn-success" id="submitButton" disabled>Submit</button>
+        <script>
+            function validateForm() {
+            // Check steps
+            const steps = JSON.parse(document.getElementById("StepsJson").value || "[]");
+            // Check title and content
+            const title = document.querySelector('[name="RequestTitle"]').value.trim();
+            const content = document.querySelector('[name="RequestContent"]').value.trim();
+            // Enable if all are filled
+            const isValid = steps.length > 0 && title.length > 0 && content.length > 0;
+            document.getElementById("submitButton").disabled = !isValid;
+            }
+
+            // Observe changes
+            $(document).ready(function () {
+            // Steps change: after displaySteps
+            const origDisplaySteps = window.displaySteps;
+            window.displaySteps = function(stepsData) {
+                origDisplaySteps(stepsData);
+                validateForm();
+            };
+
+            // Title/content change
+            $('[name="RequestTitle"], [name="RequestContent"]').on("input", validateForm);
+
+            // Initial check
+            validateForm();
+            });
+        </script>
     </form>
 </div>
 

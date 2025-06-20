@@ -9,6 +9,11 @@ public class UserRepository<T> : IUserRepository<T> where T : class
 {
     private readonly UserDbContext _context;
 
+    public async Task<T?> GetByEmailAsync(string email)
+    {
+        return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "Email") == email);
+    }
+
     public async Task<T?> ValidateLoginAndInfomationAsync(string email)
     {
         return await _context.Set<T>().FirstOrDefaultAsync(e =>
@@ -53,6 +58,10 @@ public class UserRepository<T> : IUserRepository<T> where T : class
     }
     public async Task<T?> GetByIdAsync(Guid id) =>
         await _context.Set<T>().FindAsync(id);
+    public async Task<T?> GetByEmpoyeeNoAsync(string id) 
+    {
+        return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "EmployeeNumber") == id);
+    }
     public async Task<IEnumerable<T>> GetAllAsync() =>
         await _context.Set<T>().ToListAsync();
     public async Task AddAsync(T entity)
@@ -103,9 +112,9 @@ public class UserRepository<T> : IUserRepository<T> where T : class
     {
         await _context.SaveChangesAsync();
     }
-    public async Task<T?> GetByEmailAsync(string email)
+    public async Task<T?> GetByEmployeeNoAsync(string employeeNumber)
     {
-        return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "Email") == email);
+        return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "EmployeeNumber") == employeeNumber);
     }
     public async Task<IEnumerable<T>> GetByRoleAsync(string role)
     {

@@ -2544,6 +2544,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"78152"},{"Name":"Content-Type","Value":"application/vnd.ms-excel"},{"Name":"ETag","Value":"\u0022axJPy2CkjCh9Ld5bWSXWqMRyECo7wU1NngfWPkqxrhY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Jun 2025 00:45:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ApprovalWeb/uploads/file_12.86dsd0ldff.oga">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\file_12.oga'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"86dsd0ldff"},{"Name":"integrity","Value":"sha256-sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA="},{"Name":"label","Value":"_content/ApprovalWeb/uploads/file_12.oga"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43266"},{"Name":"Content-Type","Value":"audio/ogg"},{"Name":"ETag","Value":"\u0022sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Jun 2025 23:36:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ApprovalWeb/uploads/file_12.oga">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\file_12.oga'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"43266"},{"Name":"Content-Type","Value":"audio/ogg"},{"Name":"ETag","Value":"\u0022sO4hRq2FYwkBaLvUz70mBA6dck2RiX5s5rVz0xXPFcA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Jun 2025 23:36:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ApprovalWeb/uploads/Screenshot 2025-06-04 at 9.11.59 AM.8hs1ych0q9.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Screenshot 2025-06-04 at 9.11.59 AM.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../../../../BuildingBlocks/Core/Core.csproj" />
-    <ProjectReference Include="../../../../BuildingBlocks/Core/Infrastructure/Core.csproj" />
     <ProjectReference Include="../Domain/NotificationService.Domain.csproj" />
   </ItemGroup>
 

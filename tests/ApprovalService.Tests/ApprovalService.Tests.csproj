@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Services\ApprovalService\Application\ApprovalService.Application.csproj" />
-    <ProjectReference Include="..\..\src\Services\ApprovalService\Domain\ApprovalService.Domain.csproj" />
+    <ProjectReference Include="../../src/Services/ApprovalService/Application/Volvo.Service.Approval.Application.csproj" />
+    <ProjectReference Include="../../src/Services/ApprovalService/Domain/Volvo.Service.Approval.Domain.csproj" />
   </ItemGroup>
 
 </Project>

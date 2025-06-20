@@ -13,5 +13,7 @@ public interface IApprovalRequestRepository<T> : IRepository<T> where T : class
     Task ApproveRequestAsync(Guid requestId);
     Task RejectRequestAsync(Guid requestId);
     Task<T> CreateApprovalRequestAsync(T request);
+    //Task<string> GetEmailContentAsync(Guid requestId);
     IQueryable<ApprovalRequestWithCurrentStepDto> GetApprovalRequestsWithCurrentStep(string userId);
 }
+

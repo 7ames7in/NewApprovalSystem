@@ -1,6 +1,41 @@
-@ApprovalService.API_HostAddress = http://localhost:5229
 
-GET {{ApprovalService.API_HostAddress}}/weatherforecast/
+@schema=https
+@hostname=localhost
+@port=5001
+
+
+@Url={{schema}}://{{hostname}}:{{port}}
+
+
+GET {{Url}}/api/approvals/{approvalId}
 Accept: application/json
 
 ###
+POST {{Url}}/api/approvals
+Content-Type: application/json
+Accept: application/json
+
+{
+     "requesterId": "string",
+     "approvalType": "string",
+     "details": "string"
+}
+
+###
+PUT {{Url}}/api/approvals/{approvalId}
+Content-Type: application/json
+Accept: application/json
+
+{
+     "requesterId": "string",
+     "approvalType": "string",
+     "details": "string"
+}
+
+###
+DELETE {{Url}}/api/approvals/{approvalId}    
+Accept: application/json
+
+###
+GET {{Url}}/api/approvals
+Accept: application/json

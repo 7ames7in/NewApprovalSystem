@@ -1,12 +1,16 @@
 namespace ApprovalService.Domain.Entities;
 
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel;
 
 public class ApprovalRequest
 {
     [Key] // Entity Framework recognizes this as the primary key
+    [Required] // This field is required
+    [Display(Name = "Approval ID")] // Display name for UI purposes
+    [Description("Unique identifier for the approval request.")] // Description for documentation
     public Guid ApprovalId { get; set; } // Unique identifier for the approval request
-
     public string RequestTitle { get; set; } = string.Empty; // Title of the approval request
     public string? RequestContent { get; set; } // Detailed content of the request
     public string ApplicantEmployeeNumber { get; set; } = string.Empty; // Employee number of the applicant
@@ -21,7 +25,6 @@ public class ApprovalRequest
     public int CurrentStep { get; set; } = 1; // Current step in the approval process
     public string? CurrentApproverEmployeeNumber { get; set; } // Employee number of the current approver
     public string? MisKey { get; set; } // Optional key for integration with external systems
-
     public List<ApprovalStep> Steps { get; set; } = new List<ApprovalStep>(); // List of steps in the approval process
     public List<ApprovalAttachment> Attachments { get; set; } = new List<ApprovalAttachment>(); // List of attachments related to the request
 }

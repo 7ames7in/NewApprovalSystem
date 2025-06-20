@@ -21,6 +21,13 @@ builder.Host.UseSerilog(); // Serilog 사용
                            // Serilog 설정 완료
                            // Serilog 미들웨어 추가
 
+var approvalServiceUri = builder.Configuration["ApiConfigs:ApprovalService:Uri"]??string.Empty;
+var attachmentServiceUri = builder.Configuration["ApiConfigs:AttachmentService:Uri"]??string.Empty;
+var loggingServiceUri = builder.Configuration["ApiConfigs:LoggingService:Uri"]??string.Empty;
+var notificationServiceUri = builder.Configuration["ApiConfigs:NotificationService:Uri"]??string.Empty;
+var userServiceUri = builder.Configuration["ApiConfigs:UserService:Uri"]??string.Empty;
+var approvalWebUri = builder.Configuration["ApiConfigs:ApprovalWeb:Uri"] ?? string.Empty;
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowWebApp", policy =>

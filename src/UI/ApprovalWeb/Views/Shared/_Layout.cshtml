@@ -10,42 +10,40 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ApprovalWeb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4a90e2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" style="font-size: 1.4rem;" asp-area="" asp-controller="Home" asp-action="Index">ApprovalWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="MyRequest" asp-action="Index">My Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Approval" asp-action="Index">Approvals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    @if (User?.Identity?.IsAuthenticated == true)
+                    {
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline">
+                                <button type="submit" class="nav-link active btn btn-link text-white">Logout</button>
+                            </form>
                         </li>
-                        <li class="nav-item"></li>
-                            <a class="nav-link active" asp-area="" asp-controller="MyRequest" asp-action="Index">My Requests</a>
-                        </li>
-                        <li class="nav-item"></li>
-                            <a class="nav-link active" asp-area="" asp-controller="Approval" asp-action="Index">Approvals</a>
-                        </li>
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        @if (User?.Identity?.IsAuthenticated == true)
-{
-    <li class="nav-item">
-    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline">
-        <button type="submit" class="nav-link active">Logout</button>
-    </form>
-    </li>
-}
-                    </ul>
-                </div>
+                    }
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()

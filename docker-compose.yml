@@ -1,0 +1,48 @@
+#version: '3.8'
+
+services:
+  approval-service:
+    build:
+      context: .
+      dockerfile: src/Services/ApprovalService/API/Dockerfile
+    ports:
+      - "5001:8080"
+
+  attachment-service:
+    build:
+      context: .
+      dockerfile: src/Services/AttachmentService/API/Dockerfile
+    ports:
+      - "7224:8080"
+
+  logging-service:
+    build:
+      context: .
+      dockerfile: src/Services/LoggingService/API/Dockerfile
+    ports:
+      - "6001:8080"
+
+  notification-service:
+    build:
+      context: .
+      dockerfile: src/Services/NotificationService/API/Dockerfile
+    ports:
+      - "7259:8080"
+
+  user-service:
+    build:
+      context: .
+      dockerfile: src/Services/UserService/API/Dockerfile
+    ports:
+      - "7129:8080"
+
+  approval-web:
+    build:
+      context: .
+      dockerfile: src/UI/ApprovalWeb/Dockerfile
+    ports:
+      - "7185:8080"
+    depends_on:
+      - approval-service
+      - user-service
+      - logging-service

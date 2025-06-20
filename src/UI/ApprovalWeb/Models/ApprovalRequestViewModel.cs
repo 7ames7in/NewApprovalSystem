@@ -1,3 +1,5 @@
+using BuildingBlocks.Core.Pagination;
+
 namespace ApprovalWeb.Models;
 
 /// <summary>
@@ -74,7 +76,6 @@ public class ApprovalRequestViewModel
     /// JSON representation of the approval steps.
     /// </summary>
     public string? StepsJson { get; set; } = string.Empty;
-
     public string? CurrentApproverName { get; set; } = string.Empty;
     public string? CurrentApproverEmployeeNumber { get; set; } = string.Empty;
     public string? CurrentActionStatus { get; set; } = "Pending";
@@ -93,4 +94,6 @@ public class ApprovalRequestViewModel
     /// List of files uploaded by the applicant.
     /// </summary>
     public List<IFormFile>? Files { get; set; }  // ✅ Must be public and match the property name "files".
+    public static IComparer<ApprovalRequestViewModel>? DateComparer => Comparer<ApprovalRequestViewModel>.Create((x, y) => y.RequestedAt.CompareTo(x.RequestedAt));
+    public static IComparer<ApprovalRequestViewModel>? TitleComparer => Comparer<ApprovalRequestViewModel>.Create((x, y) => string.Compare(x.RequestTitle, y.RequestTitle, StringComparison.OrdinalIgnoreCase));
 }

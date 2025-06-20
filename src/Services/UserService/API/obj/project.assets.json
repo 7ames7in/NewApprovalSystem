@@ -934,6 +934,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5",
           "UserService.Domain": "1.0.0"
@@ -2376,6 +2377,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Core >= 1.0.0",
       "FluentValidation.AspNetCore >= 11.3.0",
       "MediatR >= 11.1.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
@@ -2394,9 +2396,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/UserService.API.csproj",
-      "projectName": "UserService.API",
-      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/UserService.API.csproj",
+      "projectUniqueName": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Volvo.Service.User.API.csproj",
+      "projectName": "Volvo.Service.User.API",
+      "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/Volvo.Service.User.API.csproj",
       "packagesPath": "/Users/7ames7in/.nuget/packages/",
       "outputPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/API/obj/",
       "projectStyle": "PackageReference",
@@ -2414,6 +2416,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj": {
+              "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/BuildingBlocks/Core/Core.csproj"
+            },
             "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj": {
               "projectPath": "/Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/UserService/Domain/UserService.Domain.csproj"
             },
