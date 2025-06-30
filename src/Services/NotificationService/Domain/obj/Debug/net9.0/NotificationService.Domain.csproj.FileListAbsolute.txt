@@ -10,3 +10,15 @@
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/refint/NotificationService.Domain.dll
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/NotificationService.Domain.pdb
 /Users/7ames7in/Documents/GitHub/New-Projects/NewApprovalSystem/src/Services/NotificationService/Domain/obj/Debug/net9.0/ref/NotificationService.Domain.dll
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\bin\Debug\net9.0\NotificationService.Domain.deps.json
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\bin\Debug\net9.0\NotificationService.Domain.dll
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\bin\Debug\net9.0\NotificationService.Domain.pdb
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.AssemblyInfoInputs.cache
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.AssemblyInfo.cs
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.sourcelink.json
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.dll
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\refint\NotificationService.Domain.dll
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\NotificationService.Domain.pdb
+C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\Domain\obj\Debug\net9.0\ref\NotificationService.Domain.dll

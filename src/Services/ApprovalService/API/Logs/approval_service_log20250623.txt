@@ -1,0 +1,132 @@
+2025-06-23 14:01:12.183 +09:00 [INF] Starting Approval Service API
+2025-06-23 14:01:13.242 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-23 14:01:13.685 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-23 14:01:15.615 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:01:15.633 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:01:15.663 +09:00 [DBG] Created DbConnection. (24ms).
+2025-06-23 14:01:15.676 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.700 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.706 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.719 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (1ms).
+2025-06-23 14:01:15.728 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:01:15.731 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:01:15.731 +09:00 [DBG] Created DbConnection. (2ms).
+2025-06-23 14:01:15.741 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (9ms).
+2025-06-23 14:01:15.744 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (17ms).
+2025-06-23 14:01:15.744 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.753 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.773 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:01:15.874 +09:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:01:15.879 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.885 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (5ms).
+2025-06-23 14:01:15.893 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:01:15.894 +09:00 [DBG] Created DbConnection. (0ms).
+2025-06-23 14:01:15.894 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.895 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.895 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.896 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-23 14:01:15.896 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:01:15.896 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-06-23 14:01:15.896 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-06-23 14:01:15.897 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:15.897 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.898 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:01:15.899 +09:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:01:15.900 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:15.900 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-23 14:01:15.994 +09:00 [DBG] Compiling query expression: 
+'DbSet<ApprovalRequest>()
+    .Any()'
+2025-06-23 14:01:16.453 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalRequests AS a)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM ApprovalRequests AS a), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: ApprovalService.Infrastructure.Persistence.ApprovalDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:01:16.497 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:16.500 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:16.500 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:01:16.500 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-23 14:01:16.501 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-23 14:01:16.501 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalRequests" AS "a")
+2025-06-23 14:01:16.505 +09:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ApprovalRequests" AS "a")
+2025-06-23 14:01:16.513 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:16.517 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db' is being disposed after spending 8ms reading results.
+2025-06-23 14:01:16.521 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-23 14:01:16.522 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (1ms).
+2025-06-23 14:01:16.525 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-23 14:01:16.527 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-23 14:01:16.527 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (0ms).
+2025-06-23 14:01:16.536 +09:00 [DBG] Hosting starting
+2025-06-23 14:01:16.633 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-23 14:01:16.636 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-23 14:01:16.835 +09:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+2025-06-23 14:01:17.121 +09:00 [INF] Now listening on: https://localhost:5001
+2025-06-23 14:01:17.121 +09:00 [INF] Now listening on: http://localhost:5229
+2025-06-23 14:01:17.122 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.Approval.API
+2025-06-23 14:01:17.122 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-23 14:01:17.123 +09:00 [INF] Hosting environment: Development
+2025-06-23 14:01:17.124 +09:00 [INF] Content root path: C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API
+2025-06-23 14:01:17.124 +09:00 [DBG] Hosting started
+2025-06-23 14:02:27.672 +09:00 [DBG] Connection id "0HNDI2CJ8620C" accepted.
+2025-06-23 14:02:27.674 +09:00 [DBG] Connection id "0HNDI2CJ8620C" started.
+2025-06-23 14:02:27.676 +09:00 [DBG] Connection id "0HNDI2CJ8620D" accepted.
+2025-06-23 14:02:27.677 +09:00 [DBG] Connection id "0HNDI2CJ8620D" started.
+2025-06-23 14:02:27.813 +09:00 [DBG] Connection id "0HNDI2CJ8620D" received FIN.
+2025-06-23 14:02:27.813 +09:00 [DBG] Connection id "0HNDI2CJ8620C" received FIN.
+2025-06-23 14:02:27.820 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-23 14:02:27.820 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-23 14:02:27.835 +09:00 [DBG] Connection id "0HNDI2CJ8620C" stopped.
+2025-06-23 14:02:27.835 +09:00 [DBG] Connection id "0HNDI2CJ8620D" stopped.
+2025-06-23 14:02:27.836 +09:00 [DBG] Connection id "0HNDI2CJ8620C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:02:27.836 +09:00 [DBG] Connection id "0HNDI2CJ8620D" sending FIN because: "The Socket transport's send loop completed gracefully."

@@ -1,0 +1,110 @@
+2025-06-25 13:24:15.025 +09:00 [DBG] Connection id "0HNDI32EQIT0G" accepted.
+2025-06-25 13:24:15.118 +09:00 [DBG] Connection id "0HNDI32EQIT0G" started.
+2025-06-25 13:24:15.161 +09:00 [DBG] Connection 0HNDI32EQIT0G established using the following protocol: "Tls13"
+2025-06-25 13:24:15.508 +09:00 [INF] Request starting HTTP/1.1 GET https://localhost:5002/api/approval/my-approvals/EC20505 - null null
+2025-06-25 13:24:15.588 +09:00 [DBG] 1 candidate(s) found for the request path '/api/approval/my-approvals/EC20505'
+2025-06-25 13:24:15.655 +09:00 [DBG] Endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (Volvo.Service.Approval.API)' with route pattern 'api/Approval/my-approvals/{approverId}' is valid for the request path '/api/approval/my-approvals/EC20505'
+2025-06-25 13:24:15.690 +09:00 [DBG] Request matched endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (Volvo.Service.Approval.API)'
+2025-06-25 13:24:15.734 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-25 13:24:15.740 +09:00 [INF] Executing endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (Volvo.Service.Approval.API)'
+2025-06-25 13:24:15.758 +09:00 [INF] Route matched with {action = "GetMyApprovals", controller = "Approval"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyApprovals(System.String) on controller ApprovalService.API.Controllers.ApprovalController (Volvo.Service.Approval.API).
+2025-06-25 13:24:15.774 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-25 13:24:15.784 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-25 13:24:15.797 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-25 13:24:15.804 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-25 13:24:15.808 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-25 13:24:15.817 +09:00 [DBG] Executing controller factory for controller ApprovalService.API.Controllers.ApprovalController (Volvo.Service.Approval.API)
+2025-06-25 13:24:15.839 +09:00 [DBG] Executed controller factory for controller ApprovalService.API.Controllers.ApprovalController (Volvo.Service.Approval.API)
+2025-06-25 13:24:15.854 +09:00 [DBG] Attempting to bind parameter 'approverId' of type 'System.String' ...
+2025-06-25 13:24:15.861 +09:00 [DBG] Attempting to bind parameter 'approverId' of type 'System.String' using the name 'approverId' in request data ...
+2025-06-25 13:24:15.864 +09:00 [DBG] Done attempting to bind parameter 'approverId' of type 'System.String'.
+2025-06-25 13:24:15.870 +09:00 [DBG] Done attempting to bind parameter 'approverId' of type 'System.String'.
+2025-06-25 13:24:15.876 +09:00 [DBG] Attempting to validate the bound parameter 'approverId' of type 'System.String' ...
+2025-06-25 13:24:15.882 +09:00 [DBG] Done attempting to validate the bound parameter 'approverId' of type 'System.String'.
+2025-06-25 13:24:15.933 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'ApprovalDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-25 13:24:15.966 +09:00 [DBG] Creating DbConnection.
+2025-06-25 13:24:15.985 +09:00 [DBG] Created DbConnection. (18ms).
+2025-06-25 13:24:15.989 +09:00 [DBG] Opening connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-25 13:24:16.118 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-25 13:24:16.148 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-25 13:24:16.159 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (14ms).
+2025-06-25 13:24:16.182 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (37ms).
+2025-06-25 13:24:16.194 +09:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."ApplicantEmployeeNumber", "a"."ApplicantDepartment", "a"."ApplicantName", "a"."ApplicantPosition", "a"."Status", "a1"."StepId", "a1"."ActionDate", "a1"."ActionStatus", "a1"."ApprovalId", "a1"."ApproverEmployeeNumber", "a1"."ApproverName", "a1"."Comment", "a1"."Department", "a1"."IsFinalApprover", "a1"."Position", "a1"."Sequence", "a1"."StepType", "a"."CurrentStep", (
+    SELECT "a2"."ApproverName"
+    FROM "ApprovalSteps" AS "a2"
+    WHERE "a"."ApprovalId" = "a2"."ApprovalId" AND "a2"."Sequence" = "a"."CurrentStep"
+    LIMIT 1), (
+    SELECT "a3"."ApproverEmployeeNumber"
+    FROM "ApprovalSteps" AS "a3"
+    WHERE "a"."ApprovalId" = "a3"."ApprovalId" AND "a3"."Sequence" = "a"."CurrentStep"
+    LIMIT 1), (
+    SELECT "a4"."ActionStatus"
+    FROM "ApprovalSteps" AS "a4"
+    WHERE "a"."ApprovalId" = "a4"."ApprovalId" AND "a4"."Sequence" = "a"."CurrentStep"
+    LIMIT 1)
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a1" ON "a"."ApprovalId" = "a1"."ApprovalId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "ApprovalSteps" AS "a0"
+    WHERE "a"."ApprovalId" = "a0"."ApprovalId" AND "a0"."ApproverEmployeeNumber" = @__userId_0)
+ORDER BY "a"."ApprovalId"
+2025-06-25 13:24:16.222 +09:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ApprovalId", "a"."RequestTitle", "a"."RequestedAt", "a"."RespondedAt", "a"."ApplicantEmployeeNumber", "a"."ApplicantDepartment", "a"."ApplicantName", "a"."ApplicantPosition", "a"."Status", "a1"."StepId", "a1"."ActionDate", "a1"."ActionStatus", "a1"."ApprovalId", "a1"."ApproverEmployeeNumber", "a1"."ApproverName", "a1"."Comment", "a1"."Department", "a1"."IsFinalApprover", "a1"."Position", "a1"."Sequence", "a1"."StepType", "a"."CurrentStep", (
+    SELECT "a2"."ApproverName"
+    FROM "ApprovalSteps" AS "a2"
+    WHERE "a"."ApprovalId" = "a2"."ApprovalId" AND "a2"."Sequence" = "a"."CurrentStep"
+    LIMIT 1), (
+    SELECT "a3"."ApproverEmployeeNumber"
+    FROM "ApprovalSteps" AS "a3"
+    WHERE "a"."ApprovalId" = "a3"."ApprovalId" AND "a3"."Sequence" = "a"."CurrentStep"
+    LIMIT 1), (
+    SELECT "a4"."ActionStatus"
+    FROM "ApprovalSteps" AS "a4"
+    WHERE "a"."ApprovalId" = "a4"."ApprovalId" AND "a4"."Sequence" = "a"."CurrentStep"
+    LIMIT 1)
+FROM "ApprovalRequests" AS "a"
+LEFT JOIN "ApprovalSteps" AS "a1" ON "a"."ApprovalId" = "a1"."ApprovalId"
+WHERE EXISTS (
+    SELECT 1
+    FROM "ApprovalSteps" AS "a0"
+    WHERE "a"."ApprovalId" = "a0"."ApprovalId" AND "a0"."ApproverEmployeeNumber" = @__userId_0)
+ORDER BY "a"."ApprovalId"
+2025-06-25 13:24:16.242 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.247 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.264 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.279 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.296 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.304 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.308 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.625 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.644 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.650 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.664 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.733 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:16.801 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:17.073 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:17.076 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:17.351 +09:00 [DBG] Context 'ApprovalDbContext' started tracking 'ApprovalStep' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-25 13:24:17.426 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-25 13:24:17.437 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db' is being disposed after spending 1203ms reading results.
+2025-06-25 13:24:17.445 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\ApprovalService\API\Data\ApprovalService.db'.
+2025-06-25 13:24:17.450 +09:00 [DBG] Closed connection to database 'main' on server 'Data/ApprovalService.db' (5ms).
+2025-06-25 13:24:17.461 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-25 13:24:17.478 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-25 13:24:17.480 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-25 13:24:17.482 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-25 13:24:17.494 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-25 13:24:17.497 +09:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ApprovalService.Domain.Entities.ApprovalRequestWithCurrentStepDto, Volvo.Service.Approval.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-25 13:24:17.530 +09:00 [INF] Executed action ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (Volvo.Service.Approval.API) in 1714.1147ms
+2025-06-25 13:24:17.557 +09:00 [INF] Executed endpoint 'ApprovalService.API.Controllers.ApprovalController.GetMyApprovals (Volvo.Service.Approval.API)'
+2025-06-25 13:24:17.563 +09:00 [DBG] Connection id "0HNDI32EQIT0G" completed keep alive response.
+2025-06-25 13:24:17.576 +09:00 [DBG] 'ApprovalDbContext' disposed.
+2025-06-25 13:24:17.631 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/ApprovalService.db'.
+2025-06-25 13:24:17.637 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/ApprovalService.db' (5ms).
+2025-06-25 13:24:17.644 +09:00 [INF] Request finished HTTP/1.1 GET https://localhost:5002/api/approval/my-approvals/EC20505 - 200 null application/json; charset=utf-8 2138.7093ms
+2025-06-25 13:25:30.298 +09:00 [DBG] Connection id "0HNDI32EQIT0G" received FIN.
+2025-06-25 13:25:30.665 +09:00 [DBG] Connection id "0HNDI32EQIT0G" disconnecting.
+2025-06-25 13:25:30.696 +09:00 [DBG] Connection id "0HNDI32EQIT0G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-25 13:25:30.772 +09:00 [DBG] Connection id "0HNDI32EQIT0G" stopped.

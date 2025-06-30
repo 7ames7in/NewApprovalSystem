@@ -15,7 +15,7 @@ class Program
 
         HttpClient _http = new HttpClient
         {
-            BaseAddress = new Uri("https://localhost:5001/api/approvalrequest/")
+            BaseAddress = new Uri("https://localhost:5002/api/approvalrequest/")
         };
 
         var list = await _http.GetFromJsonAsync<IEnumerable<ApprovalRequestViewModel>>("my-requests/EC20505");

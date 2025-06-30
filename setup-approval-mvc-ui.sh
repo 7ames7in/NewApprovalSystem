@@ -30,7 +30,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient("ApprovalApi", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:5001/"); // ApprovalService.API 주소
+    client.BaseAddress = new Uri("https://localhost:5002/"); // ApprovalService.API 주소
 });
 
 var app = builder.Build();
