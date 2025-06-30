@@ -1,0 +1,200 @@
+2025-06-23 14:05:30.085 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-23 14:05:31.402 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-23 14:05:32.501 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-23 14:05:37.807 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'NotificationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:05:39.586 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:05:40.006 +09:00 [DBG] Created DbConnection. (412ms).
+2025-06-23 14:05:40.150 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:40.435 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:41.337 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:41.979 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (633ms).
+2025-06-23 14:05:42.488 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:05:42.561 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:05:42.568 +09:00 [DBG] Created DbConnection. (7ms).
+2025-06-23 14:05:42.599 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (102ms).
+2025-06-23 14:05:42.607 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (120ms).
+2025-06-23 14:05:42.610 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:42.795 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:42.813 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:05:43.306 +09:00 [INF] Executed DbCommand (473ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:05:43.326 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:43.353 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (27ms).
+2025-06-23 14:05:43.375 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:05:43.384 +09:00 [DBG] Created DbConnection. (9ms).
+2025-06-23 14:05:43.387 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:43.543 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:43.743 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:43.755 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (11ms).
+2025-06-23 14:05:43.765 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:05:43.767 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-23 14:05:43.769 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-06-23 14:05:43.777 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:43.787 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:43.790 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:05:43.800 +09:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:05:43.807 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:43.817 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (10ms).
+2025-06-23 14:05:44.048 +09:00 [DBG] Compiling query expression: 
+'DbSet<EmailNotification>()
+    .Any()'
+2025-06-23 14:05:44.556 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: NotificationService.Infrastructure.Persistence.NotificationDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:05:44.619 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:44.625 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:44.628 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:05:44.631 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-06-23 14:05:44.634 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2025-06-23 14:05:44.641 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-06-23 14:05:44.655 +09:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-06-23 14:05:44.674 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:44.683 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db' is being disposed after spending 18ms reading results.
+2025-06-23 14:05:44.691 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:05:44.694 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (2ms).
+2025-06-23 14:05:44.704 +09:00 [DBG] 'NotificationDbContext' disposed.
+2025-06-23 14:05:44.709 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:05:44.720 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (11ms).
+2025-06-23 14:05:45.273 +09:00 [INF] Ensuring RabbitMQ connection to localhost
+2025-06-23 14:23:31.676 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-23 14:23:31.807 +09:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-23 14:23:32.061 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-23 14:23:33.534 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'NotificationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:23:33.545 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:23:33.562 +09:00 [DBG] Created DbConnection. (14ms).
+2025-06-23 14:23:33.571 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.590 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.596 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.604 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (3ms).
+2025-06-23 14:23:33.611 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:23:33.613 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:23:33.615 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-23 14:23:33.621 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (7ms).
+2025-06-23 14:23:33.624 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (14ms).
+2025-06-23 14:23:33.625 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.630 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.638 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:23:33.705 +09:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:23:33.709 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.715 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (4ms).
+2025-06-23 14:23:33.721 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:23:33.722 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-23 14:23:33.724 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.726 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.728 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.730 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (1ms).
+2025-06-23 14:23:33.732 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:23:33.733 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-23 14:23:33.736 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (4ms).
+2025-06-23 14:23:33.738 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:33.740 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.744 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:23:33.747 +09:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:23:33.750 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:33.752 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (2ms).
+2025-06-23 14:23:33.805 +09:00 [DBG] Compiling query expression: 
+'DbSet<EmailNotification>()
+    .Any()'
+2025-06-23 14:23:34.013 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM EmailNotifications AS e), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: NotificationService.Infrastructure.Persistence.NotificationDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:23:34.044 +09:00 [DBG] Opening connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:34.048 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:34.050 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:23:34.052 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-06-23 14:23:34.054 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-06-23 14:23:34.057 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-06-23 14:23:34.062 +09:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "EmailNotifications" AS "e")
+2025-06-23 14:23:34.072 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:34.077 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db' is being disposed after spending 9ms reading results.
+2025-06-23 14:23:34.082 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\NotificationService\API\Data\NotificationService.db'.
+2025-06-23 14:23:34.085 +09:00 [DBG] Closed connection to database 'main' on server 'Data/NotificationService.db' (2ms).
+2025-06-23 14:23:34.089 +09:00 [DBG] 'NotificationDbContext' disposed.
+2025-06-23 14:23:34.093 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/NotificationService.db'.
+2025-06-23 14:23:34.096 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/NotificationService.db' (2ms).
+2025-06-23 14:23:34.715 +09:00 [INF] Ensuring RabbitMQ connection to localhost

@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: src/Services/ApprovalService/API/Dockerfile
     ports:
-      - "5001:8080"
+      - "5002:8080"
 
   attachment-service:
     build:

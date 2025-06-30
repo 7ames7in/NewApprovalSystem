@@ -19,8 +19,8 @@ dotnet run --project src/Services/UserService/API/Volvo.Service.User.API.csproj 
 echo "Starting EmailService..."
 dotnet run --project src/Services/EmailService/API/Volvo.Service.Email.API.csproj --launch-profile https &
 
-echo "Starting ApprovalWeb..."
-dotnet run --project src/UI/ApprovalWeb/Volvo.Web.Approval.csproj --launch-profile https &
+#echo "Starting ApprovalWeb..."
+#dotnet run --project src/UI/ApprovalWeb/Volvo.Web.Approval.csproj --launch-profile https &
 
 
 echo "=== All services are starting... ==="

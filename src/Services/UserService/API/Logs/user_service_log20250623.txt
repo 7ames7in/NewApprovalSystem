@@ -1,0 +1,764 @@
+2025-06-23 14:33:37.528 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-23 14:33:37.857 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-23 14:33:39.633 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:33:39.650 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:33:39.680 +09:00 [DBG] Created DbConnection. (23ms).
+2025-06-23 14:33:39.694 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.720 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.730 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.746 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (7ms).
+2025-06-23 14:33:39.774 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:33:39.791 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:33:39.793 +09:00 [DBG] Created DbConnection. (2ms).
+2025-06-23 14:33:39.828 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (46ms).
+2025-06-23 14:33:39.834 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (61ms).
+2025-06-23 14:33:39.840 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.847 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.863 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:33:39.921 +09:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:33:39.927 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.936 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (8ms).
+2025-06-23 14:33:39.946 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:33:39.947 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-23 14:33:39.950 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.954 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.959 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.963 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (4ms).
+2025-06-23 14:33:39.969 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:33:39.970 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-06-23 14:33:39.972 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-06-23 14:33:39.974 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:39.978 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.980 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:33:39.987 +09:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:33:39.990 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:39.994 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-23 14:33:40.078 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-06-23 14:33:40.441 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:33:40.487 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:40.492 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:40.495 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:33:40.499 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-06-23 14:33:40.501 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2025-06-23 14:33:40.505 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-23 14:33:40.513 +09:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-23 14:33:40.525 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:40.532 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 12ms reading results.
+2025-06-23 14:33:40.539 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:33:40.541 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (2ms).
+2025-06-23 14:33:40.547 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:33:40.550 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:33:40.552 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (2ms).
+2025-06-23 14:33:40.562 +09:00 [DBG] Hosting starting
+2025-06-23 14:33:40.634 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-23 14:33:40.638 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-23 14:33:40.807 +09:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+2025-06-23 14:33:40.987 +09:00 [INF] Now listening on: https://localhost:7129
+2025-06-23 14:33:40.991 +09:00 [INF] Now listening on: http://localhost:5139
+2025-06-23 14:33:40.993 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.User.API
+2025-06-23 14:33:40.995 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-23 14:33:40.998 +09:00 [INF] Hosting environment: Development
+2025-06-23 14:33:40.999 +09:00 [INF] Content root path: C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API
+2025-06-23 14:33:41.001 +09:00 [DBG] Hosting started
+2025-06-23 14:35:26.818 +09:00 [DBG] Connection id "0HNDI2V12PB57" accepted.
+2025-06-23 14:35:26.821 +09:00 [DBG] Connection id "0HNDI2V12PB57" started.
+2025-06-23 14:35:26.891 +09:00 [DBG] Connection id "0HNDI2V12PB57" received FIN.
+2025-06-23 14:35:26.907 +09:00 [DBG] Connection 0HNDI2V12PB57 established using the following protocol: "Tls13"
+2025-06-23 14:35:26.921 +09:00 [DBG] Connection id "0HNDI2V12PB57" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:35:26.924 +09:00 [DBG] Connection id "0HNDI2V12PB57" disconnecting.
+2025-06-23 14:35:26.937 +09:00 [DBG] Connection id "0HNDI2V12PB57" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2025-06-23 14:35:26.973 +09:00 [DBG] Connection id "0HNDI2V12PB57" stopped.
+2025-06-23 14:35:28.905 +09:00 [DBG] Connection id "0HNDI2V12PB58" accepted.
+2025-06-23 14:35:28.907 +09:00 [DBG] Connection id "0HNDI2V12PB58" started.
+2025-06-23 14:35:28.919 +09:00 [DBG] Connection 0HNDI2V12PB58 established using the following protocol: "Tls13"
+2025-06-23 14:35:28.920 +09:00 [DBG] Connection id "0HNDI2V12PB58" reset.
+2025-06-23 14:35:28.923 +09:00 [DBG] Connection id "0HNDI2V12PB58" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:35:28.924 +09:00 [DBG] Connection id "0HNDI2V12PB58" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2025-06-23 14:35:28.927 +09:00 [DBG] Connection id "0HNDI2V12PB58" disconnecting.
+2025-06-23 14:35:28.936 +09:00 [DBG] Connection id "0HNDI2V12PB58" stopped.
+2025-06-23 14:35:32.938 +09:00 [DBG] Connection id "0HNDI2V12PB59" accepted.
+2025-06-23 14:35:32.940 +09:00 [DBG] Connection id "0HNDI2V12PB59" started.
+2025-06-23 14:35:32.949 +09:00 [DBG] Connection 0HNDI2V12PB59 established using the following protocol: "Tls13"
+2025-06-23 14:35:32.951 +09:00 [DBG] Connection id "0HNDI2V12PB59" reset.
+2025-06-23 14:35:32.951 +09:00 [DBG] Connection id "0HNDI2V12PB59" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2025-06-23 14:35:32.952 +09:00 [DBG] Connection id "0HNDI2V12PB59" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:35:32.959 +09:00 [DBG] Connection id "0HNDI2V12PB59" disconnecting.
+2025-06-23 14:35:32.961 +09:00 [DBG] Connection id "0HNDI2V12PB59" stopped.
+2025-06-23 14:35:40.972 +09:00 [DBG] Connection id "0HNDI2V12PB5A" accepted.
+2025-06-23 14:35:40.974 +09:00 [DBG] Connection id "0HNDI2V12PB5A" started.
+2025-06-23 14:35:40.986 +09:00 [DBG] Connection id "0HNDI2V12PB5A" received FIN.
+2025-06-23 14:35:40.987 +09:00 [DBG] Connection 0HNDI2V12PB5A established using the following protocol: "Tls13"
+2025-06-23 14:35:40.997 +09:00 [DBG] Connection id "0HNDI2V12PB5A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:35:41.000 +09:00 [DBG] Connection id "0HNDI2V12PB5A" disconnecting.
+2025-06-23 14:35:41.003 +09:00 [DBG] Connection id "0HNDI2V12PB5A" request processing ended abnormally.
+System.IO.IOException: The decryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2025-06-23 14:35:41.013 +09:00 [DBG] Connection id "0HNDI2V12PB5A" stopped.
+2025-06-23 14:36:39.320 +09:00 [INF] Application is shutting down...
+2025-06-23 14:36:39.322 +09:00 [DBG] Hosting stopping
+2025-06-23 14:36:39.334 +09:00 [DBG] Hosting stopped
+2025-06-23 14:38:56.084 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-23 14:38:56.386 +09:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-23 14:38:57.048 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:38:57.067 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:38:57.090 +09:00 [DBG] Created DbConnection. (22ms).
+2025-06-23 14:38:57.107 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.128 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.138 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.151 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (4ms).
+2025-06-23 14:38:57.159 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:38:57.164 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:38:57.166 +09:00 [DBG] Created DbConnection. (3ms).
+2025-06-23 14:38:57.178 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (13ms).
+2025-06-23 14:38:57.182 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (23ms).
+2025-06-23 14:38:57.184 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.190 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.204 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:38:57.262 +09:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:38:57.271 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.282 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (12ms).
+2025-06-23 14:38:57.293 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:38:57.295 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-23 14:38:57.298 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.302 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.305 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.309 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-23 14:38:57.313 +09:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-06-23 14:38:57.318 +09:00 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2025-06-23 14:38:57.320 +09:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2025-06-23 14:38:57.323 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.326 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.330 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:38:57.336 +09:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-06-23 14:38:57.340 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.343 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (2ms).
+2025-06-23 14:38:57.425 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-06-23 14:38:57.804 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Users AS u), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:38:57.863 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.867 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.869 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:38:57.871 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-06-23 14:38:57.873 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-06-23 14:38:57.876 +09:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-23 14:38:57.884 +09:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-06-23 14:38:57.904 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.910 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 12ms reading results.
+2025-06-23 14:38:57.917 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:38:57.920 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-23 14:38:57.926 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:38:57.930 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:38:57.933 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (3ms).
+2025-06-23 14:38:57.943 +09:00 [DBG] Hosting starting
+2025-06-23 14:38:58.031 +09:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-23 14:38:58.035 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-23 14:38:58.445 +09:00 [INF] Now listening on: https://localhost:7129
+2025-06-23 14:38:58.447 +09:00 [INF] Now listening on: http://localhost:5139
+2025-06-23 14:38:58.449 +09:00 [DBG] Loaded hosting startup assembly Volvo.Service.User.API
+2025-06-23 14:38:58.451 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-23 14:38:58.455 +09:00 [INF] Hosting environment: Development
+2025-06-23 14:38:58.457 +09:00 [INF] Content root path: C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API
+2025-06-23 14:38:58.459 +09:00 [DBG] Hosting started
+2025-06-23 14:40:01.827 +09:00 [DBG] Connection id "0HNDI31J1FBC3" accepted.
+2025-06-23 14:40:01.831 +09:00 [DBG] Connection id "0HNDI31J1FBC3" started.
+2025-06-23 14:40:01.932 +09:00 [DBG] Connection 0HNDI31J1FBC3 established using the following protocol: "Tls13"
+2025-06-23 14:40:02.098 +09:00 [INF] Request starting HTTP/1.1 POST https://localhost:7129/api/userservice/login - application/json; charset=utf-8 null
+2025-06-23 14:40:02.149 +09:00 [DBG] 1 candidate(s) found for the request path '/api/userservice/login'
+2025-06-23 14:40:02.158 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.Login (Volvo.Service.User.API)' with route pattern 'api/UserService/login' is valid for the request path '/api/userservice/login'
+2025-06-23 14:40:02.161 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.Login (Volvo.Service.User.API)'
+2025-06-23 14:40:02.202 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-23 14:40:02.206 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.Login (Volvo.Service.User.API)'
+2025-06-23 14:40:02.251 +09:00 [INF] Route matched with {action = "Login", controller = "UserService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UserService.API.Dtos.LoginDto) on controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API).
+2025-06-23 14:40:02.258 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-23 14:40:02.261 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-23 14:40:02.266 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-23 14:40:02.270 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-23 14:40:02.273 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-23 14:40:02.281 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:40:02.286 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:40:02.304 +09:00 [DBG] Attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto' ...
+2025-06-23 14:40:02.311 +09:00 [DBG] Attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto' using the name '' in request data ...
+2025-06-23 14:40:02.316 +09:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+2025-06-23 14:40:02.430 +09:00 [DBG] Connection id "0HNDI31J1FBC3", Request id "0HNDI31J1FBC3:00000001": started reading request body.
+2025-06-23 14:40:02.441 +09:00 [DBG] Connection id "0HNDI31J1FBC3", Request id "0HNDI31J1FBC3:00000001": done reading request body.
+2025-06-23 14:40:02.470 +09:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserService.API.Dtos.LoginDto'
+2025-06-23 14:40:02.472 +09:00 [DBG] Done attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-23 14:40:02.476 +09:00 [DBG] Done attempting to bind parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-23 14:40:02.478 +09:00 [DBG] Attempting to validate the bound parameter 'user' of type 'UserService.API.Dtos.LoginDto' ...
+2025-06-23 14:40:02.505 +09:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'UserService.API.Dtos.LoginDto'.
+2025-06-23 14:40:02.566 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:40:02.597 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(e => EF.Property<string>(e, "Email") == __email_0)'
+2025-06-23 14:40:02.807 +09:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<User>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.EmployeeNumber (string) Required PK AfterSave:Throw, 0], [Property: User.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: User.Department (string), 2], [Property: User.Email (string) Required, 3], [Property: User.Name (string) Required, 4], [Property: User.Position (string), 5], [Property: User.Role (string) Required, 6] }
+            SELECT TOP(1) u.EmployeeNumber, u.CreatedAt, u.Department, u.Email, u.Name, u.Position, u.Role
+            FROM Users AS u
+            WHERE u.Email == @__email_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.EmployeeNumber (string) Required PK AfterSave:Throw, 0], [Property: User.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: User.Department (string), 2], [Property: User.Email (string) Required, 3], [Property: User.Name (string) Required, 4], [Property: User.Position (string), 5], [Property: User.Role (string) Required, 6] }
+            SELECT TOP(1) u.EmployeeNumber, u.CreatedAt, u.Department, u.Email, u.Name, u.Position, u.Role
+            FROM Users AS u
+            WHERE u.Email == @__email_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                User instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(User);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.EmployeeNumber PK | Resolver: c => c.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetString(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (User)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<EmployeeNumber>k__BackingField = dataReader.GetString(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<Department>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<Email>k__BackingField = dataReader.GetString(3);
+                                    instance.<Name>k__BackingField = dataReader.GetString(4);
+                                    instance.<Position>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                    instance.<Role>k__BackingField = dataReader.GetString(6);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-23 14:40:02.845 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:40:02.848 +09:00 [DBG] Created DbConnection. (3ms).
+2025-06-23 14:40:02.850 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:40:02.853 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:40:02.856 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:40:02.858 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-06-23 14:40:02.865 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2025-06-23 14:40:02.872 +09:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-06-23 14:40:02.886 +09:00 [INF] Executed DbCommand (18ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-06-23 14:40:02.962 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:40:03.028 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:40:03.031 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 140ms reading results.
+2025-06-23 14:40:03.036 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:40:03.039 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (2ms).
+2025-06-23 14:40:03.047 +09:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-23 14:40:03.053 +09:00 [DBG] No information found on request to perform content negotiation.
+2025-06-23 14:40:03.054 +09:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-23 14:40:03.057 +09:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-23 14:40:03.060 +09:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-23 14:40:03.064 +09:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`7[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-23 14:40:03.128 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.Login (Volvo.Service.User.API) in 843.8154ms
+2025-06-23 14:40:03.139 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.Login (Volvo.Service.User.API)'
+2025-06-23 14:40:03.141 +09:00 [DBG] Connection id "0HNDI31J1FBC3" completed keep alive response.
+2025-06-23 14:40:03.147 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:40:03.153 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:40:03.157 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (4ms).
+2025-06-23 14:40:03.163 +09:00 [INF] Request finished HTTP/1.1 POST https://localhost:7129/api/userservice/login - 200 null application/json; charset=utf-8 1069.9759ms
+2025-06-23 14:41:16.840 +09:00 [DBG] Connection id "0HNDI31J1FBC3" received FIN.
+2025-06-23 14:41:16.844 +09:00 [DBG] Connection id "0HNDI31J1FBC3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:41:16.850 +09:00 [DBG] Connection id "0HNDI31J1FBC3" disconnecting.
+2025-06-23 14:41:16.858 +09:00 [DBG] Connection id "0HNDI31J1FBC3" stopped.
+2025-06-23 14:41:42.997 +09:00 [DBG] Connection id "0HNDI31J1FBC4" accepted.
+2025-06-23 14:41:43.003 +09:00 [DBG] Connection id "0HNDI31J1FBC4" started.
+2025-06-23 14:41:43.016 +09:00 [DBG] Connection id "0HNDI31J1FBC4" received FIN.
+2025-06-23 14:41:43.024 +09:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-23 14:41:43.047 +09:00 [DBG] Connection id "0HNDI31J1FBC5" accepted.
+2025-06-23 14:41:43.051 +09:00 [DBG] Connection id "0HNDI31J1FBC4" stopped.
+2025-06-23 14:41:43.051 +09:00 [DBG] Connection id "0HNDI31J1FBC5" started.
+2025-06-23 14:41:43.054 +09:00 [DBG] Connection id "0HNDI31J1FBC4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:41:43.065 +09:00 [DBG] Connection 0HNDI31J1FBC5 established using the following protocol: "Tls13"
+2025-06-23 14:41:43.110 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=us - null null
+2025-06-23 14:41:43.118 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-06-23 14:41:43.125 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=use - null null
+2025-06-23 14:41:43.127 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-06-23 14:41:43.133 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-06-23 14:41:43.146 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.148 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-06-23 14:41:43.162 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.163 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-23 14:41:43.168 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-06-23 14:41:43.168 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-23 14:41:43.172 +09:00 [INF] CORS policy execution successful.
+2025-06-23 14:41:43.174 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-06-23 14:41:43.176 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.178 +09:00 [INF] CORS policy execution successful.
+2025-06-23 14:41:43.183 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.195 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API).
+2025-06-23 14:41:43.197 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API).
+2025-06-23 14:41:43.247 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-23 14:41:43.252 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-23 14:41:43.256 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-23 14:41:43.271 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-23 14:41:43.278 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-23 14:41:43.282 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-23 14:41:43.293 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-23 14:41:43.302 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-23 14:41:43.312 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-23 14:41:43.316 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-23 14:41:43.320 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.331 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.344 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.344 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.355 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.355 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.360 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-06-23 14:41:43.361 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-06-23 14:41:43.366 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.368 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.370 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.373 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.375 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.378 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.385 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.387 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.427 +09:00 [INF] Request starting HTTP/2 GET https://localhost:7129/api/UserService/search?query=user - null null
+2025-06-23 14:41:43.433 +09:00 [DBG] 1 candidate(s) found for the request path '/api/UserService/search'
+2025-06-23 14:41:43.437 +09:00 [DBG] Endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)' with route pattern 'api/UserService/search' is valid for the request path '/api/UserService/search'
+2025-06-23 14:41:43.440 +09:00 [DBG] Request matched endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.442 +09:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-23 14:41:43.444 +09:00 [DBG] The request has an origin header: 'https://localhost:7185'.
+2025-06-23 14:41:43.448 +09:00 [INF] CORS policy execution successful.
+2025-06-23 14:41:43.450 +09:00 [INF] Executing endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.453 +09:00 [INF] Route matched with {action = "SearchUsers", controller = "UserService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchUsers(System.String) on controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API).
+2025-06-23 14:41:43.459 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-23 14:41:43.462 +09:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-23 14:41:43.470 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-23 14:41:43.475 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-23 14:41:43.478 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-23 14:41:43.480 +09:00 [DBG] Executing controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.490 +09:00 [DBG] Executed controller factory for controller UserService.API.Controllers.UserServiceController (Volvo.Service.User.API)
+2025-06-23 14:41:43.494 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.496 +09:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-06-23 14:41:43.499 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.501 +09:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.504 +09:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-06-23 14:41:43.507 +09:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-06-23 14:41:43.532 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:41:43.532 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:41:43.532 +09:00 [DBG] Entity Framework Core 9.0.5 initialized 'UserDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-23 14:41:43.540 +09:00 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-23 14:41:43.540 +09:00 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-23 14:41:43.541 +09:00 [INF] Executing JsonResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[UserService.Domain.Entities.User, UserService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-23 14:41:43.564 +09:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Where(e => __Functions_0
+        .Like(
+            matchExpression: EF.Property<string>(e, "Name"), 
+            pattern: __Format_1) || __Functions_0
+        .Like(
+            matchExpression: EF.Property<string>(e, "Email"), 
+            pattern: __Format_1))
+    .Skip(__p_2)
+    .Take(__p_3)'
+2025-06-23 14:41:43.603 +09:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-23 14:41:43.607 +09:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-23 14:41:43.639 +09:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<User>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.EmployeeNumber (string) Required PK AfterSave:Throw, 0], [Property: User.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: User.Department (string), 2], [Property: User.Email (string) Required, 3], [Property: User.Name (string) Required, 4], [Property: User.Position (string), 5], [Property: User.Role (string) Required, 6] }
+        SELECT u.EmployeeNumber, u.CreatedAt, u.Department, u.Email, u.Name, u.Position, u.Role
+        FROM Users AS u
+        WHERE (u.Name LIKE @__Format_1) || (u.Email LIKE @__Format_1)
+        OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.EmployeeNumber (string) Required PK AfterSave:Throw, 0], [Property: User.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 1], [Property: User.Department (string), 2], [Property: User.Email (string) Required, 3], [Property: User.Name (string) Required, 4], [Property: User.Position (string), 5], [Property: User.Role (string) Required, 6] }
+        SELECT u.EmployeeNumber, u.CreatedAt, u.Department, u.Email, u.Name, u.Position, u.Role
+        FROM Users AS u
+        WHERE (u.Name LIKE @__Format_1) || (u.Email LIKE @__Format_1)
+        OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        User entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            User instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(User);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: User.EmployeeNumber PK | Resolver: c => c.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetString(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (User)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")]: 
+                        {
+                            return 
+                            {
+                                User instance;
+                                instance = new User();
+                                instance.<EmployeeNumber>k__BackingField = dataReader.GetString(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Department>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                instance.<Email>k__BackingField = dataReader.GetString(3);
+                                instance.<Name>k__BackingField = dataReader.GetString(4);
+                                instance.<Position>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                instance.<Role>k__BackingField = dataReader.GetString(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("UserService.Domain.Entities.User")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(User)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: UserService.Infrastructure.Persistence.UserDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-06-23 14:41:43.656 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:41:43.656 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:41:43.656 +09:00 [DBG] Creating DbConnection.
+2025-06-23 14:41:43.657 +09:00 [DBG] Created DbConnection. (1ms).
+2025-06-23 14:41:43.659 +09:00 [DBG] Created DbConnection. (2ms).
+2025-06-23 14:41:43.660 +09:00 [DBG] Created DbConnection. (4ms).
+2025-06-23 14:41:43.662 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.666 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.668 +09:00 [DBG] Opening connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.670 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.675 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.678 +09:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.680 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:41:43.682 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:41:43.684 +09:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-23 14:41:43.686 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-06-23 14:41:43.689 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-06-23 14:41:43.691 +09:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-06-23 14:41:43.694 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2025-06-23 14:41:43.698 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (15ms).
+2025-06-23 14:41:43.699 +09:00 [DBG] Initialized DbCommand for 'ExecuteReader' (15ms).
+2025-06-23 14:41:43.702 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 6), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.705 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.708 +09:00 [DBG] Executing DbCommand [Parameters=[@__Format_1='?' (Size = 5), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.713 +09:00 [INF] Executed DbCommand (11ms) [Parameters=[@__Format_1='?' (Size = 6), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.717 +09:00 [INF] Executed DbCommand (12ms) [Parameters=[@__Format_1='?' (Size = 4), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.721 +09:00 [INF] Executed DbCommand (13ms) [Parameters=[@__Format_1='?' (Size = 5), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."EmployeeNumber", "u"."CreatedAt", "u"."Department", "u"."Email", "u"."Name", "u"."Position", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Name" LIKE @__Format_1 OR "u"."Email" LIKE @__Format_1
+LIMIT @__p_3 OFFSET @__p_2
+2025-06-23 14:41:43.724 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.728 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.829 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.836 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.836 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.836 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.839 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.841 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.844 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.847 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.850 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.853 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.856 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.859 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.862 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.867 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.870 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.873 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.876 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.879 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.881 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.884 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.887 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.890 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.893 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.895 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.899 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.901 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.904 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.909 +09:00 [DBG] Context 'UserDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-23 14:41:43.914 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.914 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.916 +09:00 [DBG] Closing data reader to 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.919 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 195ms reading results.
+2025-06-23 14:41:43.922 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 193ms reading results.
+2025-06-23 14:41:43.925 +09:00 [DBG] A data reader for 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db' is being disposed after spending 96ms reading results.
+2025-06-23 14:41:43.928 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.931 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.935 +09:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ec20505\source\repos\MyGit-Projects\NewApprovalSystem\src\Services\UserService\API\Data\UserService.db'.
+2025-06-23 14:41:43.937 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (9ms).
+2025-06-23 14:41:43.940 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (8ms).
+2025-06-23 14:41:43.943 +09:00 [DBG] Closed connection to database 'main' on server 'Data/UserService.db' (8ms).
+2025-06-23 14:41:43.947 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API) in 466.5047ms
+2025-06-23 14:41:43.950 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API) in 630.0156ms
+2025-06-23 14:41:43.953 +09:00 [INF] Executed action UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API) in 622.3271ms
+2025-06-23 14:41:43.956 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.959 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.961 +09:00 [INF] Executed endpoint 'UserService.API.Controllers.UserServiceController.SearchUsers (Volvo.Service.User.API)'
+2025-06-23 14:41:43.964 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:41:43.970 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:41:43.972 +09:00 [DBG] 'UserDbContext' disposed.
+2025-06-23 14:41:43.974 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.977 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.980 +09:00 [DBG] Disposing connection to database 'main' on server 'Data/UserService.db'.
+2025-06-23 14:41:43.982 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (7ms).
+2025-06-23 14:41:43.986 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (9ms).
+2025-06-23 14:41:43.990 +09:00 [DBG] Disposed connection to database 'main' on server 'Data/UserService.db' (10ms).
+2025-06-23 14:41:43.993 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=user - 200 null application/json; charset=utf-8 565.4683ms
+2025-06-23 14:41:43.998 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=us - 200 null application/json; charset=utf-8 888.1723ms
+2025-06-23 14:41:44.005 +09:00 [INF] Request finished HTTP/2 GET https://localhost:7129/api/UserService/search?query=use - 200 null application/json; charset=utf-8 880.3978ms
+2025-06-23 14:43:55.424 +09:00 [DBG] Connection id "0HNDI31J1FBC5" is closing.
+2025-06-23 14:43:55.425 +09:00 [DBG] Connection id "0HNDI31J1FBC5" is closed. The last processed stream ID was 5.
+2025-06-23 14:43:55.428 +09:00 [DBG] Connection id "0HNDI31J1FBC5" received FIN.
+2025-06-23 14:43:55.429 +09:00 [DBG] The connection queue processing loop for 0HNDI31J1FBC5 completed.
+2025-06-23 14:43:55.429 +09:00 [DBG] Connection id "0HNDI31J1FBC5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-23 14:43:55.438 +09:00 [DBG] Connection id "0HNDI31J1FBC5" stopped.
