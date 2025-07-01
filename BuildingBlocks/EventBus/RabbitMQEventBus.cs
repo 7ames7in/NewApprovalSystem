@@ -37,21 +37,34 @@ namespace BuildingBlocks.EventBus
             if (_connection != null && _channel != null)
                 return;
 
-            var factory = new ConnectionFactory() { HostName = _hostName };
-            _connection = await factory.CreateConnectionAsync();
-            _channel = await _connection.CreateChannelAsync();
+            try
+            {
+                var factory = new ConnectionFactory() { HostName = _hostName };
+                _connection = await factory.CreateConnectionAsync();
+                _channel = await _connection.CreateChannelAsync();
 
-            await _channel.ExchangeDeclareAsync(
-                exchange: _exchangeName,
-                type: ExchangeType.Direct,
-                durable: true);
+                await _channel.ExchangeDeclareAsync(
+                    exchange: _exchangeName,
+                    type: ExchangeType.Direct,
+                    durable: true);
 
-            await _channel.QueueDeclareAsync(
-                queue: _queueName,
-                durable: true,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null);
+                await _channel.QueueDeclareAsync(
+                    queue: _queueName,
+                    durable: true,
+                    exclusive: false,
+                    autoDelete: false,
+                    arguments: null);
+            }
+            catch (RabbitMQ.Client.Exceptions.BrokerUnreachableException ex)
+            {
+                _logger.LogError(ex, "Connection refused: Unable to reach RabbitMQ at {HostName}. Is the server running and accessible?", _hostName);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to connect to RabbitMQ at {HostName}. Is the server running and accessible?", _hostName);
+                throw;
+            }
         }
 
         public async Task PublishAsync<T>(T @event) where T : class

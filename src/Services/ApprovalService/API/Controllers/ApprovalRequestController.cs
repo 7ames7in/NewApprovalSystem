@@ -181,10 +181,17 @@ namespace ApprovalService.API.Controllers
                 // await eventBus.PublishAsync(emailEvent);
                 
                 var emailHelper = new EmailHelper(HttpContext.RequestServices);
-                await emailHelper.SendEmailAsync(
-                    to: user.Email,
-                    approvalRequest: createdRequest
-                );
+                try
+                {
+                    await emailHelper.SendEmailAsync(
+                        to: user.Email,
+                        approvalRequest: createdRequest
+                    );
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to send email notification for approval request {ApprovalId}. Continuing without interruption.", createdRequest.ApprovalId);
+                }
             }
 
             // Return the created approval request with a 201 Created status
